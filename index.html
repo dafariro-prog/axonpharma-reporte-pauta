@@ -141,6 +141,11 @@ function agg(rows){
   return s;
 }
 const metric=(v,l,cls='')=>`<div class="metric ${cls}"><div class="m-v">${v}</div><div class="m-l">${l}</div></div>`;
+// Alcance/frecuencia NO son aditivos: usar el reach único mensual por campaña (no la suma diaria)
+function realReach(rws,ym){
+  const camps=[...new Set(rws.map(r=>r.campaign))];
+  return camps.reduce((s,c)=>s+((REACH[ym]&&REACH[ym][c]&&REACH[ym][c].reach)||0),0);
+}
 
 const BRANDS=[
   {key:'MARIMER', name:'Marimer', banner:'assets/image35.png',
@@ -164,20 +169,21 @@ const PLAT_META={
   Search:{tag:'Search',cls:'se',title:'Search (Google Ads)'},
 };
 
-let ALL=[], CRE={}, ADS={};
+let ALL=[], CRE={}, ADS={}, REACH={};
 Promise.all([
   fetch('data/meta.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/google_ads.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/tiktok.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/creatives.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
   fetch('data/adsets.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
-]).then(([m,g,t,c,ad])=>{
+  fetch('data/reach.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
+]).then(([m,g,t,c,ad,rc])=>{
   ALL=[
     ...(m.rows||[]).map(r=>({...r,source:'Meta'})),
     ...(g.rows||[]).map(r=>({...r,source:'Google Ads'})),
     ...(t.rows||[]).map(r=>({...r,source:'TikTok'})),
   ];
-  CRE=c.months||{}; ADS=ad.months||{};
+  CRE=c.months||{}; ADS=ad.months||{}; REACH=rc.months||{};
   const months=[...new Set(ALL.map(r=>r.date.slice(0,7)))].filter(m=>m.startsWith('2026')).sort();
   const sel=byId('mesSel');
   sel.innerHTML=months.map(m=>`<option value="${m}">${mesName(m)}</option>`).join('');
@@ -205,6 +211,7 @@ function render(ym){
         html+=`<div class="empty">Sin pauta de ${cfg.title} para ${b.name} en ${mesName(ym)}.</div>`;
       } else {
         const a=agg(rws);
+        const rr=realReach(rws,ym); if(rr){ a.reach=rr; a.freq=a.impressions/rr; }
         html+=resultsCard(P,a);
         html+=`<div class="analisis">${analisis(P,b,ym,a,rws)}</div>`;
         const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
@@ -293,7 +300,8 @@ function brandSummary(b,ym,rowsM){
   const parts=Object.entries(byP).map(([P,a])=>`${nm(P)} ${cop(a.spend)} COP`);
   const S=[`<b>${b.name}</b> cerró ${mesName(ym)} con una inversión total de <b>${cop(t.spend)} COP</b> en pauta, distribuida en ${parts.join(' · ')}.`];
   const aw=byP.Awareness;
-  if(aw) S.push(`En Awareness alcanzó ${fmt(aw.reach)} personas con ${fmt(aw.impressions)} impresiones y un CPM de ${cop(aw.cpm)} COP.`);
+  if(aw){ const ar=realReach(rws.filter(r=>platOf(r)==='Awareness'),ym); if(ar){aw.reach=ar;aw.freq=aw.impressions/ar;}
+    S.push(`En Awareness alcanzó ${fmt(aw.reach)} personas con ${fmt(aw.impressions)} impresiones y un CPM de ${cop(aw.cpm)} COP.`); }
   let best=null; Object.entries(byP).forEach(([P,a])=>{ if(P==='Awareness')return; const c=a.cpc; if(c>0&&(!best||c<best.c))best={P,c}; });
   if(best) S.push(`El CPC más eficiente en tráfico se dio en ${nm(best.P)} con ${cop(best.c)} COP.`);
   const totClk=Object.values(byP).reduce((s,a)=>s+(a.link_clicks||a.clicks),0);

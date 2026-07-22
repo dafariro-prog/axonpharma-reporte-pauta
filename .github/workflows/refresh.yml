@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name  "axon-report-bot"
           git config user.email "actions@github.com"
-          git add data/meta.json data/tiktok.json data/creatives.json data/adsets.json
+          git add data/meta.json data/tiktok.json data/creatives.json data/adsets.json data/reach.json
           if git diff --staged --quiet; then
             echo "Sin cambios en la data."
           else

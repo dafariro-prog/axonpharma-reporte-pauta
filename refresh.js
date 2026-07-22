@@ -70,6 +70,16 @@ async function win(connector, fields, { from=FROM, to=TO, account } = {}) {
   fs.writeFileSync(path.join(dataDir,'tiktok.json'), JSON.stringify({
     updated:new Date().toISOString(), account:{id:TT_ACCT,name:'CO_AxonPharma_GarnierCOLOMBIA',currency:'COP',note:'USD->COP TC 3.800'}, rows:ttRows }, null, 2));
 
+  // ---------- REACH mensual único por campaña (alcance/frecuencia NO son aditivos) ----------
+  const reachMonths = {};
+  const addReach = rows => rows.forEach(r => {
+    const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+    (reachMonths[m] = reachMonths[m] || {})[String(r.campaign).trim()] = { reach:+r.reach||0, freq:+r.frequency||0 };
+  });
+  addReach((await win('facebook', ['account_id','month','campaign','reach','frequency'], {account:FB_ACCT})).filter(r=>String(r.account_id)===FB_ACCT));
+  addReach((await win('tiktok',   ['account_id','month','campaign','reach','frequency'], {account:TT_ACCT})).filter(r=>String(r.account_id)===TT_ACCT));
+  fs.writeFileSync(path.join(dataDir,'reach.json'), JSON.stringify({ source:'Meta+TikTok reach mensual único', updated:new Date().toISOString(), months:reachMonths }, null, 2));
+
   // ---------- CREATIVOS (Meta image_url + TikTok video_thumbnail_url) ----------
   const acc = {};
   const addCr = (month, brand, plat, ad, img, spend, impr, clk) => {
