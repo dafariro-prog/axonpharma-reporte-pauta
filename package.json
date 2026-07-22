@@ -1,0 +1,10 @@
+{
+  "name": "axonpharma-reporte-pauta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reporte mensual de pauta Axon Pharma (Meta + Google Search + TikTok) con estructura de plantilla del cliente",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}
