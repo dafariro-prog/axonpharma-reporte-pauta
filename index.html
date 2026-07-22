@@ -51,6 +51,16 @@ img{max-width:100%;display:block}
 /* Analysis */
 .analisis{background:var(--card);border-left:4px solid var(--blue);border-radius:12px;padding:18px 20px;margin-top:16px;font-size:13.5px;line-height:1.65;color:#2a3350;box-shadow:0 1px 3px rgba(20,26,51,.06)}
 .analisis b{color:var(--navy)}
+.analisis ul{margin:8px 0 0 18px;font-size:13px;line-height:1.6}
+.analisis .lrn-t{font-weight:700;color:var(--navy);margin-top:12px;font-size:13px}
+.rtab-t{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:700;margin:18px 0 8px}
+.rtab-wrap{overflow-x:auto;background:#fff;border:1px solid #e2e7ef;border-radius:12px;box-shadow:0 1px 3px rgba(20,26,51,.06)}
+.rtab{width:100%;border-collapse:collapse;font-size:12.5px}
+.rtab th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;font-weight:600;white-space:nowrap}
+.rtab th.n,.rtab td.n{text-align:right;font-variant-numeric:tabular-nums}
+.rtab td{padding:8px 12px;border-bottom:1px solid #eef1f6}
+.rtab tbody tr:last-child td{border-bottom:none}
+.rtab tr.tot td{font-weight:800;background:#eef3fb;color:var(--navy)}
 .analisis .est{display:inline-block;font-size:10.5px;font-weight:700;color:#8a6d00;background:#FFF3D6;padding:2px 8px;border-radius:6px;margin-left:6px;text-transform:uppercase;letter-spacing:.4px}
 /* Creatives */
 .crea{margin-top:16px}
@@ -141,19 +151,20 @@ const PLAT_META={
   Search:{tag:'Search',cls:'se',title:'Search (Google Ads)'},
 };
 
-let ALL=[], CRE={};
+let ALL=[], CRE={}, ADS={};
 Promise.all([
   fetch('data/meta.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/google_ads.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/tiktok.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/creatives.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
-]).then(([m,g,t,c])=>{
+  fetch('data/adsets.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
+]).then(([m,g,t,c,ad])=>{
   ALL=[
     ...(m.rows||[]).map(r=>({...r,source:'Meta'})),
     ...(g.rows||[]).map(r=>({...r,source:'Google Ads'})),
     ...(t.rows||[]).map(r=>({...r,source:'TikTok'})),
   ];
-  CRE=c.months||{};
+  CRE=c.months||{}; ADS=ad.months||{};
   const months=[...new Set(ALL.map(r=>r.date.slice(0,7)))].filter(m=>m.startsWith('2026')).sort();
   const sel=byId('mesSel');
   sel.innerHTML=months.map(m=>`<option value="${m}">${mesName(m)}</option>`).join('');
@@ -182,7 +193,7 @@ function render(ym){
       } else {
         const a=agg(rws);
         html+=resultsCard(P,a);
-        html+=`<div class="analisis">${analisis(P,b.name,ym,a,rws)}</div>`;
+        html+=`<div class="analisis">${analisis(P,b,ym,a,rws)}</div>`;
         const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
         if(cr.length){
           const isAw=P==='Awareness';
@@ -194,6 +205,8 @@ function render(ym){
               return `<div class="crea-card"><img loading="lazy" src="${c.thumbnail}" onerror="this.closest('.crea-card').style.display='none'"><div class="cc2">${st}</div></div>`;
             }).join('')+`</div></div>`;
         }
+        const adt=(ADS[ym]&&ADS[ym][b.key]&&ADS[ym][b.key][P])||[];
+        if(adt.length) html+=summaryTable(adt);
       }
       html+=`</div>`;
     });
@@ -225,25 +238,53 @@ function resultsCard(P,a){
   return `<div class="res"><div class="res-t">Resultados de plataforma</div><div class="res-grid">${items}</div></div>`;
 }
 
-function analisis(P,brand,ym,a,rws){
-  const mes=mesName(ym);
-  const clks=a.link_clicks||a.clicks;
-  if(P==='Awareness')
-    return `La campaña de <b>Awareness</b> de <b>${brand}</b> en ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y un CPM de ${cop(a.cpm)} COP, con una inversión de ${cop(a.spend)} COP y una frecuencia de ${dec(a.freq,2)}.`;
-  if(P==='Traffic')
-    return `La campaña de <b>Traffic</b> de <b>${brand}</b> en ${mes} generó <b>${fmt(clks)}</b> clics en enlace con un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP, alcanzando ${fmt(a.reach)} personas. Inversión de ${cop(a.spend)} COP.`;
-  if(P==='TikTok')
-    return `La campaña de <b>Traffic</b> de <b>${brand}</b> en <b>TikTok</b> durante ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y ${fmt(clks)} clics, un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP. Inversión de ${cop(a.spend)} COP con frecuencia ${dec(a.freq,2)}.`;
-  return `La campaña de <b>Search</b> de <b>${brand}</b> en ${mes} generó <b>${fmt(clks)}</b> link clicks con un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP, sobre ${fmt(a.impressions)} impresiones. Inversión de ${cop(a.spend)} COP.`;
+const cleanAd=n=>String(n).replace(/^\w+_CO_AxonPharma_/i,'').replace(/_(Traffic|Awareness)_.*$/i,'').replace(/_/g,' ').replace(/\s+/g,' ').trim();
+
+function summaryTable(ad){
+  const rows=[...ad].sort((x,y)=>y.impressions-x.impressions);
+  const tot=rows.reduce((s,r)=>({impressions:s.impressions+r.impressions,link_clicks:s.link_clicks+r.link_clicks,reach:s.reach+r.reach,clicks:s.clicks+r.clicks}),{impressions:0,link_clicks:0,reach:0,clicks:0});
+  const totCtr=tot.impressions?tot.clicks/tot.impressions*100:0;
+  const body=rows.map(r=>`<tr><td>${cleanAd(r.name)}</td><td class="n">${fmt(r.impressions)}</td><td class="n">${fmt(r.link_clicks)}</td><td class="n">${fmt(r.reach)}</td><td class="n">${dec(r.ctr,2)}%</td></tr>`).join('');
+  return `<div class="rtab-t">Resumen por conjunto de anuncios</div><div class="rtab-wrap"><table class="rtab">
+    <thead><tr><th>Conjunto de anuncios</th><th class="n">Impresiones</th><th class="n">Clics enlace</th><th class="n">Alcance</th><th class="n">CTR</th></tr></thead>
+    <tbody>${body}<tr class="tot"><td>Total general</td><td class="n">${fmt(tot.impressions)}</td><td class="n">${fmt(tot.link_clicks)}</td><td class="n">${fmt(tot.reach)}</td><td class="n">${dec(totCtr,2)}%</td></tr></tbody></table></div>`;
+}
+
+function analisis(P,b,ym,a,rws){
+  const mes=mesName(ym), brand=b.name, clks=a.link_clicks||a.clicks;
+  let base='';
+  if(P==='Awareness') base=`La campaña de <b>Awareness</b> de <b>${brand}</b> en ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y un CPM de ${cop(a.cpm)} COP, con una inversión de ${cop(a.spend)} COP y frecuencia ${dec(a.freq,2)}.`;
+  else if(P==='Traffic') base=`La campaña de <b>Traffic</b> de <b>${brand}</b> en ${mes} generó <b>${fmt(clks)}</b> clics en enlace con un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP, alcanzando ${fmt(a.reach)} personas. Inversión de ${cop(a.spend)} COP.`;
+  else if(P==='TikTok') base=`La campaña de <b>Traffic</b> de <b>${brand}</b> en <b>TikTok</b> durante ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y ${fmt(clks)} clics, CTR ${dec(a.ctr,2)}% y CPC ${cop(a.cpc)} COP. Inversión ${cop(a.spend)} COP, frecuencia ${dec(a.freq,2)}.`;
+  else base=`La campaña de <b>Search</b> de <b>${brand}</b> en ${mes} generó <b>${fmt(clks)}</b> link clicks con un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP, sobre ${fmt(a.impressions)} impresiones. Inversión ${cop(a.spend)} COP.`;
+  const L=[];
+  const ad=(ADS[ym]&&ADS[ym][b.key]&&ADS[ym][b.key][P])||[];
+  if(ad.length){
+    const byImp=[...ad].sort((x,y)=>y.impressions-x.impressions)[0];
+    const byCtr=[...ad].filter(x=>x.impressions>1000).sort((x,y)=>y.ctr-x.ctr)[0];
+    if(byImp) L.push(`El conjunto con mayor volumen fue <b>${cleanAd(byImp.name)}</b> con ${fmt(byImp.impressions)} impresiones.`);
+    if(byCtr && byCtr!==byImp) L.push(`El mejor CTR entre conjuntos lo registró <b>${cleanAd(byCtr.name)}</b> con ${dec(byCtr.ctr,2)}%.`);
+  }
+  const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
+  if(cr.length){ const top=cr[0]; L.push(`El creativo con mejor CTR alcanzó <b>${dec(top.ctr,2)}%</b>${P==='Awareness'?` con CPM ${cop(top.cpm)} COP`:` con CPC ${cop(top.cpc)} COP`}.`); }
+  return base + (L.length?`<div class="lrn-t">Aprendizajes</div><ul>`+L.map(x=>`<li>${x}</li>`).join('')+`</ul>`:'');
 }
 
 function brandSummary(b,ym,rowsM){
   const rws=rowsM.filter(r=>productOf(r.campaign)===b.key);
   if(!rws.length) return `Sin pauta registrada para ${b.name} en ${mesName(ym)}.`;
   const t=agg(rws);
-  const byP={};b.platforms.forEach(P=>{const rr=rws.filter(r=>platOf(r)===P);if(rr.length)byP[P]=agg(rr);});
-  const parts=Object.entries(byP).map(([P,a])=>`${PLAT_META[P].title.replace(/ \(.*\)/,'')} ${cop(a.spend)} COP`);
-  return `${b.name} cerró ${mesName(ym)} con una inversión total de <b>${cop(t.spend)} COP</b> en pauta, distribuida en: ${parts.join(' · ')}. Alcance y clics según el detalle por plataforma arriba.`;
+  const byP={}; b.platforms.forEach(P=>{const rr=rws.filter(r=>platOf(r)===P); if(rr.length)byP[P]=agg(rr);});
+  const nm=P=>PLAT_META[P].title.replace(/ \(.*\)/,'');
+  const parts=Object.entries(byP).map(([P,a])=>`${nm(P)} ${cop(a.spend)} COP`);
+  const S=[`<b>${b.name}</b> cerró ${mesName(ym)} con una inversión total de <b>${cop(t.spend)} COP</b> en pauta, distribuida en ${parts.join(' · ')}.`];
+  const aw=byP.Awareness;
+  if(aw) S.push(`En Awareness alcanzó ${fmt(aw.reach)} personas con ${fmt(aw.impressions)} impresiones y un CPM de ${cop(aw.cpm)} COP.`);
+  let best=null; Object.entries(byP).forEach(([P,a])=>{ if(P==='Awareness')return; const c=a.cpc; if(c>0&&(!best||c<best.c))best={P,c}; });
+  if(best) S.push(`El CPC más eficiente en tráfico se dio en ${nm(best.P)} con ${cop(best.c)} COP.`);
+  const totClk=Object.values(byP).reduce((s,a)=>s+(a.link_clicks||a.clicks),0);
+  S.push(`En conjunto, la marca generó ${fmt(totClk)} clics de tráfico entre las plataformas activas.`);
+  return S.join(' ');
 }
 </script>
 </body></html>

@@ -1,0 +1,3507 @@
+{
+  "source": "Meta adsets",
+  "updated": "2026-07-22T00:51:05.560Z",
+  "months": {
+    "2026-01": {
+      "FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_LaRebaja_Awareness_15-31Ene",
+            "impressions": 953465,
+            "link_clicks": 640,
+            "reach": 582084,
+            "clicks": 1518,
+            "ctr": 0.16,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Awareness_15-31Ene",
+            "impressions": 949694,
+            "link_clicks": 603,
+            "reach": 514529,
+            "clicks": 1571,
+            "ctr": 0.17,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Farmatodo_Awareness_15-31Ene",
+            "impressions": 931695,
+            "link_clicks": 464,
+            "reach": 549800,
+            "clicks": 1148,
+            "ctr": 0.12,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Awareness_15-31Ene",
+            "impressions": 918008,
+            "link_clicks": 502,
+            "reach": 537273,
+            "clicks": 1512,
+            "ctr": 0.16,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Pasteur_Awareness_15-31Ene",
+            "impressions": 909927,
+            "link_clicks": 525,
+            "reach": 491828,
+            "clicks": 1578,
+            "ctr": 0.17,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_15-31Ene",
+            "impressions": 903420,
+            "link_clicks": 491,
+            "reach": 528629,
+            "clicks": 1583,
+            "ctr": 0.18,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_Farmatodo_Awareness_15-31Ene",
+            "impressions": 898958,
+            "link_clicks": 467,
+            "reach": 449299,
+            "clicks": 1989,
+            "ctr": 0.22,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Pasteur_Awareness_15-31Ene",
+            "impressions": 898620,
+            "link_clicks": 217,
+            "reach": 407627,
+            "clicks": 1071,
+            "ctr": 0.12,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_LaRebaja_Awareness_15-31Ene",
+            "impressions": 536411,
+            "link_clicks": 608,
+            "reach": 164445,
+            "clicks": 1267,
+            "ctr": 0.24,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Awareness_15-31Ene",
+            "impressions": 524331,
+            "link_clicks": 365,
+            "reach": 160381,
+            "clicks": 1145,
+            "ctr": 0.22,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_LaRebaja_Awareness_15-31Ene",
+            "impressions": 511148,
+            "link_clicks": 508,
+            "reach": 190182,
+            "clicks": 1367,
+            "ctr": 0.27,
+            "spend": 610315
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_BOGOTÁ_Farmatodo_Awareness_15-31Ene",
+            "impressions": 223197,
+            "link_clicks": 322,
+            "reach": 77809,
+            "clicks": 476,
+            "ctr": 0.21,
+            "spend": 610311
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Pasteur_Awareness_01-31-Dic",
+            "impressions": 59185,
+            "link_clicks": 64,
+            "reach": 52092,
+            "clicks": 118,
+            "ctr": 0.2,
+            "spend": 17785
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Awareness_01-31-Dic",
+            "impressions": 58064,
+            "link_clicks": 51,
+            "reach": 52774,
+            "clicks": 157,
+            "ctr": 0.27,
+            "spend": 17980
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Awareness_01-31-Dic",
+            "impressions": 57770,
+            "link_clicks": 56,
+            "reach": 54198,
+            "clicks": 100,
+            "ctr": 0.17,
+            "spend": 17921
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_LaRebaja_Awareness_01-31-Dic",
+            "impressions": 57528,
+            "link_clicks": 56,
+            "reach": 54678,
+            "clicks": 112,
+            "ctr": 0.19,
+            "spend": 17986
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Farmatodo_Awareness_01-31-Dic",
+            "impressions": 57387,
+            "link_clicks": 61,
+            "reach": 52128,
+            "clicks": 93,
+            "ctr": 0.16,
+            "spend": 17782
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_01-31-Dic",
+            "impressions": 54440,
+            "link_clicks": 56,
+            "reach": 49284,
+            "clicks": 102,
+            "ctr": 0.19,
+            "spend": 17638
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Pasteur_Awareness_01-31-Dic",
+            "impressions": 53433,
+            "link_clicks": 21,
+            "reach": 42390,
+            "clicks": 74,
+            "ctr": 0.14,
+            "spend": 17577
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_Farmatodo_Awareness_01-31-Dic",
+            "impressions": 52819,
+            "link_clicks": 75,
+            "reach": 46483,
+            "clicks": 137,
+            "ctr": 0.26,
+            "spend": 16311
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_LaRebaja_Awareness_01-31-Dic",
+            "impressions": 38809,
+            "link_clicks": 41,
+            "reach": 28379,
+            "clicks": 91,
+            "ctr": 0.23,
+            "spend": 19418
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_LaRebaja_Awareness_01-31-Dic",
+            "impressions": 37697,
+            "link_clicks": 44,
+            "reach": 31071,
+            "clicks": 101,
+            "ctr": 0.27,
+            "spend": 18723
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Awareness_01-31-Dic",
+            "impressions": 37543,
+            "link_clicks": 34,
+            "reach": 26921,
+            "clicks": 66,
+            "ctr": 0.18,
+            "spend": 19594
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_BOGOTÁ_Farmatodo_Awareness_01-31-Dic",
+            "impressions": 19580,
+            "link_clicks": 26,
+            "reach": 14594,
+            "clicks": 32,
+            "ctr": 0.16,
+            "spend": 19294
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Farmatodo_Traffic_15-31Ene",
+            "impressions": 838486,
+            "link_clicks": 11180,
+            "reach": 361461,
+            "clicks": 14762,
+            "ctr": 1.76,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_LaRebaja_Traffic_15-31Ene",
+            "impressions": 547759,
+            "link_clicks": 18582,
+            "reach": 360093,
+            "clicks": 21533,
+            "ctr": 3.93,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Traffic_15-31Ene",
+            "impressions": 547659,
+            "link_clicks": 18653,
+            "reach": 350557,
+            "clicks": 21866,
+            "ctr": 3.99,
+            "spend": 1359424
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Farmatodo_Traffic_01-31-Dic",
+            "impressions": 507125,
+            "link_clicks": 4390,
+            "reach": 326088,
+            "clicks": 6111,
+            "ctr": 1.21,
+            "spend": 377735
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Traffic_15-31Ene",
+            "impressions": 420471,
+            "link_clicks": 17440,
+            "reach": 255968,
+            "clicks": 19036,
+            "ctr": 4.53,
+            "spend": 1359410
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Pasteur_Traffic_15-31Ene",
+            "impressions": 399759,
+            "link_clicks": 18220,
+            "reach": 239867,
+            "clicks": 20292,
+            "ctr": 5.08,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_Farmatodo_Traffic_15-31Ene",
+            "impressions": 397784,
+            "link_clicks": 16579,
+            "reach": 212782,
+            "clicks": 18330,
+            "ctr": 4.61,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_LaRebaja_Traffic_15-31Ene",
+            "impressions": 387809,
+            "link_clicks": 19638,
+            "reach": 246499,
+            "clicks": 21354,
+            "ctr": 5.51,
+            "spend": 1359419
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_LaRebaja_Traffic_15-31Ene",
+            "impressions": 381990,
+            "link_clicks": 19189,
+            "reach": 246436,
+            "clicks": 20573,
+            "ctr": 5.39,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_BOGOTA_Farmatodo_Traffic_15-31Ene",
+            "impressions": 374968,
+            "link_clicks": 17053,
+            "reach": 215246,
+            "clicks": 19087,
+            "ctr": 5.09,
+            "spend": 1359395
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Traffic_15-31Ene",
+            "impressions": 355160,
+            "link_clicks": 17503,
+            "reach": 203786,
+            "clicks": 18262,
+            "ctr": 5.14,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Traffic_15-31Ene",
+            "impressions": 310986,
+            "link_clicks": 16501,
+            "reach": 178435,
+            "clicks": 17457,
+            "ctr": 5.61,
+            "spend": 1359424
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Pasteur_Traffic_15-31Ene",
+            "impressions": 296815,
+            "link_clicks": 17590,
+            "reach": 179568,
+            "clicks": 18775,
+            "ctr": 6.33,
+            "spend": 1355709
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Traffic_01-31-Dic",
+            "impressions": 177284,
+            "link_clicks": 6048,
+            "reach": 114366,
+            "clicks": 6577,
+            "ctr": 3.71,
+            "spend": 385714
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Pasteur_Traffic_01-31-Dic",
+            "impressions": 172449,
+            "link_clicks": 7277,
+            "reach": 138502,
+            "clicks": 7990,
+            "ctr": 4.63,
+            "spend": 391431
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Traffic_01-31-Dic",
+            "impressions": 161432,
+            "link_clicks": 7938,
+            "reach": 115898,
+            "clicks": 8366,
+            "ctr": 5.18,
+            "spend": 444121
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Traffic_01-31-Dic",
+            "impressions": 155284,
+            "link_clicks": 7322,
+            "reach": 122328,
+            "clicks": 7864,
+            "ctr": 5.06,
+            "spend": 391996
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_LaRebaja_Traffic_01-31-Dic",
+            "impressions": 138559,
+            "link_clicks": 6954,
+            "reach": 103462,
+            "clicks": 7092,
+            "ctr": 5.12,
+            "spend": 387526
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Pasteur_Traffic_01-31-Dic",
+            "impressions": 128964,
+            "link_clicks": 7563,
+            "reach": 94154,
+            "clicks": 8379,
+            "ctr": 6.5,
+            "spend": 424160
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_Farmatodo_Traffic_01-31-Dic",
+            "impressions": 128749,
+            "link_clicks": 6997,
+            "reach": 85522,
+            "clicks": 7624,
+            "ctr": 5.92,
+            "spend": 386934
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_BOGOTA_Farmatodo_Traffic_01-31-Dic",
+            "impressions": 110453,
+            "link_clicks": 6430,
+            "reach": 77001,
+            "clicks": 6798,
+            "ctr": 6.15,
+            "spend": 391335
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Traffic_01-31-Dic",
+            "impressions": 108270,
+            "link_clicks": 6874,
+            "reach": 75316,
+            "clicks": 7119,
+            "ctr": 6.58,
+            "spend": 379562
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_LaRebaja_Traffic_01-31-Dic",
+            "impressions": 101992,
+            "link_clicks": 6736,
+            "reach": 73876,
+            "clicks": 6759,
+            "ctr": 6.63,
+            "spend": 390979
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_LaRebaja_Traffic_01-31-Dic",
+            "impressions": 84770,
+            "link_clicks": 6670,
+            "reach": 56449,
+            "clicks": 6201,
+            "ctr": 7.32,
+            "spend": 387133
+          }
+        ]
+      },
+      "MARIMER": {
+        "Awareness": [
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Awareness_01-31Ene",
+            "impressions": 1067156,
+            "link_clicks": 1417,
+            "reach": 638459,
+            "clicks": 3452,
+            "ctr": 0.32,
+            "spend": 676693
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Pasteur_Awareness_01-31Ene",
+            "impressions": 1031527,
+            "link_clicks": 820,
+            "reach": 686639,
+            "clicks": 2037,
+            "ctr": 0.2,
+            "spend": 676693
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_LaRebaja_Awareness_01-31Ene",
+            "impressions": 1014091,
+            "link_clicks": 694,
+            "reach": 618967,
+            "clicks": 1954,
+            "ctr": 0.19,
+            "spend": 676693
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Awareness_01-31Ene",
+            "impressions": 1008762,
+            "link_clicks": 561,
+            "reach": 582596,
+            "clicks": 1304,
+            "ctr": 0.13,
+            "spend": 676690
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_ADULTOS_CENTRO_Farmatodo_Awareness_01-31Ene",
+            "impressions": 938541,
+            "link_clicks": 2038,
+            "reach": 487331,
+            "clicks": 3064,
+            "ctr": 0.33,
+            "spend": 676693
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_BABY_CENTRO_Farmatodo_Awareness01-31Ene",
+            "impressions": 403673,
+            "link_clicks": 1039,
+            "reach": 121876,
+            "clicks": 1569,
+            "ctr": 0.39,
+            "spend": 676692
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Awareness_15-31Ene",
+            "impressions": 395319,
+            "link_clicks": 987,
+            "reach": 117977,
+            "clicks": 1385,
+            "ctr": 0.35,
+            "spend": 676686
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Awareness_01-Ene",
+            "impressions": 381611,
+            "link_clicks": 800,
+            "reach": 124316,
+            "clicks": 1354,
+            "ctr": 0.35,
+            "spend": 676693
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Awareness_01-31Ene",
+            "impressions": 154603,
+            "link_clicks": 538,
+            "reach": 54287,
+            "clicks": 903,
+            "ctr": 0.58,
+            "spend": 676672
+          },
+          {
+            "name": "Ene26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Awareness_01-31Ene",
+            "impressions": 154161,
+            "link_clicks": 542,
+            "reach": 54517,
+            "clicks": 946,
+            "ctr": 0.61,
+            "spend": 676530
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Pasteur_Awareness_01-31Dic",
+            "impressions": 71780,
+            "link_clicks": 90,
+            "reach": 66120,
+            "clicks": 180,
+            "ctr": 0.25,
+            "spend": 20855
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Awareness_01-31Dic",
+            "impressions": 58646,
+            "link_clicks": 61,
+            "reach": 56891,
+            "clicks": 155,
+            "ctr": 0.26,
+            "spend": 17519
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Awareness_01-31Dic",
+            "impressions": 57885,
+            "link_clicks": 62,
+            "reach": 53960,
+            "clicks": 114,
+            "ctr": 0.2,
+            "spend": 17398
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_LaRebaja_Awareness_01-31Dic",
+            "impressions": 57719,
+            "link_clicks": 79,
+            "reach": 51004,
+            "clicks": 133,
+            "ctr": 0.23,
+            "spend": 17566
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_CENTRO_Farmatodo_Awareness_01-31Dic",
+            "impressions": 55249,
+            "link_clicks": 106,
+            "reach": 48275,
+            "clicks": 172,
+            "ctr": 0.31,
+            "spend": 17060
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_CENTRO_Farmatodo_Awareness01-31Dic",
+            "impressions": 37968,
+            "link_clicks": 95,
+            "reach": 24845,
+            "clicks": 140,
+            "ctr": 0.37,
+            "spend": 21004
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Awareness_01-31Dic",
+            "impressions": 37854,
+            "link_clicks": 73,
+            "reach": 25972,
+            "clicks": 99,
+            "ctr": 0.26,
+            "spend": 21393
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Awareness_01-31Dic",
+            "impressions": 32293,
+            "link_clicks": 53,
+            "reach": 23134,
+            "clicks": 105,
+            "ctr": 0.33,
+            "spend": 17388
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Awareness_01-31Dic",
+            "impressions": 16074,
+            "link_clicks": 27,
+            "reach": 11469,
+            "clicks": 54,
+            "ctr": 0.34,
+            "spend": 14993
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Awareness_01-31Dic",
+            "impressions": 16054,
+            "link_clicks": 40,
+            "reach": 11271,
+            "clicks": 58,
+            "ctr": 0.36,
+            "spend": 14331
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_LaRebaja_Traffic_01-31ene",
+            "impressions": 845825,
+            "link_clicks": 21279,
+            "reach": 523517,
+            "clicks": 24652,
+            "ctr": 2.91,
+            "spend": 1396684
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Traffic_01-31Ene",
+            "impressions": 800878,
+            "link_clicks": 23384,
+            "reach": 522614,
+            "clicks": 27003,
+            "ctr": 3.37,
+            "spend": 1396693
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_01-31Ene",
+            "impressions": 800655,
+            "link_clicks": 23185,
+            "reach": 529358,
+            "clicks": 27051,
+            "ctr": 3.38,
+            "spend": 1396693
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Traffic_01-31Ene",
+            "impressions": 716085,
+            "link_clicks": 19905,
+            "reach": 363655,
+            "clicks": 22354,
+            "ctr": 3.12,
+            "spend": 1396685
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Traffic_01-31Ene",
+            "impressions": 703342,
+            "link_clicks": 20822,
+            "reach": 449053,
+            "clicks": 23171,
+            "ctr": 3.29,
+            "spend": 1396567
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_BABY_BOGOTA_Traffic_01-31Ene",
+            "impressions": 660664,
+            "link_clicks": 21344,
+            "reach": 358436,
+            "clicks": 23747,
+            "ctr": 3.59,
+            "spend": 1396689
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_Traffic_01-31Ene",
+            "impressions": 644452,
+            "link_clicks": 19345,
+            "reach": 350995,
+            "clicks": 21611,
+            "ctr": 3.35,
+            "spend": 1396583
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Traffic_01-31Ene",
+            "impressions": 601188,
+            "link_clicks": 19770,
+            "reach": 379794,
+            "clicks": 21550,
+            "ctr": 3.58,
+            "spend": 1396562
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Traffic_01-31Ene",
+            "impressions": 544040,
+            "link_clicks": 18662,
+            "reach": 288007,
+            "clicks": 19902,
+            "ctr": 3.66,
+            "spend": 1396578
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Pasteur_Traffic_01-31Ene",
+            "impressions": 437471,
+            "link_clicks": 21161,
+            "reach": 286651,
+            "clicks": 23905,
+            "ctr": 5.46,
+            "spend": 1396648
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Traffic_01-31Dic",
+            "impressions": 236208,
+            "link_clicks": 5484,
+            "reach": 175613,
+            "clicks": 6339,
+            "ctr": 2.68,
+            "spend": 248905
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_LaRebaja_Traffic_01-31Dic",
+            "impressions": 204404,
+            "link_clicks": 5291,
+            "reach": 160351,
+            "clicks": 5956,
+            "ctr": 2.91,
+            "spend": 252012
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_01-31Dic",
+            "impressions": 191818,
+            "link_clicks": 5684,
+            "reach": 156740,
+            "clicks": 6498,
+            "ctr": 3.39,
+            "spend": 253524
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_BOGOTA_Traffic_01-31Dic",
+            "impressions": 184528,
+            "link_clicks": 5619,
+            "reach": 119236,
+            "clicks": 6171,
+            "ctr": 3.34,
+            "spend": 266600
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_Traffic_01-31Dic",
+            "impressions": 183175,
+            "link_clicks": 5136,
+            "reach": 124380,
+            "clicks": 5677,
+            "ctr": 3.1,
+            "spend": 250851
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Traffic_01-31Dic",
+            "impressions": 183009,
+            "link_clicks": 5350,
+            "reach": 132615,
+            "clicks": 5887,
+            "ctr": 3.22,
+            "spend": 247907
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Traffic_01-31Dic",
+            "impressions": 180013,
+            "link_clicks": 4895,
+            "reach": 120132,
+            "clicks": 5381,
+            "ctr": 2.99,
+            "spend": 265503
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Traffic_01-31Dic",
+            "impressions": 171081,
+            "link_clicks": 5231,
+            "reach": 134977,
+            "clicks": 5664,
+            "ctr": 3.31,
+            "spend": 252677
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Traffic_01-31Dic",
+            "impressions": 145289,
+            "link_clicks": 4657,
+            "reach": 95999,
+            "clicks": 4909,
+            "ctr": 3.38,
+            "spend": 252876
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Pasteur_Traffic_01-31Dic",
+            "impressions": 116884,
+            "link_clicks": 5755,
+            "reach": 93578,
+            "clicks": 6261,
+            "ctr": 5.36,
+            "spend": 314496
+          }
+        ]
+      },
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Awareness_15-31Ene",
+            "impressions": 1135062,
+            "link_clicks": 1444,
+            "reach": 579852,
+            "clicks": 2876,
+            "ctr": 0.25,
+            "spend": 719944
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Awareness_15-31Ene",
+            "impressions": 1097700,
+            "link_clicks": 811,
+            "reach": 631743,
+            "clicks": 2218,
+            "ctr": 0.2,
+            "spend": 719960
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Awareness_15-31Ene",
+            "impressions": 1092709,
+            "link_clicks": 596,
+            "reach": 578826,
+            "clicks": 1724,
+            "ctr": 0.16,
+            "spend": 719996
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Awareness_15-31Ene",
+            "impressions": 1046624,
+            "link_clicks": 675,
+            "reach": 591582,
+            "clicks": 1859,
+            "ctr": 0.18,
+            "spend": 720000
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_CENTRO_Farmatodo_Awareness_15-31Ene",
+            "impressions": 1003017,
+            "link_clicks": 797,
+            "reach": 477665,
+            "clicks": 1632,
+            "ctr": 0.16,
+            "spend": 719990
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Awareness_01-31Dic",
+            "impressions": 57370,
+            "link_clicks": 49,
+            "reach": 52565,
+            "clicks": 113,
+            "ctr": 0.2,
+            "spend": 17945
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Awareness_01-31Dic",
+            "impressions": 56182,
+            "link_clicks": 33,
+            "reach": 55203,
+            "clicks": 106,
+            "ctr": 0.19,
+            "spend": 17844
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Awareness_01-31Dic",
+            "impressions": 55874,
+            "link_clicks": 37,
+            "reach": 48371,
+            "clicks": 94,
+            "ctr": 0.17,
+            "spend": 18068
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_CENTRO_Farmatodo_Awareness_01-31Dic",
+            "impressions": 55443,
+            "link_clicks": 69,
+            "reach": 47640,
+            "clicks": 125,
+            "ctr": 0.23,
+            "spend": 18393
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Awareness_01-31Dic",
+            "impressions": 54055,
+            "link_clicks": 43,
+            "reach": 48050,
+            "clicks": 85,
+            "ctr": 0.16,
+            "spend": 17593
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Traffic_15-31Ene",
+            "impressions": 916429,
+            "link_clicks": 24986,
+            "reach": 604357,
+            "clicks": 28504,
+            "ctr": 3.11,
+            "spend": 1500000
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Traffic_15-31Ene",
+            "impressions": 902543,
+            "link_clicks": 24754,
+            "reach": 613732,
+            "clicks": 28328,
+            "ctr": 3.14,
+            "spend": 1500000
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Traffic_15-31Ene",
+            "impressions": 665905,
+            "link_clicks": 22832,
+            "reach": 381657,
+            "clicks": 26174,
+            "ctr": 3.93,
+            "spend": 1499983
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Traffic_15-31Ene",
+            "impressions": 637452,
+            "link_clicks": 29869,
+            "reach": 320892,
+            "clicks": 33682,
+            "ctr": 5.28,
+            "spend": 1499829
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_Farmatodo_Traffic_15-31Ene",
+            "impressions": 545408,
+            "link_clicks": 24760,
+            "reach": 244088,
+            "clicks": 28169,
+            "ctr": 5.16,
+            "spend": 1499934
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Traffic_01-31Dic",
+            "impressions": 315024,
+            "link_clicks": 8782,
+            "reach": 240972,
+            "clicks": 9702,
+            "ctr": 3.08,
+            "spend": 377754
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Traffic_01-31Dic",
+            "impressions": 299049,
+            "link_clicks": 8226,
+            "reach": 228146,
+            "clicks": 9131,
+            "ctr": 3.05,
+            "spend": 370334
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Traffic_01-31Dic",
+            "impressions": 223063,
+            "link_clicks": 9664,
+            "reach": 165934,
+            "clicks": 10697,
+            "ctr": 4.8,
+            "spend": 375806
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_Farmatodo_Traffic_01-31Dic",
+            "impressions": 211282,
+            "link_clicks": 8072,
+            "reach": 139690,
+            "clicks": 9161,
+            "ctr": 4.34,
+            "spend": 371936
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Traffic_01-31Dic",
+            "impressions": 170371,
+            "link_clicks": 6051,
+            "reach": 116541,
+            "clicks": 6623,
+            "ctr": 3.89,
+            "spend": 377428
+          }
+        ]
+      },
+      "MARIMER & FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Ene2026_CO_AxonPharma_Floratil_ELTIEMPO_Awareness_15-31Ene",
+            "impressions": 1576826,
+            "link_clicks": 162,
+            "reach": 700402,
+            "clicks": 16564,
+            "ctr": 1.05,
+            "spend": 2999795
+          },
+          {
+            "name": "Ene2026_CO_AxonPharma_Marimer_ELTIEMPO_Awareness_15-31Ene",
+            "impressions": 1573155,
+            "link_clicks": 218,
+            "reach": 758442,
+            "clicks": 15180,
+            "ctr": 0.96,
+            "spend": 2999968
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_Marimer_ELTIEMPO_Awareness_23-31Dic",
+            "impressions": 255682,
+            "link_clicks": 23,
+            "reach": 199638,
+            "clicks": 3225,
+            "ctr": 1.26,
+            "spend": 297626
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_Floratil_ELTIEMPO_Awareness_23-31Dic",
+            "impressions": 253681,
+            "link_clicks": 28,
+            "reach": 180902,
+            "clicks": 3118,
+            "ctr": 1.23,
+            "spend": 299371
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_Floratil_ELTIEMPO_Awareness_16-31Dic",
+            "impressions": 61783,
+            "link_clicks": 0,
+            "reach": 55220,
+            "clicks": 328,
+            "ctr": 0.53,
+            "spend": 16918
+          },
+          {
+            "name": "Dic2025_CO_AxonPharma_Marimer_ELTIEMPO_Awareness_16-31Dic",
+            "impressions": 58110,
+            "link_clicks": 0,
+            "reach": 53204,
+            "clicks": 190,
+            "ctr": 0.33,
+            "spend": 17421
+          }
+        ]
+      }
+    },
+    "2026-02": {
+      "FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Awareness_05-28Feb",
+            "impressions": 852447,
+            "link_clicks": 789,
+            "reach": 548898,
+            "clicks": 2227,
+            "ctr": 0.26,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Farmatodo_Awareness_05-28Feb",
+            "impressions": 809725,
+            "link_clicks": 774,
+            "reach": 474269,
+            "clicks": 1327,
+            "ctr": 0.16,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_LaRebaja_Awareness_05-28Feb",
+            "impressions": 784549,
+            "link_clicks": 557,
+            "reach": 509773,
+            "clicks": 1146,
+            "ctr": 0.15,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Awareness_05-28Feb",
+            "impressions": 783287,
+            "link_clicks": 541,
+            "reach": 456428,
+            "clicks": 1297,
+            "ctr": 0.17,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Pasteur_Awareness_05-28Feb",
+            "impressions": 780309,
+            "link_clicks": 621,
+            "reach": 444169,
+            "clicks": 1298,
+            "ctr": 0.17,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_05-28Feb",
+            "impressions": 777192,
+            "link_clicks": 750,
+            "reach": 489849,
+            "clicks": 1571,
+            "ctr": 0.2,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_Farmatodo_Awareness_05-28Feb",
+            "impressions": 772623,
+            "link_clicks": 554,
+            "reach": 400434,
+            "clicks": 1615,
+            "ctr": 0.21,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Pasteur_Awareness_05-28Feb",
+            "impressions": 756460,
+            "link_clicks": 188,
+            "reach": 331055,
+            "clicks": 959,
+            "ctr": 0.13,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_LaRebaja_Awareness_05-28Feb",
+            "impressions": 557268,
+            "link_clicks": 628,
+            "reach": 169295,
+            "clicks": 1362,
+            "ctr": 0.24,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Awareness_05-28Feb",
+            "impressions": 533182,
+            "link_clicks": 499,
+            "reach": 149139,
+            "clicks": 1132,
+            "ctr": 0.21,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_LaRebaja_Awareness_05-28Feb",
+            "impressions": 531001,
+            "link_clicks": 625,
+            "reach": 181608,
+            "clicks": 1400,
+            "ctr": 0.26,
+            "spend": 610315
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_BOGOTÁ_Farmatodo_Awareness_05-28Feb",
+            "impressions": 251936,
+            "link_clicks": 668,
+            "reach": 83950,
+            "clicks": 910,
+            "ctr": 0.36,
+            "spend": 610315
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Farmatodo_Traffic_05-28Feb",
+            "impressions": 745263,
+            "link_clicks": 11217,
+            "reach": 226227,
+            "clicks": 15433,
+            "ctr": 2.07,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Traffic_05-28Feb",
+            "impressions": 448028,
+            "link_clicks": 17674,
+            "reach": 174608,
+            "clicks": 18354,
+            "ctr": 4.1,
+            "spend": 1359102
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_LaRebaja_Traffic_05-28Feb",
+            "impressions": 416783,
+            "link_clicks": 17973,
+            "reach": 138929,
+            "clicks": 18108,
+            "ctr": 4.34,
+            "spend": 1359081
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Pasteur_Traffic_05-28Feb",
+            "impressions": 387446,
+            "link_clicks": 11935,
+            "reach": 202655,
+            "clicks": 14817,
+            "ctr": 3.82,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Traffic_05-28Feb",
+            "impressions": 371679,
+            "link_clicks": 12462,
+            "reach": 182761,
+            "clicks": 14605,
+            "ctr": 3.93,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_LaRebaja_Traffic_05-28Feb",
+            "impressions": 345851,
+            "link_clicks": 12113,
+            "reach": 212701,
+            "clicks": 12763,
+            "ctr": 3.69,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Traffic_05-28Feb",
+            "impressions": 340423,
+            "link_clicks": 17225,
+            "reach": 140704,
+            "clicks": 18162,
+            "ctr": 5.34,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Pasteur_Traffic_05-28Feb",
+            "impressions": 329295,
+            "link_clicks": 12300,
+            "reach": 174374,
+            "clicks": 14838,
+            "ctr": 4.51,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_Farmatodo_Traffic_05-28Feb",
+            "impressions": 319421,
+            "link_clicks": 11234,
+            "reach": 150794,
+            "clicks": 13132,
+            "ctr": 4.11,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Traffic_05-28Feb",
+            "impressions": 316185,
+            "link_clicks": 12565,
+            "reach": 178189,
+            "clicks": 13359,
+            "ctr": 4.23,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_PADRES_BOGOTA_Farmatodo_Traffic_05-28Feb",
+            "impressions": 302031,
+            "link_clicks": 11898,
+            "reach": 157322,
+            "clicks": 12430,
+            "ctr": 4.12,
+            "spend": 1359424
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_LaRebaja_Traffic_05-28Feb",
+            "impressions": 220173,
+            "link_clicks": 12873,
+            "reach": 142221,
+            "clicks": 12901,
+            "ctr": 5.86,
+            "spend": 1359424
+          }
+        ]
+      },
+      "MARIMER": {
+        "Awareness": [
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Awareness_05-28Feb",
+            "impressions": 913357,
+            "link_clicks": 485,
+            "reach": 610889,
+            "clicks": 2203,
+            "ctr": 0.24,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Pasteur_Awareness_05-28Feb",
+            "impressions": 905175,
+            "link_clicks": 982,
+            "reach": 582371,
+            "clicks": 2102,
+            "ctr": 0.23,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Awareness_05-28Feb",
+            "impressions": 882352,
+            "link_clicks": 873,
+            "reach": 544012,
+            "clicks": 2247,
+            "ctr": 0.25,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_LaRebaja_Awareness_05-28Feb",
+            "impressions": 865724,
+            "link_clicks": 765,
+            "reach": 534231,
+            "clicks": 1908,
+            "ctr": 0.22,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_ADULTOS_CENTRO_Farmatodo_Awareness_05-28Feb",
+            "impressions": 835557,
+            "link_clicks": 1813,
+            "reach": 420832,
+            "clicks": 2788,
+            "ctr": 0.33,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_BABY_CENTRO_Farmatodo_Awareness_05-28Feb",
+            "impressions": 479026,
+            "link_clicks": 1253,
+            "reach": 122877,
+            "clicks": 1824,
+            "ctr": 0.38,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Awareness_05-28Feb",
+            "impressions": 460951,
+            "link_clicks": 966,
+            "reach": 125602,
+            "clicks": 1707,
+            "ctr": 0.37,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Awareness_05-28Feb",
+            "impressions": 457193,
+            "link_clicks": 1045,
+            "reach": 120284,
+            "clicks": 1541,
+            "ctr": 0.34,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Awareness_05-28Feb",
+            "impressions": 210862,
+            "link_clicks": 739,
+            "reach": 63545,
+            "clicks": 1230,
+            "ctr": 0.58,
+            "spend": 676693
+          },
+          {
+            "name": "Feb26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Awareness_05-28Feb",
+            "impressions": 210813,
+            "link_clicks": 715,
+            "reach": 63795,
+            "clicks": 1207,
+            "ctr": 0.57,
+            "spend": 676693
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Traffic_05-28Feb",
+            "impressions": 1164962,
+            "link_clicks": 18959,
+            "reach": 343295,
+            "clicks": 18745,
+            "ctr": 1.61,
+            "spend": 1396693
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Pasteur_Traffic_05-28Feb",
+            "impressions": 1096454,
+            "link_clicks": 19205,
+            "reach": 313458,
+            "clicks": 18353,
+            "ctr": 1.67,
+            "spend": 1396674
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_Traffic_05-28Feb",
+            "impressions": 1050021,
+            "link_clicks": 18504,
+            "reach": 185982,
+            "clicks": 16656,
+            "ctr": 1.59,
+            "spend": 1396639
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Traffic_05-28Feb",
+            "impressions": 1035976,
+            "link_clicks": 19408,
+            "reach": 260570,
+            "clicks": 18120,
+            "ctr": 1.75,
+            "spend": 1396648
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Traffic_05-28Feb",
+            "impressions": 927333,
+            "link_clicks": 19772,
+            "reach": 200617,
+            "clicks": 17765,
+            "ctr": 1.92,
+            "spend": 1396629
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_LaRebaja_Traffic_05-28Feb",
+            "impressions": 923696,
+            "link_clicks": 16692,
+            "reach": 476896,
+            "clicks": 18273,
+            "ctr": 1.98,
+            "spend": 1396693
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Traffic_05-28Feb",
+            "impressions": 863122,
+            "link_clicks": 18610,
+            "reach": 152062,
+            "clicks": 16401,
+            "ctr": 1.9,
+            "spend": 1396662
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Traffic_05-28Feb",
+            "impressions": 846586,
+            "link_clicks": 18780,
+            "reach": 126759,
+            "clicks": 16358,
+            "ctr": 1.93,
+            "spend": 1396645
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_05-28Feb",
+            "impressions": 723972,
+            "link_clicks": 23779,
+            "reach": 410639,
+            "clicks": 26327,
+            "ctr": 3.64,
+            "spend": 1396560
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_MARIMER_BABY_BOGOTA_Traffic_05-28Feb",
+            "impressions": 542863,
+            "link_clicks": 19343,
+            "reach": 228552,
+            "clicks": 20288,
+            "ctr": 3.74,
+            "spend": 1396276
+          }
+        ]
+      },
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Awareness_05-28Feb",
+            "impressions": 940462,
+            "link_clicks": 499,
+            "reach": 505186,
+            "clicks": 1602,
+            "ctr": 0.17,
+            "spend": 719982
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Awareness_05-28Feb",
+            "impressions": 923891,
+            "link_clicks": 593,
+            "reach": 562133,
+            "clicks": 1781,
+            "ctr": 0.19,
+            "spend": 720000
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Awareness_05-28Feb",
+            "impressions": 920757,
+            "link_clicks": 461,
+            "reach": 512023,
+            "clicks": 1499,
+            "ctr": 0.16,
+            "spend": 719972
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Awareness_05-28Feb",
+            "impressions": 903782,
+            "link_clicks": 709,
+            "reach": 527858,
+            "clicks": 1771,
+            "ctr": 0.2,
+            "spend": 719994
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_CENTRO_Farmatodo_Awareness_05-28Feb",
+            "impressions": 860176,
+            "link_clicks": 883,
+            "reach": 413821,
+            "clicks": 1764,
+            "ctr": 0.21,
+            "spend": 719983
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Traffic_05-28Feb",
+            "impressions": 682317,
+            "link_clicks": 19765,
+            "reach": 165265,
+            "clicks": 18262,
+            "ctr": 2.68,
+            "spend": 1499961
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Traffic_05-28Feb",
+            "impressions": 667783,
+            "link_clicks": 17395,
+            "reach": 354580,
+            "clicks": 23022,
+            "ctr": 3.45,
+            "spend": 1500000
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_Farmatodo_Traffic_05-28Feb",
+            "impressions": 496676,
+            "link_clicks": 24685,
+            "reach": 195885,
+            "clicks": 27614,
+            "ctr": 5.56,
+            "spend": 1499538
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Traffic_05-28Feb",
+            "impressions": 458327,
+            "link_clicks": 13621,
+            "reach": 222655,
+            "clicks": 15769,
+            "ctr": 3.44,
+            "spend": 1500000
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Traffic_05-28Feb",
+            "impressions": 400552,
+            "link_clicks": 14383,
+            "reach": 164423,
+            "clicks": 17984,
+            "ctr": 4.49,
+            "spend": 1499969
+          }
+        ]
+      },
+      "MARIMER & FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Feb2026_CO_AxonPharma_Marimer_ELTIEMPO_Awareness_05-28Feb",
+            "impressions": 1461935,
+            "link_clicks": 188,
+            "reach": 755763,
+            "clicks": 20411,
+            "ctr": 1.4,
+            "spend": 2999821
+          },
+          {
+            "name": "Feb2026_CO_AxonPharma_Floratil_ELTIEMPO_Awareness_05-28Feb",
+            "impressions": 1385201,
+            "link_clicks": 92,
+            "reach": 612822,
+            "clicks": 24703,
+            "ctr": 1.78,
+            "spend": 2999893
+          }
+        ]
+      }
+    },
+    "2026-03": {
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Awareness_10-31Mar",
+            "impressions": 533013,
+            "link_clicks": 546,
+            "reach": 358580,
+            "clicks": 1376,
+            "ctr": 0.26,
+            "spend": 400000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Awareness_10-31Mar",
+            "impressions": 531348,
+            "link_clicks": 696,
+            "reach": 353085,
+            "clicks": 1367,
+            "ctr": 0.26,
+            "spend": 400000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Awareness_10-31Mar",
+            "impressions": 529295,
+            "link_clicks": 495,
+            "reach": 337151,
+            "clicks": 1245,
+            "ctr": 0.24,
+            "spend": 400000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Awareness_10-31Mar",
+            "impressions": 517781,
+            "link_clicks": 402,
+            "reach": 332134,
+            "clicks": 1121,
+            "ctr": 0.22,
+            "spend": 400000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_CENTRO_Farmatodo_Awareness_10-31Mar",
+            "impressions": 508219,
+            "link_clicks": 487,
+            "reach": 299662,
+            "clicks": 1142,
+            "ctr": 0.22,
+            "spend": 400000
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_LaRebaja_Traffic_10-31Mar",
+            "impressions": 230329,
+            "link_clicks": 6216,
+            "reach": 186466,
+            "clicks": 7044,
+            "ctr": 3.06,
+            "spend": 409998
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Pasteur_Traffic_10-31Mar",
+            "impressions": 230142,
+            "link_clicks": 6530,
+            "reach": 174708,
+            "clicks": 7286,
+            "ctr": 3.17,
+            "spend": 409995
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_LaRebaja_Traffic_10-31Mar",
+            "impressions": 164926,
+            "link_clicks": 7467,
+            "reach": 123046,
+            "clicks": 8409,
+            "ctr": 5.1,
+            "spend": 409997
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Traffic_10-31Mar",
+            "impressions": 144372,
+            "link_clicks": 7157,
+            "reach": 100890,
+            "clicks": 8081,
+            "ctr": 5.6,
+            "spend": 409994
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_Farmatodo_Traffic_10-31Mar",
+            "impressions": 127093,
+            "link_clicks": 5678,
+            "reach": 81419,
+            "clicks": 6683,
+            "ctr": 5.26,
+            "spend": 359713
+          }
+        ]
+      },
+      "MARIMER": {
+        "Awareness": [
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Awareness_10-31Mar",
+            "impressions": 734320,
+            "link_clicks": 1259,
+            "reach": 464908,
+            "clicks": 2391,
+            "ctr": 0.33,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Pasteur_Awareness_10-31Mar",
+            "impressions": 731598,
+            "link_clicks": 981,
+            "reach": 484738,
+            "clicks": 1947,
+            "ctr": 0.27,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Awareness_10-31Mar",
+            "impressions": 713285,
+            "link_clicks": 651,
+            "reach": 452996,
+            "clicks": 1785,
+            "ctr": 0.25,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_LaRebaja_Awareness_10-31Mar",
+            "impressions": 677075,
+            "link_clicks": 623,
+            "reach": 432676,
+            "clicks": 1518,
+            "ctr": 0.22,
+            "spend": 529986
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_ADULTOS_CENTRO_Farmatodo_Awareness_10-31Mar",
+            "impressions": 672358,
+            "link_clicks": 762,
+            "reach": 384492,
+            "clicks": 1813,
+            "ctr": 0.27,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Awareness_10-31Mar",
+            "impressions": 410604,
+            "link_clicks": 650,
+            "reach": 97868,
+            "clicks": 1225,
+            "ctr": 0.3,
+            "spend": 529998
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Awareness_10-31Mar",
+            "impressions": 404889,
+            "link_clicks": 674,
+            "reach": 95250,
+            "clicks": 1317,
+            "ctr": 0.33,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_BABY_CENTRO_Farmatodo_Awareness_10-31Mar",
+            "impressions": 386675,
+            "link_clicks": 678,
+            "reach": 93979,
+            "clicks": 1335,
+            "ctr": 0.35,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Awareness_10-31Mar",
+            "impressions": 180724,
+            "link_clicks": 419,
+            "reach": 45490,
+            "clicks": 827,
+            "ctr": 0.46,
+            "spend": 530000
+          },
+          {
+            "name": "Mar26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Awareness_10-31Mar",
+            "impressions": 177240,
+            "link_clicks": 539,
+            "reach": 43778,
+            "clicks": 906,
+            "ctr": 0.51,
+            "spend": 529999
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_LaRebaja_Traffic_10-31Mar",
+            "impressions": 399947,
+            "link_clicks": 11539,
+            "reach": 292965,
+            "clicks": 12558,
+            "ctr": 3.14,
+            "spend": 749885
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_10-31Mar",
+            "impressions": 396828,
+            "link_clicks": 11782,
+            "reach": 267032,
+            "clicks": 12958,
+            "ctr": 3.27,
+            "spend": 749904
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Pasteur_Traffic_10-31Mar",
+            "impressions": 373680,
+            "link_clicks": 9924,
+            "reach": 202422,
+            "clicks": 10642,
+            "ctr": 2.85,
+            "spend": 749954
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_LaRebaja_Traffic_10-31Mar",
+            "impressions": 369266,
+            "link_clicks": 10091,
+            "reach": 213463,
+            "clicks": 11047,
+            "ctr": 2.99,
+            "spend": 749935
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Traffic_10-31Mar",
+            "impressions": 358723,
+            "link_clicks": 10912,
+            "reach": 266002,
+            "clicks": 12040,
+            "ctr": 3.36,
+            "spend": 749933
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Traffic_10-31Mar",
+            "impressions": 340706,
+            "link_clicks": 10471,
+            "reach": 226357,
+            "clicks": 11217,
+            "ctr": 3.29,
+            "spend": 749942
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_BABY_BOGOTA_Traffic_10-31Mar",
+            "impressions": 329228,
+            "link_clicks": 9862,
+            "reach": 188076,
+            "clicks": 10649,
+            "ctr": 3.23,
+            "spend": 749974
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_Farmatodo_Traffic_10-31Mar",
+            "impressions": 309571,
+            "link_clicks": 10129,
+            "reach": 197490,
+            "clicks": 10508,
+            "ctr": 3.39,
+            "spend": 749944
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_Traffic_10-31Mar",
+            "impressions": 268983,
+            "link_clicks": 9364,
+            "reach": 136282,
+            "clicks": 9611,
+            "ctr": 3.57,
+            "spend": 749954
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Pasteur_Traffic_10-31Mar",
+            "impressions": 267856,
+            "link_clicks": 9601,
+            "reach": 151372,
+            "clicks": 9786,
+            "ctr": 3.65,
+            "spend": 749993
+          }
+        ]
+      },
+      "FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Awareness_17-31Mar",
+            "impressions": 1255745,
+            "link_clicks": 912,
+            "reach": 747352,
+            "clicks": 2633,
+            "ctr": 0.21,
+            "spend": 1080000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Unidrogas_Awareness_17-31Mar",
+            "impressions": 1106922,
+            "link_clicks": 939,
+            "reach": 560023,
+            "clicks": 2514,
+            "ctr": 0.23,
+            "spend": 1000000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Unidrogas_Awareness_17-31Mar",
+            "impressions": 1077490,
+            "link_clicks": 740,
+            "reach": 547952,
+            "clicks": 1523,
+            "ctr": 0.14,
+            "spend": 1000000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_CruzVerde_Awareness_17-31Mar",
+            "impressions": 1005564,
+            "link_clicks": 786,
+            "reach": 598018,
+            "clicks": 1879,
+            "ctr": 0.19,
+            "spend": 920000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Unidrogas_Awareness_17-31Mar",
+            "impressions": 646265,
+            "link_clicks": 477,
+            "reach": 443107,
+            "clicks": 1319,
+            "ctr": 0.2,
+            "spend": 550000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_BOGOTA_CruzVerde_Awareness_17-31Mar",
+            "impressions": 593099,
+            "link_clicks": 931,
+            "reach": 164095,
+            "clicks": 2295,
+            "ctr": 0.39,
+            "spend": 920000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_17-31Mar",
+            "impressions": 563552,
+            "link_clicks": 628,
+            "reach": 391963,
+            "clicks": 1322,
+            "ctr": 0.23,
+            "spend": 450000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_ATLANTICO_Unidrogas_Awareness_17-31Mar",
+            "impressions": 433032,
+            "link_clicks": 826,
+            "reach": 104669,
+            "clicks": 1875,
+            "ctr": 0.43,
+            "spend": 1080000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Unidrogas_Awareness_17-31Mar",
+            "impressions": 400002,
+            "link_clicks": 531,
+            "reach": 124529,
+            "clicks": 1191,
+            "ctr": 0.3,
+            "spend": 550000
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_CruzVerde_Awareness_17-31Mar",
+            "impressions": 362958,
+            "link_clicks": 339,
+            "reach": 108227,
+            "clicks": 859,
+            "ctr": 0.24,
+            "spend": 450000
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Traffic_17-31Mar",
+            "impressions": 455497,
+            "link_clicks": 14863,
+            "reach": 231943,
+            "clicks": 16276,
+            "ctr": 3.57,
+            "spend": 1196999
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_NACIONAL_Unidrogas_Traffic_17-31Mar",
+            "impressions": 398247,
+            "link_clicks": 16032,
+            "reach": 251650,
+            "clicks": 17479,
+            "ctr": 4.39,
+            "spend": 1108325
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Copservir_Traffic_17-31Mar",
+            "impressions": 394514,
+            "link_clicks": 13832,
+            "reach": 257605,
+            "clicks": 14840,
+            "ctr": 3.76,
+            "spend": 1108113
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_ANTIOQUIA_Unidrogas_Traffic_17-31Mar",
+            "impressions": 380245,
+            "link_clicks": 14119,
+            "reach": 185634,
+            "clicks": 15109,
+            "ctr": 3.97,
+            "spend": 1108375
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_ATLANTICO_Unidrogas_Traffic_17-31Mar",
+            "impressions": 374971,
+            "link_clicks": 13757,
+            "reach": 229579,
+            "clicks": 15002,
+            "ctr": 4,
+            "spend": 1195055
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_CruzVerde_Traffic_17-31Mar",
+            "impressions": 372158,
+            "link_clicks": 11792,
+            "reach": 213136,
+            "clicks": 12722,
+            "ctr": 3.42,
+            "spend": 1019694
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Unidrogas_Traffic_17-31Mar",
+            "impressions": 363453,
+            "link_clicks": 13192,
+            "reach": 191988,
+            "clicks": 14075,
+            "ctr": 3.87,
+            "spend": 1108368
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_FLORATIL_PADRES_BOGOTA_CruzVerde_Traffic_17-31Mar",
+            "impressions": 328226,
+            "link_clicks": 13321,
+            "reach": 193400,
+            "clicks": 14169,
+            "ctr": 4.32,
+            "spend": 1019691
+          }
+        ]
+      },
+      "MARIMER & FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Mar2026_CO_AxonPharma_Floratil_ELTIEMPO_Awareness_10-31Mar",
+            "impressions": 1563424,
+            "link_clicks": 143,
+            "reach": 763035,
+            "clicks": 22727,
+            "ctr": 1.45,
+            "spend": 2999961
+          },
+          {
+            "name": "Mar2026_CO_AxonPharma_Marimer_ELTIEMPO_Awareness_10-31Mar",
+            "impressions": 1435364,
+            "link_clicks": 202,
+            "reach": 824894,
+            "clicks": 17975,
+            "ctr": 1.25,
+            "spend": 2999863
+          }
+        ]
+      }
+    },
+    "2026-04": {
+      "MARIMER": {
+        "Awareness": [
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_ADULTO_BOGOTA_CruzVerde_Awareness_10-30Abr",
+            "impressions": 2089260,
+            "link_clicks": 4325,
+            "reach": 947031,
+            "clicks": 8178,
+            "ctr": 0.39,
+            "spend": 1684251
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Unidrogas_Awareness_10-30Abr",
+            "impressions": 881100,
+            "link_clicks": 1242,
+            "reach": 542501,
+            "clicks": 2620,
+            "ctr": 0.3,
+            "spend": 673623
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_BABY_BOGOTA_CruzVerde_Awareness_10-30Abr",
+            "impressions": 701111,
+            "link_clicks": 1486,
+            "reach": 177105,
+            "clicks": 2868,
+            "ctr": 0.41,
+            "spend": 1116587
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_Unidrogas_Awareness_10-30Abr",
+            "impressions": 498199,
+            "link_clicks": 840,
+            "reach": 364811,
+            "clicks": 1287,
+            "ctr": 0.26,
+            "spend": 370543
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_CruzVerde_Awareness_10-30Abr",
+            "impressions": 403867,
+            "link_clicks": 659,
+            "reach": 290363,
+            "clicks": 1123,
+            "ctr": 0.28,
+            "spend": 303155
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_ADULTO_ATLANTICO_Unidrogas_Awareness_10-30Abr",
+            "impressions": 393685,
+            "link_clicks": 596,
+            "reach": 221334,
+            "clicks": 983,
+            "ctr": 0.25,
+            "spend": 336791
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Awareness_10-30Abr",
+            "impressions": 273176,
+            "link_clicks": 507,
+            "reach": 170868,
+            "clicks": 778,
+            "ctr": 0.28,
+            "spend": 224569
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Unidrogas_Awareness_10-30Abr",
+            "impressions": 233639,
+            "link_clicks": 407,
+            "reach": 84333,
+            "clicks": 754,
+            "ctr": 0.32,
+            "spend": 247023
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_BABY_NACIONAL_CruzVerde_Awareness_10-30Abr",
+            "impressions": 201295,
+            "link_clicks": 267,
+            "reach": 76414,
+            "clicks": 528,
+            "ctr": 0.26,
+            "spend": 202115
+          },
+          {
+            "name": "Abr26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Awareness_10-30Abr",
+            "impressions": 168238,
+            "link_clicks": 529,
+            "reach": 53227,
+            "clicks": 976,
+            "ctr": 0.58,
+            "spend": 448262
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_CruzVerde_Views_17-30Abr",
+            "impressions": 99128,
+            "link_clicks": 0,
+            "reach": 24868,
+            "clicks": 265,
+            "ctr": 0.27,
+            "spend": 515102
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_BABY_BOGOTA_CruzVerde_Traffic_10-30Abr",
+            "impressions": 381358,
+            "link_clicks": 30805,
+            "reach": 197364,
+            "clicks": 25597,
+            "ctr": 6.71,
+            "spend": 2476234
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_CruzVerde_Traffic_10-30Abr",
+            "impressions": 270640,
+            "link_clicks": 20693,
+            "reach": 164320,
+            "clicks": 17243,
+            "ctr": 6.37,
+            "spend": 1650837
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_Unidrogas_Traffic_10-30Abr",
+            "impressions": 192464,
+            "link_clicks": 12183,
+            "reach": 131181,
+            "clicks": 11252,
+            "ctr": 5.85,
+            "spend": 990521
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Traffic_10-30Abr",
+            "impressions": 167238,
+            "link_clicks": 12610,
+            "reach": 94678,
+            "clicks": 10755,
+            "ctr": 6.43,
+            "spend": 990356
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_10-30Abr",
+            "impressions": 158065,
+            "link_clicks": 7989,
+            "reach": 111748,
+            "clicks": 7806,
+            "ctr": 4.94,
+            "spend": 659731
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_ADULTOS_ATLANTICO_Unidrogas_Traffic_10-30Abr",
+            "impressions": 113211,
+            "link_clicks": 8354,
+            "reach": 65305,
+            "clicks": 6820,
+            "ctr": 6.02,
+            "spend": 660223
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Unidrogas_Traffic_10-30Abr",
+            "impressions": 103239,
+            "link_clicks": 4126,
+            "reach": 79070,
+            "clicks": 4081,
+            "ctr": 3.95,
+            "spend": 330196
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Traffic_10-30Abr",
+            "impressions": 71894,
+            "link_clicks": 6229,
+            "reach": 45981,
+            "clicks": 4978,
+            "ctr": 6.92,
+            "spend": 495220
+          }
+        ]
+      },
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_CruzVerde_Awareness_08-30Abr",
+            "impressions": 1242095,
+            "link_clicks": 1528,
+            "reach": 701451,
+            "clicks": 3334,
+            "ctr": 0.27,
+            "spend": 1010568
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Awareness_08-30Abr",
+            "impressions": 836567,
+            "link_clicks": 1406,
+            "reach": 572831,
+            "clicks": 2465,
+            "ctr": 0.29,
+            "spend": 631574
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Awareness_08-30Abr",
+            "impressions": 417292,
+            "link_clicks": 532,
+            "reach": 267544,
+            "clicks": 1027,
+            "ctr": 0.25,
+            "spend": 378978
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Unidrogas_Awareness_08-30Abr",
+            "impressions": 361652,
+            "link_clicks": 521,
+            "reach": 269383,
+            "clicks": 911,
+            "ctr": 0.25,
+            "spend": 277730
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_CruzVerde_Awareness_08-30Abr",
+            "impressions": 296849,
+            "link_clicks": 443,
+            "reach": 236696,
+            "clicks": 740,
+            "ctr": 0.25,
+            "spend": 227362
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_CruzVerde_Traffic_08-30Abr",
+            "impressions": 616998,
+            "link_clicks": 26150,
+            "reach": 272688,
+            "clicks": 29186,
+            "ctr": 4.73,
+            "spend": 1486062
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Traffic_08-30Abr",
+            "impressions": 602413,
+            "link_clicks": 18278,
+            "reach": 397524,
+            "clicks": 20314,
+            "ctr": 3.37,
+            "spend": 928748
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Copservir_Traffic_08-30Abr",
+            "impressions": 324081,
+            "link_clicks": 16347,
+            "reach": 185253,
+            "clicks": 17918,
+            "ctr": 5.53,
+            "spend": 743034
+          },
+          {
+            "name": "Abr2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Traffic_08-30Abr",
+            "impressions": 215538,
+            "link_clicks": 8893,
+            "reach": 96097,
+            "clicks": 9659,
+            "ctr": 4.48,
+            "spend": 557257
+          }
+        ]
+      },
+      "FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Abr2026_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Views_17-30Abr",
+            "impressions": 206978,
+            "link_clicks": 2,
+            "reach": 128975,
+            "clicks": 886,
+            "ctr": 0.43,
+            "spend": 824842
+          }
+        ]
+      }
+    },
+    "2026-05": {
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_CruzVerde_Awareness_08-31May",
+            "impressions": 1124058,
+            "link_clicks": 1755,
+            "reach": 653125,
+            "clicks": 3490,
+            "ctr": 0.31,
+            "spend": 951126
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Awareness_08-31May",
+            "impressions": 742774,
+            "link_clicks": 1588,
+            "reach": 510276,
+            "clicks": 2888,
+            "ctr": 0.39,
+            "spend": 593829
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Awareness_08-31May",
+            "impressions": 410746,
+            "link_clicks": 405,
+            "reach": 241194,
+            "clicks": 969,
+            "ctr": 0.24,
+            "spend": 356364
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Unidrogas_Awareness_08-31May",
+            "impressions": 321360,
+            "link_clicks": 530,
+            "reach": 230037,
+            "clicks": 1007,
+            "ctr": 0.31,
+            "spend": 261342
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_CruzVerde_Awareness_08-31May",
+            "impressions": 268004,
+            "link_clicks": 467,
+            "reach": 200506,
+            "clicks": 952,
+            "ctr": 0.36,
+            "spend": 213752
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_CruzVerde_Traffic_08-30May",
+            "impressions": 463583,
+            "link_clicks": 22929,
+            "reach": 209254,
+            "clicks": 24947,
+            "ctr": 5.38,
+            "spend": 1425369
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Traffic_08-30May",
+            "impressions": 397207,
+            "link_clicks": 14590,
+            "reach": 285390,
+            "clicks": 16021,
+            "ctr": 4.03,
+            "spend": 891249
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Copservir_Traffic_08-30May",
+            "impressions": 262317,
+            "link_clicks": 15335,
+            "reach": 154939,
+            "clicks": 16696,
+            "ctr": 6.36,
+            "spend": 710277
+          },
+          {
+            "name": "May2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Traffic_08-30May",
+            "impressions": 211411,
+            "link_clicks": 7937,
+            "reach": 120755,
+            "clicks": 8471,
+            "ctr": 4.01,
+            "spend": 534526
+          }
+        ]
+      },
+      "MARIMER": {
+        "Awareness": [
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_ADULTO_BOGOTA_CruzVerde_Awareness_08-31May",
+            "impressions": 1266015,
+            "link_clicks": 2495,
+            "reach": 618534,
+            "clicks": 4710,
+            "ctr": 0.37,
+            "spend": 1111012
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_BABY_BOGOTA_CruzVerde_Awareness_08-31May",
+            "impressions": 670548,
+            "link_clicks": 1877,
+            "reach": 143300,
+            "clicks": 3417,
+            "ctr": 0.51,
+            "spend": 1662402
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Unidrogas_Awareness_08-31May",
+            "impressions": 653034,
+            "link_clicks": 658,
+            "reach": 383692,
+            "clicks": 2385,
+            "ctr": 0.37,
+            "spend": 543426
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_Unidrogas_Awareness_08-31May",
+            "impressions": 455391,
+            "link_clicks": 428,
+            "reach": 340992,
+            "clicks": 1668,
+            "ctr": 0.37,
+            "spend": 339526
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Awareness_08-31May",
+            "impressions": 370729,
+            "link_clicks": 617,
+            "reach": 210124,
+            "clicks": 1204,
+            "ctr": 0.32,
+            "spend": 296433
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Unidrogas_Awareness_08-31May",
+            "impressions": 358566,
+            "link_clicks": 755,
+            "reach": 95830,
+            "clicks": 1451,
+            "ctr": 0.4,
+            "spend": 509113
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_CruzVerde_Awareness_08-31May",
+            "impressions": 335201,
+            "link_clicks": 500,
+            "reach": 215248,
+            "clicks": 1054,
+            "ctr": 0.31,
+            "spend": 277908
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_BABY_NACIONAL_CruzVerde_Awareness_08-31May",
+            "impressions": 332772,
+            "link_clicks": 704,
+            "reach": 92380,
+            "clicks": 1129,
+            "ctr": 0.34,
+            "spend": 416860
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_ADULTO_ATLANTICO_Unidrogas_Awareness_08-31May",
+            "impressions": 234145,
+            "link_clicks": 348,
+            "reach": 126412,
+            "clicks": 819,
+            "ctr": 0.35,
+            "spend": 197619
+          },
+          {
+            "name": "May26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Awareness_08-31May",
+            "impressions": 129003,
+            "link_clicks": 356,
+            "reach": 39919,
+            "clicks": 747,
+            "ctr": 0.58,
+            "spend": 781294
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_BABY_BOGOTA_CruzVerde_Traffic_08-31May",
+            "impressions": 1295905,
+            "link_clicks": 36279,
+            "reach": 617401,
+            "clicks": 39204,
+            "ctr": 3.03,
+            "spend": 2450020
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_Unidrogas_Traffic_08-31May",
+            "impressions": 809827,
+            "link_clicks": 24225,
+            "reach": 508665,
+            "clicks": 27433,
+            "ctr": 3.39,
+            "spend": 1360258
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_CruzVerde_Traffic_08-31May",
+            "impressions": 753314,
+            "link_clicks": 22768,
+            "reach": 412062,
+            "clicks": 24798,
+            "ctr": 3.29,
+            "spend": 1634177
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Traffic_08-31May",
+            "impressions": 665674,
+            "link_clicks": 18930,
+            "reach": 317005,
+            "clicks": 20634,
+            "ctr": 3.1,
+            "spend": 1198283
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_08-31May",
+            "impressions": 378384,
+            "link_clicks": 11902,
+            "reach": 240479,
+            "clicks": 11876,
+            "ctr": 3.14,
+            "spend": 906618
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Unidrogas_Traffic_08-31May",
+            "impressions": 364877,
+            "link_clicks": 13639,
+            "reach": 251810,
+            "clicks": 14938,
+            "ctr": 4.09,
+            "spend": 798546
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Traffic_08-31May",
+            "impressions": 228692,
+            "link_clicks": 6956,
+            "reach": 132765,
+            "clicks": 7566,
+            "ctr": 3.31,
+            "spend": 434509
+          },
+          {
+            "name": "May2026_CO_AxonPharma_MARIMER_ADULTOS_ATLANTICO_Unidrogas_Traffic_08-31May",
+            "impressions": 107357,
+            "link_clicks": 4141,
+            "reach": 69891,
+            "clicks": 4243,
+            "ctr": 3.95,
+            "spend": 290386
+          }
+        ]
+      }
+    },
+    "2026-06": {
+      "MARIMER": {
+        "Traffic": [
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_Unidrogas_Traffic_11-30Jun",
+            "impressions": 1127841,
+            "link_clicks": 31825,
+            "reach": 492941,
+            "clicks": 29121,
+            "ctr": 2.58,
+            "spend": 1901604
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_BABY_BOGOTA_CruzVerde_Traffic_11-30Jun",
+            "impressions": 949450,
+            "link_clicks": 43586,
+            "reach": 339745,
+            "clicks": 36063,
+            "ctr": 3.8,
+            "spend": 2546652
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Traffic_11-30Jun",
+            "impressions": 534678,
+            "link_clicks": 22511,
+            "reach": 200889,
+            "clicks": 18943,
+            "ctr": 3.54,
+            "spend": 1271147
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_ADULTOS_BOGOTA_CruzVerde_Traffic_11-30Jun",
+            "impressions": 266641,
+            "link_clicks": 23558,
+            "reach": 133304,
+            "clicks": 21841,
+            "ctr": 8.19,
+            "spend": 1693235
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_11-30Jun",
+            "impressions": 227968,
+            "link_clicks": 16964,
+            "reach": 130996,
+            "clicks": 17093,
+            "ctr": 7.5,
+            "spend": 1270586
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Traffic_11-30Jun",
+            "impressions": 225121,
+            "link_clicks": 10981,
+            "reach": 98822,
+            "clicks": 9530,
+            "ctr": 4.23,
+            "spend": 636753
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Unidrogas_Traffic_11-30Jun",
+            "impressions": 109912,
+            "link_clicks": 11035,
+            "reach": 71457,
+            "clicks": 10459,
+            "ctr": 9.52,
+            "spend": 847000
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_MARIMER_ADULTOS_ATLANTICO_Unidrogas_Traffic_11-30Jun",
+            "impressions": 60674,
+            "link_clicks": 6631,
+            "reach": 33880,
+            "clicks": 5603,
+            "ctr": 9.23,
+            "spend": 424271
+          }
+        ],
+        "Awareness": [
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_ADULTO_BOGOTA_CruzVerde_Awareness_11-30Jun",
+            "impressions": 921413,
+            "link_clicks": 2082,
+            "reach": 477134,
+            "clicks": 3082,
+            "ctr": 0.33,
+            "spend": 994758
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Unidrogas_Awareness_11-30Jun",
+            "impressions": 524222,
+            "link_clicks": 900,
+            "reach": 299837,
+            "clicks": 1528,
+            "ctr": 0.29,
+            "spend": 497372
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_Unidrogas_Awareness_11-30Jun",
+            "impressions": 498169,
+            "link_clicks": 1072,
+            "reach": 350771,
+            "clicks": 1767,
+            "ctr": 0.35,
+            "spend": 409837
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Awareness_11-30Jun",
+            "impressions": 413626,
+            "link_clicks": 744,
+            "reach": 228883,
+            "clicks": 1335,
+            "ctr": 0.32,
+            "spend": 374159
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_CruzVerde_Awareness_11-30Jun",
+            "impressions": 350880,
+            "link_clicks": 505,
+            "reach": 219939,
+            "clicks": 907,
+            "ctr": 0.26,
+            "spend": 335477
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_BABY_BOGOTA_CruzVerde_Awareness_11-30Jun",
+            "impressions": 344411,
+            "link_clicks": 1001,
+            "reach": 125571,
+            "clicks": 1637,
+            "ctr": 0.48,
+            "spend": 1470665
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Unidrogas_Awareness_11-30Jun",
+            "impressions": 250959,
+            "link_clicks": 631,
+            "reach": 93841,
+            "clicks": 1122,
+            "ctr": 0.45,
+            "spend": 609400
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_ADULTO_ATLANTICO_Unidrogas_Awareness_11-30Jun",
+            "impressions": 241910,
+            "link_clicks": 352,
+            "reach": 132714,
+            "clicks": 656,
+            "ctr": 0.27,
+            "spend": 248592
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_BABY_NACIONAL_CruzVerde_Awareness_11-30Jun",
+            "impressions": 225062,
+            "link_clicks": 470,
+            "reach": 84731,
+            "clicks": 801,
+            "ctr": 0.36,
+            "spend": 500185
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Awareness_11-30Jun",
+            "impressions": 84417,
+            "link_clicks": 377,
+            "reach": 38445,
+            "clicks": 612,
+            "ctr": 0.72,
+            "spend": 735701
+          }
+        ]
+      },
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Awareness_08-30Jun",
+            "impressions": 898331,
+            "link_clicks": 1055,
+            "reach": 454940,
+            "clicks": 2203,
+            "ctr": 0.25,
+            "spend": 879374
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Awareness_08-30Jun",
+            "impressions": 688020,
+            "link_clicks": 1068,
+            "reach": 482475,
+            "clicks": 2062,
+            "ctr": 0.3,
+            "spend": 594196
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_CruzVerde_Awareness_08-30Jun",
+            "impressions": 471139,
+            "link_clicks": 584,
+            "reach": 296817,
+            "clicks": 1516,
+            "ctr": 0.32,
+            "spend": 428348
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Unidrogas_Awareness_08-30Jun",
+            "impressions": 304599,
+            "link_clicks": 485,
+            "reach": 229691,
+            "clicks": 927,
+            "ctr": 0.3,
+            "spend": 261612
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_CruzVerde_Awareness_08-31Jun",
+            "impressions": 251908,
+            "link_clicks": 420,
+            "reach": 195334,
+            "clicks": 875,
+            "ctr": 0.35,
+            "spend": 214451
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Traffic_19-30Jun",
+            "impressions": 647585,
+            "link_clicks": 26970,
+            "reach": 283490,
+            "clicks": 28669,
+            "ctr": 4.43,
+            "spend": 1986396
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Traffic_19-30Jun",
+            "impressions": 623741,
+            "link_clicks": 20903,
+            "reach": 437260,
+            "clicks": 22843,
+            "ctr": 3.66,
+            "spend": 1339416
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Copservir_Traffic_19-30Jun",
+            "impressions": 409327,
+            "link_clicks": 20737,
+            "reach": 245335,
+            "clicks": 22730,
+            "ctr": 5.55,
+            "spend": 1069465
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_A-CERUMEN_ADULTO_BOGOTA_CruzVerde_Traffic_19-30Jun",
+            "impressions": 310425,
+            "link_clicks": 14886,
+            "reach": 175155,
+            "clicks": 16378,
+            "ctr": 5.28,
+            "spend": 969308
+          }
+        ]
+      },
+      "FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Unidrogas_Awareness_08-31Jun",
+            "impressions": 3295292,
+            "link_clicks": 4477,
+            "reach": 1211896,
+            "clicks": 8510,
+            "ctr": 0.26,
+            "spend": 2965083
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_BABY_ATLANTICO_Unidrogas_Awareness_08-31Jun",
+            "impressions": 2928034,
+            "link_clicks": 5533,
+            "reach": 773844,
+            "clicks": 9246,
+            "ctr": 0.32,
+            "spend": 2596356
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Awareness_08-31Jun",
+            "impressions": 2919956,
+            "link_clicks": 4247,
+            "reach": 827239,
+            "clicks": 8537,
+            "ctr": 0.29,
+            "spend": 2595988
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_ADULTO_BOGOTA_CruzVerde_Awareness_08-31Jun",
+            "impressions": 2853006,
+            "link_clicks": 5807,
+            "reach": 1207961,
+            "clicks": 10021,
+            "ctr": 0.35,
+            "spend": 2317480
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_BABY_ANTIOQUIA_Unidrogas_Awareness_08-31Jun",
+            "impressions": 2656995,
+            "link_clicks": 4715,
+            "reach": 1042319,
+            "clicks": 8048,
+            "ctr": 0.3,
+            "spend": 2272097
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Unidrogas_Awareness_08-31Jun",
+            "impressions": 975633,
+            "link_clicks": 1596,
+            "reach": 551687,
+            "clicks": 2900,
+            "ctr": 0.3,
+            "spend": 764365
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_08-31Jun",
+            "impressions": 824531,
+            "link_clicks": 2043,
+            "reach": 504266,
+            "clicks": 3271,
+            "ctr": 0.4,
+            "spend": 625700
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_BABY_NACIONAL_Unidrogas_Awareness_08-31Jun",
+            "impressions": 631609,
+            "link_clicks": 1568,
+            "reach": 115793,
+            "clicks": 2276,
+            "ctr": 0.36,
+            "spend": 764943
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_BABY_BOGOTA_CruzVerde_Awareness_08-31Jun",
+            "impressions": 621340,
+            "link_clicks": 2194,
+            "reach": 126011,
+            "clicks": 3148,
+            "ctr": 0.51,
+            "spend": 2317957
+          },
+          {
+            "name": "Jun26_CO_AxonPharma_FLORATIL_BABY_NACIONAL_CruzVerde_Awareness_08-31Jun",
+            "impressions": 408435,
+            "link_clicks": 993,
+            "reach": 117702,
+            "clicks": 1418,
+            "ctr": 0.35,
+            "spend": 617139
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_ADULTOS_ANTIOQUIA_Unidrogas_Traffic_02-30Jun",
+            "impressions": 3010422,
+            "link_clicks": 46045,
+            "reach": 525474,
+            "clicks": 42415,
+            "ctr": 1.41,
+            "spend": 2535800
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_ADULTOS_BOGOTA_CruzVerde_Traffic_02-30Jun",
+            "impressions": 2664110,
+            "link_clicks": 32828,
+            "reach": 645065,
+            "clicks": 32558,
+            "ctr": 1.22,
+            "spend": 1981178
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_ADULTOS_ATLANTICO_Unidrogas_Traffic_02-30Jun",
+            "impressions": 2228326,
+            "link_clicks": 40136,
+            "reach": 395435,
+            "clicks": 38758,
+            "ctr": 1.74,
+            "spend": 2217405
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_ADULTOS_NACIONAL_LaRebaja_Traffic_02-30Jun",
+            "impressions": 1991986,
+            "link_clicks": 19667,
+            "reach": 588606,
+            "clicks": 20550,
+            "ctr": 1.03,
+            "spend": 1189423
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_BABY_ANTIOQUIA_Unidrogas_Traffic_02-30Jun",
+            "impressions": 486860,
+            "link_clicks": 30954,
+            "reach": 218512,
+            "clicks": 23704,
+            "ctr": 4.87,
+            "spend": 2468312
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_BABY_BOGOTA_CruzVerde_Traffic_02-30Jun",
+            "impressions": 404843,
+            "link_clicks": 25848,
+            "reach": 205174,
+            "clicks": 22325,
+            "ctr": 5.51,
+            "spend": 1923922
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_BABY_ATLANTICO_Unidrogas_Traffic_02-30Jun",
+            "impressions": 383804,
+            "link_clicks": 27583,
+            "reach": 156852,
+            "clicks": 20434,
+            "ctr": 5.32,
+            "spend": 2157720
+          },
+          {
+            "name": "Jun2026_CO_AxonPharma_FLORATIL_BABY_NACIONAL_Unidrogas_Traffic_02-30Jun",
+            "impressions": 232414,
+            "link_clicks": 16462,
+            "reach": 134060,
+            "clicks": 14973,
+            "ctr": 6.44,
+            "spend": 1157534
+          }
+        ]
+      }
+    },
+    "2026-07": {
+      "FLORATIL": {
+        "Awareness": [
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_BABY_PADRES_ANTIOQUIA_Unidrogas_Awareness_02-31Jul",
+            "impressions": 2956704,
+            "link_clicks": 3260,
+            "reach": 1038962,
+            "clicks": 7258,
+            "ctr": 0.25,
+            "spend": 2480238
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Unidrogas_Awareness_02-31Jul",
+            "impressions": 2875766,
+            "link_clicks": 3699,
+            "reach": 1407235,
+            "clicks": 7244,
+            "ctr": 0.25,
+            "spend": 2483685
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_02-31Jul",
+            "impressions": 2623151,
+            "link_clicks": 5787,
+            "reach": 1208633,
+            "clicks": 8906,
+            "ctr": 0.34,
+            "spend": 1944062
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_BABY_PADRES_ATLANTICO_Unidrogas_Awareness_02-31Jul",
+            "impressions": 2461570,
+            "link_clicks": 3118,
+            "reach": 693515,
+            "clicks": 6543,
+            "ctr": 0.27,
+            "spend": 2163003
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Awareness_02-31Jul",
+            "impressions": 2382913,
+            "link_clicks": 3498,
+            "reach": 1039418,
+            "clicks": 7068,
+            "ctr": 0.3,
+            "spend": 2162989
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_BABY_PADRES_NACIONAL_CruzVerde_Awareness_02-31Jul",
+            "impressions": 934320,
+            "link_clicks": 2885,
+            "reach": 265398,
+            "clicks": 4170,
+            "ctr": 0.45,
+            "spend": 1932879
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Awareness_02-31Jul",
+            "impressions": 902177,
+            "link_clicks": 1439,
+            "reach": 570505,
+            "clicks": 2542,
+            "ctr": 0.28,
+            "spend": 641466
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Awareness_02-31Jul",
+            "impressions": 737016,
+            "link_clicks": 934,
+            "reach": 417649,
+            "clicks": 1997,
+            "ctr": 0.27,
+            "spend": 523425
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_BABY_PADRES_NACIONAL_Farmatodo_Awareness_02-31Jul",
+            "impressions": 464365,
+            "link_clicks": 768,
+            "reach": 162762,
+            "clicks": 1361,
+            "ctr": 0.29,
+            "spend": 644602
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_FLORATIL_BABY_PADRES_NACIONAL_LaRebaja_Awareness_02-31Jul",
+            "impressions": 398400,
+            "link_clicks": 478,
+            "reach": 143096,
+            "clicks": 1016,
+            "ctr": 0.26,
+            "spend": 526102
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_ANTIOQUIA_Unidrogas_Views_03-31Jul",
+            "impressions": 375807,
+            "link_clicks": 4583,
+            "reach": 199492,
+            "clicks": 5774,
+            "ctr": 1.54,
+            "spend": 1252776
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_ANTIOQUIA_Unidrogas_Views_03-31Jul",
+            "impressions": 370295,
+            "link_clicks": 5128,
+            "reach": 233641,
+            "clicks": 6230,
+            "ctr": 1.68,
+            "spend": 1249715
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_ATLANTICO_Unidrogas_Views_03-31Jul",
+            "impressions": 307509,
+            "link_clicks": 4096,
+            "reach": 151215,
+            "clicks": 5387,
+            "ctr": 1.75,
+            "spend": 1099478
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_ATLANTICO_Unidrogas_Views_03-31Jul",
+            "impressions": 298849,
+            "link_clicks": 4197,
+            "reach": 161972,
+            "clicks": 5026,
+            "ctr": 1.68,
+            "spend": 1096909
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_NACIONAL_CruzVerde_Views_03-31Jul",
+            "impressions": 269691,
+            "link_clicks": 3560,
+            "reach": 174389,
+            "clicks": 4340,
+            "ctr": 1.61,
+            "spend": 920943
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_NACIONAL_CruzVerde_Views_03-31Jul",
+            "impressions": 235949,
+            "link_clicks": 2913,
+            "reach": 108760,
+            "clicks": 3549,
+            "ctr": 1.5,
+            "spend": 986758
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_NACIONAL_Farmatodo_Views_03-31Jul",
+            "impressions": 179674,
+            "link_clicks": 2262,
+            "reach": 108340,
+            "clicks": 2793,
+            "ctr": 1.55,
+            "spend": 591142
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_NACIONAL_Farmatodo_Views_03-31Jul",
+            "impressions": 139655,
+            "link_clicks": 1846,
+            "reach": 66693,
+            "clicks": 2195,
+            "ctr": 1.57,
+            "spend": 590766
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_NACIONAL_LaRebaja_Traffic_03-31Jul",
+            "impressions": 1760946,
+            "link_clicks": 27136,
+            "reach": 547944,
+            "clicks": 32714,
+            "ctr": 1.86,
+            "spend": 1479155
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_ANTIOQUIA_Unidrogas_Traffic_03-31Jul",
+            "impressions": 1272161,
+            "link_clicks": 25919,
+            "reach": 294852,
+            "clicks": 25030,
+            "ctr": 1.97,
+            "spend": 1306538
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_ATLANTICO_Unidrogas_Traffic_03-31Jul",
+            "impressions": 1108270,
+            "link_clicks": 22634,
+            "reach": 236492,
+            "clicks": 22636,
+            "ctr": 2.04,
+            "spend": 1162777
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_ADULTOS_NACIONAL_CruzVerde_Traffic_03-31Jul",
+            "impressions": 857498,
+            "link_clicks": 12564,
+            "reach": 290748,
+            "clicks": 13790,
+            "ctr": 1.61,
+            "spend": 702131
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_PADRES_ANTIOQUIA_Unidrogas_Traffic_03-31Jul",
+            "impressions": 266845,
+            "link_clicks": 28367,
+            "reach": 103620,
+            "clicks": 19728,
+            "ctr": 7.39,
+            "spend": 1509875
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_PADRES_NACIONAL_CruzVerde_Traffic_03-31Jul",
+            "impressions": 250701,
+            "link_clicks": 18773,
+            "reach": 114193,
+            "clicks": 16938,
+            "ctr": 6.76,
+            "spend": 1169929
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_PADRES_BABY_ATLANTICO_Unidrogas_Traffic_03-31Jul",
+            "impressions": 220321,
+            "link_clicks": 25755,
+            "reach": 78708,
+            "clicks": 17204,
+            "ctr": 7.81,
+            "spend": 1328354
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_FLORATIL_BABY_PADRES_NACIONAL_Farmatodo_Traffic_03-31Jul",
+            "impressions": 130224,
+            "link_clicks": 11492,
+            "reach": 72644,
+            "clicks": 11055,
+            "ctr": 8.49,
+            "spend": 707368
+          }
+        ]
+      },
+      "MARIMER": {
+        "Awareness": [
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Awareness_03-31Jul",
+            "impressions": 1099525,
+            "link_clicks": 1331,
+            "reach": 534755,
+            "clicks": 2919,
+            "ctr": 0.27,
+            "spend": 826582
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_CruzVerde_Awareness_03-31Jul",
+            "impressions": 957170,
+            "link_clicks": 1606,
+            "reach": 617177,
+            "clicks": 2777,
+            "ctr": 0.29,
+            "spend": 648194
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_ADULTO_ATLANTICO_Unidrogas_Awareness_03-31Jul",
+            "impressions": 608553,
+            "link_clicks": 851,
+            "reach": 294721,
+            "clicks": 1660,
+            "ctr": 0.27,
+            "spend": 552854
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_BABY_NACIONAL_CruzVerde_Awareness_03-31Jul",
+            "impressions": 456157,
+            "link_clicks": 948,
+            "reach": 179169,
+            "clicks": 1711,
+            "ctr": 0.38,
+            "spend": 959849
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Unidrogas_Awareness_03-31Jul",
+            "impressions": 369265,
+            "link_clicks": 514,
+            "reach": 235391,
+            "clicks": 929,
+            "ctr": 0.25,
+            "spend": 276836
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_Farmatodo_Awareness_03-31Jul",
+            "impressions": 261772,
+            "link_clicks": 483,
+            "reach": 176844,
+            "clicks": 710,
+            "ctr": 0.27,
+            "spend": 203764
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_LaRebaja_Awareness_03-31Jul",
+            "impressions": 242169,
+            "link_clicks": 520,
+            "reach": 194433,
+            "clicks": 806,
+            "ctr": 0.33,
+            "spend": 166747
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Awareness_03-31Jul",
+            "impressions": 198492,
+            "link_clicks": 467,
+            "reach": 92949,
+            "clicks": 683,
+            "ctr": 0.34,
+            "spend": 304085
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_BABY_NACIONAL_LaRebaja_Awareness_03-31Jul",
+            "impressions": 156527,
+            "link_clicks": 493,
+            "reach": 77223,
+            "clicks": 743,
+            "ctr": 0.47,
+            "spend": 245348
+          },
+          {
+            "name": "Jul26_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Awareness_03-31Jul",
+            "impressions": 131683,
+            "link_clicks": 375,
+            "reach": 64413,
+            "clicks": 616,
+            "ctr": 0.47,
+            "spend": 409861
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_CruzVerde_Traffic_03-31Jul",
+            "impressions": 1230801,
+            "link_clicks": 26965,
+            "reach": 489058,
+            "clicks": 28851,
+            "ctr": 2.34,
+            "spend": 1428546
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_BABY_ATLANTICO_Unidrogas_Traffic_03-31Jul",
+            "impressions": 743298,
+            "link_clicks": 25111,
+            "reach": 189860,
+            "clicks": 22285,
+            "ctr": 3,
+            "spend": 1239936
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_BABY_NACIONAL_FARMATODO_Traffic_03-31Jul",
+            "impressions": 679461,
+            "link_clicks": 15120,
+            "reach": 307269,
+            "clicks": 14766,
+            "ctr": 2.17,
+            "spend": 827821
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_BABY_ANTIOQUIA_Unidrogas_Traffic_03-31Jul",
+            "impressions": 463222,
+            "link_clicks": 12849,
+            "reach": 157440,
+            "clicks": 11499,
+            "ctr": 2.48,
+            "spend": 624402
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_CruzVerde_Traffic_03-31Jul",
+            "impressions": 194037,
+            "link_clicks": 15966,
+            "reach": 121626,
+            "clicks": 14475,
+            "ctr": 7.46,
+            "spend": 965666
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_ADULTOS_ATLANTICO_Unidrogas_Traffic_03-31Jul",
+            "impressions": 145070,
+            "link_clicks": 15256,
+            "reach": 62890,
+            "clicks": 11741,
+            "ctr": 8.09,
+            "spend": 836616
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_ADULTOS_NACIONAL_LaRebaja_Traffic_03-31Jul",
+            "impressions": 99546,
+            "link_clicks": 9696,
+            "reach": 62488,
+            "clicks": 8611,
+            "ctr": 8.65,
+            "spend": 556543
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_MARIMER_ADULTOS_ANTIOQUIA_Unidrogas_Traffic_03-31Jul",
+            "impressions": 92332,
+            "link_clicks": 6611,
+            "reach": 55978,
+            "clicks": 6226,
+            "ctr": 6.74,
+            "spend": 415260
+          }
+        ]
+      },
+      "A-CERUMEN": {
+        "Awareness": [
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Farmatodo_Awareness_03-31Jul",
+            "impressions": 1175582,
+            "link_clicks": 1368,
+            "reach": 499509,
+            "clicks": 2727,
+            "ctr": 0.23,
+            "spend": 906660
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Awareness_03-31Jul",
+            "impressions": 1000980,
+            "link_clicks": 2626,
+            "reach": 658069,
+            "clicks": 4166,
+            "ctr": 0.42,
+            "spend": 685404
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_CruzVerde_Awareness_03-31Jul",
+            "impressions": 552798,
+            "link_clicks": 938,
+            "reach": 376926,
+            "clicks": 1757,
+            "ctr": 0.32,
+            "spend": 379553
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Unidrogas_Awareness_03-31Jul",
+            "impressions": 442681,
+            "link_clicks": 894,
+            "reach": 316680,
+            "clicks": 1609,
+            "ctr": 0.36,
+            "spend": 306633
+          }
+        ],
+        "Traffic": [
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Traffic_03-31Jul",
+            "impressions": 647185,
+            "link_clicks": 21009,
+            "reach": 449661,
+            "clicks": 22304,
+            "ctr": 3.45,
+            "spend": 1009373
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_ATLANTICO_Unidrogas_Traffic_03-31Jul",
+            "impressions": 598347,
+            "link_clicks": 24121,
+            "reach": 239859,
+            "clicks": 25720,
+            "ctr": 4.3,
+            "spend": 1327015
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_Nacional_CruzVerde_Traffic_03-31Jul",
+            "impressions": 258163,
+            "link_clicks": 12010,
+            "reach": 186159,
+            "clicks": 13064,
+            "ctr": 5.06,
+            "spend": 550097
+          },
+          {
+            "name": "Jul2026_CO_AxonPharma_A-CERUMEN_ADULTO_NACIONAL_Farmatodo_Traffic_03-31Jul",
+            "impressions": 181543,
+            "link_clicks": 9792,
+            "reach": 134641,
+            "clicks": 10458,
+            "ctr": 5.76,
+            "spend": 449451
+          }
+        ]
+      }
+    }
+  }
+}
