@@ -29,11 +29,13 @@ const normMonth = m => { m = String(m).trim(); if (/^\d{4}-\d{2}/.test(m)) retur
 const https = u => String(u||'').replace(/^http:\/\//, 'https://');
 const PRODUCTS = ['A-CERUMEN','MARIMER&FLORATIL','MARIMER','FLORATIL'];
 const productOf = c => { const u=(c||'').toUpperCase(); for(const p of PRODUCTS) if(u.includes(p)) return p==='MARIMER&FLORATIL'?'MARIMER & FLORATIL':p; return 'Otros'; };
+const cleanMeta = n => String(n).replace(/^\w+_CO_AxonPharma_/i,'').replace(/_(Traffic|Awareness)_.*$/i,'').replace(/_/g,' ').replace(/\s+/g,' ').trim();
+const cleanTT   = n => String(n).replace(/^\w+_AXONPHARMA_/i,'').replace(/\.(mp4|mov).*/i,'').replace(/_\$[\d.,]+.*$/,'').replace(/_20\d\d-.*/,'').replace(/_/g,' ').replace(/\s+/g,' ').trim() || n;
 
-async function win(connector, fields, { from=FROM, to=TO } = {}) {
-  const url = `https://connectors.windsor.ai/${connector}?` + new URLSearchParams({
-    api_key: API_KEY, date_from: from, date_to: to, fields: fields.join(','),
-  });
+async function win(connector, fields, { from=FROM, to=TO, account } = {}) {
+  const params = { api_key: API_KEY, date_from: from, date_to: to, fields: fields.join(',') };
+  if (account) params.account = account;   // filtro server-side por cuenta (mucho más rápido)
+  const url = `https://connectors.windsor.ai/${connector}?` + new URLSearchParams(params);
   const res = await fetch(url);
   if (!res.ok) throw new Error(`${connector} API HTTP ${res.status} :: ${(await res.text()).slice(0,150)}`);
   const j = await res.json();
@@ -45,7 +47,7 @@ async function win(connector, fields, { from=FROM, to=TO } = {}) {
 
   // ---------- META (diario) ----------
   const mAll = await win('facebook', ['account_id','campaign','objective','date','spend','impressions',
-    'reach','frequency','clicks','link_clicks','cpc','cpm','ctr']);
+    'reach','frequency','clicks','link_clicks','cpc','cpm','ctr'], {account:FB_ACCT});
   const metaRows = mAll.filter(r => String(r.account_id) === FB_ACCT).map(r => ({
     campaign:r.campaign, objective:r.objective, date:r.date,
     spend:+r.spend||0, impressions:+r.impressions||0, reach:+r.reach||0, frequency:+r.frequency||0,
@@ -56,7 +58,7 @@ async function win(connector, fields, { from=FROM, to=TO } = {}) {
 
   // ---------- TIKTOK (diario, USD->COP) ----------
   const tAll = await win('tiktok', ['account_id','campaign','date','spend','impressions','reach',
-    'clicks','video_views','cpc','cpm','ctr','frequency']);
+    'clicks','video_views','cpc','cpm','ctr','frequency'], {account:TT_ACCT});
   const ttRows = tAll.filter(r => String(r.account_id) === TT_ACCT).map(r => {
     const spend = Math.round((+r.spend||0)*RATE), impressions=+r.impressions||0, clicks=+r.clicks||0;
     return { campaign:r.campaign, objective:/awareness|awarenes/i.test(r.campaign)?'OUTCOME_AWARENESS':'LINK_CLICKS',
@@ -76,13 +78,13 @@ async function win(connector, fields, { from=FROM, to=TO } = {}) {
     const a = acc[key] || (acc[key] = { month, brand, plat, ad_name:ad, thumbnail:https(img), spend:0, impressions:0, clicks:0 });
     a.thumbnail = https(img); a.spend += spend; a.impressions += impr; a.clicks += clk;
   };
-  const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','thumbnail_url','spend','impressions','clicks']);
+  const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT});
   mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
     const m = normMonth(r.month); if (!m.startsWith('2026')) return;
     const img = /^http/.test(r.image_url||'') ? r.image_url : r.thumbnail_url;   // image_url = creativo real
     addCr(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
   });
-  const tCr = await win('tiktok', ['account_id','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks']);
+  const tCr = await win('tiktok', ['account_id','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT});
   tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {
     const m = normMonth(r.month); if (!m.startsWith('2026')) return;
     addCr(m, productOf(r.campaign), 'TikTok', r.ad_name, r.video_thumbnail_url, (+r.spend||0)*RATE, +r.impressions||0, +r.clicks||0);
@@ -99,25 +101,31 @@ async function win(connector, fields, { from=FROM, to=TO } = {}) {
     months[m][b][p] = months[m][b][p].sort((x,y)=>y.ctr-x.ctr).slice(0, TOP_ADS);
   fs.writeFileSync(path.join(dataDir,'creatives.json'), JSON.stringify({ source:'Meta(image_url)+TikTok', updated:new Date().toISOString(), months }, null, 2));
 
-  // ---------- ADSETS (tabla resumen por conjunto de anuncios) ----------
+  // ---------- ADSETS / ADS (tabla resumen: Meta adsets + TikTok ads) ----------
   const adAcc = {};
-  const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks']);
+  const addAd = (month, brand, plat, name, spend, impr, reach, lc, clk, hasReach) => {
+    const key = month+'|'+brand+'|'+plat+'|'+name;
+    const a = adAcc[key] || (adAcc[key] = { month, brand, plat, name, spend:0, impressions:0, reach:0, link_clicks:0, clicks:0, hasReach });
+    a.spend+=spend; a.impressions+=impr; a.reach+=reach; a.link_clicks+=lc; a.clicks+=clk;
+  };
+  const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT});
   adAll.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
     const m = normMonth(r.month); if (!m.startsWith('2026')) return;
-    const b = productOf(r.campaign), p = /traffic/i.test(r.campaign)?'Traffic':'Awareness', name=(r.adset_name||'—').trim();
-    const key = m+'|'+b+'|'+p+'|'+name;
-    const a = adAcc[key] || (adAcc[key] = { month:m, brand:b, plat:p, name, spend:0, impressions:0, reach:0, link_clicks:0, clicks:0 });
-    a.spend+=+r.spend||0; a.impressions+=+r.impressions||0; a.reach+=+r.reach||0; a.link_clicks+=+r.link_clicks||0; a.clicks+=+r.clicks||0;
+    addAd(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
+  });
+  tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {   // TikTok ads (sin reach)
+    const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+    addAd(m, productOf(r.campaign), 'TikTok', cleanTT(r.ad_name||'—'), (+r.spend||0)*RATE, +r.impressions||0, 0, +r.clicks||0, +r.clicks||0, false);
   });
   const adMonths = {};
   Object.values(adAcc).forEach(a => {
     a.ctr = a.impressions?+(a.clicks/a.impressions*100).toFixed(2):0;
     const M=adMonths[a.month]||(adMonths[a.month]={}), B=M[a.brand]||(M[a.brand]={});
-    (B[a.plat]||(B[a.plat]=[])).push({name:a.name,impressions:a.impressions,link_clicks:a.link_clicks,reach:a.reach,clicks:a.clicks,ctr:a.ctr,spend:Math.round(a.spend)});
+    (B[a.plat]||(B[a.plat]=[])).push({name:a.name,impressions:a.impressions,link_clicks:a.link_clicks,reach:a.reach,clicks:a.clicks,ctr:a.ctr,hasReach:a.hasReach});
   });
   for(const m in adMonths) for(const b in adMonths[m]) for(const p in adMonths[m][b])
-    adMonths[m][b][p] = adMonths[m][b][p].sort((x,y)=>y.impressions-x.impressions);
-  fs.writeFileSync(path.join(dataDir,'adsets.json'), JSON.stringify({ source:'Meta adsets', updated:new Date().toISOString(), months:adMonths }, null, 2));
+    adMonths[m][b][p] = adMonths[m][b][p].sort((x,y)=>y.impressions-x.impressions).slice(0, 12);
+  fs.writeFileSync(path.join(dataDir,'adsets.json'), JSON.stringify({ source:'Meta adsets + TikTok ads', updated:new Date().toISOString(), months:adMonths }, null, 2));
 
   console.log(`OK · meta ${metaRows.length} · tiktok ${ttRows.length} · creativos ${Object.keys(months).length} meses · adsets ${Object.keys(adMonths).length} meses`);
 })().catch(e => { console.error(e); process.exit(1); });

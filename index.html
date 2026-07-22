@@ -54,13 +54,26 @@ img{max-width:100%;display:block}
 .analisis ul{margin:8px 0 0 18px;font-size:13px;line-height:1.6}
 .analisis .lrn-t{font-weight:700;color:var(--navy);margin-top:12px;font-size:13px}
 .rtab-t{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:700;margin:18px 0 8px}
-.rtab-wrap{overflow-x:auto;background:#fff;border:1px solid #e2e7ef;border-radius:12px;box-shadow:0 1px 3px rgba(20,26,51,.06)}
-.rtab{width:100%;border-collapse:collapse;font-size:12.5px}
-.rtab th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;font-weight:600;white-space:nowrap}
+.rtab-wrap{overflow-x:auto;background:#fff;border:1px solid #e2e7ef;border-radius:14px;box-shadow:0 4px 16px rgba(20,26,51,.07)}
+.rtab{width:100%;border-collapse:collapse;font-size:13px;min-width:520px}
+.rtab thead th{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:left;padding:12px 14px;font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;white-space:nowrap;position:sticky;top:0}
 .rtab th.n,.rtab td.n{text-align:right;font-variant-numeric:tabular-nums}
-.rtab td{padding:8px 12px;border-bottom:1px solid #eef1f6}
-.rtab tbody tr:last-child td{border-bottom:none}
-.rtab tr.tot td{font-weight:800;background:#eef3fb;color:var(--navy)}
+.rtab tbody td{padding:10px 14px;border-bottom:1px solid #eef1f6;color:#2a3350}
+.rtab tbody tr:nth-child(even){background:#f8fafd}
+.rtab tbody tr:hover{background:#eaf2fb}
+.rtab td.name{font-weight:600;color:var(--navy)}
+.rtab tr.tot td{font-weight:800;background:var(--navy);color:#fff;border-bottom:none}
+.rtab tr.tot:hover td{background:var(--navy)}
+.pdf-btn{background:#fff;color:var(--navy);border:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:8px}
+.pdf-btn:hover{background:#e8eefb}
+@media print{
+  .top{position:static;box-shadow:none}
+  .mo,.pdf-btn,.note-src{display:none!important}
+  body{background:#fff}
+  .brand-hero,.res,.rtab-wrap,.b-sum,.analisis,.chart-card{break-inside:avoid;page-break-inside:avoid}
+  .plat{break-inside:avoid}
+  .crea-card{break-inside:avoid}
+}
 .analisis .est{display:inline-block;font-size:10.5px;font-weight:700;color:#8a6d00;background:#FFF3D6;padding:2px 8px;border-radius:6px;margin-left:6px;text-transform:uppercase;letter-spacing:.4px}
 /* Creatives */
 .crea{margin-top:16px}
@@ -88,7 +101,7 @@ footer .s{font-size:11px;opacity:.7;margin-top:10px}
     <div class="mk"><img src="assets/axon-pharma.webp" alt="Axon Pharma"><span class="divp"></span><img src="assets/garnier.png" alt="Garnier"></div>
     <div><h1>Informe de Pauta Mensual</h1><div class="sub">Axon Pharma Colombia · Marimer · Floratil · A-Cerumen</div></div>
   </div>
-  <div class="mo"><label>Mes</label><select id="mesSel"></select></div>
+  <div class="mo"><button class="pdf-btn" onclick="window.print()">⬇ Descargar PDF</button><label>Mes</label><select id="mesSel"></select></div>
 </div></div>
 
 <div class="section-band">
@@ -242,12 +255,13 @@ const cleanAd=n=>String(n).replace(/^\w+_CO_AxonPharma_/i,'').replace(/_(Traffic
 
 function summaryTable(ad){
   const rows=[...ad].sort((x,y)=>y.impressions-x.impressions);
+  const showReach=rows.some(r=>r.hasReach);
   const tot=rows.reduce((s,r)=>({impressions:s.impressions+r.impressions,link_clicks:s.link_clicks+r.link_clicks,reach:s.reach+r.reach,clicks:s.clicks+r.clicks}),{impressions:0,link_clicks:0,reach:0,clicks:0});
   const totCtr=tot.impressions?tot.clicks/tot.impressions*100:0;
-  const body=rows.map(r=>`<tr><td>${cleanAd(r.name)}</td><td class="n">${fmt(r.impressions)}</td><td class="n">${fmt(r.link_clicks)}</td><td class="n">${fmt(r.reach)}</td><td class="n">${dec(r.ctr,2)}%</td></tr>`).join('');
+  const body=rows.map(r=>`<tr><td class="name">${r.name}</td><td class="n">${fmt(r.impressions)}</td><td class="n">${fmt(r.link_clicks)}</td>${showReach?`<td class="n">${r.hasReach?fmt(r.reach):'—'}</td>`:''}<td class="n">${dec(r.ctr,2)}%</td></tr>`).join('');
   return `<div class="rtab-t">Resumen por conjunto de anuncios</div><div class="rtab-wrap"><table class="rtab">
-    <thead><tr><th>Conjunto de anuncios</th><th class="n">Impresiones</th><th class="n">Clics enlace</th><th class="n">Alcance</th><th class="n">CTR</th></tr></thead>
-    <tbody>${body}<tr class="tot"><td>Total general</td><td class="n">${fmt(tot.impressions)}</td><td class="n">${fmt(tot.link_clicks)}</td><td class="n">${fmt(tot.reach)}</td><td class="n">${dec(totCtr,2)}%</td></tr></tbody></table></div>`;
+    <thead><tr><th>Conjunto de anuncios</th><th class="n">Impresiones</th><th class="n">Clics enlace</th>${showReach?'<th class="n">Alcance</th>':''}<th class="n">CTR</th></tr></thead>
+    <tbody>${body}<tr class="tot"><td>Total general</td><td class="n">${fmt(tot.impressions)}</td><td class="n">${fmt(tot.link_clicks)}</td>${showReach?`<td class="n">${fmt(tot.reach)}</td>`:''}<td class="n">${dec(totCtr,2)}%</td></tr></tbody></table></div>`;
 }
 
 function analisis(P,b,ym,a,rws){
@@ -262,8 +276,8 @@ function analisis(P,b,ym,a,rws){
   if(ad.length){
     const byImp=[...ad].sort((x,y)=>y.impressions-x.impressions)[0];
     const byCtr=[...ad].filter(x=>x.impressions>1000).sort((x,y)=>y.ctr-x.ctr)[0];
-    if(byImp) L.push(`El conjunto con mayor volumen fue <b>${cleanAd(byImp.name)}</b> con ${fmt(byImp.impressions)} impresiones.`);
-    if(byCtr && byCtr!==byImp) L.push(`El mejor CTR entre conjuntos lo registró <b>${cleanAd(byCtr.name)}</b> con ${dec(byCtr.ctr,2)}%.`);
+    if(byImp) L.push(`El conjunto con mayor volumen fue <b>${byImp.name}</b> con ${fmt(byImp.impressions)} impresiones.`);
+    if(byCtr && byCtr!==byImp) L.push(`El mejor CTR entre conjuntos lo registró <b>${byCtr.name}</b> con ${dec(byCtr.ctr,2)}%.`);
   }
   const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
   if(cr.length){ const top=cr[0]; L.push(`El creativo con mejor CTR alcanzó <b>${dec(top.ctr,2)}%</b>${P==='Awareness'?` con CPM ${cop(top.cpm)} COP`:` con CPC ${cop(top.cpc)} COP`}.`); }
