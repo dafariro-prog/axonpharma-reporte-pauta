@@ -58,8 +58,9 @@ img{max-width:100%;display:block}
 .crea-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
 .crea-card{background:#fff;border:1px solid #dfe4f0;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(20,26,51,.08)}
 .crea-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#eef2f7}
-.crea-card .cc{padding:8px 10px;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.crea-card .cc b{color:var(--navy);font-size:12px}
+.crea-card .cc2{padding:9px 11px;display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;font-size:10.5px;color:var(--muted)}
+.crea-card .cc2 span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crea-card .cc2 b{color:var(--navy);font-size:12px}
 .empty{background:#fff;border:1px dashed #c9d2e6;border-radius:12px;padding:22px;text-align:center;color:var(--muted);font-size:13px}
 /* Brand summary */
 .b-sum{background:var(--navy-3);color:#fff;border-radius:16px;padding:22px 24px;margin:24px 0 8px}
@@ -184,8 +185,14 @@ function render(ym){
         html+=`<div class="analisis">${analisis(P,b.name,ym,a,rws)}</div>`;
         const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
         if(cr.length){
-          html+=`<div class="crea"><div class="crea-t">Creativos del mes · top por inversión</div><div class="crea-row">`+
-            cr.map(c=>`<div class="crea-card"><img loading="lazy" src="${c.thumbnail}" onerror="this.closest('.crea-card').style.display='none'"><div class="cc"><b>${dec(c.ctr,2)}% CTR</b> · ${cop(c.spend)} COP</div></div>`).join('')+`</div></div>`;
+          const isAw=P==='Awareness';
+          html+=`<div class="crea"><div class="crea-t">Creativos del mes · ordenados por CTR</div><div class="crea-row">`+
+            cr.map(c=>{
+              const st=isAw
+                ? `<span><b>${dec(c.ctr,2)}%</b> CTR</span><span>${fmt(c.impressions)} impr</span><span>CPM ${cop(c.cpm)}</span><span>${cop(c.spend)} inv.</span>`
+                : `<span><b>${dec(c.ctr,2)}%</b> CTR</span><span>${fmt(c.clicks)} clics</span><span>CPC ${cop(c.cpc)}</span><span>${cop(c.spend)} inv.</span>`;
+              return `<div class="crea-card"><img loading="lazy" src="${c.thumbnail}" onerror="this.closest('.crea-card').style.display='none'"><div class="cc2">${st}</div></div>`;
+            }).join('')+`</div></div>`;
         }
       }
       html+=`</div>`;
