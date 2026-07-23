@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Informe de Pauta Mensual · Axon Pharma</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
 <style>
 :root{
   --navy:#16266B;--navy-2:#0F1B4C;--navy-3:#1E2E7A;--blue:#2E9BE6;--blue-2:#4FB4EE;
@@ -83,6 +84,7 @@ img{max-width:100%;display:block}
 .yt-top .star{color:#C4302B;font-weight:800}
 .yt-img{width:100%;height:auto;border-radius:10px;display:block;border:1px solid #eef1f6}
 .yt-cre img{max-height:440px;object-fit:contain;background:#f6f8fb}
+.ch-wrap{height:250px;position:relative}
 .pdf-btn{background:#fff;color:var(--navy);border:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:8px}
 .pdf-btn:hover{background:#e8eefb}
 @media print{
@@ -219,7 +221,15 @@ function render(ym){
   byId('introPauta').textContent=`Cifras y análisis multicanal de pauta para las marcas Marimer, Floratil y A-Cerumen — ${mesName(ym)}. Desglose de resultados por plataforma (Meta Awareness y Traffic, TikTok, Google Search y YouTube), con el mejor rendimiento de creativos y el comportamiento de las audiencias objetivo.`;
   byId('footMes').textContent=mesName(ym);
   const rowsM=ALL.filter(r=>r.date.slice(0,7)===ym);
+  const pending=[];
   let html='';
+  // Overview del mes (gráficos de resultados)
+  html+=`<div class="wrap"><div class="plat"><div class="plat-head"><span class="plat-tag" style="background:var(--navy-3)">Overview</span><h3>Resumen del mes en gráficos</h3><span class="mo-lbl">${mesName(ym)}</span></div>
+    <div class="yt-graf">
+      <div class="yt-card"><h5>Inversión por marca y plataforma (COP)</h5><div class="ch-wrap"><canvas id="chOverBrands"></canvas></div></div>
+      <div class="yt-card"><h5>Distribución de la inversión por plataforma</h5><div class="ch-wrap"><canvas id="chOverPlat"></canvas></div></div>
+    </div></div></div>`;
+  pending.push({type:'overview'});
   BRANDS.forEach(b=>{
     html+=`<div class="brand-hero"><img src="${b.banner}" alt="${b.name}"></div>`;
     html+=`<div class="brand-intro"><div class="in">${b.intro}</div></div>`;
@@ -235,6 +245,9 @@ function render(ym){
         const a=agg(rws);
         const rr=realReach(rws,ym); if(rr){ a.reach=rr; a.freq=a.impressions/rr; }
         html+=resultsCard(P,a);
+        const cid='ch_'+b.key.replace(/[^A-Za-z]/g,'')+'_'+P;
+        html+=`<div class="yt-card" style="margin-top:16px"><h5>Evolución diaria · impresiones y clics</h5><div class="ch-wrap"><canvas id="${cid}"></canvas></div></div>`;
+        pending.push({type:'daily', id:cid, rows:rws});
         html+=`<div class="analisis">${analisis(P,b,ym,a,rws)}</div>`;
         const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
         if(cr.length){
@@ -256,6 +269,52 @@ function render(ym){
     html+=`</div><div class="divider-band"></div>`;
   });
   byId('report').innerHTML=html;
+  drawCharts(pending, rowsM, ym);
+}
+
+let CHARTS=[];
+const PCOLORS={Awareness:'#2E9BE6',Traffic:'#16266B',TikTok:'#111111',Search:'#1f9d55',YouTube:'#C4302B'};
+function drawCharts(pending, rowsM, ym){
+  CHARTS.forEach(c=>{try{c.destroy()}catch(e){}}); CHARTS=[];
+  if(typeof Chart==='undefined') return;
+  Chart.defaults.font.family="-apple-system,'Segoe UI',Roboto,sans-serif"; Chart.defaults.color='#5C6577'; Chart.defaults.font.size=11;
+  const kfmt=v=>v>=1e6?(v/1e6).toFixed(1)+'M':(v>=1e3?(v/1e3).toFixed(0)+'K':v);
+  pending.forEach(p=>{
+    if(p.type==='daily'){
+      const el=byId(p.id); if(!el)return;
+      const days=[...new Set(p.rows.map(r=>r.date))].sort();
+      const imp=days.map(d=>p.rows.filter(r=>r.date===d).reduce((s,r)=>s+r.impressions,0));
+      const clk=days.map(d=>p.rows.filter(r=>r.date===d).reduce((s,r)=>s+(r.link_clicks||r.clicks),0));
+      CHARTS.push(new Chart(el,{data:{labels:days.map(d=>d.slice(8)),datasets:[
+        {type:'bar',label:'Impresiones',data:imp,backgroundColor:'#2E9BE6',borderRadius:3,yAxisID:'y'},
+        {type:'line',label:'Clics',data:clk,borderColor:'#16266B',backgroundColor:'#16266B22',tension:.35,borderWidth:2,pointRadius:0,yAxisID:'y1'}
+      ]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+        plugins:{legend:{position:'bottom',labels:{usePointStyle:true,pointStyle:'circle',padding:10,font:{size:11}}},
+          tooltip:{callbacks:{label:c=>c.dataset.label+': '+fmt(c.parsed.y)}}},
+        scales:{x:{grid:{display:false},ticks:{font:{size:10}}},
+          y:{beginAtZero:true,grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}},
+          y1:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},ticks:{callback:kfmt,font:{size:10}}}}}}));
+    } else if(p.type==='overview'){
+      const elB=byId('chOverBrands'), elP=byId('chOverPlat'); if(!elB||!elP)return;
+      const PLATS=['Awareness','Traffic','TikTok','Search'];
+      const ds=PLATS.map(P=>({label:P==='Awareness'?'Awareness (Meta)':(P==='Traffic'?'Traffic (Meta)':P),
+        data:BRANDS.map(b=>Math.round(rowsM.filter(r=>productOf(r.campaign)===b.key&&platOf(r)===P).reduce((s,r)=>s+r.spend,0))),
+        backgroundColor:PCOLORS[P],stack:'s',borderRadius:3}));
+      ds.push({label:'YouTube',data:BRANDS.map(b=>(YT[ym]&&YT[ym][b.key])?YT[ym][b.key].spend:0),backgroundColor:PCOLORS.YouTube,stack:'s',borderRadius:3});
+      CHARTS.push(new Chart(elB,{type:'bar',data:{labels:BRANDS.map(b=>b.name),datasets:ds},
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{position:'bottom',labels:{usePointStyle:true,pointStyle:'circle',padding:10,font:{size:11}}},
+            tooltip:{callbacks:{label:c=>c.dataset.label+': $'+fmt(c.parsed.x)+' COP'}}},
+          scales:{x:{stacked:true,grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}},y:{stacked:true,grid:{display:false}}}}}));
+      const platTot=PLATS.map(P=>Math.round(rowsM.filter(r=>platOf(r)===P).reduce((s,r)=>s+r.spend,0)));
+      platTot.push(BRANDS.reduce((s,b)=>s+((YT[ym]&&YT[ym][b.key])?YT[ym][b.key].spend:0),0));
+      CHARTS.push(new Chart(elP,{type:'doughnut',data:{labels:['Awareness (Meta)','Traffic (Meta)','TikTok','Search','YouTube'],
+        datasets:[{data:platTot,backgroundColor:[PCOLORS.Awareness,PCOLORS.Traffic,PCOLORS.TikTok,PCOLORS.Search,PCOLORS.YouTube],borderWidth:2,borderColor:'#fff'}]},
+        options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
+          plugins:{legend:{position:'bottom',labels:{usePointStyle:true,pointStyle:'circle',padding:10,font:{size:11}}},
+            tooltip:{callbacks:{label:c=>c.label+': $'+fmt(c.parsed)+' COP'}}}}}));
+    }
+  });
 }
 
 function resultsCard(P,a){
