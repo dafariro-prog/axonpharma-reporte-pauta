@@ -1,0 +1,44 @@
+{
+  "source": "YouTube Ads · Reporte mensual de branding (PDF proveedor Almendra Marketing)",
+  "updated": "2026-07-23T00:00:00",
+  "months": {
+    "2026-06": {
+      "FLORATIL": {
+        "periodo": "20 – 30 Jun",
+        "contratadas": 750000,
+        "spend": 12870000,
+        "impressions": 782665,
+        "interacciones": 132635,
+        "ctr": 2.50,
+        "imprVisibles": 316889,
+        "entrega": 104.35,
+        "topCreative": "In-stream #2 — 56,4% de la entrega total («Que la diarrea no cambie los planes de tu familia»)",
+        "devices": [["Pantallas de TV", 62], ["Otros dispositivos", 38]],
+        "insights": [
+          "La campaña superó la meta: 104,35% de entrega (782.665 impresiones frente a 750.000 contratadas) con una inversión de $12.870.000 COP.",
+          "CTR de 2,50%, saludable para una campaña de branding en formato video.",
+          "El 62% de los impactos se concentró en Smart TVs, dispositivo afín al objetivo de visibilidad de marca en entorno familiar.",
+          "El público que más consumió el anuncio: mujeres de 25–44 años, con pico pronunciado en 25–34."
+        ]
+      },
+      "MARIMER": {
+        "periodo": "20 – 30 Jun",
+        "contratadas": 375313,
+        "spend": 6440367,
+        "impressions": 441399,
+        "interacciones": 14605,
+        "ctr": 3.30,
+        "imprVisibles": 203225,
+        "entrega": 117.6,
+        "topCreative": "Short #1 — 38,6% de la entrega (170.744 impresiones; «¿Entrenas pero sientes que no rindes igual?»)",
+        "devices": [["Pantallas de TV", 73], ["Teléfonos celulares", 21], ["Computadoras / tablets", 5]],
+        "insights": [
+          "117,6% de cumplimiento de entrega: 66.086 impresiones adicionales sin aumentar la inversión ($6.440.367 COP).",
+          "CTR de 3,30%, por encima del promedio de branding, con 14.605 interacciones.",
+          "El 73% de las impresiones ocurrió en pantallas de TV; teléfonos 21% y computadoras/tablets 5%.",
+          "Mayor impacto en el grupo 25–34 años; el pico es mujeres 25–34, afín a la línea Baby (decisoras de compra)."
+        ]
+      }
+    }
+  }
+}

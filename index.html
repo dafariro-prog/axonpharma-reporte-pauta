@@ -64,6 +64,23 @@ img{max-width:100%;display:block}
 .rtab td.name{font-weight:600;color:var(--navy)}
 .rtab tr.tot td{font-weight:800;background:var(--navy);color:#fff;border-bottom:none}
 .rtab tr.tot:hover td{background:var(--navy)}
+.plat-tag.yt{background:#C4302B}
+.yt-graf{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:760px){.yt-graf{grid-template-columns:1fr}}
+.yt-card{background:#fff;border:1px solid #e2e7ef;border-radius:14px;padding:18px 20px;box-shadow:0 1px 3px rgba(20,26,51,.06)}
+.yt-card h5{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:700;margin-bottom:14px}
+.yt-dev{display:flex;align-items:center;gap:10px;margin-bottom:11px}
+.yt-dev .yd-n{width:150px;font-size:12.5px;color:#2a3350;font-weight:600}
+.yt-dev .yd-bar{flex:1;height:10px;background:#e7eef6;border-radius:6px;overflow:hidden}
+.yt-dev .yd-fill{height:100%;background:linear-gradient(90deg,#C4302B,#E8756F);border-radius:6px}
+.yt-dev .yd-p{width:46px;text-align:right;font-size:12.5px;font-weight:800;color:var(--navy)}
+.yt-ent{height:14px;background:#e7eef6;border-radius:8px;overflow:hidden}
+.yt-ent-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--blue-2));border-radius:8px}
+.yt-ent-fill.ok{background:linear-gradient(90deg,#1f8a4c,#3cb371)}
+.yt-ent-lbl{font-size:12.5px;color:#2a3350;margin-top:9px}
+.yt-ent-lbl b{color:var(--navy)}
+.yt-top{display:flex;gap:10px;align-items:flex-start;background:#FFF7F6;border:1px solid #F3D3D1;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.55;margin-top:14px}
+.yt-top .star{color:#C4302B;font-weight:800}
 .pdf-btn{background:#fff;color:var(--navy);border:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:8px}
 .pdf-btn:hover{background:#e8eefb}
 @media print{
@@ -115,7 +132,7 @@ footer .s{font-size:11px;opacity:.7;margin-top:10px}
   <div class="g">GRACIAS</div>
   <div class="s">Informe de Pauta · Axon Pharma Colombia · <span id="footMes"></span></div>
 </footer>
-<div class="note-src">Fuentes: Meta Ads (Windsor) · Google Ads Search (BigQuery) · TikTok Ads (Windsor). Moneda COP · TikTok convertido de USD a COP (TC 3.800). Estructura y creativos según plantilla del cliente.</div>
+<div class="note-src">Fuentes: Meta Ads (Windsor) · Google Ads Search (BigQuery) · TikTok Ads (Windsor) · YouTube Ads (reporte mensual de branding, carga manual). Moneda COP · TikTok convertido de USD a COP (TC 3.800). Estructura y creativos según plantilla del cliente.</div>
 
 <script>
 const NF=new Intl.NumberFormat('es-CO');
@@ -150,15 +167,15 @@ function realReach(rws,ym){
 const BRANDS=[
   {key:'MARIMER', name:'Marimer', banner:'assets/image35.png',
    intro:'Es la marca que se posiciona como prevención familiar, centrada en la salud cotidiana apoyada de ingredientes naturales. Con un clima atípico al que el colombiano viene acostumbrado, la marca se posicionó en búsquedas para el cuidado nasal, permitiendo un mayor reconocimiento de marca.',
-   platforms:['Awareness','Traffic','TikTok','Search'],
+   platforms:['Awareness','Traffic','TikTok','Search','YouTube'],
    creatives:{Awareness:['image44','image45','image46'],Traffic:['image48','image49','image50'],TikTok:['image53','image54','image55'],Search:['image61','image62','image63']}},
   {key:'FLORATIL', name:'Floratil', banner:'assets/image64.png',
    intro:'Su enfoque parte de la recuperación y la confianza, educando a los usuarios sobre el cuidado de la flora intestinal en tratamientos por antibióticos y situaciones de viaje. Sus creativos con criterio médico la posicionan como una marca relevante dentro del ecosistema digital.',
-   platforms:['Awareness','Traffic','Search'],
+   platforms:['Awareness','Traffic','Search','YouTube'],
    creatives:{Awareness:['image66','image67','image68'],Traffic:['image69','image70','image71'],Search:['image72','image73']}},
   {key:'A-CERUMEN', name:'A-Cerumen', banner:'assets/image74.png',
    intro:'Un producto con un objetivo específico: el cuidado del oído, con un discurso que pasa de la molestia a la prevención dentro de la vida cotidiana. Es una marca que rompe con el hábito de usar copitos hacia un método más seguro.',
-   platforms:['Awareness','Traffic','TikTok','Search'],
+   platforms:['Awareness','Traffic','TikTok','Search','YouTube'],
    creatives:{Awareness:['image76','image77','image78'],Traffic:['image79','image80','image81'],TikTok:['image82','image83','image84'],Search:['image85','image86']}},
 ];
 
@@ -167,9 +184,10 @@ const PLAT_META={
   Traffic:{tag:'Traffic',cls:'',title:'Traffic (Meta)'},
   TikTok:{tag:'TikTok',cls:'tt',title:'Traffic (TikTok)'},
   Search:{tag:'Search',cls:'se',title:'Search (Google Ads)'},
+  YouTube:{tag:'YouTube',cls:'yt',title:'Branding (YouTube Ads)'},
 };
 
-let ALL=[], CRE={}, ADS={}, REACH={};
+let ALL=[], CRE={}, ADS={}, REACH={}, YT={};
 Promise.all([
   fetch('data/meta.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/google_ads.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
@@ -177,13 +195,14 @@ Promise.all([
   fetch('data/creatives.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
   fetch('data/adsets.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
   fetch('data/reach.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
-]).then(([m,g,t,c,ad,rc])=>{
+  fetch('data/youtube.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
+]).then(([m,g,t,c,ad,rc,yt])=>{
   ALL=[
     ...(m.rows||[]).map(r=>({...r,source:'Meta'})),
     ...(g.rows||[]).map(r=>({...r,source:'Google Ads'})),
     ...(t.rows||[]).map(r=>({...r,source:'TikTok'})),
   ];
-  CRE=c.months||{}; ADS=ad.months||{}; REACH=rc.months||{};
+  CRE=c.months||{}; ADS=ad.months||{}; REACH=rc.months||{}; YT=yt.months||{};
   const months=[...new Set(ALL.map(r=>r.date.slice(0,7)))].filter(m=>m.startsWith('2026')).sort();
   const sel=byId('mesSel');
   sel.innerHTML=months.map(m=>`<option value="${m}">${mesName(m)}</option>`).join('');
@@ -195,7 +214,7 @@ Promise.all([
 function byId(id){return document.getElementById(id);}
 
 function render(ym){
-  byId('introPauta').textContent=`Cifras y análisis multicanal de pauta para las marcas Marimer, Floratil y A-Cerumen — ${mesName(ym)}. Desglose de resultados por plataforma (Meta Awareness y Traffic, TikTok y Google Search), con el mejor rendimiento de creativos y el comportamiento de las audiencias objetivo.`;
+  byId('introPauta').textContent=`Cifras y análisis multicanal de pauta para las marcas Marimer, Floratil y A-Cerumen — ${mesName(ym)}. Desglose de resultados por plataforma (Meta Awareness y Traffic, TikTok, Google Search y YouTube), con el mejor rendimiento de creativos y el comportamiento de las audiencias objetivo.`;
   byId('footMes').textContent=mesName(ym);
   const rowsM=ALL.filter(r=>r.date.slice(0,7)===ym);
   let html='';
@@ -204,6 +223,7 @@ function render(ym){
     html+=`<div class="brand-intro"><div class="in">${b.intro}</div></div>`;
     html+=`<div class="wrap">`;
     b.platforms.forEach(P=>{
+      if(P==='YouTube'){ const y=YT[ym]&&YT[ym][b.key]; if(y) html+=youtubeBlock(y,b,ym); return; }
       const cfg=PLAT_META[P];
       const rws=rowsM.filter(r=>productOf(r.campaign)===b.key && platOf(r)===P);
       html+=`<div class="plat"><div class="plat-head"><span class="plat-tag ${cfg.cls}">${cfg.tag}</span><h3>${b.name} · ${cfg.title}</h3><span class="mo-lbl">${mesName(ym)}</span></div>`;
@@ -291,14 +311,40 @@ function analisis(P,b,ym,a,rws){
   return base + (L.length?`<div class="lrn-t">Aprendizajes</div><ul>`+L.map(x=>`<li>${x}</li>`).join('')+`</ul>`:'');
 }
 
+function youtubeBlock(y,b,ym){
+  let h=`<div class="plat"><div class="plat-head"><span class="plat-tag yt">YouTube</span><h3>${b.name} · Branding (YouTube Ads)</h3><span class="mo-lbl">${mesName(ym)}</span></div>`;
+  const items=metric(fmt(y.impressions),'Impresiones','big hl')+metric(dec(y.entrega,2)+'%','% Entrega','big')+
+    metric(fmt(y.contratadas),'Impr. contratadas')+metric(fmt(y.interacciones),'Interacciones')+
+    metric(dec(y.ctr,2)+'%','CTR')+metric(fmt(y.imprVisibles),'Impr. visibles')+metric(cop(y.spend)+' COP','Inversión');
+  h+=`<div class="res"><div class="res-t">Resultados de plataforma · ${y.periodo}</div><div class="res-grid">${items}</div></div>`;
+  const entPct=Math.min(100,y.entrega);
+  h+=`<div class="yt-graf">
+    <div class="yt-card"><h5>Entrega vs contratado</h5>
+      <div class="yt-ent"><div class="yt-ent-fill${y.entrega>=100?' ok':''}" style="width:${entPct}%"></div></div>
+      <div class="yt-ent-lbl"><b>${dec(y.entrega,2)}%</b> de entrega · ${fmt(y.impressions)} impresiones de ${fmt(y.contratadas)} contratadas${y.entrega>100?` <b>(+${fmt(y.impressions-y.contratadas)} adicionales)</b>`:''}</div>
+      <div class="yt-top"><span class="star">★</span><div><b>Creativo destacado:</b> ${y.topCreative}</div></div>
+    </div>
+    <div class="yt-card"><h5>Impresiones por dispositivo</h5>
+      ${y.devices.map(d=>`<div class="yt-dev"><span class="yd-n">${d[0]}</span><div class="yd-bar"><div class="yd-fill" style="width:${Math.min(100,d[1])}%"></div></div><span class="yd-p">${d[1]}%</span></div>`).join('')}
+    </div>
+  </div>`;
+  h+=`<div class="analisis">La campaña de <b>Branding en YouTube Ads</b> de <b>${b.name}</b> en ${mesName(ym)} (${y.periodo}) entregó <b>${fmt(y.impressions)}</b> impresiones (${dec(y.entrega,2)}% de las ${fmt(y.contratadas)} contratadas) con ${fmt(y.interacciones)} interacciones y un CTR de ${dec(y.ctr,2)}%. Inversión de ${cop(y.spend)} COP.<div class="lrn-t">Insights</div><ul>${(y.insights||[]).map(i=>`<li>${i}</li>`).join('')}</ul></div>`;
+  h+=`</div>`;
+  return h;
+}
+
 function brandSummary(b,ym,rowsM){
   const rws=rowsM.filter(r=>productOf(r.campaign)===b.key);
-  if(!rws.length) return `Sin pauta registrada para ${b.name} en ${mesName(ym)}.`;
+  const y=YT[ym]&&YT[ym][b.key];
+  if(!rws.length && !y) return `Sin pauta registrada para ${b.name} en ${mesName(ym)}.`;
   const t=agg(rws);
-  const byP={}; b.platforms.forEach(P=>{const rr=rws.filter(r=>platOf(r)===P); if(rr.length)byP[P]=agg(rr);});
+  const byP={}; b.platforms.forEach(P=>{if(P==='YouTube')return; const rr=rws.filter(r=>platOf(r)===P); if(rr.length)byP[P]=agg(rr);});
   const nm=P=>PLAT_META[P].title.replace(/ \(.*\)/,'');
   const parts=Object.entries(byP).map(([P,a])=>`${nm(P)} ${cop(a.spend)} COP`);
-  const S=[`<b>${b.name}</b> cerró ${mesName(ym)} con una inversión total de <b>${cop(t.spend)} COP</b> en pauta, distribuida en ${parts.join(' · ')}.`];
+  if(y) parts.push(`Branding YouTube ${cop(y.spend)} COP`);
+  const total=t.spend+(y?y.spend:0);
+  const S=[`<b>${b.name}</b> cerró ${mesName(ym)} con una inversión total de <b>${cop(total)} COP</b> en pauta, distribuida en ${parts.join(' · ')}.`];
+  if(y) S.push(`En YouTube (branding) entregó ${fmt(y.impressions)} impresiones (${dec(y.entrega,2)}% de lo contratado) con CTR ${dec(y.ctr,2)}%.`);
   const aw=byP.Awareness;
   if(aw){ const ar=realReach(rws.filter(r=>platOf(r)==='Awareness'),ym); if(ar){aw.reach=ar;aw.freq=aw.impressions/ar;}
     S.push(`En Awareness alcanzó ${fmt(aw.reach)} personas con ${fmt(aw.impressions)} impresiones y un CPM de ${cop(aw.cpm)} COP.`); }
