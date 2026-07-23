@@ -14,6 +14,10 @@
         "entrega": 104.35,
         "topCreative": "In-stream #2 — 56,4% de la entrega total («Que la diarrea no cambie los planes de tu familia»)",
         "devices": [["Pantallas de TV", 62], ["Otros dispositivos", 38]],
+        "imgs": {
+          "creativo": "assets/youtube/floratil_creativo.jpg",
+          "generoEdad": "assets/youtube/floratil_genero_edad.jpg"
+        },
         "insights": [
           "La campaña superó la meta: 104,35% de entrega (782.665 impresiones frente a 750.000 contratadas) con una inversión de $12.870.000 COP.",
           "CTR de 2,50%, saludable para una campaña de branding en formato video.",
@@ -32,6 +36,19 @@
         "entrega": 117.6,
         "topCreative": "Short #1 — 38,6% de la entrega (170.744 impresiones; «¿Entrenas pero sientes que no rindes igual?»)",
         "devices": [["Pantallas de TV", 73], ["Teléfonos celulares", 21], ["Computadoras / tablets", 5]],
+        "imgs": {
+          "performance": "assets/youtube/marimer_performance.jpg",
+          "creativo": "assets/youtube/marimer_creativo.jpg",
+          "generoEdad": "assets/youtube/marimer_genero_edad.jpg"
+        },
+        "creativos": [
+          { "name": "Short #1",    "dur": "0:15", "copy": "Respira mejor y rinde más con Marimer® Isotónico", "impr": 170744 },
+          { "name": "Bumper #3",   "dur": "0:06", "copy": "Alivia su nariz tapada con Marimer® Baby Hipertónico", "impr": 94088 },
+          { "name": "Bumper #2",   "dur": "0:06", "copy": "Cuida su naricita cada día con Marimer® Baby Isotónico", "impr": 84783 },
+          { "name": "In Stream #2","dur": "0:15", "copy": "Cuando respira mejor, todo se siente más tranquilo — Marimer® Baby Isotónico", "impr": 38643 },
+          { "name": "Short #2",    "dur": "0:15", "copy": "Que nadie interrumpa su diversión, usa Marimer® Baby Hiper.", "impr": 36430 },
+          { "name": "Bumper #1",   "dur": "0:06", "copy": "Respira mejor cada día con Marimer® Isotónico", "impr": 16711 }
+        ],
         "insights": [
           "117,6% de cumplimiento de entrega: 66.086 impresiones adicionales sin aumentar la inversión ($6.440.367 COP).",
           "CTR de 3,30%, por encima del promedio de branding, con 14.605 interacciones.",

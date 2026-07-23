@@ -81,6 +81,8 @@ img{max-width:100%;display:block}
 .yt-ent-lbl b{color:var(--navy)}
 .yt-top{display:flex;gap:10px;align-items:flex-start;background:#FFF7F6;border:1px solid #F3D3D1;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.55;margin-top:14px}
 .yt-top .star{color:#C4302B;font-weight:800}
+.yt-img{width:100%;height:auto;border-radius:10px;display:block;border:1px solid #eef1f6}
+.yt-cre img{max-height:440px;object-fit:contain;background:#f6f8fb}
 .pdf-btn{background:#fff;color:var(--navy);border:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:8px}
 .pdf-btn:hover{background:#e8eefb}
 @media print{
@@ -322,12 +324,24 @@ function youtubeBlock(y,b,ym){
     <div class="yt-card"><h5>Entrega vs contratado</h5>
       <div class="yt-ent"><div class="yt-ent-fill${y.entrega>=100?' ok':''}" style="width:${entPct}%"></div></div>
       <div class="yt-ent-lbl"><b>${dec(y.entrega,2)}%</b> de entrega · ${fmt(y.impressions)} impresiones de ${fmt(y.contratadas)} contratadas${y.entrega>100?` <b>(+${fmt(y.impressions-y.contratadas)} adicionales)</b>`:''}</div>
-      <div class="yt-top"><span class="star">★</span><div><b>Creativo destacado:</b> ${y.topCreative}</div></div>
     </div>
     <div class="yt-card"><h5>Impresiones por dispositivo</h5>
       ${y.devices.map(d=>`<div class="yt-dev"><span class="yd-n">${d[0]}</span><div class="yd-bar"><div class="yd-fill" style="width:${Math.min(100,d[1])}%"></div></div><span class="yd-p">${d[1]}%</span></div>`).join('')}
     </div>
   </div>`;
+  // Performance creativo (tabla si hay datos por anuncio) + creativo destacado
+  let perf='';
+  if(y.creativos&&y.creativos.length){
+    const tot=y.creativos.reduce((s,c)=>s+c.impr,0);
+    perf=`<div class="rtab-wrap" style="border:none;box-shadow:none;border-radius:8px"><table class="rtab"><thead><tr><th>Anuncio</th><th>Copy</th><th class="n">Impresiones</th><th class="n">%</th></tr></thead><tbody>`+
+      y.creativos.map(c=>`<tr><td class="name" style="white-space:nowrap">${c.name}<div style="color:#8a93a5;font-weight:400;font-size:11px">${c.dur}</div></td><td style="font-size:12px">${c.copy}</td><td class="n">${fmt(c.impr)}</td><td class="n">${dec(c.impr/tot*100,1)}%</td></tr>`).join('')+
+      `</tbody></table></div>`;
+  }
+  h+=`<div class="yt-graf">
+    <div class="yt-card"><h5>Performance creativo</h5>${perf}<div class="yt-top"><span class="star">★</span><div><b>Creativo destacado:</b> ${y.topCreative}</div></div></div>
+    ${y.imgs&&y.imgs.creativo?`<div class="yt-card yt-cre"><h5>Creativo destacado</h5><img class="yt-img" loading="lazy" src="${y.imgs.creativo}" alt="Creativo ${b.name}"></div>`:''}
+  </div>`;
+  if(y.imgs&&y.imgs.generoEdad) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por género y edad · impresiones</h5><img class="yt-img" loading="lazy" src="${y.imgs.generoEdad}" alt="Género y edad ${b.name}"></div>`;
   h+=`<div class="analisis">La campaña de <b>Branding en YouTube Ads</b> de <b>${b.name}</b> en ${mesName(ym)} (${y.periodo}) entregó <b>${fmt(y.impressions)}</b> impresiones (${dec(y.entrega,2)}% de las ${fmt(y.contratadas)} contratadas) con ${fmt(y.interacciones)} interacciones y un CTR de ${dec(y.ctr,2)}%. Inversión de ${cop(y.spend)} COP.<div class="lrn-t">Insights</div><ul>${(y.insights||[]).map(i=>`<li>${i}</li>`).join('')}</ul></div>`;
   h+=`</div>`;
   return h;
