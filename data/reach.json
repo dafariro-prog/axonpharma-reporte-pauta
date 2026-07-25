@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-07-24T19:17:13.488Z",
+  "updated": "2026-07-25T15:59:40.052Z",
   "months": {
     "2026-01": {
       "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
@@ -780,40 +780,40 @@
     },
     "2026-07": {
       "Jul26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 4434999,
-        "freq": 4.3444
+        "reach": 4557315,
+        "freq": 4.4365
       },
       "Jul26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 1625443,
-        "freq": 4.0544
+        "reach": 1674991,
+        "freq": 4.0872
       },
       "Jul26_CO_AxonPharma_FLORATIL_FB/IG_Views": {
-        "reach": 1037908,
-        "freq": 2.4771
+        "reach": 1077195,
+        "freq": 2.5191
       },
       "Jul26_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
-        "reach": 2112501,
-        "freq": 2.459
+        "reach": 2166166,
+        "freq": 2.5224
       },
       "Jul26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 1206170,
-        "freq": 3.2796
+        "reach": 1228528,
+        "freq": 3.2967
       },
       "Jul26_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
-        "reach": 1617191,
-        "freq": 2.2855
+        "reach": 1662542,
+        "freq": 2.3427
       },
       "Jul26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 981438,
-        "freq": 2.0244
+        "reach": 1033261,
+        "freq": 2.0245
       },
       "Jul26_AXONPHARMA_A-Cerumen_Traffic": {
-        "reach": 381910,
-        "freq": 3.2469
+        "reach": 396483,
+        "freq": 3.2618
       },
       "Jul26_AXONPHARMA_Marimer_Traffic": {
-        "reach": 678536,
-        "freq": 3.42
+        "reach": 709640,
+        "freq": 3.3831
       },
       "Jul26_AXONPHARMA_Floratil_Traffic": {
         "reach": 355288,
@@ -900,6 +900,10 @@
         "freq": 0
       },
       "Sept25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Floratil_Traffic": {
         "reach": 0,
         "freq": 0
       },
