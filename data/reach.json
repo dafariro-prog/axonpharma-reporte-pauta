@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-07-27T19:18:30.200Z",
+  "updated": "2026-07-28T16:29:52.933Z",
   "months": {
     "2026-01": {
       "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
@@ -780,40 +780,40 @@
     },
     "2026-07": {
       "Jul26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 4769553,
-        "freq": 4.681
+        "reach": 4871172,
+        "freq": 4.7703
       },
       "Jul26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 1773937,
-        "freq": 4.1157
+        "reach": 1793264,
+        "freq": 4.1409
       },
       "Jul26_CO_AxonPharma_FLORATIL_FB/IG_Views": {
-        "reach": 1158005,
-        "freq": 2.61
+        "reach": 1192069,
+        "freq": 2.6542
       },
       "Jul26_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
-        "reach": 2323119,
-        "freq": 2.6018
+        "reach": 2414276,
+        "freq": 2.606
       },
       "Jul26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 1287323,
-        "freq": 3.2963
+        "reach": 1310405,
+        "freq": 3.2953
       },
       "Jul26_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
-        "reach": 1774455,
-        "freq": 2.4505
+        "reach": 1834776,
+        "freq": 2.4807
       },
       "Jul26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 1096362,
-        "freq": 2.0932
+        "reach": 1135172,
+        "freq": 2.0821
       },
       "Jul26_AXONPHARMA_A-Cerumen_Traffic": {
-        "reach": 434579,
+        "reach": 449302,
         "freq": 3.2705
       },
       "Jul26_AXONPHARMA_Marimer_Traffic": {
-        "reach": 773836,
-        "freq": 3.3791
+        "reach": 805146,
+        "freq": 3.3547
       },
       "Jul26_AXONPHARMA_Floratil_Traffic": {
         "reach": 355288,
@@ -916,6 +916,10 @@
         "freq": 0
       },
       "Ago25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Marimer_Traffic": {
         "reach": 0,
         "freq": 0
       },
