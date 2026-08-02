@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T18:59:56.379Z",
+  "updated": "2026-08-02T15:56:47.288Z",
   "account": {
     "id": "7512240273293279239",
     "name": "CO_AxonPharma_GarnierCOLOMBIA",
@@ -5172,30 +5172,30 @@
       "objective": "LINK_CLICKS",
       "date": "2026-07-31",
       "spend": 197980,
-      "impressions": 78446,
+      "impressions": 78435,
       "reach": 37607,
-      "frequency": 2.0859,
-      "clicks": 13416,
-      "link_clicks": 13416,
+      "frequency": 2.0856,
+      "clicks": 13412,
+      "link_clicks": 13412,
       "views": 0,
       "cpc": 14.76,
-      "cpm": 2523.77,
-      "ctr": 17.1022
+      "cpm": 2524.13,
+      "ctr": 17.0995
     },
     {
       "campaign": "Jul26_AXONPHARMA_A-Cerumen_Traffic",
       "objective": "LINK_CLICKS",
       "date": "2026-07-31",
       "spend": 95228,
-      "impressions": 37196,
+      "impressions": 37194,
       "reach": 16405,
-      "frequency": 2.2674,
+      "frequency": 2.2672,
       "clicks": 6247,
       "link_clicks": 6247,
       "views": 0,
       "cpc": 15.24,
-      "cpm": 2560.17,
-      "ctr": 16.7948
+      "cpm": 2560.31,
+      "ctr": 16.7957
     }
   ]
 }
