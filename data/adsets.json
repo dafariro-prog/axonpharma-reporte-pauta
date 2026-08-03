@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-08-02T19:00:46.098Z",
+  "updated": "2026-08-03T19:23:54.952Z",
   "months": {
     "2026-01": {
       "FLORATIL": {
@@ -2714,7 +2714,7 @@
             "hasReach": true
           },
           {
-            "name": "FLORATIL PADRES NACIONAL Unidrogas",
+            "name": "FLORATIL ADULTO NACIONAL Copservir",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -2723,7 +2723,7 @@
             "hasReach": true
           },
           {
-            "name": "FLORATIL ADULTO NACIONAL Copservir",
+            "name": "FLORATIL PADRES NACIONAL Unidrogas",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5206,7 +5206,7 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER ADULTOS ATLANTICO Unidrogas",
+            "name": "MARIMER BABY ATLANTICO Unidrogas",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5215,7 +5215,7 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER BABY ATLANTICO Unidrogas",
+            "name": "MARIMER ADULTOS ATLANTICO Unidrogas",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5338,39 +5338,77 @@
       "A-CERUMEN": {
         "Traffic": [
           {
-            "name": "A-CERUMEN ADULTO NACIONAL Farmatodo",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": true
-          },
-          {
             "name": "A-CERUMEN ADULTO ANTIOQUIA Unidrogas",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": true
-          },
-          {
-            "name": "A-CERUMEN ADULTO Nacional CruzVerde",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
+            "impressions": 54665,
+            "link_clicks": 1266,
+            "reach": 34953,
+            "clicks": 1860,
+            "ctr": 3.4,
             "hasReach": true
           },
           {
             "name": "A-CERUMEN ADULTO ATLANTICO Unidrogas",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
+            "impressions": 54076,
+            "link_clicks": 885,
+            "reach": 29585,
+            "clicks": 1525,
+            "ctr": 2.82,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO Nacional CruzVerde",
+            "impressions": 42933,
+            "link_clicks": 1150,
+            "reach": 22525,
+            "clicks": 1799,
+            "ctr": 4.19,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO NACIONAL Farmatodo",
+            "impressions": 36122,
+            "link_clicks": 834,
+            "reach": 27348,
+            "clicks": 1382,
+            "ctr": 3.83,
+            "hasReach": true
+          }
+        ],
+        "Awareness": [
+          {
+            "name": "A-CERUMEN ADULTO NACIONAL Unidrogas",
+            "impressions": 12642,
+            "link_clicks": 25,
+            "reach": 12535,
+            "clicks": 28,
+            "ctr": 0.22,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO ANTIOQUIA Unidrogas",
+            "impressions": 12025,
+            "link_clicks": 30,
+            "reach": 11961,
+            "clicks": 39,
+            "ctr": 0.32,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO NACIONAL CruzVerde",
+            "impressions": 8399,
+            "link_clicks": 13,
+            "reach": 8219,
+            "clicks": 19,
+            "ctr": 0.23,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO ATLANTICO Farmatodo",
+            "impressions": 3609,
+            "link_clicks": 3,
+            "reach": 3545,
+            "clicks": 6,
+            "ctr": 0.17,
             "hasReach": true
           }
         ],
