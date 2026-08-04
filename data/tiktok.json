@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T19:23:30.278Z",
+  "updated": "2026-08-04T16:48:08.554Z",
   "account": {
     "id": "7512240273293279239",
     "name": "CO_AxonPharma_GarnierCOLOMBIA",
@@ -5168,7 +5168,7 @@
       "ctr": 14.9673
     },
     {
-      "campaign": "Jul26_AXONPHARMA_Marimer_Traffic",
+      "campaign": "Ago26_AXONPHARMA_Marimer_Traffic",
       "objective": "LINK_CLICKS",
       "date": "2026-07-31",
       "spend": 197980,
@@ -5183,7 +5183,7 @@
       "ctr": 17.0995
     },
     {
-      "campaign": "Jul26_AXONPHARMA_A-Cerumen_Traffic",
+      "campaign": "Ago26_AXONPHARMA_A-Cerumen_Traffic",
       "objective": "LINK_CLICKS",
       "date": "2026-07-31",
       "spend": 95228,
@@ -5196,6 +5196,66 @@
       "cpc": 15.24,
       "cpm": 2560.31,
       "ctr": 16.7957
+    },
+    {
+      "campaign": "Ago26_AXONPHARMA_Marimer_Traffic",
+      "objective": "LINK_CLICKS",
+      "date": "2026-08-03",
+      "spend": 26296,
+      "impressions": 7467,
+      "reach": 4170,
+      "frequency": 1.7906,
+      "clicks": 2122,
+      "link_clicks": 2122,
+      "views": 0,
+      "cpc": 12.39,
+      "cpm": 3521.63,
+      "ctr": 28.4184
+    },
+    {
+      "campaign": "Ago26_AXONPHARMA_A-Cerumen_Traffic",
+      "objective": "LINK_CLICKS",
+      "date": "2026-08-03",
+      "spend": 25726,
+      "impressions": 12115,
+      "reach": 4164,
+      "frequency": 2.9095,
+      "clicks": 1846,
+      "link_clicks": 1846,
+      "views": 0,
+      "cpc": 13.94,
+      "cpm": 2123.48,
+      "ctr": 15.2373
+    },
+    {
+      "campaign": "Ago26_AXONPHARMA_Marimer_Traffic",
+      "objective": "LINK_CLICKS",
+      "date": "2026-08-04",
+      "spend": 67146,
+      "impressions": 22585,
+      "reach": 6211,
+      "frequency": 3.6363,
+      "clicks": 4694,
+      "link_clicks": 4694,
+      "views": 0,
+      "cpc": 14.3,
+      "cpm": 2973.04,
+      "ctr": 20.7837
+    },
+    {
+      "campaign": "Ago26_AXONPHARMA_A-Cerumen_Traffic",
+      "objective": "LINK_CLICKS",
+      "date": "2026-08-04",
+      "spend": 35492,
+      "impressions": 17260,
+      "reach": 3355,
+      "frequency": 5.1446,
+      "clicks": 2471,
+      "link_clicks": 2471,
+      "views": 0,
+      "cpc": 14.36,
+      "cpm": 2056.32,
+      "ctr": 14.3163
     }
   ]
 }
