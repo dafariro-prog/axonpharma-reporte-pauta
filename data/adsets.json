@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-08-08T18:27:25.632Z",
+  "updated": "2026-08-09T15:32:41.909Z",
   "months": {
     "2026-01": {
       "FLORATIL": {
@@ -5157,12 +5157,30 @@
             "hasReach": true
           },
           {
+            "name": "FLORATIL BABY ANTIOQUIA Unidrogas Views 03-31Ago",
+            "impressions": 107957,
+            "link_clicks": 1240,
+            "reach": 73596,
+            "clicks": 1703,
+            "ctr": 1.58,
+            "hasReach": true
+          },
+          {
             "name": "FLORATIL BABY PADRES BOGOTA Farmatodo",
             "impressions": 103673,
             "link_clicks": 385,
             "reach": 70643,
             "clicks": 606,
             "ctr": 0.58,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas Views 03-31Ago",
+            "impressions": 101469,
+            "link_clicks": 1342,
+            "reach": 82417,
+            "clicks": 1654,
+            "ctr": 1.63,
             "hasReach": true
           },
           {
@@ -5175,30 +5193,12 @@
             "hasReach": true
           },
           {
-            "name": "FLORATIL BABY ANTIOQUIA Unidrogas Views 03-31Ago",
-            "impressions": 87865,
-            "link_clicks": 1012,
-            "reach": 61680,
-            "clicks": 1376,
-            "ctr": 1.57,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas Views 03-31Ago",
-            "impressions": 82414,
-            "link_clicks": 1104,
-            "reach": 68022,
-            "clicks": 1357,
-            "ctr": 1.65,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL BABY PADRES NACIONAL CruzVerde",
-            "impressions": 79193,
-            "link_clicks": 185,
-            "reach": 58490,
-            "clicks": 278,
-            "ctr": 0.35,
+            "name": "FLORATIL BABY ATLANTICO Unidrogas Views 03-31Ago",
+            "impressions": 89169,
+            "link_clicks": 1016,
+            "reach": 55916,
+            "clicks": 1449,
+            "ctr": 1.63,
             "hasReach": true
           }
         ],
@@ -5231,7 +5231,7 @@
             "hasReach": false
           },
           {
-            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
+            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5240,7 +5240,7 @@
             "hasReach": false
           },
           {
-            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
+            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5361,6 +5361,24 @@
             "hasReach": true
           },
           {
+            "name": "MARIMER BABY ATLANTICO Unidrogas Views 04-31Ago",
+            "impressions": 58488,
+            "link_clicks": 812,
+            "reach": 39319,
+            "clicks": 1036,
+            "ctr": 1.77,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY NACIONAL Cruz verde Views 04-31Ago",
+            "impressions": 54118,
+            "link_clicks": 715,
+            "reach": 30553,
+            "clicks": 904,
+            "ctr": 1.67,
+            "hasReach": true
+          },
+          {
             "name": "MARIMER ADULTO NACIONAL LaRebaja",
             "impressions": 46891,
             "link_clicks": 124,
@@ -5370,21 +5388,12 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER BABY ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 45811,
-            "link_clicks": 625,
-            "reach": 31527,
-            "clicks": 793,
-            "ctr": 1.73,
-            "hasReach": true
-          },
-          {
-            "name": "MARIMER BABY NACIONAL Cruz verde Views 04-31Ago",
-            "impressions": 41969,
-            "link_clicks": 527,
-            "reach": 24966,
-            "clicks": 665,
-            "ctr": 1.58,
+            "name": "MARIMER ADULTOS NACIONAL Cruz verde Views 04-31Ago",
+            "impressions": 45857,
+            "link_clicks": 528,
+            "reach": 39149,
+            "clicks": 633,
+            "ctr": 1.38,
             "hasReach": true
           },
           {
@@ -5397,30 +5406,21 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER ADULTOS NACIONAL Cruz verde Views 04-31Ago",
-            "impressions": 36131,
-            "link_clicks": 408,
-            "reach": 31792,
-            "clicks": 486,
-            "ctr": 1.35,
+            "name": "MARIMER BABY NACIONAL Farmatodo Views 04-31Ago",
+            "impressions": 36928,
+            "link_clicks": 463,
+            "reach": 20942,
+            "clicks": 567,
+            "ctr": 1.54,
             "hasReach": true
           },
           {
-            "name": "MARIMER ADULTO NACIONAL Farmatodo",
-            "impressions": 33444,
-            "link_clicks": 91,
-            "reach": 30222,
-            "clicks": 132,
-            "ctr": 0.39,
-            "hasReach": true
-          },
-          {
-            "name": "MARIMER BABY NACIONAL LaRebaja",
-            "impressions": 31552,
-            "link_clicks": 84,
-            "reach": 25938,
-            "clicks": 139,
-            "ctr": 0.44,
+            "name": "MARIMER ADULTOS ATLANTICO Unidrogas Views 04-31Ago",
+            "impressions": 35904,
+            "link_clicks": 449,
+            "reach": 21208,
+            "clicks": 623,
+            "ctr": 1.74,
             "hasReach": true
           }
         ],
@@ -5501,11 +5501,11 @@
         "TikTok": [
           {
             "name": "Marimer Traffic",
-            "impressions": 341986,
-            "link_clicks": 59776,
+            "impressions": 443219,
+            "link_clicks": 73295,
             "reach": 0,
-            "clicks": 59776,
-            "ctr": 17.48,
+            "clicks": 73295,
+            "ctr": 16.54,
             "hasReach": false
           },
           {
@@ -5689,11 +5689,11 @@
         "TikTok": [
           {
             "name": "ACerumen Traffic",
-            "impressions": 217623,
-            "link_clicks": 31097,
+            "impressions": 282338,
+            "link_clicks": 37791,
             "reach": 0,
-            "clicks": 31097,
-            "ctr": 14.29,
+            "clicks": 37791,
+            "ctr": 13.39,
             "hasReach": false
           },
           {
