@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-08-10T18:47:34.563Z",
+  "updated": "2026-08-11T16:52:56.831Z",
   "months": {
     "2026-01": {
       "FLORATIL": {
@@ -5148,6 +5148,24 @@
             "hasReach": true
           },
           {
+            "name": "FLORATIL BABY ANTIOQUIA Unidrogas Views 03-31Ago",
+            "impressions": 152435,
+            "link_clicks": 1742,
+            "reach": 98578,
+            "clicks": 2413,
+            "ctr": 1.58,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas Views 03-31Ago",
+            "impressions": 143391,
+            "link_clicks": 1874,
+            "reach": 112181,
+            "clicks": 2326,
+            "ctr": 1.62,
+            "hasReach": true
+          },
+          {
             "name": "FLORATIL ADULTO NACIONAL CruzVerde",
             "impressions": 136681,
             "link_clicks": 350,
@@ -5157,30 +5175,21 @@
             "hasReach": true
           },
           {
-            "name": "FLORATIL BABY ANTIOQUIA Unidrogas Views 03-31Ago",
-            "impressions": 128412,
-            "link_clicks": 1471,
-            "reach": 84937,
-            "clicks": 2043,
-            "ctr": 1.59,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas Views 03-31Ago",
-            "impressions": 121308,
-            "link_clicks": 1610,
-            "reach": 97408,
-            "clicks": 1979,
-            "ctr": 1.63,
-            "hasReach": true
-          },
-          {
             "name": "FLORATIL BABY ATLANTICO Unidrogas Views 03-31Ago",
-            "impressions": 107160,
-            "link_clicks": 1212,
-            "reach": 63704,
-            "clicks": 1744,
-            "ctr": 1.63,
+            "impressions": 126131,
+            "link_clicks": 1482,
+            "reach": 72973,
+            "clicks": 2130,
+            "ctr": 1.69,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS ATLANTICO Unidrogas Views 03-31Ago",
+            "impressions": 114212,
+            "link_clicks": 1474,
+            "reach": 78050,
+            "clicks": 1882,
+            "ctr": 1.65,
             "hasReach": true
           },
           {
@@ -5190,15 +5199,6 @@
             "reach": 70643,
             "clicks": 606,
             "ctr": 0.58,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL BABY PADRES NACIONAL Unidrogas",
-            "impressions": 96284,
-            "link_clicks": 187,
-            "reach": 73070,
-            "clicks": 338,
-            "ctr": 0.35,
             "hasReach": true
           }
         ],
@@ -5334,12 +5334,30 @@
             "hasReach": true
           },
           {
+            "name": "MARIMER BABY ATLANTICO Unidrogas Views 04-31Ago",
+            "impressions": 87361,
+            "link_clicks": 1229,
+            "reach": 54655,
+            "clicks": 1606,
+            "ctr": 1.84,
+            "hasReach": true
+          },
+          {
             "name": "MARIMER BABY NACIONAL CruzVerde",
             "impressions": 79820,
             "link_clicks": 129,
             "reach": 57658,
             "clicks": 262,
             "ctr": 0.33,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY NACIONAL Cruz verde Views 04-31Ago",
+            "impressions": 77309,
+            "link_clicks": 1073,
+            "reach": 41614,
+            "clicks": 1355,
+            "ctr": 1.75,
             "hasReach": true
           },
           {
@@ -5352,21 +5370,12 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER BABY ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 73298,
-            "link_clicks": 1006,
-            "reach": 47411,
-            "clicks": 1301,
-            "ctr": 1.77,
-            "hasReach": true
-          },
-          {
-            "name": "MARIMER BABY NACIONAL Cruz verde Views 04-31Ago",
-            "impressions": 66074,
-            "link_clicks": 912,
-            "reach": 35352,
-            "clicks": 1147,
-            "ctr": 1.74,
+            "name": "MARIMER ADULTOS NACIONAL Cruz verde Views 04-31Ago",
+            "impressions": 68485,
+            "link_clicks": 787,
+            "reach": 59283,
+            "clicks": 969,
+            "ctr": 1.41,
             "hasReach": true
           },
           {
@@ -5379,12 +5388,30 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER ADULTOS NACIONAL Cruz verde Views 04-31Ago",
-            "impressions": 57333,
-            "link_clicks": 654,
-            "reach": 49320,
-            "clicks": 793,
-            "ctr": 1.38,
+            "name": "MARIMER ADULTOS ATLANTICO Unidrogas Views 04-31Ago",
+            "impressions": 54589,
+            "link_clicks": 693,
+            "reach": 29232,
+            "clicks": 986,
+            "ctr": 1.81,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY NACIONAL Farmatodo Views 04-31Ago",
+            "impressions": 54185,
+            "link_clicks": 704,
+            "reach": 29896,
+            "clicks": 890,
+            "ctr": 1.64,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY ANTIOQUIA Unidrogas Views 04-31Ago",
+            "impressions": 50756,
+            "link_clicks": 678,
+            "reach": 36297,
+            "clicks": 876,
+            "ctr": 1.73,
             "hasReach": true
           },
           {
@@ -5394,33 +5421,6 @@
             "reach": 43383,
             "clicks": 189,
             "ctr": 0.4,
-            "hasReach": true
-          },
-          {
-            "name": "MARIMER ADULTOS ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 44865,
-            "link_clicks": 564,
-            "reach": 25240,
-            "clicks": 791,
-            "ctr": 1.76,
-            "hasReach": true
-          },
-          {
-            "name": "MARIMER BABY NACIONAL Farmatodo Views 04-31Ago",
-            "impressions": 44520,
-            "link_clicks": 571,
-            "reach": 24184,
-            "clicks": 705,
-            "ctr": 1.58,
-            "hasReach": true
-          },
-          {
-            "name": "MARIMER BABY ANTIOQUIA Unidrogas Views 04-31Ago",
-            "impressions": 42412,
-            "link_clicks": 558,
-            "reach": 30903,
-            "clicks": 719,
-            "ctr": 1.7,
             "hasReach": true
           }
         ],
@@ -5501,11 +5501,11 @@
         "TikTok": [
           {
             "name": "Marimer Traffic",
-            "impressions": 554367,
-            "link_clicks": 87526,
+            "impressions": 714792,
+            "link_clicks": 100065,
             "reach": 0,
-            "clicks": 87526,
-            "ctr": 15.79,
+            "clicks": 100065,
+            "ctr": 14,
             "hasReach": false
           },
           {
@@ -5689,11 +5689,11 @@
         "TikTok": [
           {
             "name": "ACerumen Traffic",
-            "impressions": 349646,
-            "link_clicks": 44812,
+            "impressions": 427410,
+            "link_clicks": 50776,
             "reach": 0,
-            "clicks": 44812,
-            "ctr": 12.82,
+            "clicks": 50776,
+            "ctr": 11.88,
             "hasReach": false
           },
           {
