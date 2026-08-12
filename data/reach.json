@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-08-11T18:53:54.408Z",
+  "updated": "2026-08-12T16:52:01.250Z",
   "months": {
     "2026-01": {
       "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
@@ -942,44 +942,44 @@
     },
     "2026-08": {
       "Ago26_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
-        "reach": 300684,
-        "freq": 1.4673
+        "reach": 346337,
+        "freq": 1.4256
       },
       "Ago26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 689932,
-        "freq": 1.8258
+        "reach": 709399,
+        "freq": 1.7983
       },
       "Ago26_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
-        "reach": 407059,
-        "freq": 1.5078
+        "reach": 459929,
+        "freq": 1.4672
       },
       "Ago26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 162335,
-        "freq": 1.6677
+        "reach": 186757,
+        "freq": 1.6362
       },
       "Ago26_CO_AxonPharma_FLORATIL_FB/IG_Views": {
-        "reach": 450884,
-        "freq": 1.7495
+        "reach": 518882,
+        "freq": 1.7961
       },
       "Ago26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 439272,
-        "freq": 1.8664
+        "reach": 510269,
+        "freq": 1.7901
       },
       "Ago26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 1282395,
-        "freq": 1.7786
+        "reach": 1379810,
+        "freq": 1.8016
       },
       "Ago26_CO_AxonPharma_MARIMER_FB/IG_Views": {
-        "reach": 267539,
-        "freq": 1.7605
+        "reach": 304783,
+        "freq": 1.8252
       },
       "Ago26_AXONPHARMA_A-Cerumen_Traffic": {
-        "reach": 162906,
-        "freq": 2.6206
+        "reach": 188713,
+        "freq": 2.6075
       },
       "Ago26_AXONPHARMA_Marimer_Traffic": {
-        "reach": 261895,
-        "freq": 2.7269
+        "reach": 294444,
+        "freq": 2.6965
       },
       "Ago26_AXONPHARMA_Floratil_Traffic": {
         "reach": 0,
@@ -1053,7 +1053,15 @@
         "reach": 0,
         "freq": 0
       },
+      "Sept25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
       "Ago25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_A-Cerumen_Traffic": {
         "reach": 0,
         "freq": 0
       },
