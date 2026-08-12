@@ -88,10 +88,12 @@ async function win(connector, fields, { from=FROM, to=TO, account } = {}) {
     const a = acc[key] || (acc[key] = { month, brand, plat, ad_name:ad, thumbnail:https(img), spend:0, impressions:0, clicks:0 });
     a.thumbnail = https(img); a.spend += spend; a.impressions += impr; a.clicks += clk;
   };
-  const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT});
+  const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT});
   mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
     const m = normMonth(r.month); if (!m.startsWith('2026')) return;
-    const img = /^http/.test(r.image_url||'') ? r.image_url : r.thumbnail_url;   // image_url = creativo real
+    // prioridad: creativo real (image_url) -> imagen real del post IG -> thumbnail genérico (último recurso, evita tarjetas de texto)
+    const img = /^http/.test(r.image_url||'') ? r.image_url
+              : (/^http/.test(r.effective_instagram_media__media_url||'') ? r.effective_instagram_media__media_url : r.thumbnail_url);
     addCr(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
   });
   const tCr = await win('tiktok', ['account_id','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT});
