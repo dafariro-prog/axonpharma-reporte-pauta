@@ -1,0 +1,342 @@
+{
+  "source": "Spotify Ads · Reporte de performance (Excel proveedor)",
+  "updated": "2026-08-13T21:01:49.523Z",
+  "months": {
+    "2026-07": {
+      "FLORATIL": {
+        "periodo": "21 jul – 11 ago 2026",
+        "formato": "Audio · Everywhere · Colombia",
+        "monedaOrig": "USD (TC 3.800 a COP)",
+        "impressions": 623465,
+        "reach": 434754,
+        "frequency": 1.43,
+        "clics": 10031,
+        "ctr": 1.61,
+        "spendUSD": 3168.63,
+        "audioStarts": 631911,
+        "completion": 94.58,
+        "spend": 12040794,
+        "escuchas100": 597642,
+        "monthly": [
+          {
+            "mes": "Julio",
+            "impressions": 461936,
+            "reach": 366187,
+            "clics": 5532,
+            "spendUSD": 2350.68,
+            "spend": 8932584,
+            "audioStarts": 467846,
+            "escuchas100": 442306
+          },
+          {
+            "mes": "Agosto",
+            "impressions": 161529,
+            "reach": 94613,
+            "clics": 4499,
+            "spendUSD": 817.95,
+            "spend": 3108210,
+            "audioStarts": 164065,
+            "escuchas100": 155336
+          }
+        ],
+        "daily": [
+          {
+            "date": "2026-07-21",
+            "impressions": 21975,
+            "reach": 11032,
+            "spend": 446576,
+            "clics": 181,
+            "ctr": 0.82
+          },
+          {
+            "date": "2026-07-22",
+            "impressions": 63004,
+            "reach": 30228,
+            "spend": 953344,
+            "clics": 511,
+            "ctr": 0.81
+          },
+          {
+            "date": "2026-07-23",
+            "impressions": 87452,
+            "reach": 42246,
+            "spend": 1430396,
+            "clics": 594,
+            "ctr": 0.68
+          },
+          {
+            "date": "2026-07-24",
+            "impressions": 15880,
+            "reach": 6349,
+            "spend": 321556,
+            "clics": 72,
+            "ctr": 0.45
+          },
+          {
+            "date": "2026-07-25",
+            "impressions": 40502,
+            "reach": 29648,
+            "spend": 777214,
+            "clics": 310,
+            "ctr": 0.77
+          },
+          {
+            "date": "2026-07-26",
+            "impressions": 44920,
+            "reach": 38462,
+            "spend": 780026,
+            "clics": 491,
+            "ctr": 1.09
+          },
+          {
+            "date": "2026-07-27",
+            "impressions": 38604,
+            "reach": 22182,
+            "spend": 774706,
+            "clics": 655,
+            "ctr": 1.7
+          },
+          {
+            "date": "2026-07-28",
+            "impressions": 42030,
+            "reach": 26041,
+            "spend": 893836,
+            "clics": 604,
+            "ctr": 1.44
+          },
+          {
+            "date": "2026-07-29",
+            "impressions": 38221,
+            "reach": 24926,
+            "spend": 1131222,
+            "clics": 800,
+            "ctr": 2.09
+          },
+          {
+            "date": "2026-07-30",
+            "impressions": 36085,
+            "reach": 19213,
+            "spend": 929290,
+            "clics": 635,
+            "ctr": 1.76
+          },
+          {
+            "date": "2026-07-31",
+            "impressions": 32651,
+            "reach": 26318,
+            "spend": 409298,
+            "clics": 661,
+            "ctr": 2.02
+          },
+          {
+            "date": "2026-08-01",
+            "impressions": 612,
+            "reach": 419,
+            "spend": 83600,
+            "clics": 18,
+            "ctr": 2.94
+          },
+          {
+            "date": "2026-08-04",
+            "impressions": 24374,
+            "reach": 19286,
+            "spend": 472948,
+            "clics": 499,
+            "ctr": 2.05
+          },
+          {
+            "date": "2026-08-05",
+            "impressions": 21363,
+            "reach": 16049,
+            "spend": 423548,
+            "clics": 544,
+            "ctr": 2.55
+          },
+          {
+            "date": "2026-08-06",
+            "impressions": 20996,
+            "reach": 16056,
+            "spend": 419596,
+            "clics": 445,
+            "ctr": 2.12
+          },
+          {
+            "date": "2026-08-07",
+            "impressions": 21176,
+            "reach": 15467,
+            "spend": 424080,
+            "clics": 571,
+            "ctr": 2.7
+          },
+          {
+            "date": "2026-08-08",
+            "impressions": 21486,
+            "reach": 15494,
+            "spend": 387866,
+            "clics": 622,
+            "ctr": 2.89
+          },
+          {
+            "date": "2026-08-09",
+            "impressions": 19600,
+            "reach": 13167,
+            "spend": 363698,
+            "clics": 666,
+            "ctr": 3.4
+          },
+          {
+            "date": "2026-08-10",
+            "impressions": 14893,
+            "reach": 10178,
+            "spend": 285798,
+            "clics": 527,
+            "ctr": 3.54
+          },
+          {
+            "date": "2026-08-11",
+            "impressions": 17983,
+            "reach": 12071,
+            "spend": 337858,
+            "clics": 627,
+            "ctr": 3.49
+          },
+          {
+            "date": "1899-12-30",
+            "impressions": 623807,
+            "reach": 394832,
+            "spend": 12046456,
+            "clics": 10033,
+            "ctr": 1.61
+          },
+          {
+            "date": "1899-12-30",
+            "impressions": 0,
+            "reach": 0,
+            "spend": 0,
+            "clics": 0,
+            "ctr": 0
+          }
+        ],
+        "audiencia": [
+          {
+            "seg": "18-24",
+            "impr": 245383,
+            "pct": 39.4,
+            "clics": 3401,
+            "ctr": 1.39,
+            "completion": 91.5
+          },
+          {
+            "seg": "25-34",
+            "impr": 196316,
+            "pct": 31.5,
+            "clics": 2746,
+            "ctr": 1.4,
+            "completion": 91.9
+          },
+          {
+            "seg": "45+",
+            "impr": 98750,
+            "pct": 15.8,
+            "clics": 2551,
+            "ctr": 2.58,
+            "completion": 92.6
+          },
+          {
+            "seg": "35-44",
+            "impr": 83016,
+            "pct": 13.3,
+            "clics": 1332,
+            "ctr": 1.6,
+            "completion": 92.5
+          }
+        ],
+        "generos": [
+          {
+            "seg": "Latin",
+            "impr": 129914,
+            "pct": 20.8,
+            "ctr": 1.58
+          },
+          {
+            "seg": "Reggaeton",
+            "impr": 118512,
+            "pct": 19,
+            "ctr": 1.08
+          },
+          {
+            "seg": "Mexican",
+            "impr": 61593,
+            "pct": 9.9,
+            "ctr": 1.76
+          },
+          {
+            "seg": "Trap",
+            "impr": 45335,
+            "pct": 7.3,
+            "ctr": 1.56
+          },
+          {
+            "seg": "Hip hop",
+            "impr": 32695,
+            "pct": 5.2,
+            "ctr": 1.63
+          },
+          {
+            "seg": "Pop",
+            "impr": 31634,
+            "pct": 5.1,
+            "ctr": 2.16
+          },
+          {
+            "seg": "Latin Pop",
+            "impr": 25369,
+            "pct": 4.1,
+            "ctr": 1.59
+          },
+          {
+            "seg": "Theater",
+            "impr": 23265,
+            "pct": 3.7,
+            "ctr": 1.33
+          },
+          {
+            "seg": "Rock",
+            "impr": 21356,
+            "pct": 3.4,
+            "ctr": 1.62
+          },
+          {
+            "seg": "Electronica",
+            "impr": 12714,
+            "pct": 2,
+            "ctr": 1.97
+          }
+        ],
+        "dispositivos": [
+          [
+            "Teléfono",
+            99.5
+          ],
+          [
+            "Computador",
+            0.5
+          ]
+        ],
+        "conclusiones": [
+          "La campaña está superando ampliamente el benchmark de la plataforma para audio (0,25% de CTR), alcanzando un CTR consolidado de 1,61%, es decir, está desempeñándose más de 6 veces por encima del estándar de la industria.",
+          "El mes de agosto está mostrando una eficiencia aún mayor: el CTR está subiendo a 2,78%, más de 11 veces el benchmark, lo que indica que la extensión de la campaña está funcionando muy bien.",
+          "La campaña está alcanzando ya a 434.754 usuarios únicos en Colombia (366.187 en julio y 94.613 adicionales en agosto), acumulando 623.465 impresiones y 631.911 escuchas de audio iniciadas.",
+          "El audio está reteniendo a la audiencia de forma sobresaliente: el 94,58% de las escuchas iniciadas están llegando al 100% de la reproducción, mostrando que el mensaje de Floratil está resonando y manteniendo la atención hasta el final.",
+          "El público de 18 a 34 años está concentrando el 70,9% de las impresiones, confirmando que la campaña está conectando con el segmento más joven, mientras que el grupo de 45+ está mostrando el CTR más alto (2,58%), destacándose como una audiencia altamente receptiva.",
+          "Los hombres están representando el 53,3% de las impresiones y las mujeres el 45,3%, evidenciando que la campaña está llegando de forma balanceada a ambos géneros.",
+          "Los géneros musicales Latin y Reggaeton están liderando la distribución (22,3% y 20,3% de las impresiones respectivamente), mostrando que la selección de contexto musical está alineándose muy bien con los gustos del público colombiano.",
+          "El tono 'Bittersweet' y 'Love' están dominando el consumo de contenido (20,8% y 17,1%), sugiriendo que los momentos emocionales están siendo el contexto más efectivo para conectar con la marca.",
+          "La actividad 'Dancing' está generando el mayor volumen de impresiones (23,8%), seguida de 'Party' y 'Sport', reflejando que la campaña está acompañando momentos de alta energía y vida social.",
+          "El dispositivo móvil (Phone) está concentrando el 99,5% de las impresiones, confirmando que la estrategia mobile-first de Spotify está siendo el canal principal para llegar a la audiencia.",
+          "El desempeño diario está manteniéndose estable y consistente a lo largo de todo el periodo, sin caídas relevantes, lo que está demostrando una entrega saludable del presupuesto y un ritmo de pauta sostenido."
+        ]
+      }
+    }
+  }
+}

@@ -66,6 +66,7 @@ img{max-width:100%;display:block}
 .rtab tr.tot td{font-weight:800;background:var(--navy);color:#fff;border-bottom:none}
 .rtab tr.tot:hover td{background:var(--navy)}
 .plat-tag.yt{background:#C4302B}
+.plat-tag.sp{background:#1DB954}
 .yt-graf{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
 @media(max-width:760px){.yt-graf{grid-template-columns:1fr}}
 .yt-card{background:#fff;border:1px solid #e2e7ef;border-radius:14px;padding:18px 20px;box-shadow:0 1px 3px rgba(20,26,51,.06)}
@@ -136,7 +137,7 @@ footer .s{font-size:11px;opacity:.7;margin-top:10px}
   <div class="g">GRACIAS</div>
   <div class="s">Informe de Pauta · Axon Pharma Colombia · <span id="footMes"></span></div>
 </footer>
-<div class="note-src">Fuentes: Meta Ads (Windsor) · Google Ads Search (BigQuery) · TikTok Ads (Windsor) · YouTube Ads (reporte mensual de branding, carga manual). Moneda COP · TikTok convertido de USD a COP (TC 3.800). Estructura y creativos según plantilla del cliente.</div>
+<div class="note-src">Fuentes: Meta Ads (Windsor) · Google Ads Search (BigQuery) · TikTok Ads (Windsor) · YouTube Ads (branding, carga manual) · Spotify Ads (audio, carga manual, USD→COP TC 3.800). Moneda COP · TikTok convertido de USD a COP (TC 3.800). Estructura y creativos según plantilla del cliente.</div>
 
 <script>
 const NF=new Intl.NumberFormat('es-CO');
@@ -171,15 +172,15 @@ function realReach(rws,ym){
 const BRANDS=[
   {key:'MARIMER', name:'Marimer', banner:'assets/image35.png',
    intro:'Es la marca que se posiciona como prevención familiar, centrada en la salud cotidiana apoyada de ingredientes naturales. Con un clima atípico al que el colombiano viene acostumbrado, la marca se posicionó en búsquedas para el cuidado nasal, permitiendo un mayor reconocimiento de marca.',
-   platforms:['Awareness','Traffic','TikTok','Search','YouTube'],
+   platforms:['Awareness','Traffic','TikTok','Search','YouTube','Spotify'],
    creatives:{Awareness:['image44','image45','image46'],Traffic:['image48','image49','image50'],TikTok:['image53','image54','image55'],Search:['image61','image62','image63']}},
   {key:'FLORATIL', name:'Floratil', banner:'assets/image64.png',
    intro:'Su enfoque parte de la recuperación y la confianza, educando a los usuarios sobre el cuidado de la flora intestinal en tratamientos por antibióticos y situaciones de viaje. Sus creativos con criterio médico la posicionan como una marca relevante dentro del ecosistema digital.',
-   platforms:['Awareness','Traffic','Search','YouTube'],
+   platforms:['Awareness','Traffic','Search','YouTube','Spotify'],
    creatives:{Awareness:['image66','image67','image68'],Traffic:['image69','image70','image71'],Search:['image72','image73']}},
   {key:'A-CERUMEN', name:'A-Cerumen', banner:'assets/image74.png',
    intro:'Un producto con un objetivo específico: el cuidado del oído, con un discurso que pasa de la molestia a la prevención dentro de la vida cotidiana. Es una marca que rompe con el hábito de usar copitos hacia un método más seguro.',
-   platforms:['Awareness','Traffic','TikTok','Search','YouTube'],
+   platforms:['Awareness','Traffic','TikTok','Search','YouTube','Spotify'],
    creatives:{Awareness:['image76','image77','image78'],Traffic:['image79','image80','image81'],TikTok:['image82','image83','image84'],Search:['image85','image86']}},
 ];
 
@@ -189,9 +190,10 @@ const PLAT_META={
   TikTok:{tag:'TikTok',cls:'tt',title:'Traffic (TikTok)'},
   Search:{tag:'Search',cls:'se',title:'Search (Google Ads)'},
   YouTube:{tag:'YouTube',cls:'yt',title:'Branding (YouTube Ads)'},
+  Spotify:{tag:'Spotify',cls:'sp',title:'Audio (Spotify Ads)'},
 };
 
-let ALL=[], CRE={}, ADS={}, REACH={}, YT={};
+let ALL=[], CRE={}, ADS={}, REACH={}, YT={}, SPOT={};
 Promise.all([
   fetch('data/meta.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
   fetch('data/google_ads.json?_='+Date.now()).then(r=>r.json()).catch(()=>({rows:[]})),
@@ -200,14 +202,15 @@ Promise.all([
   fetch('data/adsets.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
   fetch('data/reach.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
   fetch('data/youtube.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
-]).then(([m,g,t,c,ad,rc,yt])=>{
+  fetch('data/spotify.json?_='+Date.now()).then(r=>r.json()).catch(()=>({months:{}})),
+]).then(([m,g,t,c,ad,rc,yt,sp])=>{
   ALL=[
     ...(m.rows||[]).map(r=>({...r,source:'Meta'})),
     ...(g.rows||[]).map(r=>({...r,source:'Google Ads'})),
     ...(t.rows||[]).map(r=>({...r,source:'TikTok'})),
   ];
-  CRE=c.months||{}; ADS=ad.months||{}; REACH=rc.months||{}; YT=yt.months||{};
-  const months=[...new Set(ALL.map(r=>r.date.slice(0,7)))].filter(m=>m.startsWith('2026')).sort();
+  CRE=c.months||{}; ADS=ad.months||{}; REACH=rc.months||{}; YT=yt.months||{}; SPOT=sp.months||{};
+  const months=[...new Set([...ALL.map(r=>r.date.slice(0,7)), ...Object.keys(YT), ...Object.keys(SPOT)])].filter(m=>m.startsWith('2026')).sort();
   const sel=byId('mesSel');
   sel.innerHTML=months.map(m=>`<option value="${m}">${mesName(m)}</option>`).join('');
   const def=months.includes('2026-03')?'2026-03':months[months.length-1];
@@ -236,6 +239,7 @@ function render(ym){
     html+=`<div class="wrap">`;
     b.platforms.forEach(P=>{
       if(P==='YouTube'){ const y=YT[ym]&&YT[ym][b.key]; if(y) html+=youtubeBlock(y,b,ym); return; }
+      if(P==='Spotify'){ const s=SPOT[ym]&&SPOT[ym][b.key]; if(s){ html+=spotifyBlock(s,b,ym); pending.push({type:'spotify',s,key:b.key.replace(/[^A-Za-z]/g,'')}); } return; }
       const cfg=PLAT_META[P];
       const rws=rowsM.filter(r=>productOf(r.campaign)===b.key && platOf(r)===P);
       html+=`<div class="plat"><div class="plat-head"><span class="plat-tag ${cfg.cls}">${cfg.tag}</span><h3>${b.name} · ${cfg.title}</h3><span class="mo-lbl">${mesName(ym)}</span></div>`;
@@ -313,6 +317,21 @@ function drawCharts(pending, rowsM, ym){
         options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
           plugins:{legend:{position:'bottom',labels:{usePointStyle:true,pointStyle:'circle',padding:10,font:{size:11}}},
             tooltip:{callbacks:{label:c=>c.label+': $'+fmt(c.parsed)+' COP'}}}}}));
+    } else if(p.type==='spotify'){
+      const s=p.s, k=p.key;
+      const dEl=byId('sp_daily_'+k), dd=s.daily||[];
+      if(dEl) CHARTS.push(new Chart(dEl,{data:{labels:dd.map(x=>x.date.slice(8)),datasets:[
+        {type:'bar',label:'Impresiones',data:dd.map(x=>x.impressions),backgroundColor:'#1DB954',borderRadius:3,yAxisID:'y'},
+        {type:'line',label:'Clics',data:dd.map(x=>x.clics),borderColor:'#16266B',backgroundColor:'#16266B22',tension:.35,borderWidth:2,pointRadius:0,yAxisID:'y1'}
+      ]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+        plugins:{legend:{position:'bottom',labels:{usePointStyle:true,pointStyle:'circle',padding:10,font:{size:11}}}},
+        scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{beginAtZero:true,grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}},y1:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},ticks:{callback:kfmt,font:{size:10}}}}}}));
+      const aEl=byId('sp_age_'+k), a=s.audiencia||[];
+      if(aEl) CHARTS.push(new Chart(aEl,{type:'bar',data:{labels:a.map(x=>x.seg),datasets:[{label:'Impresiones',data:a.map(x=>x.impr),backgroundColor:'#1DB954',borderRadius:3}]},
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.parsed.x)+' impresiones'}}},scales:{x:{grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}},y:{grid:{display:false}}}}}));
+      const gEl=byId('sp_gen_'+k), g=s.generos||[];
+      if(gEl) CHARTS.push(new Chart(gEl,{type:'bar',data:{labels:g.map(x=>x.seg),datasets:[{label:'% impresiones',data:g.map(x=>x.pct),backgroundColor:'#16266B',borderRadius:3}]},
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.x+'%'}}},scales:{x:{grid:{color:'#EBF0F7'},ticks:{callback:v=>v+'%',font:{size:10}}},y:{grid:{display:false},ticks:{font:{size:10}}}}}}));
     }
   });
 }
@@ -406,16 +425,42 @@ function youtubeBlock(y,b,ym){
   return h;
 }
 
+function spotifyBlock(s,b,ym){
+  const k=b.key.replace(/[^A-Za-z]/g,'');
+  let h=`<div class="plat"><div class="plat-head"><span class="plat-tag sp">Spotify</span><h3>${b.name} · Audio (Spotify Ads)</h3><span class="mo-lbl">${s.periodo}</span></div>`;
+  const items=metric(fmt(s.impressions),'Impresiones','big hl')+metric(fmt(s.reach),'Alcance','big')+
+    metric(dec(s.frequency,2),'Frecuencia')+metric(fmt(s.clics),'Clics')+metric(dec(s.ctr,2)+'%','CTR')+
+    metric(dec(s.completion,2)+'%','Completion rate')+metric(fmt(s.audioStarts),'Audio starts')+metric(cop(s.spend)+' COP','Inversión');
+  h+=`<div class="res"><div class="res-t">Resultados de plataforma · ${s.periodo}</div><div class="res-grid">${items}</div></div>`;
+  if(s.monthly&&s.monthly.length){
+    h+=`<div class="rtab-t">Desempeño por mes</div><div class="rtab-wrap"><table class="rtab"><thead><tr><th>Mes</th><th class="n">Impresiones</th><th class="n">Alcance</th><th class="n">Clics</th><th class="n">Inversión</th></tr></thead><tbody>`+
+      s.monthly.map(m=>`<tr><td class="name">${m.mes}</td><td class="n">${fmt(m.impressions)}</td><td class="n">${fmt(m.reach)}</td><td class="n">${fmt(m.clics)}</td><td class="n">${cop(m.spend)} COP</td></tr>`).join('')+`</tbody></table></div>`;
+  }
+  h+=`<div class="yt-graf">
+    <div class="yt-card"><h5>Desempeño diario · impresiones y clics</h5><div class="ch-wrap"><canvas id="sp_daily_${k}"></canvas></div></div>
+    <div class="yt-card"><h5>Audiencia por edad · impresiones</h5><div class="ch-wrap"><canvas id="sp_age_${k}"></canvas></div></div>
+  </div>
+  <div class="yt-graf">
+    <div class="yt-card"><h5>Top géneros musicales · % impresiones</h5><div class="ch-wrap"><canvas id="sp_gen_${k}"></canvas></div></div>
+    <div class="yt-card"><h5>Impresiones por dispositivo</h5>${(s.dispositivos||[]).map(d=>`<div class="yt-dev"><span class="yd-n">${d[0]}</span><div class="yd-bar"><div class="yd-fill" style="width:${Math.min(100,d[1])}%;background:linear-gradient(90deg,#1DB954,#57e08a)"></div></div><span class="yd-p">${d[1]}%</span></div>`).join('')}</div>
+  </div>`;
+  h+=`<div class="analisis">La campaña de <b>Audio en Spotify</b> de <b>${b.name}</b> (${s.periodo}) alcanzó <b>${fmt(s.reach)}</b> usuarios únicos con ${fmt(s.impressions)} impresiones y ${fmt(s.clics)} clics (CTR ${dec(s.ctr,2)}%), con un completion rate de ${dec(s.completion,2)}% sobre ${fmt(s.audioStarts)} audio starts. Inversión de ${cop(s.spend)} COP.<div class="lrn-t">Conclusiones</div><ul>${(s.conclusiones||[]).map(c=>`<li>${c}</li>`).join('')}</ul></div>`;
+  h+=`</div>`;
+  return h;
+}
+
 function brandSummary(b,ym,rowsM){
   const rws=rowsM.filter(r=>productOf(r.campaign)===b.key);
   const y=YT[ym]&&YT[ym][b.key];
-  if(!rws.length && !y) return `Sin pauta registrada para ${b.name} en ${mesName(ym)}.`;
+  const sp=SPOT[ym]&&SPOT[ym][b.key];
+  if(!rws.length && !y && !sp) return `Sin pauta registrada para ${b.name} en ${mesName(ym)}.`;
   const t=agg(rws);
-  const byP={}; b.platforms.forEach(P=>{if(P==='YouTube')return; const rr=rws.filter(r=>platOf(r)===P); if(rr.length)byP[P]=agg(rr);});
+  const byP={}; b.platforms.forEach(P=>{if(P==='YouTube'||P==='Spotify')return; const rr=rws.filter(r=>platOf(r)===P); if(rr.length)byP[P]=agg(rr);});
   const nm=P=>PLAT_META[P].title.replace(/ \(.*\)/,'');
   const parts=Object.entries(byP).map(([P,a])=>`${nm(P)} ${cop(a.spend)} COP`);
   if(y) parts.push(`Branding YouTube ${cop(y.spend)} COP`);
-  const total=t.spend+(y?y.spend:0);
+  if(sp) parts.push(`Audio Spotify ${cop(sp.spend)} COP`);
+  const total=t.spend+(y?y.spend:0)+(sp?sp.spend:0);
   const S=[`<b>${b.name}</b> cerró ${mesName(ym)} con una inversión total de <b>${cop(total)} COP</b> en pauta, distribuida en ${parts.join(' · ')}.`];
   if(y) S.push(`En YouTube (branding) entregó ${fmt(y.impressions)} impresiones (${dec(y.entrega,2)}% de lo contratado) con CTR ${dec(y.ctr,2)}%.`);
   const aw=byP.Awareness;
