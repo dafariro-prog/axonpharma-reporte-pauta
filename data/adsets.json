@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-08-14T18:44:03.571Z",
+  "updated": "2026-08-15T16:20:44.929Z",
   "months": {
     "2026-01": {
       "FLORATIL": {
@@ -5231,7 +5231,7 @@
             "hasReach": false
           },
           {
-            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
+            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5240,7 +5240,7 @@
             "hasReach": false
           },
           {
-            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
+            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -5326,10 +5326,10 @@
           },
           {
             "name": "MARIMER BABY ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 123978,
-            "link_clicks": 1748,
-            "reach": 73356,
-            "clicks": 2289,
+            "impressions": 125100,
+            "link_clicks": 1762,
+            "reach": 74017,
+            "clicks": 2309,
             "ctr": 1.85,
             "hasReach": true
           },
@@ -5371,11 +5371,20 @@
           },
           {
             "name": "MARIMER ADULTOS ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 77307,
-            "link_clicks": 1025,
-            "reach": 39112,
-            "clicks": 1428,
-            "ctr": 1.85,
+            "impressions": 77947,
+            "link_clicks": 1038,
+            "reach": 39312,
+            "clicks": 1446,
+            "ctr": 1.86,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY NACIONAL Farmatodo Views 04-31Ago",
+            "impressions": 76320,
+            "link_clicks": 1028,
+            "reach": 39532,
+            "clicks": 1334,
+            "ctr": 1.75,
             "hasReach": true
           },
           {
@@ -5388,21 +5397,12 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER BABY NACIONAL Farmatodo Views 04-31Ago",
-            "impressions": 74506,
-            "link_clicks": 1004,
-            "reach": 39085,
-            "clicks": 1304,
-            "ctr": 1.75,
-            "hasReach": true
-          },
-          {
             "name": "MARIMER BABY ANTIOQUIA Unidrogas Views 04-31Ago",
-            "impressions": 72005,
-            "link_clicks": 966,
-            "reach": 48210,
-            "clicks": 1237,
-            "ctr": 1.72,
+            "impressions": 74053,
+            "link_clicks": 990,
+            "reach": 49622,
+            "clicks": 1266,
+            "ctr": 1.71,
             "hasReach": true
           },
           {
@@ -5689,11 +5689,11 @@
         "TikTok": [
           {
             "name": "ACerumen Traffic",
-            "impressions": 617980,
-            "link_clicks": 67722,
+            "impressions": 648748,
+            "link_clicks": 71444,
             "reach": 0,
-            "clicks": 67722,
-            "ctr": 10.96,
+            "clicks": 71444,
+            "ctr": 11.01,
             "hasReach": false
           },
           {
