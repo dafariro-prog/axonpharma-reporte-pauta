@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-08-15T18:19:23.802Z",
+  "updated": "2026-08-16T16:21:36.116Z",
   "months": {
     "2026-01": {
       "FLORATIL": {
@@ -5326,10 +5326,10 @@
           },
           {
             "name": "MARIMER BABY ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 125100,
-            "link_clicks": 1762,
-            "reach": 74017,
-            "clicks": 2309,
+            "impressions": 126055,
+            "link_clicks": 1780,
+            "reach": 74588,
+            "clicks": 2331,
             "ctr": 1.85,
             "hasReach": true
           },
@@ -5371,20 +5371,29 @@
           },
           {
             "name": "MARIMER ADULTOS ATLANTICO Unidrogas Views 04-31Ago",
-            "impressions": 77947,
-            "link_clicks": 1038,
-            "reach": 39312,
-            "clicks": 1446,
-            "ctr": 1.86,
+            "impressions": 78527,
+            "link_clicks": 1044,
+            "reach": 39564,
+            "clicks": 1454,
+            "ctr": 1.85,
             "hasReach": true
           },
           {
             "name": "MARIMER BABY NACIONAL Farmatodo Views 04-31Ago",
-            "impressions": 76320,
-            "link_clicks": 1028,
-            "reach": 39532,
-            "clicks": 1334,
-            "ctr": 1.75,
+            "impressions": 78268,
+            "link_clicks": 1061,
+            "reach": 39974,
+            "clicks": 1376,
+            "ctr": 1.76,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY ANTIOQUIA Unidrogas Views 04-31Ago",
+            "impressions": 76252,
+            "link_clicks": 1009,
+            "reach": 51069,
+            "clicks": 1290,
+            "ctr": 1.69,
             "hasReach": true
           },
           {
@@ -5397,15 +5406,6 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER BABY ANTIOQUIA Unidrogas Views 04-31Ago",
-            "impressions": 74053,
-            "link_clicks": 990,
-            "reach": 49622,
-            "clicks": 1266,
-            "ctr": 1.71,
-            "hasReach": true
-          },
-          {
             "name": "MARIMER ADULTO NACIONAL LaRebaja",
             "impressions": 71979,
             "link_clicks": 201,
@@ -5415,12 +5415,12 @@
             "hasReach": true
           },
           {
-            "name": "MARIMER ADULTO ANTIOQUIA Unidrogas",
-            "impressions": 67329,
-            "link_clicks": 105,
-            "reach": 54439,
-            "clicks": 211,
-            "ctr": 0.31,
+            "name": "MARIMER ADULTOS NACIONAL La Rebaja Views 04-31Ago",
+            "impressions": 68826,
+            "link_clicks": 845,
+            "reach": 59230,
+            "clicks": 1028,
+            "ctr": 1.49,
             "hasReach": true
           }
         ],
@@ -5689,11 +5689,11 @@
         "TikTok": [
           {
             "name": "ACerumen Traffic",
-            "impressions": 648748,
-            "link_clicks": 71444,
+            "impressions": 668856,
+            "link_clicks": 75102,
             "reach": 0,
-            "clicks": 71444,
-            "ctr": 11.01,
+            "clicks": 75102,
+            "ctr": 11.23,
             "hasReach": false
           },
           {

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T18:19:19.623Z",
+  "updated": "2026-08-16T16:17:29.812Z",
   "account": {
     "id": "1211531357024604",
     "name": "Axon Pharma Colombia",
@@ -14389,15 +14389,29 @@
       "campaign": "Ago26_CO_AxonPharma_MARIMER_FB/IG_Views",
       "objective": "OUTCOME_AWARENESS",
       "date": "2026-08-15",
-      "spend": 3799,
-      "impressions": 1236,
-      "reach": 1193,
-      "frequency": 1.036,
-      "clicks": 21,
-      "link_clicks": 17,
-      "cpc": 180.9048,
-      "cpm": 3073.6246,
-      "ctr": 0.017
+      "spend": 25956,
+      "impressions": 8818,
+      "reach": 8693,
+      "frequency": 1.0144,
+      "clicks": 120,
+      "link_clicks": 98,
+      "cpc": 216.3,
+      "cpm": 2943.5246,
+      "ctr": 0.0136
+    },
+    {
+      "campaign": "Ago26_CO_AxonPharma_MARIMER_FB/IG_Views",
+      "objective": "OUTCOME_AWARENESS",
+      "date": "2026-08-16",
+      "spend": 5622,
+      "impressions": 1694,
+      "reach": 1541,
+      "frequency": 1.0993,
+      "clicks": 31,
+      "link_clicks": 28,
+      "cpc": 181.3548,
+      "cpm": 3318.7721,
+      "ctr": 0.0183
     }
   ]
 }
