@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16T18:18:53.729Z",
+  "updated": "2026-08-17T16:19:56.978Z",
   "account": {
     "id": "7512240273293279239",
     "name": "CO_AxonPharma_GarnierCOLOMBIA",
@@ -5550,27 +5550,42 @@
       "impressions": 19886,
       "reach": 11184,
       "frequency": 1.7781,
-      "clicks": 3699,
-      "link_clicks": 3699,
+      "clicks": 3697,
+      "link_clicks": 3697,
       "views": 0,
       "cpc": 16.04,
       "cpm": 2982.9,
-      "ctr": 18.601
+      "ctr": 18.591
     },
     {
       "campaign": "Ago26_AXONPHARMA_A-Cerumen_Traffic",
       "objective": "LINK_CLICKS",
       "date": "2026-08-16",
-      "spend": 14364,
-      "impressions": 4735,
-      "reach": 809,
-      "frequency": 5.8529,
-      "clicks": 807,
-      "link_clicks": 807,
+      "spend": 58140,
+      "impressions": 29206,
+      "reach": 11695,
+      "frequency": 2.4973,
+      "clicks": 3855,
+      "link_clicks": 3855,
       "views": 0,
-      "cpc": 17.8,
-      "cpm": 3033.58,
-      "ctr": 17.0433
+      "cpc": 15.08,
+      "cpm": 1990.69,
+      "ctr": 13.1993
+    },
+    {
+      "campaign": "Ago26_AXONPHARMA_A-Cerumen_Traffic",
+      "objective": "LINK_CLICKS",
+      "date": "2026-08-17",
+      "spend": 16340,
+      "impressions": 4327,
+      "reach": 834,
+      "frequency": 5.1882,
+      "clicks": 1048,
+      "link_clicks": 1048,
+      "views": 0,
+      "cpc": 15.59,
+      "cpm": 3776.29,
+      "ctr": 24.22
     }
   ]
 }
