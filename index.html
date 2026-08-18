@@ -148,7 +148,7 @@ const MES=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto',
 const mesName=ym=>MES[+ym.slice(5,7)]+' '+ym.slice(0,4);
 
 const PRODUCTS=['A-CERUMEN','MARIMER&FLORATIL','MARIMER','FLORATIL'];
-const productOf=c=>{const u=(c||'').toUpperCase();for(const p of PRODUCTS)if(u.includes(p))return p==='MARIMER&FLORATIL'?'MARIMER & FLORATIL':p;return 'Otros';};
+const productOf=c=>{const u=(c||'').toUpperCase().replace(/ACERUMEN/g,'A-CERUMEN');for(const p of PRODUCTS)if(u.includes(p))return p==='MARIMER&FLORATIL'?'MARIMER & FLORATIL':p;return 'Otros';};
 const isTraffic=r=>r.objective==='LINK_CLICKS'||/traffic/i.test(r.campaign);
 const objClass=r=> r.objective==='VIDEO_VIEWS'?'Reproducciones':(isTraffic(r)?'Traffic':'Awareness');
 function platOf(r){ if(r.source==='TikTok')return 'TikTok'; if(r.source==='Google Ads')return 'Search'; return objClass(r); }
