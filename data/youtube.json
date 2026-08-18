@@ -56,6 +56,44 @@
           "Mayor impacto en el grupo 25–34 años; el pico es mujeres 25–34, afín a la línea Baby (decisoras de compra)."
         ]
       }
+    },
+    "2026-07": {
+      "FLORATIL": {
+        "periodo": "01 – 31 Jul",
+        "contratadas": 1035000,
+        "spend": 17760600,
+        "impressions": 1037230,
+        "interacciones": 28040,
+        "ctr": 2.70,
+        "imprVisibles": 975620,
+        "entrega": 100.21,
+        "devices": [["Teléfonos celulares", 77], ["Computadoras", 18], ["Tablets", 5]],
+        "imgs": { "generoEdad": "assets/youtube/floratil_genero_edad_jul.png" },
+        "insights": [
+          "Dominio de formatos cortos (Bumpers 6s): los tres anuncios Bumper acumularon más del 98% de las impresiones entregadas; el mensaje rápido y directo funciona mejor para la retención en productos de cuidado estomacal/familiar.",
+          "Efectividad de la segmentación femenina: enfocar el presupuesto exclusivamente en mujeres maximizó la eficiencia y entregó un CTR competitivo del 2,70%, validando a las mujeres de 25–44 años como buyer persona decisor de la categoría.",
+          "Mensaje clave ganador: el ángulo de practicidad y prevención de complicaciones digestivas (Anuncio #3 Bumper) superó a las piezas orientadas a viajes o imprevistos.",
+          "Dispositivo: teléfonos celulares 77%, computadoras 18% y tablets 5% (se omitió TV por su menor CTR)."
+        ]
+      },
+      "MARIMER": {
+        "periodo": "01 – 30 Jul",
+        "contratadas": 506489,
+        "spend": 8691344,
+        "impressions": 580458,
+        "interacciones": 14580,
+        "ctr": 2.51,
+        "imprVisibles": 341673,
+        "entrega": 114.6,
+        "devices": [["Teléfonos celulares", 69], ["Computadoras", 20], ["Tablets", 11]],
+        "imgs": { "generoEdad": "assets/youtube/marimer_genero_edad_jul.png" },
+        "insights": [
+          "Eficiencia y sobrecumplimiento: la pauta entregó más de 73.000 impresiones adicionales sobre lo contratado (+14,6%), asegurando sobreexposición positiva de marca dentro del presupuesto.",
+          "Efectividad de formatos cortos (Bumpers 6s): los formatos Bumper capturaron más del 64% de las impresiones combinadas, con la mayor retención de marca y menor abandono en video.",
+          "Optimización de pantallas (Mobile First): la exclusión de dispositivos TV mantuvo un CTR favorable del 2,51%, ya que el tráfico móvil facilita la interacción directa e individual del usuario.",
+          "Dispositivo: teléfonos celulares 69%, computadoras 20% y tablets 11%."
+        ]
+      }
     }
   }
 }
