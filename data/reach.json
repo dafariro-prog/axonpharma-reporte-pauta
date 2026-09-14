@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-09-14T19:42:20.591Z",
+  "updated": "2026-09-14T20:32:37.108Z",
   "months": {
     "2026-01": {
       "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
@@ -1006,6 +1006,30 @@
       "Sep26_AXONPHARMA_Floratil_Traffic": {
         "reach": 0,
         "freq": 0
+      },
+      "May25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
+        "reach": 1460708,
+        "freq": 1.4146
+      },
+      "May25_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 367032,
+        "freq": 1.946
+      },
+      "May25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 1359719,
+        "freq": 1.4585
+      },
+      "May25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 174795,
+        "freq": 1.4643
+      },
+      "May25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 517495,
+        "freq": 1.392
+      },
+      "May25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 200988,
+        "freq": 1.6618
       }
     },
     "2026-06": {
@@ -1200,6 +1224,30 @@
       "Sep26_AXONPHARMA_Floratil_Traffic": {
         "reach": 0,
         "freq": 0
+      },
+      "Jun25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 1420338,
+        "freq": 1.6267
+      },
+      "Jun25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 786029,
+        "freq": 2.2926
+      },
+      "Jun25_CO_AxonPharma_Marimer_FB/IG_Awareness": {
+        "reach": 1875867,
+        "freq": 2.4
+      },
+      "Jun25_CO_AxonPharma_Marimer_FB/IG_Traffic": {
+        "reach": 456610,
+        "freq": 2.032
+      },
+      "Jun25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 1519387,
+        "freq": 2.4471
+      },
+      "Jun25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 374721,
+        "freq": 2.0431
       }
     },
     "2026-07": {
@@ -1398,6 +1446,30 @@
       "Sep26_AXONPHARMA_Floratil_Traffic": {
         "reach": 355288,
         "freq": 2.9541
+      },
+      "Jul25_CO_AxonPharma_Marimer_FB/IG_Awareness": {
+        "reach": 1107494,
+        "freq": 4.1257
+      },
+      "Jul25_CO_AxonPharma_Marimer_FB/IG_Traffic": {
+        "reach": 1010335,
+        "freq": 2.296
+      },
+      "Jul25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 590186,
+        "freq": 2.1385
+      },
+      "Jul25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 1055923,
+        "freq": 4.005
+      },
+      "Jul25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 836137,
+        "freq": 2.4465
+      },
+      "Jul25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 899705,
+        "freq": 3.2204
       }
     },
     "2026-08": {
@@ -1600,36 +1672,60 @@
       "Sep26_AXONPHARMA_Floratil_Traffic": {
         "reach": 1451786,
         "freq": 3.7345
+      },
+      "Ago25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
+        "reach": 1767821,
+        "freq": 3.901
+      },
+      "Ago25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 1274594,
+        "freq": 3.0929
+      },
+      "Ago25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 1740058,
+        "freq": 3.6563
+      },
+      "Ago25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 1076050,
+        "freq": 1.7927
+      },
+      "Ago25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 597712,
+        "freq": 2.5549
+      },
+      "Ago25_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 1224366,
+        "freq": 2.5035
       }
     },
     "2026-09": {
       "SEP26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 317346,
-        "freq": 2.0909
+        "reach": 320467,
+        "freq": 2.0932
       },
       "Sep26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 109354,
-        "freq": 2.2655
+        "reach": 109889,
+        "freq": 2.2728
       },
       "Sep26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 410779,
-        "freq": 2.0959
+        "reach": 415219,
+        "freq": 2.1087
       },
       "Sep26_CO_AxonPharma_FLORATIL_FB/IG_Awareness - Floratil_OK": {
-        "reach": 1434223,
-        "freq": 1.9084
+        "reach": 1448523,
+        "freq": 1.9061
       },
       "Sep26_AXONPHARMA_A-Cerumen_Traffic": {
-        "reach": 145052,
-        "freq": 4.438
+        "reach": 146936,
+        "freq": 4.495
       },
       "Sep26_AXONPHARMA_Marimer_Traffic": {
-        "reach": 222440,
-        "freq": 5.2008
+        "reach": 225420,
+        "freq": 5.3548
       },
       "Sep26_AXONPHARMA_Floratil_Traffic": {
-        "reach": 238956,
-        "freq": 6.4206
+        "reach": 241251,
+        "freq": 6.4626
       },
       "Jun26_AXONPHARMA_A-Cerumen_Traffic": {
         "reach": 0,
@@ -1702,6 +1798,596 @@
       "Dic25_AXONPHARMA_Floratil_Traffic": {
         "reach": 0,
         "freq": 0
+      },
+      "Nov25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Nov25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Nov25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Oct25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Oct25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Oct25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sept25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sept25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Floratil_Views": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun25_AXONPHARMA_Marimer_Awareness": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun25_AxonPharma_Floratil_Awarenes": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 796669,
+        "freq": 1.636
+      },
+      "Sep25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 809087,
+        "freq": 2.49
+      },
+      "Sep25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 2738516,
+        "freq": 2.8148
+      },
+      "Sep25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
+        "reach": 2427963,
+        "freq": 2.9203
+      },
+      "Sep25_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 742293,
+        "freq": 2.2806
+      },
+      "Sep_25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 1685567,
+        "freq": 2.6387
+      },
+      "Sep25_CO_AxonPharma_MARIMER_EL TIEMPO_FB/IG_Awareness": {
+        "reach": 1419765,
+        "freq": 2.5206
+      }
+    },
+    "2026-10": {
+      "Oct25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 2944853,
+        "freq": 2.6474
+      },
+      "Oct25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 1011,
+        "freq": 1.0247
+      },
+      "Oct25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
+        "reach": 2278718,
+        "freq": 2.8774
+      },
+      "Oct25_CO_AxonPharma_MARIMER&FLORATIL_EL TIEMPO_FB/IG_Awareness": {
+        "reach": 1816061,
+        "freq": 4.0238
+      },
+      "Oct25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 1890537,
+        "freq": 2.4427
+      },
+      "Oct25_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 1806296,
+        "freq": 2.7658
+      },
+      "Oct25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 1228683,
+        "freq": 2.0546
+      },
+      "Sep26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Mar26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Mar26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Marimer_Traffic_Optimization": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Nov25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Nov25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Nov25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Oct25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 1196629,
+        "freq": 2.4404
+      },
+      "Oct25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 483693,
+        "freq": 4.2316
+      },
+      "Oct25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 1136676,
+        "freq": 2.0477
+      },
+      "Sep25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sept25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sept25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Floratil_Views": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun25_AXONPHARMA_Marimer_Awareness": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun25_AxonPharma_Floratil_Awarenes": {
+        "reach": 0,
+        "freq": 0
+      }
+    },
+    "2026-11": {
+      "Nov25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
+        "reach": 2047070,
+        "freq": 2.6472
+      },
+      "Nov25_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 988984,
+        "freq": 2.0435
+      },
+      "Nov25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 1562311,
+        "freq": 2.4505
+      },
+      "Nov25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 1203525,
+        "freq": 1.9099
+      },
+      "Nov25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 2445441,
+        "freq": 2.8072
+      },
+      "Nov25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 1976664,
+        "freq": 2.1596
+      },
+      "Nov25_CO_AxonPharma_MARIMER&FLORATIL_EL TIEMPO_FB/IG_Awareness": {
+        "reach": 2015353,
+        "freq": 2.9436
+      },
+      "Sep26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Mar26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Mar26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Marimer_Traffic_Optimization": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Nov25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 771237,
+        "freq": 2.9799
+      },
+      "Nov25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 677816,
+        "freq": 3.4446
+      },
+      "Nov25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 503866,
+        "freq": 5.2842
+      },
+      "Oct25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Oct25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Oct25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sept25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sept25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ago25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jul25_AXONPHARMA_Floratil_Views": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun25_AXONPHARMA_Marimer_Awareness": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun25_AxonPharma_Floratil_Awarenes": {
+        "reach": 0,
+        "freq": 0
+      }
+    },
+    "2026-12": {
+      "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
+        "reach": 716089,
+        "freq": 1.555
+      },
+      "Dic25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
+        "reach": 542317,
+        "freq": 1.5412
+      },
+      "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 1929001,
+        "freq": 1.5116
+      },
+      "Dic25_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 1521561,
+        "freq": 1.4065
+      },
+      "Dic25_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
+        "reach": 420920,
+        "freq": 1.2937
+      },
+      "Dic25_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 1018287,
+        "freq": 1.3753
+      },
+      "Dic25_CO_AxonPharma_MARIMER&FLORATIL_EL TIEMPO_FB/IG_Awareness": {
+        "reach": 167207,
+        "freq": 1.3197
+      },
+      "Dic25_CO_AxonPharma_MARIMER&FLORATIL_EL TIEMPO_FB/IG_Awareness_Optimizacion": {
+        "reach": 390965,
+        "freq": 1.5333
+      },
+      "Sep26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Sep26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Jun26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "May26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Mar26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Mar26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Feb26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_Floratil_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Ene26_AXONPHARMA_Marimer_Traffic": {
+        "reach": 0,
+        "freq": 0
+      },
+      "Dic25_AXONPHARMA_Marimer_Traffic_Optimization": {
+        "reach": 444467,
+        "freq": 2.7693
+      },
+      "Dic25_AXONPHARMA_A-Cerumen_Traffic": {
+        "reach": 629413,
+        "freq": 3.4108
+      },
+      "Dic25_AXONPHARMA_Marimer_Traffic": {
+        "reach": 238301,
+        "freq": 3.3448
+      },
+      "Dic25_AXONPHARMA_Floratil_Traffic": {
+        "reach": 632257,
+        "freq": 2.8272
       },
       "Nov25_AXONPHARMA_Floratil_Traffic": {
         "reach": 0,
