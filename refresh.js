@@ -111,7 +111,8 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
   if (!FULL) { const cut = MONTH_FROM.slice(0,7); for (const m in reachMonths) if (m >= cut) delete reachMonths[m]; }
   const addReach = rows => rows.forEach(r => {
     const m = ymOf(r); if (!/^202[56]/.test(m)) return;
-    (reachMonths[m] = reachMonths[m] || {})[String(r.campaign).trim()] = { reach:+r.reach||0, freq:+r.frequency||0 };
+    const reach = +r.reach||0; if (!reach) return;   // Windsor devuelve todas las campañas por mes; ignorar las inactivas (reach 0)
+    (reachMonths[m] = reachMonths[m] || {})[String(r.campaign).trim()] = { reach, freq:+r.frequency||0 };
   });
   addReach((await win('facebook', ['account_id','year','month','campaign','reach','frequency'], {account:FB_ACCT, from:MONTH_FROM})).filter(r=>String(r.account_id)===FB_ACCT));
   if (ttOk) { try {
