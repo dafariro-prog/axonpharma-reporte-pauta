@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-08-26T19:41:16.784Z",
+  "updated": "2026-09-14T19:09:10.470Z",
   "months": {
     "2026-01": {
       "Dic25_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
@@ -1318,36 +1318,36 @@
     },
     "2026-08": {
       "Ago26_CO_AxonPharma_A-CERUMEN_FB/IG_Awareness": {
-        "reach": 1095011,
-        "freq": 1.7201
+        "reach": 1437107,
+        "freq": 1.9507
       },
       "Ago26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 840135,
-        "freq": 1.8027
+        "reach": 917761,
+        "freq": 1.8445
       },
       "Ago26_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
-        "reach": 1463520,
-        "freq": 1.7877
+        "reach": 1732612,
+        "freq": 2.1542
       },
       "Ago26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 491895,
-        "freq": 1.8992
+        "reach": 1146943,
+        "freq": 2.7522
       },
       "Ago26_CO_AxonPharma_FLORATIL_FB/IG_Views": {
-        "reach": 861176,
-        "freq": 1.9543
+        "reach": 959900,
+        "freq": 1.9822
       },
       "Ago26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 900201,
-        "freq": 2.0465
+        "reach": 1736878,
+        "freq": 2.8661
       },
       "Ago26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 3155121,
-        "freq": 2.6397
+        "reach": 3957924,
+        "freq": 3.1941
       },
       "Ago26_CO_AxonPharma_MARIMER_FB/IG_Views": {
-        "reach": 397036,
-        "freq": 1.9189
+        "reach": 411607,
+        "freq": 1.9171
       },
       "Ago26_AXONPHARMA_A-Cerumen_Traffic": {
         "reach": 389290,
@@ -1504,6 +1504,24 @@
       "Jun25_AxonPharma_Floratil_Awarenes": {
         "reach": 0,
         "freq": 0
+      }
+    },
+    "2026-09": {
+      "SEP26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
+        "reach": 317346,
+        "freq": 2.0909
+      },
+      "Sep26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
+        "reach": 109354,
+        "freq": 2.2655
+      },
+      "Sep26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
+        "reach": 410779,
+        "freq": 2.0959
+      },
+      "Sep26_CO_AxonPharma_FLORATIL_FB/IG_Awareness - Floratil_OK": {
+        "reach": 1434223,
+        "freq": 1.9084
       }
     }
   }
