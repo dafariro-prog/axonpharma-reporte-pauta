@@ -21,6 +21,10 @@ const RATE     = 3800;                 // USD -> COP (TikTok)
 const FROM     = '2026-01-01';
 const TO       = new Date().toISOString().slice(0, 10);
 const TOP_ADS  = 6;
+// Ventana rodante para los pulls pesados (image_url tarda ~mucho): primer día del mes, 3 meses atrás.
+// Los meses viejos ya están guardados en creatives.json/adsets.json y no cambian → se fusionan.
+const _n = new Date(); const _w = new Date(Date.UTC(_n.getUTCFullYear(), _n.getUTCMonth()-3, 1));
+const CRE_FROM = _w.toISOString().slice(0,10);
 
 if (!API_KEY) { console.error('ERROR: falta WINDSOR_API_KEY'); process.exit(1); }
 
@@ -97,78 +101,90 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
   fs.writeFileSync(path.join(dataDir,'reach.json'), JSON.stringify({ source:'Meta+TikTok reach mensual único', updated:new Date().toISOString(), months:reachMonths }, null, 2));
 
   // ---------- CREATIVOS (Meta image_url + TikTok video_thumbnail_url) ----------
-  const acc = {};
-  const addCr = (month, brand, plat, ad, img, spend, impr, clk) => {
-    if (!/^http/.test(img||'')) return;
-    const key = month+'|'+brand+'|'+plat+'|'+ad;
-    const a = acc[key] || (acc[key] = { month, brand, plat, ad_name:ad, thumbnail:https(img), spend:0, impressions:0, clicks:0 });
-    a.thumbnail = https(img); a.spend += spend; a.impressions += impr; a.clicks += clk;
-  };
-  const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT});
-  mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
-    const m = normMonth(r.month); if (!m.startsWith('2026')) return;
-    // prioridad: creativo real (image_url) -> imagen real del post IG -> thumbnail genérico (último recurso, evita tarjetas de texto)
-    const img = /^http/.test(r.image_url||'') ? r.image_url
-              : (/^http/.test(r.effective_instagram_media__media_url||'') ? r.effective_instagram_media__media_url : r.thumbnail_url);
-    addCr(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
-  });
-  if (ttOk) { try {
-    tCr = await win('tiktok', ['account_id','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT});
-    tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {
+  // Best-effort: solo la ventana rodante (image_url es lento); se fusiona con los meses viejos ya guardados.
+  // Si falla (p. ej. timeout de Windsor), se conserva creatives.json previo y NO se aborta el refresco.
+  try {
+    const acc = {};
+    const addCr = (month, brand, plat, ad, img, spend, impr, clk) => {
+      if (!/^http/.test(img||'')) return;
+      const key = month+'|'+brand+'|'+plat+'|'+ad;
+      const a = acc[key] || (acc[key] = { month, brand, plat, ad_name:ad, thumbnail:https(img), spend:0, impressions:0, clicks:0 });
+      a.thumbnail = https(img); a.spend += spend; a.impressions += impr; a.clicks += clk;
+    };
+    const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT, from:CRE_FROM});
+    mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
       const m = normMonth(r.month); if (!m.startsWith('2026')) return;
-      addCr(m, productOf(r.campaign), 'TikTok', r.ad_name, r.video_thumbnail_url, (+r.spend||0)*RATE, +r.impressions||0, +r.clicks||0);
+      // prioridad: creativo real (image_url) -> imagen real del post IG -> thumbnail genérico (último recurso, evita tarjetas de texto)
+      const img = /^http/.test(r.image_url||'') ? r.image_url
+                : (/^http/.test(r.effective_instagram_media__media_url||'') ? r.effective_instagram_media__media_url : r.thumbnail_url);
+      addCr(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
     });
-  } catch(e){ ttOk=false; warns.push('TikTok creativos no actualizado: '+String(e.message||e).slice(0,80)); } }
-  const months = {};
-  Object.values(acc).forEach(a => {
-    a.cpm=a.impressions?+(a.spend/a.impressions*1000).toFixed(2):0;
-    a.cpc=a.clicks?+(a.spend/a.clicks).toFixed(2):0;
-    a.ctr=a.impressions?+(a.clicks/a.impressions*100).toFixed(2):0;
-    const M=months[a.month]||(months[a.month]={}), B=M[a.brand]||(M[a.brand]={});
-    (B[a.plat]||(B[a.plat]=[])).push({thumbnail:a.thumbnail,ad_name:a.ad_name,spend:Math.round(a.spend),impressions:a.impressions,clicks:a.clicks,cpm:a.cpm,cpc:a.cpc,ctr:a.ctr});
-  });
-  for(const m in months) for(const b in months[m]) for(const p in months[m][b])
-    months[m][b][p] = months[m][b][p].sort((x,y)=>y.ctr-x.ctr).slice(0, TOP_ADS);
-  if (!ttOk) { // preservar creativos TikTok previos
+    if (ttOk) { try {
+      tCr = await win('tiktok', ['account_id','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT, from:CRE_FROM});
+      tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {
+        const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+        addCr(m, productOf(r.campaign), 'TikTok', r.ad_name, r.video_thumbnail_url, (+r.spend||0)*RATE, +r.impressions||0, +r.clicks||0);
+      });
+    } catch(e){ ttOk=false; warns.push('TikTok creativos no actualizado: '+String(e.message||e).slice(0,80)); } }
+    const fresh = {};
+    Object.values(acc).forEach(a => {
+      a.cpm=a.impressions?+(a.spend/a.impressions*1000).toFixed(2):0;
+      a.cpc=a.clicks?+(a.spend/a.clicks).toFixed(2):0;
+      a.ctr=a.impressions?+(a.clicks/a.impressions*100).toFixed(2):0;
+      const M=fresh[a.month]||(fresh[a.month]={}), B=M[a.brand]||(M[a.brand]={});
+      (B[a.plat]||(B[a.plat]=[])).push({thumbnail:a.thumbnail,ad_name:a.ad_name,spend:Math.round(a.spend),impressions:a.impressions,clicks:a.clicks,cpm:a.cpm,cpc:a.cpc,ctr:a.ctr});
+    });
+    for(const m in fresh) for(const b in fresh[m]) for(const p in fresh[m][b])
+      fresh[m][b][p] = fresh[m][b][p].sort((x,y)=>y.ctr-x.ctr).slice(0, TOP_ADS);
+    // fusión: base = meses previos; se sobreescriben los meses de la ventana con lo fresco
     const prev = (readJson(path.join(dataDir,'creatives.json'))||{}).months || {};
-    for(const m in prev) for(const b in prev[m]) if(prev[m][b].TikTok){
-      (months[m]=months[m]||{}); (months[m][b]=months[m][b]||{}); months[m][b].TikTok = prev[m][b].TikTok;
+    const months = JSON.parse(JSON.stringify(prev));
+    for(const m in fresh) months[m] = fresh[m];
+    if (!ttOk) { // preservar creativos TikTok previos en los meses re-escritos
+      for(const m in prev) for(const b in prev[m]) if(prev[m][b].TikTok){
+        (months[m]=months[m]||{}); (months[m][b]=months[m][b]||{}); months[m][b].TikTok = prev[m][b].TikTok;
+      }
     }
-  }
-  fs.writeFileSync(path.join(dataDir,'creatives.json'), JSON.stringify({ source:'Meta(image_url)+TikTok', updated:new Date().toISOString(), months }, null, 2));
+    fs.writeFileSync(path.join(dataDir,'creatives.json'), JSON.stringify({ source:'Meta(image_url)+TikTok', updated:new Date().toISOString(), months }, null, 2));
+  } catch(e){ warns.push('Creativos no actualizados (se conserva lo previo): '+String(e.message||e).slice(0,100)); }
 
   // ---------- ADSETS / ADS (tabla resumen: Meta adsets + TikTok ads) ----------
-  const adAcc = {};
-  const addAd = (month, brand, plat, name, spend, impr, reach, lc, clk, hasReach) => {
-    const key = month+'|'+brand+'|'+plat+'|'+name;
-    const a = adAcc[key] || (adAcc[key] = { month, brand, plat, name, spend:0, impressions:0, reach:0, link_clicks:0, clicks:0, hasReach });
-    a.spend+=spend; a.impressions+=impr; a.reach+=reach; a.link_clicks+=lc; a.clicks+=clk;
-  };
-  const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT});
-  adAll.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
-    const m = normMonth(r.month); if (!m.startsWith('2026')) return;
-    addAd(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
-  });
-  tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {   // TikTok ads (sin reach)
-    const m = normMonth(r.month); if (!m.startsWith('2026')) return;
-    addAd(m, productOf(r.campaign), 'TikTok', cleanTT(r.ad_name||'—'), (+r.spend||0)*RATE, +r.impressions||0, 0, +r.clicks||0, +r.clicks||0, false);
-  });
-  const adMonths = {};
-  Object.values(adAcc).forEach(a => {
-    a.ctr = a.impressions?+(a.clicks/a.impressions*100).toFixed(2):0;
-    const M=adMonths[a.month]||(adMonths[a.month]={}), B=M[a.brand]||(M[a.brand]={});
-    (B[a.plat]||(B[a.plat]=[])).push({name:a.name,impressions:a.impressions,link_clicks:a.link_clicks,reach:a.reach,clicks:a.clicks,ctr:a.ctr,hasReach:a.hasReach});
-  });
-  for(const m in adMonths) for(const b in adMonths[m]) for(const p in adMonths[m][b])
-    adMonths[m][b][p] = adMonths[m][b][p].sort((x,y)=>y.impressions-x.impressions).slice(0, 12);
-  if (!ttOk) { // preservar ads TikTok previos
-    const prev = (readJson(path.join(dataDir,'adsets.json'))||{}).months || {};
-    for(const m in prev) for(const b in prev[m]) if(prev[m][b].TikTok){
-      (adMonths[m]=adMonths[m]||{}); (adMonths[m][b]=adMonths[m][b]||{}); adMonths[m][b].TikTok = prev[m][b].TikTok;
+  // Best-effort: si falla, se conserva adsets.json previo y no se aborta el refresco.
+  let adMonthsCount = 0;
+  try {
+    const adAcc = {};
+    const addAd = (month, brand, plat, name, spend, impr, reach, lc, clk, hasReach) => {
+      const key = month+'|'+brand+'|'+plat+'|'+name;
+      const a = adAcc[key] || (adAcc[key] = { month, brand, plat, name, spend:0, impressions:0, reach:0, link_clicks:0, clicks:0, hasReach });
+      a.spend+=spend; a.impressions+=impr; a.reach+=reach; a.link_clicks+=lc; a.clicks+=clk;
+    };
+    const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT});
+    adAll.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
+      const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+      addAd(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
+    });
+    tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {   // TikTok ads (sin reach)
+      const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+      addAd(m, productOf(r.campaign), 'TikTok', cleanTT(r.ad_name||'—'), (+r.spend||0)*RATE, +r.impressions||0, 0, +r.clicks||0, +r.clicks||0, false);
+    });
+    const adMonths = {};
+    Object.values(adAcc).forEach(a => {
+      a.ctr = a.impressions?+(a.clicks/a.impressions*100).toFixed(2):0;
+      const M=adMonths[a.month]||(adMonths[a.month]={}), B=M[a.brand]||(M[a.brand]={});
+      (B[a.plat]||(B[a.plat]=[])).push({name:a.name,impressions:a.impressions,link_clicks:a.link_clicks,reach:a.reach,clicks:a.clicks,ctr:a.ctr,hasReach:a.hasReach});
+    });
+    for(const m in adMonths) for(const b in adMonths[m]) for(const p in adMonths[m][b])
+      adMonths[m][b][p] = adMonths[m][b][p].sort((x,y)=>y.impressions-x.impressions).slice(0, 12);
+    if (!ttOk) { // preservar ads TikTok previos
+      const prev = (readJson(path.join(dataDir,'adsets.json'))||{}).months || {};
+      for(const m in prev) for(const b in prev[m]) if(prev[m][b].TikTok){
+        (adMonths[m]=adMonths[m]||{}); (adMonths[m][b]=adMonths[m][b]||{}); adMonths[m][b].TikTok = prev[m][b].TikTok;
+      }
     }
-  }
-  fs.writeFileSync(path.join(dataDir,'adsets.json'), JSON.stringify({ source:'Meta adsets + TikTok ads', updated:new Date().toISOString(), months:adMonths }, null, 2));
+    adMonthsCount = Object.keys(adMonths).length;
+    fs.writeFileSync(path.join(dataDir,'adsets.json'), JSON.stringify({ source:'Meta adsets + TikTok ads', updated:new Date().toISOString(), months:adMonths }, null, 2));
+  } catch(e){ warns.push('Adsets no actualizados (se conserva lo previo): '+String(e.message||e).slice(0,100)); }
 
-  console.log(`OK · meta ${metaRows.length} · tiktok ${ttOk?ttRows.length:'(preservado)'} · creativos ${Object.keys(months).length} meses · adsets ${Object.keys(adMonths).length} meses`);
+  console.log(`OK · meta ${metaRows.length} · tiktok ${ttOk?ttRows.length:'(preservado)'} · adsets ${adMonthsCount} meses`);
   if (warns.length) { console.log('\nAVISOS:'); warns.forEach(w=>console.log(' - '+w)); }
 })().catch(e => { console.error(e); process.exit(1); });
