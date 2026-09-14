@@ -18,7 +18,7 @@ const API_KEY  = (RAW_KEY.match(/api_key=([^&\s]+)/i)?.[1] || RAW_KEY).trim();
 const FB_ACCT  = '1211531357024604';
 const TT_ACCT  = '7512240273293279239';
 const RATE     = 3800;                 // USD -> COP (TikTok)
-const FROM     = '2026-01-01';
+const FROM     = '2025-01-01';   // incluye histórico 2025 (Meta+TikTok); Google 2025 ya está en su snapshot
 const TO       = new Date().toISOString().slice(0, 10);
 const TOP_ADS  = 6;
 // Ventana rodante para los pulls pesados (image_url tarda ~mucho): primer día del mes, 3 meses atrás.
@@ -91,7 +91,7 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
   const reachPrev = (readJson(path.join(dataDir,'reach.json'))||{}).months || {};
   const reachMonths = JSON.parse(JSON.stringify(reachPrev));
   const addReach = rows => rows.forEach(r => {
-    const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+    const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
     (reachMonths[m] = reachMonths[m] || {})[String(r.campaign).trim()] = { reach:+r.reach||0, freq:+r.frequency||0 };
   });
   addReach((await win('facebook', ['account_id','month','campaign','reach','frequency'], {account:FB_ACCT})).filter(r=>String(r.account_id)===FB_ACCT));
@@ -113,7 +113,7 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
     };
     const mCr = await win('facebook', ['account_id','month','campaign','ad_name','image_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT, from:CRE_FROM});
     mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
-      const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+      const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
       // prioridad: creativo real (image_url) -> imagen real del post IG -> thumbnail genérico (último recurso, evita tarjetas de texto)
       const img = /^http/.test(r.image_url||'') ? r.image_url
                 : (/^http/.test(r.effective_instagram_media__media_url||'') ? r.effective_instagram_media__media_url : r.thumbnail_url);
@@ -122,7 +122,7 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
     if (ttOk) { try {
       tCr = await win('tiktok', ['account_id','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT, from:CRE_FROM});
       tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {
-        const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+        const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
         addCr(m, productOf(r.campaign), 'TikTok', r.ad_name, r.video_thumbnail_url, (+r.spend||0)*RATE, +r.impressions||0, +r.clicks||0);
       });
     } catch(e){ ttOk=false; warns.push('TikTok creativos no actualizado: '+String(e.message||e).slice(0,80)); } }
@@ -160,11 +160,11 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
     };
     const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT});
     adAll.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
-      const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+      const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
       addAd(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
     });
     tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {   // TikTok ads (sin reach)
-      const m = normMonth(r.month); if (!m.startsWith('2026')) return;
+      const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
       addAd(m, productOf(r.campaign), 'TikTok', cleanTT(r.ad_name||'—'), (+r.spend||0)*RATE, +r.impressions||0, 0, +r.clicks||0, +r.clicks||0, false);
     });
     const adMonths = {};

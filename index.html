@@ -213,7 +213,7 @@ Promise.all([
     ...(t.rows||[]).map(r=>({...r,source:'TikTok'})),
   ];
   CRE=c.months||{}; ADS=ad.months||{}; REACH=rc.months||{}; YT=yt.months||{}; SPOT=sp.months||{};
-  const months=[...new Set([...ALL.map(r=>r.date.slice(0,7)), ...Object.keys(YT), ...Object.keys(SPOT)])].filter(m=>m.startsWith('2026')).sort();
+  const months=[...new Set([...ALL.map(r=>r.date.slice(0,7)), ...Object.keys(YT), ...Object.keys(SPOT)])].filter(m=>/^202[56]/.test(m)).sort();
   const sel=byId('mesSel');
   sel.innerHTML=months.map(m=>`<option value="${m}">${mesName(m)}</option>`).join('');
   const def=months.includes('2026-08')?'2026-08':months[months.length-1];
