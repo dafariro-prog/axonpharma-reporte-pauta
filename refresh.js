@@ -7,8 +7,12 @@
  *
  * data/google_ads.json (Google Search, BigQuery) NO se toca: es snapshot histórico.
  *
- * Requiere Node 18+ y WINDSOR_API_KEY. Solo procesa meses de 2026.
- * Uso: WINDSOR_API_KEY=xxxx node refresh.js
+ * INCREMENTAL por defecto: la historia (2025→) queda persistida en data/*.json (repo);
+ * cada corrida solo baja los últimos ~35 días (diario) y el mes actual+anterior (agregados),
+ * y los FUSIONA sobre lo guardado. Backfill completo: FULL=1 node refresh.js
+ *
+ * Requiere Node 18+ y WINDSOR_API_KEY. Procesa 2025–2026.
+ * Uso: WINDSOR_API_KEY=xxxx node refresh.js   |   FULL=1 WINDSOR_API_KEY=xxxx node refresh.js
  */
 const fs = require('fs');
 const path = require('path');
@@ -18,13 +22,20 @@ const API_KEY  = (RAW_KEY.match(/api_key=([^&\s]+)/i)?.[1] || RAW_KEY).trim();
 const FB_ACCT  = '1211531357024604';
 const TT_ACCT  = '7512240273293279239';
 const RATE     = 3800;                 // USD -> COP (TikTok)
-const FROM     = '2025-01-01';   // incluye histórico 2025 (Meta+TikTok); Google 2025 ya está en su snapshot
+const DAY      = 86400000;
+const FULL     = process.env.FULL === '1';   // backfill completo (rebaja todo 2025→hoy). Por defecto: INCREMENTAL.
 const TO       = new Date().toISOString().slice(0, 10);
 const TOP_ADS  = 6;
-// Ventana rodante para los pulls pesados (image_url tarda ~mucho): primer día del mes, 3 meses atrás.
-// Los meses viejos ya están guardados en creatives.json/adsets.json y no cambian → se fusionan.
-const _n = new Date(); const _w = new Date(Date.UTC(_n.getUTCFullYear(), _n.getUTCMonth()-3, 1));
-const CRE_FROM = _w.toISOString().slice(0,10);
+const _n = new Date();
+// INCREMENTAL: la historia ya está persistida en data/*.json (repo). Cada corrida solo baja lo reciente y lo fusiona:
+//  - diario (meta/tiktok): últimos 35 días  →  reemplaza esos días, conserva todo lo anterior.
+//  - agregados mensuales (reach/adsets): mes actual + mes anterior  →  reemplaza esos meses, conserva los viejos.
+const FROM      = FULL ? '2025-01-01' : new Date(_n.getTime() - 35*DAY).toISOString().slice(0,10);   // diario
+const _mf       = new Date(Date.UTC(_n.getUTCFullYear(), _n.getUTCMonth()-1, 1));                     // 1er día del mes anterior
+const MONTH_FROM = FULL ? '2025-01-01' : _mf.toISOString().slice(0,10);                               // agregados mensuales
+// Creativos (image_url es lento): ventana de 3 meses atrás; se fusiona con los meses viejos ya guardados.
+const _w = new Date(Date.UTC(_n.getUTCFullYear(), _n.getUTCMonth()-3, 1));
+const CRE_FROM = FULL ? '2025-01-01' : _w.toISOString().slice(0,10);
 
 if (!API_KEY) { console.error('ERROR: falta WINDSOR_API_KEY'); process.exit(1); }
 
@@ -52,14 +63,16 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
   const dataDir = path.join(__dirname, 'data');
   const warns = [];
 
-  // ---------- META (diario) ----------
+  // ---------- META (diario, incremental) ----------
   const mAll = await win('facebook', ['account_id','campaign','objective','date','spend','impressions',
-    'reach','frequency','clicks','link_clicks','cpc','cpm','ctr'], {account:FB_ACCT});
-  const metaRows = mAll.filter(r => String(r.account_id) === FB_ACCT).map(r => ({
+    'reach','frequency','clicks','link_clicks','cpc','cpm','ctr'], {account:FB_ACCT});   // from=FROM (ventana diaria)
+  const mFresh = mAll.filter(r => String(r.account_id) === FB_ACCT).map(r => ({
     campaign:r.campaign, objective:r.objective, date:r.date,
     spend:+r.spend||0, impressions:+r.impressions||0, reach:+r.reach||0, frequency:+r.frequency||0,
     clicks:+r.clicks||0, link_clicks:+r.link_clicks||0, cpc:+r.cpc||0, cpm:+r.cpm||0, ctr:+r.ctr||0,
-  })).filter(r => r.date && r.impressions > 0).sort((a,b)=> a.date<b.date?-1:1);
+  })).filter(r => r.date && r.impressions > 0);
+  const mKept = ((readJson(path.join(dataDir,'meta.json'))||{}).rows||[]).filter(r => r.date && r.date < FROM); // historia previa a la ventana
+  const metaRows = mKept.concat(mFresh).sort((a,b)=> a.date<b.date?-1:1);
   fs.writeFileSync(path.join(dataDir,'meta.json'), JSON.stringify({
     updated:new Date().toISOString(), account:{id:FB_ACCT,name:'Axon Pharma Colombia',connector:'facebook',currency:'COP'}, rows:metaRows }, null, 2));
 
@@ -77,7 +90,9 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
         clicks, link_clicks:clicks, views:+r.video_views||0,
         cpc:clicks?+(spend/clicks).toFixed(2):0, cpm:impressions?+(spend/impressions*1000).toFixed(2):0,
         ctr:impressions?+(clicks/impressions*100).toFixed(4):0 };
-    }).filter(r => r.date && r.spend > 0).sort((a,b)=> a.date<b.date?-1:1);
+    }).filter(r => r.date && r.spend > 0);
+    const ttKept = ((readJson(path.join(dataDir,'tiktok.json'))||{}).rows||[]).filter(r => r.date && r.date < FROM);
+    ttRows = ttKept.concat(ttRows).sort((a,b)=> a.date<b.date?-1:1);
     fs.writeFileSync(path.join(dataDir,'tiktok.json'), JSON.stringify({
       updated:new Date().toISOString(), account:{id:TT_ACCT,name:'CO_AxonPharma_GarnierCOLOMBIA',currency:'COP',note:'USD->COP TC 3.800'}, rows:ttRows }, null, 2));
   } catch (e) {
@@ -94,9 +109,9 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
     const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
     (reachMonths[m] = reachMonths[m] || {})[String(r.campaign).trim()] = { reach:+r.reach||0, freq:+r.frequency||0 };
   });
-  addReach((await win('facebook', ['account_id','month','campaign','reach','frequency'], {account:FB_ACCT})).filter(r=>String(r.account_id)===FB_ACCT));
+  addReach((await win('facebook', ['account_id','month','campaign','reach','frequency'], {account:FB_ACCT, from:MONTH_FROM})).filter(r=>String(r.account_id)===FB_ACCT));
   if (ttOk) { try {
-    addReach((await win('tiktok', ['account_id','month','campaign','reach','frequency'], {account:TT_ACCT})).filter(r=>String(r.account_id)===TT_ACCT));
+    addReach((await win('tiktok', ['account_id','month','campaign','reach','frequency'], {account:TT_ACCT, from:MONTH_FROM})).filter(r=>String(r.account_id)===TT_ACCT));
   } catch(e){ warns.push('TikTok reach no actualizado: '+String(e.message||e).slice(0,80)); } }
   fs.writeFileSync(path.join(dataDir,'reach.json'), JSON.stringify({ source:'Meta+TikTok reach mensual único', updated:new Date().toISOString(), months:reachMonths }, null, 2));
 
@@ -158,7 +173,7 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
       const a = adAcc[key] || (adAcc[key] = { month, brand, plat, name, spend:0, impressions:0, reach:0, link_clicks:0, clicks:0, hasReach });
       a.spend+=spend; a.impressions+=impr; a.reach+=reach; a.link_clicks+=lc; a.clicks+=clk;
     };
-    const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT});
+    const adAll = await win('facebook', ['account_id','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT, from:MONTH_FROM});
     adAll.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
       const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
       addAd(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
@@ -167,18 +182,21 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
       const m = normMonth(r.month); if (!/^202[56]/.test(m)) return;
       addAd(m, productOf(r.campaign), 'TikTok', cleanTT(r.ad_name||'—'), (+r.spend||0)*RATE, +r.impressions||0, 0, +r.clicks||0, +r.clicks||0, false);
     });
-    const adMonths = {};
+    const freshAd = {};
     Object.values(adAcc).forEach(a => {
       a.ctr = a.impressions?+(a.clicks/a.impressions*100).toFixed(2):0;
-      const M=adMonths[a.month]||(adMonths[a.month]={}), B=M[a.brand]||(M[a.brand]={});
+      const M=freshAd[a.month]||(freshAd[a.month]={}), B=M[a.brand]||(M[a.brand]={});
       (B[a.plat]||(B[a.plat]=[])).push({name:a.name,impressions:a.impressions,link_clicks:a.link_clicks,reach:a.reach,clicks:a.clicks,ctr:a.ctr,hasReach:a.hasReach});
     });
-    for(const m in adMonths) for(const b in adMonths[m]) for(const p in adMonths[m][b])
-      adMonths[m][b][p] = adMonths[m][b][p].sort((x,y)=>y.impressions-x.impressions).slice(0, 12);
-    if (!ttOk) { // preservar ads TikTok previos
-      const prev = (readJson(path.join(dataDir,'adsets.json'))||{}).months || {};
-      for(const m in prev) for(const b in prev[m]) if(prev[m][b].TikTok){
-        (adMonths[m]=adMonths[m]||{}); (adMonths[m][b]=adMonths[m][b]||{}); adMonths[m][b].TikTok = prev[m][b].TikTok;
+    for(const m in freshAd) for(const b in freshAd[m]) for(const p in freshAd[m][b])
+      freshAd[m][b][p] = freshAd[m][b][p].sort((x,y)=>y.impressions-x.impressions).slice(0, 12);
+    // fusión: base = meses previos guardados; se sobreescriben solo los meses recientes re-pulled
+    const adPrev = (readJson(path.join(dataDir,'adsets.json'))||{}).months || {};
+    const adMonths = JSON.parse(JSON.stringify(adPrev));
+    for(const m in freshAd) adMonths[m] = freshAd[m];
+    if (!ttOk) { // preservar ads TikTok previos en los meses re-escritos
+      for(const m in adPrev) for(const b in adPrev[m]) if(adPrev[m][b].TikTok){
+        (adMonths[m]=adMonths[m]||{}); (adMonths[m][b]=adMonths[m][b]||{}); adMonths[m][b].TikTok = adPrev[m][b].TikTok;
       }
     }
     adMonthsCount = Object.keys(adMonths).length;
