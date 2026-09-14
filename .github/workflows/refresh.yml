@@ -4,7 +4,12 @@ on:
   schedule:
     # 10:00, 11:00 y 13:00 hora Colombia (UTC-5) = 15:00, 16:00 y 18:00 UTC
     - cron: "0 15,16,18 * * *"
-  workflow_dispatch: {}   # correr manual desde la pestaña Actions
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Backfill completo (rebaja todo 2025→hoy). Dejar en 0 para refresco incremental."
+        required: false
+        default: "0"
 
 permissions:
   contents: write
@@ -25,6 +30,7 @@ jobs:
       - name: Refrescar data (Meta + TikTok + creativos + adsets)
         env:
           WINDSOR_API_KEY: ${{ secrets.WINDSOR_API_KEY }}
+          FULL: ${{ github.event.inputs.full || '0' }}
         run: node refresh.js
 
       - name: Commit si hubo cambios
