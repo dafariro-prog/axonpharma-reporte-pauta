@@ -84,6 +84,9 @@ img{max-width:100%;display:block}
 .yt-top{display:flex;gap:10px;align-items:flex-start;background:#FFF7F6;border:1px solid #F3D3D1;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.55;margin-top:14px}
 .yt-top .star{color:#C4302B;font-weight:800}
 .yt-img{width:100%;height:auto;border-radius:10px;display:block;border:1px solid #eef1f6}
+.yt-agelg{display:flex;flex-wrap:wrap;gap:6px 16px;margin:2px 0 12px;font-size:12px;color:#4a5568}
+.yt-agelg span{display:inline-flex;align-items:center;gap:6px}
+.yt-agelg i{width:11px;height:11px;border-radius:3px;display:inline-block}
 .yt-cre img{max-height:440px;object-fit:contain;background:#f6f8fb}
 .ch-wrap{height:250px;position:relative}
 .pdf-btn{background:#fff;color:var(--navy);border:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:8px}
@@ -213,7 +216,7 @@ Promise.all([
   const months=[...new Set([...ALL.map(r=>r.date.slice(0,7)), ...Object.keys(YT), ...Object.keys(SPOT)])].filter(m=>m.startsWith('2026')).sort();
   const sel=byId('mesSel');
   sel.innerHTML=months.map(m=>`<option value="${m}">${mesName(m)}</option>`).join('');
-  const def=months.includes('2026-03')?'2026-03':months[months.length-1];
+  const def=months.includes('2026-08')?'2026-08':months[months.length-1];
   sel.value=def;
   sel.addEventListener('change',()=>render(sel.value));
   render(def);
@@ -393,9 +396,11 @@ function analisis(P,b,ym,a,rws){
 
 function youtubeBlock(y,b,ym){
   let h=`<div class="plat"><div class="plat-head"><span class="plat-tag yt">YouTube</span><h3>${b.name} · Branding (YouTube Ads)</h3><span class="mo-lbl">${mesName(ym)}</span></div>`;
+  const perfMetric=(y.rendimiento!=null)?metric(dec(y.rendimiento,2)+'%','Rendimiento (view rate)'):metric(dec(y.ctr,2)+'%','CTR');
+  const vistasMetric=(y.vistasTrueview!=null)?metric(fmt(y.vistasTrueview),'Vistas TrueView'):metric(fmt(y.imprVisibles),'Impr. visibles');
   const items=metric(fmt(y.impressions),'Impresiones','big hl')+metric(dec(y.entrega,2)+'%','% Entrega','big')+
     metric(fmt(y.contratadas),'Impr. contratadas')+metric(fmt(y.interacciones),'Interacciones')+
-    metric(dec(y.ctr,2)+'%','CTR')+metric(fmt(y.imprVisibles),'Impr. visibles')+metric(cop(y.spend)+' COP','Inversión');
+    perfMetric+vistasMetric+metric(cop(y.spend)+' COP','Inversión');
   h+=`<div class="res"><div class="res-t">Resultados de plataforma · ${y.periodo}</div><div class="res-grid">${items}</div></div>`;
   const entPct=Math.min(100,y.entrega);
   h+=`<div class="yt-graf">
@@ -403,9 +408,9 @@ function youtubeBlock(y,b,ym){
       <div class="yt-ent"><div class="yt-ent-fill${y.entrega>=100?' ok':''}" style="width:${entPct}%"></div></div>
       <div class="yt-ent-lbl"><b>${dec(y.entrega,2)}%</b> de entrega · ${fmt(y.impressions)} impresiones de ${fmt(y.contratadas)} contratadas${y.entrega>100?` <b>(+${fmt(y.impressions-y.contratadas)} adicionales)</b>`:''}</div>
     </div>
-    <div class="yt-card"><h5>Impresiones por dispositivo</h5>
+    ${(y.devices&&y.devices.length)?`<div class="yt-card"><h5>Impresiones por dispositivo</h5>
       ${y.devices.map(d=>`<div class="yt-dev"><span class="yd-n">${d[0]}</span><div class="yd-bar"><div class="yd-fill" style="width:${Math.min(100,d[1])}%"></div></div><span class="yd-p">${d[1]}%</span></div>`).join('')}
-    </div>
+    </div>`:(y.deviceNote?`<div class="yt-card"><h5>Dispositivos</h5><p style="font-size:13px;color:#4a5568;line-height:1.55;margin:6px 0 0">${y.deviceNote}</p></div>`:'')}
   </div>`;
   // Performance creativo (tabla si hay datos por anuncio) + creativo destacado
   let perf='';
@@ -421,8 +426,10 @@ function youtubeBlock(y,b,ym){
       ${y.imgs&&y.imgs.creativo?`<div class="yt-card yt-cre"><h5>Creativo destacado</h5><img class="yt-img" loading="lazy" src="${y.imgs.creativo}" alt="Creativo ${b.name}"></div>`:''}
     </div>`;
   }
-  if(y.imgs&&y.imgs.generoEdad) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por género y edad · impresiones</h5><img class="yt-img" loading="lazy" src="${y.imgs.generoEdad}" alt="Género y edad ${b.name}"></div>`;
-  h+=`<div class="analisis">La campaña de <b>Branding en YouTube Ads</b> de <b>${b.name}</b> en ${mesName(ym)} (${y.periodo}) entregó <b>${fmt(y.impressions)}</b> impresiones (${dec(y.entrega,2)}% de las ${fmt(y.contratadas)} contratadas) con ${fmt(y.interacciones)} interacciones y un CTR de ${dec(y.ctr,2)}%. Inversión de ${cop(y.spend)} COP.<div class="lrn-t">Insights</div><ul>${(y.insights||[]).map(i=>`<li>${i}</li>`).join('')}</ul></div>`;
+  if(y.imgs&&y.imgs.generoEdad) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por género y edad · impresiones</h5><div class="yt-agelg"><span><i style="background:#4285F4"></i>18–24</span><span><i style="background:#EA4335"></i>25–34</span><span><i style="background:#FBBC04"></i>35–44</span><span><i style="background:#34A853"></i>45–54</span><span><i style="background:#A142F4"></i>55–64</span></div><img class="yt-img" loading="lazy" src="${y.imgs.generoEdad}" alt="Género y edad ${b.name}"></div>`;
+  if(y.imgs&&y.imgs.estadoParental) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por estado parental · alcance</h5><div class="yt-agelg"><span><i style="background:#4285F4"></i>Hombre</span><span><i style="background:#EA4335"></i>Mujer</span><span><i style="background:#FBBC04"></i>Desconocido</span></div><img class="yt-img" loading="lazy" src="${y.imgs.estadoParental}" alt="Estado parental ${b.name}"></div>`;
+  const perfTxt=(y.rendimiento!=null)?`con ${fmt(y.interacciones)} interacciones y un rendimiento (view rate) de ${dec(y.rendimiento,2)}% (${fmt(y.vistasTrueview)} vistas TrueView)`:`con ${fmt(y.interacciones)} interacciones y un CTR de ${dec(y.ctr,2)}%`;
+  h+=`<div class="analisis">La campaña de <b>Branding en YouTube Ads</b> de <b>${b.name}</b> en ${mesName(ym)} (${y.periodo}) entregó <b>${fmt(y.impressions)}</b> impresiones (${dec(y.entrega,2)}% de las ${fmt(y.contratadas)} contratadas) ${perfTxt}. Inversión de ${cop(y.spend)} COP.<div class="lrn-t">Insights</div><ul>${(y.insights||[]).map(i=>`<li>${i}</li>`).join('')}</ul></div>`;
   h+=`</div>`;
   return h;
 }
@@ -464,7 +471,7 @@ function brandSummary(b,ym,rowsM){
   if(sp) parts.push(`Audio Spotify ${cop(sp.spend)} COP`);
   const total=t.spend+(y?y.spend:0)+(sp?sp.spend:0);
   const S=[`<b>${b.name}</b> cerró ${mesName(ym)} con una inversión total de <b>${cop(total)} COP</b> en pauta, distribuida en ${parts.join(' · ')}.`];
-  if(y) S.push(`En YouTube (branding) entregó ${fmt(y.impressions)} impresiones (${dec(y.entrega,2)}% de lo contratado) con CTR ${dec(y.ctr,2)}%.`);
+  if(y) S.push(`En YouTube (branding) entregó ${fmt(y.impressions)} impresiones (${dec(y.entrega,2)}% de lo contratado)${(y.rendimiento!=null)?` con un rendimiento (view rate) de ${dec(y.rendimiento,2)}%`:` con CTR ${dec(y.ctr,2)}%`}.`);
   const aw=byP.Awareness;
   if(aw){ const ar=realReach(rws.filter(r=>platOf(r)==='Awareness'),ym); if(ar){aw.reach=ar;aw.freq=aw.impressions/ar;}
     S.push(`En Awareness alcanzó ${fmt(aw.reach)} personas con ${fmt(aw.impressions)} impresiones y un CPM de ${cop(aw.cpm)} COP.`); }

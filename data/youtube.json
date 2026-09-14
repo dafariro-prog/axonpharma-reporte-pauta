@@ -94,6 +94,64 @@
           "Dispositivo: teléfonos celulares 69%, computadoras 20% y tablets 11%."
         ]
       }
+    },
+    "2026-08": {
+      "FLORATIL": {
+        "periodo": "01 – 31 Ago",
+        "contratadas": 585000,
+        "spend": 10038600,
+        "impressions": 589931,
+        "interacciones": 418322,
+        "rendimiento": 62.9,
+        "vistasTrueview": 371202,
+        "entrega": 100.84,
+        "devices": [["Pantallas de TV", 64], ["Teléfonos celulares", 30], ["Computadoras", 5], ["Tablets", 1]],
+        "topCreative": "In-Stream #2 — 48,7% de la entrega total («Que la diarrea no cambie los planes de tu familia / Alivia rápidamente la diarrea con Floratil»)",
+        "imgs": {
+          "creativo": "assets/youtube/floratil_creativo_ago.jpg",
+          "generoEdad": "assets/youtube/floratil_genero_edad_ago.jpg"
+        },
+        "insights": [
+          "Se priorizó la optimización por vistas TrueView (visualización real y permanencia del usuario, sin saltar el video), con un rendimiento del 62,9% y 371.202 vistas TrueView.",
+          "Se reincorporó el formato de TV, que concentró el 64% del total de las impresiones entregadas.",
+          "La audiencia femenina tuvo una participación significativamente mayor que la masculina; el segmento principal fue 25–34 años (liderado por mujeres), seguido de 35–44.",
+          "El creativo In-Stream #2 registró el mayor nivel de entrega, con 48,7% de participación sobre el total de la campaña.",
+          "Recomendación: continuar priorizando la optimización por visualizaciones TrueView —las campañas de video no alcanzan CTR representativos por la naturaleza del formato— y mantener el foco en 25–34 años con mensajes prácticos de solución inmediata."
+        ]
+      },
+      "MARIMER": {
+        "periodo": "01 – 31 Ago",
+        "contratadas": 342803,
+        "spend": 5882501,
+        "impressions": 346099,
+        "interacciones": 330310,
+        "rendimiento": 95.18,
+        "vistasTrueview": 329442,
+        "entrega": 100.96,
+        "deviceNote": "Campaña ejecutada exclusivamente en dispositivos móviles, canal que en entregas previas mostró el mejor rendimiento.",
+        "topCreative": "Bumper #2 — 58,8% de la entrega total («Limpia su naricita con Marimer® baby Isotónico»)",
+        "imgs": {
+          "creativo": "assets/youtube/marimer_creativo_ago.jpg",
+          "generoEdad": "assets/youtube/marimer_genero_edad_ago.jpg",
+          "estadoParental": "assets/youtube/marimer_estado_parental_ago.jpg"
+        },
+        "creativos": [
+          { "name": "Anuncio #2 Bumper",    "dur": "0:06", "copy": "Cuida su naricita cada día — encuéntralo en droguerías", "impr": 203602 },
+          { "name": "Anuncio #3 Bumper",    "dur": "0:06", "copy": "Alivia su nariz tapada — cómpralo en droguerías", "impr": 65947 },
+          { "name": "Anuncio #1 Bumper",    "dur": "0:06", "copy": "Respira mejor cada día — cómpralo en tu droguería", "impr": 64380 },
+          { "name": "Anuncio #2 In Stream", "dur": "0:15", "copy": "Cuando respira mejor, todo mejora — limpia su naricita con Marimer® Baby", "impr": 4163 },
+          { "name": "Anuncio #1 In Stream", "dur": "0:15", "copy": "Respira mejor cada día — cómpralo en droguerías", "impr": 3969 },
+          { "name": "Anuncio #2 Short",     "dur": "0:15", "copy": "Que nada interrumpa su día — cómpralo en droguerías", "impr": 2375 },
+          { "name": "Anuncio #1 Short",     "dur": "0:15", "copy": "Respira mejor y rinde — consíguelo en droguería", "impr": 1663 }
+        ],
+        "insights": [
+          "La campaña se ejecutó exclusivamente en dispositivos móviles, con un rendimiento del 95,18% y 329.442 vistas TrueView.",
+          "El grupo con mayor alcance fue 25–34 años (hombres y mujeres), seguido de 35–44; la audiencia masculina alcanzada fue ligeramente mayor que la femenina en casi todos los rangos.",
+          "Por estado parental, la mayor parte del alcance se registró en usuarios «Sin hijos», seguido del segmento «Padres/Madres».",
+          "Los formatos Bumper (6s) capturaron más del 96% de las impresiones combinadas: mensajes breves y directos generan la mayor retención con menor tasa de abandono en video.",
+          "Recomendación: mantener la pauta en móvil, priorizar Bumpers de 6s apoyados por Shorts (15s) y segmentar en 25–44 años, diferenciando mensajes entre Marimer Isotónico (adultos/deporte) y Marimer Baby (cuidado infantil)."
+        ]
+      }
     }
   }
 }
