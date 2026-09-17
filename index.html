@@ -37,6 +37,7 @@ img{max-width:100%;display:block}
 .plat-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
 .plat-tag{font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#fff;background:var(--blue);padding:5px 12px;border-radius:20px}
 .plat-tag.tt{background:#111}
+.plat-tag.vw{background:#57C4C4}
 .plat-tag.se{background:#1f9d55}
 .plat-head h3{font-size:19px;font-weight:800;color:var(--navy)}
 .plat-head .mo-lbl{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600}
@@ -153,7 +154,7 @@ const mesName=ym=>MES[+ym.slice(5,7)]+' '+ym.slice(0,4);
 const PRODUCTS=['A-CERUMEN','MARIMER&FLORATIL','MARIMER','FLORATIL'];
 const productOf=c=>{const u=(c||'').toUpperCase().replace(/ACERUMEN/g,'A-CERUMEN');for(const p of PRODUCTS)if(u.includes(p))return p==='MARIMER&FLORATIL'?'MARIMER & FLORATIL':p;return 'Otros';};
 const isTraffic=r=>r.objective==='LINK_CLICKS'||/traffic/i.test(r.campaign);
-const objClass=r=> r.objective==='VIDEO_VIEWS'?'Reproducciones':(isTraffic(r)?'Traffic':'Awareness');
+const objClass=r=> (r.objective==='VIDEO_VIEWS'||/views/i.test(r.campaign))?'Views':(isTraffic(r)?'Traffic':'Awareness');
 function platOf(r){ if(r.source==='TikTok')return 'TikTok'; if(r.source==='Google Ads')return 'Search'; return objClass(r); }
 
 function agg(rows){
@@ -175,11 +176,11 @@ function realReach(rws,ym){
 const BRANDS=[
   {key:'MARIMER', name:'Marimer', banner:'assets/image35.png',
    intro:'Es la marca que se posiciona como prevención familiar, centrada en la salud cotidiana apoyada de ingredientes naturales. Con un clima atípico al que el colombiano viene acostumbrado, la marca se posicionó en búsquedas para el cuidado nasal, permitiendo un mayor reconocimiento de marca.',
-   platforms:['Awareness','Traffic','TikTok','Search','YouTube','Spotify'],
+   platforms:['Awareness','Views','Traffic','TikTok','Search','YouTube','Spotify'],
    creatives:{Awareness:['image44','image45','image46'],Traffic:['image48','image49','image50'],TikTok:['image53','image54','image55'],Search:['image61','image62','image63']}},
   {key:'FLORATIL', name:'Floratil', banner:'assets/image64.png',
    intro:'Su enfoque parte de la recuperación y la confianza, educando a los usuarios sobre el cuidado de la flora intestinal en tratamientos por antibióticos y situaciones de viaje. Sus creativos con criterio médico la posicionan como una marca relevante dentro del ecosistema digital.',
-   platforms:['Awareness','Traffic','TikTok','Search','YouTube','Spotify'],
+   platforms:['Awareness','Views','Traffic','TikTok','Search','YouTube','Spotify'],
    creatives:{Awareness:['image66','image67','image68'],Traffic:['image69','image70','image71'],Search:['image72','image73']}},
   {key:'A-CERUMEN', name:'A-Cerumen', banner:'assets/image74.png',
    intro:'Un producto con un objetivo específico: el cuidado del oído, con un discurso que pasa de la molestia a la prevención dentro de la vida cotidiana. Es una marca que rompe con el hábito de usar copitos hacia un método más seguro.',
@@ -189,6 +190,7 @@ const BRANDS=[
 
 const PLAT_META={
   Awareness:{tag:'Awareness',cls:'',title:'Awareness (Meta)'},
+  Views:{tag:'Views',cls:'vw',title:'Reproducciones de video (Meta)'},
   Traffic:{tag:'Traffic',cls:'',title:'Traffic (Meta)'},
   TikTok:{tag:'TikTok',cls:'tt',title:'Traffic (TikTok)'},
   Search:{tag:'Search',cls:'se',title:'Search (Google Ads)'},
@@ -280,7 +282,7 @@ function render(ym){
 }
 
 let CHARTS=[];
-const PCOLORS={Awareness:'#2E9BE6',Traffic:'#16266B',TikTok:'#111111',Search:'#1f9d55',YouTube:'#C4302B'};
+const PCOLORS={Awareness:'#2E9BE6',Views:'#57C4C4',Traffic:'#16266B',TikTok:'#111111',Search:'#1f9d55',YouTube:'#C4302B'};
 function drawCharts(pending, rowsM, ym){
   CHARTS.forEach(c=>{try{c.destroy()}catch(e){}}); CHARTS=[];
   if(typeof Chart==='undefined') return;
@@ -303,8 +305,9 @@ function drawCharts(pending, rowsM, ym){
           y1:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},ticks:{callback:kfmt,font:{size:10}}}}}}));
     } else if(p.type==='overview'){
       const elB=byId('chOverBrands'), elP=byId('chOverPlat'); if(!elB||!elP)return;
-      const PLATS=['Awareness','Traffic','TikTok','Search'];
-      const ds=PLATS.map(P=>({label:P==='Awareness'?'Awareness (Meta)':(P==='Traffic'?'Traffic (Meta)':P),
+      const PLATS=['Awareness','Views','Traffic','TikTok','Search'];
+      const PLABEL={Awareness:'Awareness (Meta)',Views:'Reproducciones (Meta)',Traffic:'Traffic (Meta)',TikTok:'TikTok',Search:'Search'};
+      const ds=PLATS.map(P=>({label:PLABEL[P]||P,
         data:BRANDS.map(b=>Math.round(rowsM.filter(r=>productOf(r.campaign)===b.key&&platOf(r)===P).reduce((s,r)=>s+r.spend,0))),
         backgroundColor:PCOLORS[P],stack:'s',borderRadius:3}));
       ds.push({label:'YouTube',data:BRANDS.map(b=>(YT[ym]&&YT[ym][b.key])?YT[ym][b.key].spend:0),backgroundColor:PCOLORS.YouTube,stack:'s',borderRadius:3});
@@ -315,8 +318,8 @@ function drawCharts(pending, rowsM, ym){
           scales:{x:{stacked:true,grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}},y:{stacked:true,grid:{display:false}}}}}));
       const platTot=PLATS.map(P=>Math.round(rowsM.filter(r=>platOf(r)===P).reduce((s,r)=>s+r.spend,0)));
       platTot.push(BRANDS.reduce((s,b)=>s+((YT[ym]&&YT[ym][b.key])?YT[ym][b.key].spend:0),0));
-      CHARTS.push(new Chart(elP,{type:'doughnut',data:{labels:['Awareness (Meta)','Traffic (Meta)','TikTok','Search','YouTube'],
-        datasets:[{data:platTot,backgroundColor:[PCOLORS.Awareness,PCOLORS.Traffic,PCOLORS.TikTok,PCOLORS.Search,PCOLORS.YouTube],borderWidth:2,borderColor:'#fff'}]},
+      CHARTS.push(new Chart(elP,{type:'doughnut',data:{labels:[...PLATS.map(P=>PLABEL[P]||P),'YouTube'],
+        datasets:[{data:platTot,backgroundColor:[...PLATS.map(P=>PCOLORS[P]),PCOLORS.YouTube],borderWidth:2,borderColor:'#fff'}]},
         options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
           plugins:{legend:{position:'bottom',labels:{usePointStyle:true,pointStyle:'circle',padding:10,font:{size:11}}},
             tooltip:{callbacks:{label:c=>c.label+': $'+fmt(c.parsed)+' COP'}}}}}));
@@ -341,7 +344,7 @@ function drawCharts(pending, rowsM, ym){
 
 function resultsCard(P,a){
   let items='';
-  if(P==='Awareness'){
+  if(P==='Awareness'||P==='Views'){
     items=metric(fmt(a.reach),'Alcance','big hl')+metric(fmt(a.impressions),'Impresiones','big')+
       metric(dec(a.freq,2),'Frecuencia')+metric(fmt(a.link_clicks),'Link clics')+
       metric(cop(a.cpm)+' COP','CPM')+metric(cop(a.spend)+' COP','Inversión');
@@ -378,6 +381,7 @@ function analisis(P,b,ym,a,rws){
   const mes=mesName(ym), brand=b.name, clks=a.link_clicks||a.clicks;
   let base='';
   if(P==='Awareness') base=`La campaña de <b>Awareness</b> de <b>${brand}</b> en ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y un CPM de ${cop(a.cpm)} COP, con una inversión de ${cop(a.spend)} COP y frecuencia ${dec(a.freq,2)}.`;
+  else if(P==='Views') base=`La campaña de <b>Reproducciones de video</b> de <b>${brand}</b> en ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y un CPM de ${cop(a.cpm)} COP, con una inversión de ${cop(a.spend)} COP y frecuencia ${dec(a.freq,2)}.`;
   else if(P==='Traffic') base=`La campaña de <b>Traffic</b> de <b>${brand}</b> en ${mes} generó <b>${fmt(clks)}</b> clics en enlace con un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP, alcanzando ${fmt(a.reach)} personas. Inversión de ${cop(a.spend)} COP.`;
   else if(P==='TikTok') base=`La campaña de <b>Traffic</b> de <b>${brand}</b> en <b>TikTok</b> durante ${mes} alcanzó <b>${fmt(a.reach)}</b> personas con ${fmt(a.impressions)} impresiones y ${fmt(clks)} clics, CTR ${dec(a.ctr,2)}% y CPC ${cop(a.cpc)} COP. Inversión ${cop(a.spend)} COP, frecuencia ${dec(a.freq,2)}.`;
   else base=`La campaña de <b>Search</b> de <b>${brand}</b> en ${mes} generó <b>${fmt(clks)}</b> link clicks con un CTR de ${dec(a.ctr,2)}% y un CPC de ${cop(a.cpc)} COP, sobre ${fmt(a.impressions)} impresiones. Inversión ${cop(a.spend)} COP.`;
@@ -390,7 +394,7 @@ function analisis(P,b,ym,a,rws){
     if(byCtr && byCtr!==byImp) L.push(`El mejor CTR entre conjuntos lo registró <b>${byCtr.name}</b> con ${dec(byCtr.ctr,2)}%.`);
   }
   const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
-  if(cr.length){ const top=cr[0]; L.push(`El creativo con mejor CTR alcanzó <b>${dec(top.ctr,2)}%</b>${P==='Awareness'?` con CPM ${cop(top.cpm)} COP`:` con CPC ${cop(top.cpc)} COP`}.`); }
+  if(cr.length){ const top=cr[0]; L.push(`El creativo con mejor CTR alcanzó <b>${dec(top.ctr,2)}%</b>${(P==='Awareness'||P==='Views')?` con CPM ${cop(top.cpm)} COP`:` con CPC ${cop(top.cpc)} COP`}.`); }
   return base + (L.length?`<div class="lrn-t">Aprendizajes</div><ul>`+L.map(x=>`<li>${x}</li>`).join('')+`</ul>`:'');
 }
 
@@ -475,7 +479,7 @@ function brandSummary(b,ym,rowsM){
   const aw=byP.Awareness;
   if(aw){ const ar=realReach(rws.filter(r=>platOf(r)==='Awareness'),ym); if(ar){aw.reach=ar;aw.freq=aw.impressions/ar;}
     S.push(`En Awareness alcanzó ${fmt(aw.reach)} personas con ${fmt(aw.impressions)} impresiones y un CPM de ${cop(aw.cpm)} COP.`); }
-  let best=null; Object.entries(byP).forEach(([P,a])=>{ if(P==='Awareness')return; const c=a.cpc; if(c>0&&(!best||c<best.c))best={P,c}; });
+  let best=null; Object.entries(byP).forEach(([P,a])=>{ if(P==='Awareness'||P==='Views')return; const c=a.cpc; if(c>0&&(!best||c<best.c))best={P,c}; });
   if(best) S.push(`El CPC más eficiente en tráfico se dio en ${nm(best.P)} con ${cop(best.c)} COP.`);
   const totClk=Object.values(byP).reduce((s,a)=>s+(a.link_clicks||a.clicks),0);
   S.push(`En conjunto, la marca generó ${fmt(totClk)} clics de tráfico entre las plataformas activas.`);

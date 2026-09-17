@@ -44,6 +44,10 @@ const normMonth = m => { m = String(m).trim(); if (/^\d{4}-\d{2}/.test(m)) retur
 // Windsor devuelve `month` sin año ("06"); combinar con el campo `year` para evitar colisión 2025/2026.
 const ymOf = r => { const y=String(r.year||'').match(/^\d{4}$/)?String(r.year):null; const mo=pad(+r.month); return (y && /^\d{2}$/.test(mo)) ? y+'-'+mo : normMonth(r.month); };
 const https = u => String(u||'').replace(/^http:\/\//, 'https://');
+const isVid = u => /\/o1\/v\//.test(u||'');   // patrón de URL de video mp4 de IG/FB (no sirve en <img>)
+// prioridad de miniatura que SIEMPRE devuelve una imagen: image_url -> póster de video IG -> media (si no es video) -> thumbnail
+const pickImg = r => { for(const u of [r.image_url, r.effective_instagram_media__thumbnail_url, r.effective_instagram_media__media_url, r.thumbnail_url]) if(/^http/.test(u||'')&&!isVid(u)) return u; return ''; };
+const metaPlat = c => /views/i.test(c) ? 'Views' : (/traffic/i.test(c) ? 'Traffic' : 'Awareness');   // Views: campañas de reproducciones
 const PRODUCTS = ['A-CERUMEN','MARIMER&FLORATIL','MARIMER','FLORATIL'];
 const productOf = c => { const u=(c||'').toUpperCase(); for(const p of PRODUCTS) if(u.includes(p)) return p==='MARIMER&FLORATIL'?'MARIMER & FLORATIL':p; return 'Otros'; };
 const cleanMeta = n => String(n).replace(/^\w+_CO_AxonPharma_/i,'').replace(/_(Traffic|Awareness)_.*$/i,'').replace(/_/g,' ').replace(/\s+/g,' ').trim();
@@ -131,13 +135,12 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
       const a = acc[key] || (acc[key] = { month, brand, plat, ad_name:ad, thumbnail:https(img), spend:0, impressions:0, clicks:0 });
       a.thumbnail = https(img); a.spend += spend; a.impressions += impr; a.clicks += clk;
     };
-    const mCr = await win('facebook', ['account_id','year','month','campaign','ad_name','image_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT, from:CRE_FROM});
+    const mCr = await win('facebook', ['account_id','year','month','campaign','ad_name','image_url','effective_instagram_media__thumbnail_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT, from:CRE_FROM});
     mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
       const m = ymOf(r); if (!/^202[56]/.test(m)) return;
-      // prioridad: creativo real (image_url) -> imagen real del post IG -> thumbnail genérico (último recurso, evita tarjetas de texto)
-      const img = /^http/.test(r.image_url||'') ? r.image_url
-                : (/^http/.test(r.effective_instagram_media__media_url||'') ? r.effective_instagram_media__media_url : r.thumbnail_url);
-      addCr(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
+      // prioridad que garantiza IMAGEN (evita mp4 de reels/videos): image_url -> póster de video -> media(no video) -> thumbnail
+      const img = pickImg(r);
+      addCr(m, productOf(r.campaign), metaPlat(r.campaign), r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
     });
     if (ttOk) { try {
       tCr = await win('tiktok', ['account_id','year','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT, from:CRE_FROM});
@@ -181,7 +184,7 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
     const adAll = await win('facebook', ['account_id','year','month','campaign','adset_name','spend','impressions','reach','link_clicks','clicks'], {account:FB_ACCT, from:MONTH_FROM});
     adAll.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
       const m = ymOf(r); if (!/^202[56]/.test(m)) return;
-      addAd(m, productOf(r.campaign), /traffic/i.test(r.campaign)?'Traffic':'Awareness', cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
+      addAd(m, productOf(r.campaign), metaPlat(r.campaign), cleanMeta(r.adset_name||'—'), +r.spend||0, +r.impressions||0, +r.reach||0, +r.link_clicks||0, +r.clicks||0, true);
     });
     tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {   // TikTok ads (sin reach)
       const m = ymOf(r); if (!/^202[56]/.test(m)) return;
