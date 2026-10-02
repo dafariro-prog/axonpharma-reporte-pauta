@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-10-01T20:08:24.364Z",
+  "updated": "2026-10-02T19:48:01.457Z",
   "months": {
     "2026-05": {
       "MARIMER": {
@@ -1918,20 +1918,20 @@
         "Awareness": [
           {
             "name": "MARIMER ADULTO NACIONAL COLABORACION",
-            "impressions": 412055,
+            "impressions": 412186,
             "link_clicks": 1,
-            "reach": 314102,
-            "clicks": 2267,
+            "reach": 314229,
+            "clicks": 2268,
             "ctr": 0.55,
             "hasReach": true
           },
           {
             "name": "MARIMER BABY NACIONAL COLABORACION",
-            "impressions": 9343,
+            "impressions": 9344,
             "link_clicks": 0,
             "reach": 6498,
             "clicks": 64,
-            "ctr": 0.69,
+            "ctr": 0.68,
             "hasReach": true
           }
         ]
@@ -1940,73 +1940,73 @@
         "Traffic": [
           {
             "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas",
-            "impressions": 422298,
-            "link_clicks": 16949,
+            "impressions": 422342,
+            "link_clicks": 16952,
             "reach": 172809,
-            "clicks": 19064,
+            "clicks": 19067,
             "ctr": 4.51,
             "hasReach": true
           },
           {
             "name": "FLORATIL PADRES BABY ATLANTICO Unidrogas",
-            "impressions": 410913,
-            "link_clicks": 12606,
+            "impressions": 410972,
+            "link_clicks": 12608,
             "reach": 125788,
-            "clicks": 14853,
+            "clicks": 14856,
             "ctr": 3.61,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTOS BOGOTA CruzVerde",
-            "impressions": 397283,
-            "link_clicks": 15187,
+            "impressions": 397392,
+            "link_clicks": 15191,
             "reach": 175786,
-            "clicks": 17110,
+            "clicks": 17115,
             "ctr": 4.31,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas",
-            "impressions": 374314,
-            "link_clicks": 16115,
+            "impressions": 374386,
+            "link_clicks": 16117,
             "reach": 148376,
-            "clicks": 17839,
+            "clicks": 17841,
             "ctr": 4.77,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES BOGOTA CRUZ VERDE",
-            "impressions": 366620,
-            "link_clicks": 15627,
+            "impressions": 366706,
+            "link_clicks": 15634,
             "reach": 177095,
-            "clicks": 17759,
+            "clicks": 17765,
             "ctr": 4.84,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTOS ATLANTICO Unidrogas",
-            "impressions": 358867,
-            "link_clicks": 15768,
+            "impressions": 358936,
+            "link_clicks": 15772,
             "reach": 116474,
-            "clicks": 17929,
+            "clicks": 17933,
             "ctr": 5,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES NACIONAL Unidrogas",
-            "impressions": 304316,
-            "link_clicks": 12328,
+            "impressions": 304377,
+            "link_clicks": 12331,
             "reach": 163023,
-            "clicks": 14123,
+            "clicks": 14128,
             "ctr": 4.64,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTOS NACIONAL Copservir",
-            "impressions": 288149,
-            "link_clicks": 16930,
+            "impressions": 288230,
+            "link_clicks": 16933,
             "reach": 130716,
-            "clicks": 18420,
+            "clicks": 18423,
             "ctr": 6.39,
             "hasReach": true
           }
@@ -2014,25 +2014,25 @@
         "Awareness": [
           {
             "name": "FLORATIL ADULTO ANTIOQUIA Unidrogas",
-            "impressions": 1176515,
+            "impressions": 1176603,
             "link_clicks": 231,
             "reach": 589953,
-            "clicks": 3762,
+            "clicks": 3763,
             "ctr": 0.32,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas",
-            "impressions": 1158601,
+            "impressions": 1158690,
             "link_clicks": 222,
             "reach": 567272,
-            "clicks": 3650,
+            "clicks": 3651,
             "ctr": 0.32,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES NACIONAL CruzVerde",
-            "impressions": 1053673,
+            "impressions": 1053736,
             "link_clicks": 176,
             "reach": 649132,
             "clicks": 3792,
@@ -2041,16 +2041,16 @@
           },
           {
             "name": "FLORATIL ADULTO NACIONAL Cruzverde",
-            "impressions": 1033923,
+            "impressions": 1033998,
             "link_clicks": 164,
             "reach": 616514,
-            "clicks": 3839,
+            "clicks": 3841,
             "ctr": 0.37,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTO ATLANTICO Unidrogas",
-            "impressions": 996380,
+            "impressions": 996457,
             "link_clicks": 212,
             "reach": 439090,
             "clicks": 3631,
@@ -2059,7 +2059,7 @@
           },
           {
             "name": "FLORATIL BABY PADRES ATLANTICO Unidrogas",
-            "impressions": 969231,
+            "impressions": 969288,
             "link_clicks": 223,
             "reach": 416308,
             "clicks": 3296,
@@ -2068,37 +2068,37 @@
           },
           {
             "name": "FLORATIL BABY PADRES NACIONAL Farmatodo NAAwareness Cruz verde 02-31Sep",
-            "impressions": 427622,
+            "impressions": 427636,
             "link_clicks": 70,
             "reach": 316714,
-            "clicks": 1456,
+            "clicks": 1457,
             "ctr": 0.34,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTO NACIONAL Farmatodo",
-            "impressions": 422990,
+            "impressions": 423020,
             "link_clicks": 68,
-            "reach": 328304,
-            "clicks": 1528,
+            "reach": 328583,
+            "clicks": 1529,
             "ctr": 0.36,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES NACIONAL La rebaja",
-            "impressions": 333671,
+            "impressions": 333682,
             "link_clicks": 77,
             "reach": 266839,
-            "clicks": 1158,
+            "clicks": 1159,
             "ctr": 0.35,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTO NACIONAL LaRebaja",
-            "impressions": 333404,
+            "impressions": 333418,
             "link_clicks": 140,
             "reach": 229202,
-            "clicks": 1009,
+            "clicks": 1010,
             "ctr": 0.3,
             "hasReach": true
           }
@@ -2109,6 +2109,78 @@
       "FLORATIL": {
         "Traffic": [
           {
+            "name": "FLORATIL ADULTOS NACIONAL Copservir",
+            "impressions": 3871,
+            "link_clicks": 72,
+            "reach": 3783,
+            "clicks": 79,
+            "ctr": 2.04,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas Traffic",
+            "impressions": 1548,
+            "link_clicks": 28,
+            "reach": 1510,
+            "clicks": 29,
+            "ctr": 1.87,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS BOGOTA CruzVerde",
+            "impressions": 1329,
+            "link_clicks": 22,
+            "reach": 1299,
+            "clicks": 22,
+            "ctr": 1.66,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL PADRES BABY ATLANTICO Unidrogas Traffic",
+            "impressions": 1151,
+            "link_clicks": 24,
+            "reach": 1105,
+            "clicks": 25,
+            "ctr": 2.17,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES NACIONAL Unidrogas Traffic",
+            "impressions": 1132,
+            "link_clicks": 23,
+            "reach": 1132,
+            "clicks": 25,
+            "ctr": 2.21,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES BOGOTA CRUZ VERDE",
+            "impressions": 1108,
+            "link_clicks": 25,
+            "reach": 1095,
+            "clicks": 27,
+            "ctr": 2.44,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas",
+            "impressions": 957,
+            "link_clicks": 14,
+            "reach": 957,
+            "clicks": 15,
+            "ctr": 1.57,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS ATLANTICO Unidrogas Traffic",
+            "impressions": 548,
+            "link_clicks": 26,
+            "reach": 409,
+            "clicks": 24,
+            "ctr": 4.38,
+            "hasReach": true
+          },
+          {
             "name": "FLORATIL PADRES BABY ATLANTICO Unidrogas",
             "impressions": 0,
             "link_clicks": 0,
@@ -2118,25 +2190,7 @@
             "hasReach": true
           },
           {
-            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": true
-          },
-          {
             "name": "FLORATIL BABY PADRES NACIONAL Unidrogas",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTOS NACIONAL Copservir",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -2161,23 +2215,177 @@
             "clicks": 0,
             "ctr": 0,
             "hasReach": true
-          },
+          }
+        ],
+        "Awareness": [
           {
-            "name": "FLORATIL BABY PADRES BOGOTA CRUZ VERDE",
-            "impressions": 0,
+            "name": "FLORATIL ADULTO NACIONAL Cruzverde",
+            "impressions": 1927,
             "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
+            "reach": 1900,
+            "clicks": 11,
+            "ctr": 0.57,
             "hasReach": true
           },
           {
-            "name": "FLORATIL ADULTOS BOGOTA CruzVerde",
-            "impressions": 0,
+            "name": "FLORATIL BABY PADRES NACIONAL CruzVerde",
+            "impressions": 1262,
             "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
+            "reach": 1166,
+            "clicks": 1,
+            "ctr": 0.08,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTO ATLANTICO Unidrogas",
+            "impressions": 1257,
+            "link_clicks": 1,
+            "reach": 1194,
+            "clicks": 2,
+            "ctr": 0.16,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES ATLANTICO Unidrogas",
+            "impressions": 1216,
+            "link_clicks": 1,
+            "reach": 1211,
+            "clicks": 5,
+            "ctr": 0.41,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas",
+            "impressions": 1062,
+            "link_clicks": 0,
+            "reach": 1034,
+            "clicks": 2,
+            "ctr": 0.19,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTO ANTIOQUIA Unidrogas",
+            "impressions": 1056,
+            "link_clicks": 0,
+            "reach": 1026,
+            "clicks": 3,
+            "ctr": 0.28,
+            "hasReach": true
+          }
+        ]
+      },
+      "MARIMER": {
+        "Traffic": [
+          {
+            "name": "MARIMER BABY NACIONAL Farmatodo T",
+            "impressions": 1026,
+            "link_clicks": 44,
+            "reach": 895,
+            "clicks": 48,
+            "ctr": 4.68,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY NACIONAL CruzVerde",
+            "impressions": 1010,
+            "link_clicks": 68,
+            "reach": 951,
+            "clicks": 74,
+            "ctr": 7.33,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER ADULTOS ATLANTICO Unidrogas",
+            "impressions": 704,
+            "link_clicks": 30,
+            "reach": 660,
+            "clicks": 31,
+            "ctr": 4.4,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY ANTIOQUIA Unidrogas",
+            "impressions": 619,
+            "link_clicks": 25,
+            "reach": 571,
+            "clicks": 30,
+            "ctr": 4.85,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER ADULTOS NACIONAL CruzVerde",
+            "impressions": 600,
+            "link_clicks": 31,
+            "reach": 553,
+            "clicks": 36,
+            "ctr": 6,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER ADULTOS NACIONAL LaRebaja Traffic",
+            "impressions": 548,
+            "link_clicks": 24,
+            "reach": 511,
+            "clicks": 27,
+            "ctr": 4.93,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER ADULTOS ANTIOQUIA Unidrogas",
+            "impressions": 410,
+            "link_clicks": 30,
+            "reach": 381,
+            "clicks": 31,
+            "ctr": 7.56,
+            "hasReach": true
+          },
+          {
+            "name": "MARIMER BABY ATLANTICO Unidrogas Traffic",
+            "impressions": 366,
+            "link_clicks": 18,
+            "reach": 353,
+            "clicks": 19,
+            "ctr": 5.19,
+            "hasReach": true
+          }
+        ]
+      },
+      "A-CERUMEN": {
+        "Traffic": [
+          {
+            "name": "A-CERUMEN ADULTO Nacional CruzVerde",
+            "impressions": 3383,
+            "link_clicks": 55,
+            "reach": 3383,
+            "clicks": 61,
+            "ctr": 1.8,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO ANTIOQUIA Unidrogas",
+            "impressions": 2975,
+            "link_clicks": 67,
+            "reach": 2955,
+            "clicks": 76,
+            "ctr": 2.55,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO ATLANTICO Unidrogas",
+            "impressions": 2070,
+            "link_clicks": 63,
+            "reach": 2015,
+            "clicks": 66,
+            "ctr": 3.19,
+            "hasReach": true
+          },
+          {
+            "name": "A-CERUMEN ADULTO NACIONAL Farmatodo",
+            "impressions": 1986,
+            "link_clicks": 49,
+            "reach": 1972,
+            "clicks": 55,
+            "ctr": 2.77,
             "hasReach": true
           }
         ]
