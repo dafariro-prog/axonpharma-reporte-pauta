@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-10-03T18:29:16.429Z",
+  "updated": "2026-10-04T18:29:53.514Z",
   "months": {
     "2025-05": {
       "May25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
@@ -662,20 +662,20 @@
     },
     "2026-10": {
       "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 75510,
-        "freq": 1.0497
+        "reach": 143214,
+        "freq": 1.1111
       },
       "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 59371,
-        "freq": 1.1477
+        "reach": 86360,
+        "freq": 1.3118
       },
       "Oct26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 36741,
-        "freq": 1.0973
+        "reach": 59189,
+        "freq": 1.2051
       },
       "Oct26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 69247,
-        "freq": 1.2538
+        "reach": 112742,
+        "freq": 1.4331
       }
     }
   }
