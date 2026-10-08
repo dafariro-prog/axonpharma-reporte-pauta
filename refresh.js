@@ -48,6 +48,23 @@ const isVid = u => /\/o1\/v\//.test(u||'');   // patrón de URL de video mp4 de 
 // prioridad de miniatura que SIEMPRE devuelve una imagen: image_url -> póster de video IG -> media (si no es video) -> thumbnail
 const pickImg = r => { for(const u of [r.image_url, r.effective_instagram_media__thumbnail_url, r.effective_instagram_media__media_url, r.thumbnail_url]) if(/^http/.test(u||'')&&!isVid(u)) return u; return ''; };
 const metaPlat = c => /views/i.test(c) ? 'Views' : (/traffic/i.test(c) ? 'Traffic' : 'Awareness');   // Views: campañas de reproducciones
+const crypto = require('crypto');
+// Auto-aloja una miniatura remota en el repo (nunca expira). Clave estable (mes|marca|plat|anuncio) -> mismo archivo.
+async function selfHost(url, month, keyStr) {
+  if (!/^https?:\/\//.test(url||'')) return url;                 // ya es ruta local
+  const id = crypto.createHash('md5').update(keyStr).digest('hex').slice(0,16);
+  const rel = `assets/creatives/${month}/${id}.jpg`, abs = path.join(__dirname, rel);
+  if (fs.existsSync(abs)) return rel;                            // ya alojada
+  try {
+    const r = await fetch(url); const ct = r.headers.get('content-type')||'';
+    if (!r.ok || !/image\//.test(ct)) return url;               // expirada/no imagen -> deja remota (onerror la oculta)
+    fs.mkdirSync(path.dirname(abs), {recursive:true});
+    fs.writeFileSync(abs, Buffer.from(await r.arrayBuffer()));
+    return rel;
+  } catch(e) { return url; }
+}
+// Lista de meses "YYYY-MM" desde fromDate (YYYY-MM-DD) hasta hoy.
+function monthsFrom(fromDate){ const out=[]; let [y,mo]=[+fromDate.slice(0,4),+fromDate.slice(5,7)]; const cy=_n.getUTCFullYear(),cm=_n.getUTCMonth()+1; while(y<cy||(y===cy&&mo<=cm)){out.push(y+'-'+pad(mo)); mo++; if(mo>12){mo=1;y++;}} return out; }
 const PRODUCTS = ['A-CERUMEN','MARIMER&FLORATIL','MARIMER','FLORATIL'];
 const productOf = c => { const u=(c||'').toUpperCase(); for(const p of PRODUCTS) if(u.includes(p)) return p==='MARIMER&FLORATIL'?'MARIMER & FLORATIL':p; return 'Otros'; };
 const cleanMeta = n => String(n).replace(/^\w+_CO_AxonPharma_/i,'').replace(/_(Traffic|Awareness)_.*$/i,'').replace(/_/g,' ').replace(/\s+/g,' ').trim();
@@ -135,13 +152,16 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
       const a = acc[key] || (acc[key] = { month, brand, plat, ad_name:ad, thumbnail:https(img), spend:0, impressions:0, clicks:0 });
       a.thumbnail = https(img); a.spend += spend; a.impressions += impr; a.clicks += clk;
     };
-    const mCr = await win('facebook', ['account_id','year','month','campaign','ad_name','image_url','effective_instagram_media__thumbnail_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT, from:CRE_FROM});
-    mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
-      const m = ymOf(r); if (!/^202[56]/.test(m)) return;
-      // prioridad que garantiza IMAGEN (evita mp4 de reels/videos): image_url -> póster de video -> media(no video) -> thumbnail
-      const img = pickImg(r);
-      addCr(m, productOf(r.campaign), metaPlat(r.campaign), r.ad_name, img, +r.spend||0, +r.impressions||0, +r.clicks||0);
-    });
+    // Pull POR MES (el de image_url de toda la ventana excede el timeout de undici ~300s)
+    for (const mm of monthsFrom(CRE_FROM)) {
+      const mFrom = mm+'-01', mTo = new Date(Date.UTC(+mm.slice(0,4), +mm.slice(5,7), 0)).toISOString().slice(0,10);
+      const mCr = await win('facebook', ['account_id','year','month','campaign','ad_name','image_url','effective_instagram_media__thumbnail_url','effective_instagram_media__media_url','thumbnail_url','spend','impressions','clicks'], {account:FB_ACCT, from:mFrom, to:mTo});
+      mCr.filter(r => String(r.account_id) === FB_ACCT).forEach(r => {
+        const m = ymOf(r); if (!/^202[56]/.test(m)) return;
+        // prioridad que garantiza IMAGEN (evita mp4 de reels/videos): image_url -> póster de video -> media(no video) -> thumbnail
+        addCr(m, productOf(r.campaign), metaPlat(r.campaign), r.ad_name, pickImg(r), +r.spend||0, +r.impressions||0, +r.clicks||0);
+      });
+    }
     if (ttOk) { try {
       tCr = await win('tiktok', ['account_id','year','month','campaign','ad_name','video_thumbnail_url','spend','impressions','clicks'], {account:TT_ACCT, from:CRE_FROM});
       tCr.filter(r => String(r.account_id) === TT_ACCT).forEach(r => {
@@ -159,6 +179,9 @@ const readJson = p => { try { return JSON.parse(fs.readFileSync(p,'utf8')); } ca
     });
     for(const m in fresh) for(const b in fresh[m]) for(const p in fresh[m][b])
       fresh[m][b][p] = fresh[m][b][p].sort((x,y)=>y.ctr-x.ctr).slice(0, TOP_ADS);
+    // AUTO-ALOJAR las miniaturas de la ventana en el repo (las URLs de Meta/TikTok expiran en ~días)
+    for(const m in fresh) for(const b in fresh[m]) for(const p in fresh[m][b])
+      for(const c of fresh[m][b][p]) c.thumbnail = await selfHost(c.thumbnail, m, m+'|'+b+'|'+p+'|'+c.ad_name);
     // fusión: base = meses previos; se sobreescriben los meses de la ventana con lo fresco
     const prev = (readJson(path.join(dataDir,'creatives.json'))||{}).months || {};
     const months = JSON.parse(JSON.stringify(prev));

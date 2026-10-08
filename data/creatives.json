@@ -1,6 +1,6 @@
 {
   "source": "Meta(image_url)+TikTok",
-  "updated": "2026-09-20T20:08:41.334Z",
+  "updated": "2026-10-08T23:16:29.567Z",
   "months": {
     "2026-01": {
       "FLORATIL": {
@@ -4566,440 +4566,276 @@
       "A-CERUMEN": {
         "Traffic": [
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/796438723_4574765006128210_7213564591323231763_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=z51SpU5kgAkQ7kNvwEKUiGf&_nc_oc=AdpH-z0zHf61v_U9Yz9eBmSxpH6FHVsvPkWnu3hJfoT6-6yPLAWd8rwtVFFfI8O_9y8&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=4PpSqvFR-Djzx7o8eh98NQ&_nc_tpa=Q5bMBQKJqO8igJwLAwlWXemTTvBX4CwUl-HWh2UivU4udfeECQ4AyAVSxaIt4XIP1p_RlbIKCOPXQRWneg&oh=00_AQIXpuTOlKsbE3nzy_ZXN7J-zxrZqnGk7o-otcOJMVaOWg&oe=6AB5E8E8",
             "ad_name": "Sep26_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Traffic_03-31Sep_Video 2",
-            "spend": 136002,
-            "impressions": 28862,
-            "clicks": 2364,
-            "cpm": 4712.15,
-            "cpc": 57.53,
-            "ctr": 8.19
+            "spend": 183540,
+            "impressions": 36617,
+            "clicks": 3031,
+            "cpm": 5012.43,
+            "cpc": 60.55,
+            "ctr": 8.28,
+            "thumbnail": "assets/creatives/2026-09/45ad121734f87df3.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/795027481_1794681291974097_1998096618160468649_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yWa4hfCcud0Q7kNvwEzHuGt&_nc_oc=AdroObb3IJBPK_NWDNTZOKrTKA6lyb687vXdNMbOGHkur1Ndwn5LJC9gNLaG5tBTcQc&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=S7-Q1savY6eI75tQ7yPDjw&_nc_tpa=Q5bMBQLet3RAE_oLM1x8TyGG_mE8202HIwTXPltJW8wDaAJLNFc1AztL44JaDXy4mWlEu6zz1ki3brsebw&oh=00_AQJm4pETEVP3OpH5xD_n80a824mJDHphgPCt8sMfcLWm1Q&oe=6AB5E9A0",
             "ad_name": "Sep26_CO_AxonPharma_A-CERUMEN_ADULTO_Nacional_Farmatodo_Traffic_03-31Sep_Video 2",
-            "spend": 682627,
-            "impressions": 151040,
-            "clicks": 10537,
-            "cpm": 4519.51,
-            "cpc": 64.78,
-            "ctr": 6.98
+            "spend": 984511,
+            "impressions": 203011,
+            "clicks": 14625,
+            "cpm": 4849.55,
+            "cpc": 67.32,
+            "ctr": 7.2,
+            "thumbnail": "assets/creatives/2026-09/12a86600fc4ce5ba.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-2.cdninstagram.com/v/t51.71878-15/795287962_1940453823289091_5230961595406818268_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Jb_S9ecneHYQ7kNvwHgPtlj&_nc_oc=AdoIxB1SLWiryhoWhcCfzhEfrSZ1P5vMRLUKb3m0u2scR66bhB99j5DpsjiDM8IHH3I&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=DYetT44pXR7RQ_WQZRPC9g&_nc_tpa=Q5bMBQIxQ9krZVBDs9m8Wzj-9zhHDsNzIPi0y7UWSYgHXHeKHLpFNsSaKT1XaNOnxKLMPqCx_5u9Xdphkw&oh=00_AQKCXo4s8Og_MM-_d8oPalgni9uww98Tor_ODpbWoYJ0rg&oe=6AB60135",
             "ad_name": "Sep26_CO_AxonPharma_A-CERUMEN_ADULTO_Atlantico_Unidrogas_Traffic_03-31Sep_Video 2",
-            "spend": 395732,
-            "impressions": 82373,
-            "clicks": 5487,
-            "cpm": 4804.15,
-            "cpc": 72.12,
-            "ctr": 6.66
+            "spend": 458468,
+            "impressions": 91994,
+            "clicks": 6132,
+            "cpm": 4983.67,
+            "cpc": 74.77,
+            "ctr": 6.67,
+            "thumbnail": "assets/creatives/2026-09/c36d3bca61a86d30.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/794222741_1389523606116267_8118969638484047086_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=S5MIfwcF_swQ7kNvwHUULGq&_nc_oc=Ado5030DcZgPAUv7aW2L95O42hd0bHortccMd42aZ33NX9R9NsyS4B6zLC_t7x1X_FU&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=9BBd7387uAP9rpn8loLiZg&_nc_tpa=Q5bMBQJjKcNONKWa1hqJRouWCAdgCkuNg7PzK1SNdHXT_p4A1OBxdGxz1xR8_jRai3BVnPzy3t_3kTXGhQ&oh=00_AQIZgsmj6apE_Cl_tiGs1VdosczLbE_mLMjyJAzz0tITSw&oe=6AB60BDE",
             "ad_name": "Sep26_CO_AxonPharma_A-CERUMEN_ADULTO_ANTIOQUIA_Unidrogas_Traffic_03-31Sep_Video 1",
-            "spend": 998690,
-            "impressions": 322896,
-            "clicks": 19231,
-            "cpm": 3092.92,
-            "cpc": 51.93,
-            "ctr": 5.96
+            "spend": 1428575,
+            "impressions": 441126,
+            "clicks": 26041,
+            "cpm": 3238.47,
+            "cpc": 54.86,
+            "ctr": 5.9,
+            "thumbnail": "assets/creatives/2026-09/efd572a48725304d.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/795660918_1080448944686235_3204214298923116392_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=C3v_chV_7kAQ7kNvwGgA0CG&_nc_oc=AdoHJtHw_uuThYNsNDNVxlQe7oZOyuObYdylOzqjI9d0jSsPs8qbBcVD4O2OA_70zw4&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=zEGZkLAciYXT3rzfsct27A&_nc_tpa=Q5bMBQIv78e3aLLKXeK4eA-Ybn6AQcugVVDaCcwZen9Ci42wB96g4XLdUGCjMiRnKK2N0tb6FBwB3kB4Gg&oh=00_AQJ89dlQnEdzucvrWJAXjJCFc1Ga7JuJLNkzXSOjKmvJMQ&oe=6AB5D95C",
             "ad_name": "Sep26_CO_AxonPharma_A-CERUMEN_ADULTO_Nacional_Cruz Verde_Traffic_03-30Sep_Video 2",
-            "spend": 97671,
-            "impressions": 30196,
-            "clicks": 1671,
-            "cpm": 3234.57,
-            "cpc": 58.45,
-            "ctr": 5.53
+            "spend": 103210,
+            "impressions": 31487,
+            "clicks": 1743,
+            "cpm": 3277.86,
+            "cpc": 59.21,
+            "ctr": 5.54,
+            "thumbnail": "assets/creatives/2026-09/35de5618e27f1a0c.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-2.cdninstagram.com/v/t51.71878-15/797644365_28033345489619213_7560952664227775041_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0xdJjFdbUxUQ7kNvwFwmL0d&_nc_oc=AdpUAdyFTKb9aL0GKDLbQsrmf1DLZ6DjYjX5zeNo3dCATtDreZVkO7AtTDhKocAOdQc&_nc_zt=23&_nc_ht=scontent-fra5-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=9biibZl3_dwsC53tpFlcmg&_nc_tpa=Q5bMBQKy36aS1qfYox6mvnsR0rSgs0r4DTKFErbX3mQIGe6Kbq7xT4EzZjSMSylQUuJc6XJtU5Ne1elDTg&oh=00_AQLnj-ewIkHn6yMAP4QPTHP-SrDFaKCQK0fPM7aQTkeu2A&oe=6AB5FEE5",
             "ad_name": "Sep26_CO_AxonPharma_A-CERUMEN_ADULTO_Nacional_Cruz Verde_Traffic_03-30Sep_Video 1",
-            "spend": 804945,
-            "impressions": 301477,
-            "clicks": 15176,
-            "cpm": 2670,
-            "cpc": 53.04,
-            "ctr": 5.03
-          }
-        ],
-        "TikTok": [
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oIeEmxN4IboGgmQCVhuDfDYbeFAFCD4A35aVQF~tplv-noop.image?dr=18692&refresh_token=055fa743&x-expires=1789435635&x-signature=xqz3aZsY7vJZUYWBavR%2BZU4V0n4%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000dagsf1fog65k6omcdam0",
-            "ad_name": "Sep26_AXONPHARMA_ACerumen_Baby_Traffic_$880_3897_1",
-            "spend": 579956,
-            "impressions": 288358,
-            "clicks": 33582,
-            "cpm": 2011.24,
-            "cpc": 17.27,
-            "ctr": 11.65
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oAq2Ah3IPuUoKExiaVAQYYAbAziBF4BoGaHjM~tplv-noop.image?dr=18692&refresh_token=eb475f83&x-expires=1789435635&x-signature=FqqmhADh2Ul8zprlnK9f%2FAGvYO0%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000dagsdo7og65n8a1a6060",
-            "ad_name": "Sep26_AXONPHARMA_ACerumen_Traffic_$880_3897_1",
-            "spend": 691144,
-            "impressions": 355494,
-            "clicks": 39606,
-            "cpm": 1944.18,
-            "cpc": 17.45,
-            "ctr": 11.14
-          },
-          {
-            "thumbnail": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oo1CbUI2BseQGP7XDAIw0m68XaCAAXEMBegCfH~tplv-noop.image?dr=18692&refresh_token=4abdebab&x-expires=1789435635&x-signature=j4JWbyJwYJizTHMnnZNRJqYDyVs%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d813uivog65srdsquqfg",
-            "ad_name": "Jun26_AXONPHARMA_ACerumen_Traffic_$880_3897_1",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oo1CbUI2BseQGP7XDAIw0m68XaCAAXEMBegCfH~tplv-noop.image?dr=18692&refresh_token=4abdebab&x-expires=1789435635&x-signature=j4JWbyJwYJizTHMnnZNRJqYDyVs%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d813uivog65srdsquqfg",
-            "ad_name": "May26_AXONPHARMA_ACerumen_Traffic_$471,16_2356_1",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/ocD5a3IgQpAFPExH4iNnwNfzMzDxBBJIiEPpf3~tplv-noop.image?dr=18692&refresh_token=e036d191&x-expires=1789435633&x-signature=rrSP1vqR3Bj0DzsnsLxABKQfO%2Fc%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d4rhptvog65ofsv6577g",
-            "ad_name": "Mar26_AXONPHARMA_ACerumen_Traffic_$1756,46_8086_3",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/okIw3PDzYc7Ig3rLUALiSiwqZVBanTATAHa0G~tplv-noop.image?dr=18692&refresh_token=726068a3&x-expires=1789435633&x-signature=9uDlGLeR3gz6BU%2FhKt%2B7XemQ8cw%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d4rhlb7og65n5iqd4po0",
-            "ad_name": "Mar26_AXONPHARMA_ACerumen_Traffic_$1756,46_8086_2",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
+            "spend": 1166762,
+            "impressions": 417949,
+            "clicks": 20979,
+            "cpm": 2791.64,
+            "cpc": 55.62,
+            "ctr": 5.02,
+            "thumbnail": "assets/creatives/2026-09/befecf3be759cf0c.jpg"
           }
         ]
       },
       "MARIMER": {
         "Traffic": [
           {
-            "thumbnail": "https://scontent-fra3-2.cdninstagram.com/v/t51.71878-15/798115204_1537644148133025_5402746819588450000_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=93WclZsqHEkQ7kNvwHCxpo7&_nc_oc=AdpIJxlHiyrEN4wRZcSUN4O2lx-w7xqNiVKNlTm2XKNsUXt8G7WlGL7gzpgO6cyBBEg&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=ypVbWcsDr_j46ir5g7iJag&_nc_tpa=Q5bMBQJUJK-3h9Kmn08650UT5sf5nslywMMbpmc_RPE52FpvHd9w7EPzVs--ccanduHDdGJe0rGXYXaEXw&oh=00_AQKBDxGOuEhjWKiKZQcAK5i_-EZwmTryepjkLDNep3-LiA&oe=6AB5E385",
             "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Unidrogas_Traffic_03-31Sep_Video 1",
-            "spend": 109389,
-            "impressions": 18147,
-            "clicks": 1425,
-            "cpm": 6027.94,
-            "cpc": 76.76,
-            "ctr": 7.85
+            "spend": 114979,
+            "impressions": 19844,
+            "clicks": 1509,
+            "cpm": 5794.14,
+            "cpc": 76.2,
+            "ctr": 7.6,
+            "thumbnail": "assets/creatives/2026-09/1cf61ba4267f9a1c.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-2.cdninstagram.com/v/t51.71878-15/798587790_1401352211461956_7909054940109269770_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=_ZkjrEwofGwQ7kNvwGPUUpg&_nc_oc=Adq-O6vjdLdZlfZ25k9uV7m4a6AeQkf4pxl6ICbyL4NmlwRNifCRjww-IpMfkKWUsGY&_nc_zt=23&_nc_ht=scontent-fra5-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=f6dZTNeDXOGR1m5uh5Ov7w&_nc_tpa=Q5bMBQLx3VfYZ_rfBb6yFRf-dEHi954SDCByvgFpenGkraodZy574zZwtmPZVRfn7mUrYM4L11jmkV6_mw&oh=00_AQLSjUW518ZN8VMJh9_-_ee8BVc8b-x6Ss8aHOAIYHEFbA&oe=6AB5D5F8",
             "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_CruzVerde_Traffic_03-31Sep_Video 1",
-            "spend": 93501,
-            "impressions": 18454,
-            "clicks": 1100,
-            "cpm": 5066.71,
-            "cpc": 85,
-            "ctr": 5.96
+            "spend": 98757,
+            "impressions": 20702,
+            "clicks": 1179,
+            "cpm": 4770.41,
+            "cpc": 83.76,
+            "ctr": 5.7,
+            "thumbnail": "assets/creatives/2026-09/83b5535af229d7ca.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/798115197_1078322021790058_8148518258823486760_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=UYyuKVbHuioQ7kNvwEelVly&_nc_oc=Adq2WYPSszFV4JclSJvi08F298Xuffk_ATG7HTUXzMj8vHAhtDzaJLexgecOoUzp5fI&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=TWVl4VGzALmRUNNG-fC00w&_nc_tpa=Q5bMBQJfIn1MCZDu7wYjrYUBY5TYUAVNavUbOAatA1jTcwPP6GT2z4FS-FcBJvs48Kdt8btJ6UpSffiD6g&oh=00_AQLhUNbpgxx4Qv8TBMPWRcj8IuEhf9xLjbEtsSqBRfWvbQ&oe=6AB5FA35",
             "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_ATLANTICO_Unidrogas_Traffic_03-31Sep_Video 1",
-            "spend": 32799,
-            "impressions": 7756,
-            "clicks": 372,
-            "cpm": 4228.86,
-            "cpc": 88.17,
-            "ctr": 4.8
+            "spend": 33280,
+            "impressions": 7869,
+            "clicks": 381,
+            "cpm": 4229.25,
+            "cpc": 87.35,
+            "ctr": 4.84,
+            "thumbnail": "assets/creatives/2026-09/b326ee8053bd6e9a.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-2.cdninstagram.com/v/t51.71878-15/796438723_2122364105367761_8530824819899233731_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=XKx06bd7vVcQ7kNvwFykfgD&_nc_oc=AdrsrIgRKfetY5iir6t_jxvpq8rGjVvLGyKoagBu9Ujov0ErSTzW_D6rrTI748nUoCU&_nc_zt=23&_nc_ht=scontent-fra5-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=83Wm85KxxX4MgoDbn97lPw&_nc_tpa=Q5bMBQKFVMt2-MWamvyWnmSVo4LHB7A5rp7482zpOyFCRVetsXbk3d-3dSQWpn-ko8Vccvr1WzdVR2Zaig&oh=00_AQJv_TSzV83DOKeeRwt-z-qu_HetNs73Y685g_lUIIMStQ&oe=6AB5F951",
             "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_ANTIOQUIA_Unidrogas_Traffic_03-31Sep_Video 2",
-            "spend": 551824,
-            "impressions": 142991,
-            "clicks": 6585,
-            "cpm": 3859.15,
-            "cpc": 83.8,
-            "ctr": 4.61
+            "spend": 869416,
+            "impressions": 225461,
+            "clicks": 10175,
+            "cpm": 3856.17,
+            "cpc": 85.45,
+            "ctr": 4.51,
+            "thumbnail": "assets/creatives/2026-09/c8534e43a1be9319.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/813837181_1067520162696901_1511728012455360454_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IplyHhPMcJIQ7kNvwGVEZ_S&_nc_oc=AdrUOvZAM12SU00OnQ0bpjey6plPsbDMNeGYJeOCnPwzoI1YJOHYlMssBTBaMDxKQy0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=31CewQLA4uWsdhr33EAjig&_nc_tpa=Q5bMBQIYw7jMtYAbiOR9yuZCqOth0EH7KjmwUc2r9VrleBqKXmglFB9IEQopfz7XdP4HbNVb5OYge5vTSw&oh=00_AQKppX2DuzsGCFONarodgdqmoo8jGZYnaVEpm1bn7VqCrQ&oe=6AB608FB",
-            "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_LaRebaja_Traffic_03-31Sep_Video 2",
-            "spend": 641886,
-            "impressions": 199225,
-            "clicks": 7928,
-            "cpm": 3221.91,
-            "cpc": 80.96,
-            "ctr": 3.98
-          },
-          {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/796095566_1681510236734751_1860206309344277748_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=SzcdNItTDrMQ7kNvwEMM9h7&_nc_oc=Adq16rA0WSQrQ6LaM-klTjtNZ0hseIog3FEDzB48UDDMmm5yFzEW2EDDVGR7apT7UYM&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=iFHdhvQQZvNeyfCYfufk8Q&_nc_tpa=Q5bMBQI2eT-qstbEE8lM_a9g5YBW0Xgm5Oo-l_WD9jlGM9PIgvhH9oaqzcRGgJ8jyyORzzeFj1-RRWdS_A&oh=00_AQKjIZUcNY6R6wJgmksTTXEHe0BFzTnO0xhY8pLOQlf-Jw&oe=6AB5FE66",
             "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_CruzVerde_Traffic_03-31Sep_Video 2",
-            "spend": 839700,
-            "impressions": 242508,
-            "clicks": 9538,
-            "cpm": 3462.57,
-            "cpc": 88.04,
-            "ctr": 3.93
+            "spend": 1272814,
+            "impressions": 365238,
+            "clicks": 13881,
+            "cpm": 3484.89,
+            "cpc": 91.69,
+            "ctr": 3.8,
+            "thumbnail": "assets/creatives/2026-09/d57ad9d46555b6f2.jpg"
+          },
+          {
+            "ad_name": "Sep26_CO_AxonPharma_MARIMER_ADULTO_ATLANTICO_Unidrogas_Traffic_03-31Sep_Video 2",
+            "spend": 1292791,
+            "impressions": 358083,
+            "clicks": 13188,
+            "cpm": 3610.31,
+            "cpc": 98.03,
+            "ctr": 3.68,
+            "thumbnail": "assets/creatives/2026-09/97e61a148e010385.jpg"
           }
         ],
-        "TikTok": [
+        "Awareness": [
           {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oIA91I5TVDsvkfJQAGCH1VQQLCOIgQebeGdrDQ~tplv-noop.image?dr=18692&refresh_token=a5623623&x-expires=1789435638&x-signature=gIt2gB1FNrMZqzcDZp6ATPfMk%2Bc%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000dagsjh7og65k5dqjqvk0",
-            "ad_name": "Sep26_AXONPHARMA_Marimer_Traffic_$1694,83_7506_Post1_Baby",
-            "spend": 2509216,
-            "impressions": 1157617,
-            "clicks": 146128,
-            "cpm": 2167.57,
-            "cpc": 17.17,
-            "ctr": 12.62
+            "ad_name": "SEP26_CO_AxonPharma_MARIMER_BABY_NACIONAL_Farmatodo_Awareness_03-30SEP_COLABORACION",
+            "spend": 8581,
+            "impressions": 9344,
+            "clicks": 64,
+            "cpm": 918.34,
+            "cpc": 134.08,
+            "ctr": 0.68,
+            "thumbnail": "assets/creatives/2026-09/21c020723a356ad0.jpg"
           },
           {
-            "thumbnail": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oYIAAlAPOABixmHza6uRiBDrjUiE7vYYnU7Lp~tplv-noop.image?dr=18692&refresh_token=20d84959&x-expires=1789435635&x-signature=xjNlpH6XGcubblfuuE25R3L7fNk%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d8lotq7og65h1isrn7ig",
-            "ad_name": "Jun26_AXONPHARMA_Marimer_Traffic_$1694,83_7506_Post1_Baby",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oweiEyvADDCIL2AQIEGZgUQLBIrifmbHJLeG43~tplv-noop.image?dr=18692&refresh_token=1f8a0f55&x-expires=1789435635&x-signature=irvfD2YT7E%2BPe40uPgI5OJpQ%2FG4%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d814olvog65i23f2r6fg",
-            "ad_name": "TIKTOK MARIMER ADULTO ISOTONICO_RAEgjets.mp4_Copy 1 of 2026-05-11 15:58:05",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/owak3DAZQAQS2LEDjBhEHILbfI4NgXFdqEBZKf~tplv-noop.image?dr=18692&refresh_token=5f0fda78&x-expires=1789435635&x-signature=27fZ6EPD9QNLlQ8AMkq19sBvOiY%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d8145knog65htj5q85ig",
-            "ad_name": "TIKTOK MARIMER BABY HIPERTONICO_OuViE20n.mp4_2026-05-11 15:58:05",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/owXuFSPCEBfgAFk5bGgQZADA0eVbCyDsGQYfbr~tplv-noop.image?dr=18692&refresh_token=a43aacb1&x-expires=1789435634&x-signature=R1W3dODiqIL6wVWwybT2aQeUnXw%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d4rg1fnog65m0hterlsg",
-            "ad_name": "Mar26_AXONPHARMA_Marimer_Traffic_$1338,74_6163_1",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oEfp4iNwDBDNW3oESIFLDEgsBe9rIgBwydAQJA~tplv-noop.image?dr=18692&refresh_token=2dd79f7a&x-expires=1789435634&x-signature=NwaZh%2FrLW%2BnVu0zIuKXejxcARno%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d4ri5gvog65o2ddd2ev0",
-            "ad_name": "Mar26_AXONPHARMA_Marimer_Traffic_$1338,74_6163_2",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
+            "ad_name": "SEP26_CO_AxonPharma_MARIMER_ADULTO_NACIONAL_Farmatodo_Awareness_03-30SEP_COLABORACION",
+            "spend": 391419,
+            "impressions": 412186,
+            "clicks": 2268,
+            "cpm": 949.62,
+            "cpc": 172.58,
+            "ctr": 0.55,
+            "thumbnail": "assets/creatives/2026-09/a6cc356b306cb84b.jpg"
           }
         ]
       },
       "FLORATIL": {
         "Traffic": [
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/780840716_4486901501638032_926920326209523744_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cFIG2lkJfyMQ7kNvwEcQPn0&_nc_oc=Adr6K0ES1dia0MeZWQBQFAY-IG1uOTlk29koa4hxF_FRLD_NHyKOpyCVEFPMxXAfHdo&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=ECYjlxvX1TpUsjrWBuNHuQ&_nc_tpa=Q5bMBQLHoer8SZqt0q3edz2ztmPHpRYbvs020J_9mNnhQnR2cFlwQQlCmfCxnVaxuXGYJIm-Ej4imlygew&oh=00_AQI74NZkHRm6T0axM99nsNme0QBxkZf8bV8VsK0NW1qrtA&oe=6AB5FA39",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Traffic_01-30Sep_Video 1",
-            "spend": 74614,
-            "impressions": 18142,
-            "clicks": 1310,
-            "cpm": 4112.78,
-            "cpc": 56.96,
-            "ctr": 7.22
+            "spend": 153377,
+            "impressions": 36017,
+            "clicks": 2485,
+            "cpm": 4258.46,
+            "cpc": 61.72,
+            "ctr": 6.9,
+            "thumbnail": "assets/creatives/2026-09/bf81636fd025dbb3.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/782729813_1096833062684976_3851860330706272897_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=WOdXGrVkcLYQ7kNvwEp3Hck&_nc_oc=Adr2iIM-gmAN-swEC3AD9z0V0CdeQWj0H9Z2hnPUIBJsSuJNouULfMPFEdMtUtasEKM&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=THBn8mxPutkUTBOSbGvyBA&_nc_tpa=Q5bMBQIBA44KcuDD43HVK0vDgSotYiTwTvxBx-CQSXvOMrqMvgR9DkHkG99Ehy_yoDs3_ETY6XzOZk06lQ&oh=00_AQIRmyZuqJBzqqDdNrEgz_S-gnkU8rse0Bt6jNu48tG11Q&oe=6AB5FC57",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_LaRebaja_Traffic_01-30Sep_Video 2",
-            "spend": 504635,
-            "impressions": 136933,
-            "clicks": 9206,
-            "cpm": 3685.27,
-            "cpc": 54.82,
-            "ctr": 6.72
+            "spend": 911418,
+            "impressions": 242429,
+            "clicks": 15802,
+            "cpm": 3759.53,
+            "cpc": 57.68,
+            "ctr": 6.52,
+            "thumbnail": "assets/creatives/2026-09/887667df8cbdb61e.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/799867954_1076420081793713_8863293891578553657_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=WtQxgCf2lHMQ7kNvwGnYbUT&_nc_oc=AdraVeNU8AEPN4kNXFeohg2RoDT4lpcXJK5ST5Tbe-G09ojgUt-TQNAU4xLoFYQtj6M&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=pmuDeXb20y2uknd1Ni4X9g&_nc_tpa=Q5bMBQKr1SRbOAMuR6554CgNXNGuG_9nUJwQq3yWSibrKm0joY-tZTpFDggvxRnbJuU9RgdejY72dSO_Vw&oh=00_AQLJ0_TIbJ4KMOVq6xso3WStX7P3BB5yEWBidUecS7rAHQ&oe=6AB5D6F7",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Traffic_01-30Sep_Video 1",
-            "spend": 167999,
-            "impressions": 44542,
-            "clicks": 2436,
-            "cpm": 3771.7,
-            "cpc": 68.97,
-            "ctr": 5.47
+            "spend": 263397,
+            "impressions": 68371,
+            "clicks": 3669,
+            "cpm": 3852.47,
+            "cpc": 71.79,
+            "ctr": 5.37,
+            "thumbnail": "assets/creatives/2026-09/69db3223b373b06e.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/800538773_929147626905992_7011292025151061871_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5qzxn4wEs8kQ7kNvwHA8UdM&_nc_oc=AdrNQ-8dYTuyPsw_tcPq9UKx-nNvMD5Xo6oMcOZ3-OXiWHdUxT_DcDB5r4fR1B5usQg&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=i-dH6yrjBInPQF725Lz3MA&_nc_tpa=Q5bMBQJ58NmwReeyah_oQqXxsFQtxS9lxZX0npcw20JG-ikXi2gpauwuHBaIz5w6iGSuojDrOwDJWmOGng&oh=00_AQJolH13e6vPyq2Uz7NVRz6xdRy180sXheB7YdqeI8tn8A&oe=6AB609B1",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_ANTIOQUIA_Unidrogas_Traffic_01-30Sep_Video 1",
-            "spend": 216162,
-            "impressions": 49930,
-            "clicks": 2715,
-            "cpm": 4329.3,
-            "cpc": 79.62,
-            "ctr": 5.44
+            "spend": 403481,
+            "impressions": 89447,
+            "clicks": 4741,
+            "cpm": 4510.84,
+            "cpc": 85.1,
+            "ctr": 5.3,
+            "thumbnail": "assets/creatives/2026-09/6b360df4e73cc414.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/799777786_1299916625449955_5897994578283825632_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=LKYk2gEJfd0Q7kNvwGC6IcH&_nc_oc=AdoZEA3bKefgc3Xmg_UV_DVW20fpsJtUQN0FMmuBbAjtDdLFR6UhU6kDitck1f8vcf4&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=dQ-nRZ72OOnVX2rb7rzJYw&_nc_tpa=Q5bMBQJDSWOQlnrLlZsnZCxuTzp0m1kEfLhx2jnsFFJxBW1S1vjrKJiGPHTvJYTSz7CxFzbh0BNvi6Hc4Q&oh=00_AQILIR-_sTEsWaPyMT5TGssuL13xzBi98Qk3yNQ_rY7HTg&oe=6AB5F7D4",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_BABY_ANTIOQUIA_Unidrogas_Traffic_01-30Sep_Video 1",
-            "spend": 151721,
-            "impressions": 34486,
-            "clicks": 1822,
-            "cpm": 4399.5,
-            "cpc": 83.27,
-            "ctr": 5.28
+            "spend": 308315,
+            "impressions": 68285,
+            "clicks": 3493,
+            "cpm": 4515.12,
+            "cpc": 88.27,
+            "ctr": 5.12,
+            "thumbnail": "assets/creatives/2026-09/5bf8f0160555f7bf.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/800345576_1064845353123820_9140307364869998677_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DGPT5m0pxfoQ7kNvwHSs-QB&_nc_oc=AdoBGYKPsUSlwKteKUaP8_7ebSWykikrmQzFfKQOMiwaaMTJr1_hiwv6CkMrwX5P-uw&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=5w1tax-peHLlAYKI87SBeQ&_nc_tpa=Q5bMBQLl_VCHkn1qlyFnmNc__0PvaRHSaW0lEick1RggDZYMfkmq0lCCIjjkOk4jWiWWx2FKxRSVp6PEfA&oh=00_AQJtT09qXhkN9PwPsrd0Jw9ZQBXIE9MtBeffYglWuVcVdg&oe=6AB5DAE1",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Traffic_01-30Sep_Video 2",
-            "spend": 559368,
-            "impressions": 150740,
-            "clicks": 7818,
-            "cpm": 3710.81,
-            "cpc": 71.55,
-            "ctr": 5.19
+            "spend": 1068328,
+            "impressions": 285638,
+            "clicks": 14129,
+            "cpm": 3740.15,
+            "cpc": 75.61,
+            "ctr": 4.95,
+            "thumbnail": "assets/creatives/2026-09/ddee89b8e01538bb.jpg"
           }
         ],
         "Awareness": [
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/800114643_1667150485131193_5525296668565668590_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jj4teaXpWnQQ7kNvwEhyh1U&_nc_oc=AdpZKqLabOyThxVnQiYl5lW30ekdGO8xAOyvCP0AXvsrBj7xzHnP2GetsRmoKqYj0c4&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=ctbB0rRi3DqfZFNRN2EMjA&_nc_tpa=Q5bMBQKgTorp9wUF_ORTg7imzw5mYSUFl0HR4zvkcrnXfv3-yvM2zRzpUs1fCZnXTzvhXOjRhXhfL-ah5A&oh=00_AQKTpiZIge5Txf-MhwOQKl-tnkWPtSfl6DsVovuzCaj3GQ&oe=6AB5ED9C",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Awareness_01-30Sep_Video 1",
-            "spend": 10212,
-            "impressions": 12040,
-            "clicks": 51,
-            "cpm": 848.17,
-            "cpc": 200.24,
-            "ctr": 0.42
+            "spend": 13123,
+            "impressions": 15253,
+            "clicks": 68,
+            "cpm": 860.36,
+            "cpc": 192.99,
+            "ctr": 0.45,
+            "thumbnail": "assets/creatives/2026-09/4e9106ba349c468f.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/800421751_1583580613154106_570569023005305559_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=BUCWcu5auIcQ7kNvwEFPMM5&_nc_oc=AdqgZPL3ip89dPaPUxmuwYmV8PQ1okbNgwh1D4cFpWDTtOZFsYKhruc7AXUq9Rtn3ko&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=aUJQY0LjPHnwkedhBMiu6w&_nc_tpa=Q5bMBQKdzBIJMVoV7RrgkKHJvctn3ORDpAsDxeDa5dPnCB_iBUaG4xL9Y79CJdLoYDu6gPd_WBZU5J_7OQ&oh=00_AQKv67avoa_U_soqzX6tCGHaywAmBtquM2x0QYhdKcspew&oe=6AB5D68E",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Awareness_01-30Sep_Video 2",
-            "spend": 53445,
-            "impressions": 60338,
-            "clicks": 233,
-            "cpm": 885.76,
-            "cpc": 229.38,
-            "ctr": 0.39
+            "spend": 103798,
+            "impressions": 109964,
+            "clicks": 414,
+            "cpm": 943.93,
+            "cpc": 250.72,
+            "ctr": 0.38,
+            "thumbnail": "assets/creatives/2026-09/a380a140b6b0d70b.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/800538762_4602993986643812_7886447914910884801_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cdbCD6RAP_AQ7kNvwEEabCi&_nc_oc=Adq4VVgFLlPkRn_AIfDUoo21Z8Ye0wDiXCjgwDKs8m9-dwyzSg6KW-cxwFqXuzl8QPI&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=DGqBy7aFLZDRgkcBqCn0bQ&_nc_tpa=Q5bMBQIUBizBxnWcIL6qDW3GfkbBJPm8FripROZ9jDCYQBKM5X5GVF3GrnAb_jElrQZl_aefSeqNpdSaXg&oh=00_AQIKPNYR0RbFXNeR99zHeLJamqSobBvO9JNuHGo_223RZg&oe=6AB5EE9A",
-            "ad_name": "Sep26_CO_AxonPharma_FLORATIL_BABY_ATLANTICO_Unidrogas_Awareness_01-30Sep_Video 1",
-            "spend": 11583,
-            "impressions": 12456,
-            "clicks": 49,
-            "cpm": 929.91,
-            "cpc": 236.39,
-            "ctr": 0.39
-          },
-          {
-            "thumbnail": "https://scontent-fra3-2.cdninstagram.com/v/t51.71878-15/799908592_1073209928766857_7044108256452893357_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=RhEoIpiN0UEQ7kNvwE_1iQM&_nc_oc=Ado83eoy4Xzj4MHge_h0hmUP3nSLyL0o6Dw4iqKOdzcqBIAR8C2PVmO2jyUQokMH4Ds&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=CGgtWH9EElmfZHex0T9atQ&_nc_tpa=Q5bMBQJ-VvzLVW7yWmJbpPvW4Ya79qxUQtjbATPycizbQsVK8HSMKNDnUX4q-ptWM3xrsf1NDryQO9WEiQ&oh=00_AQJJAQxJM8GXfTjXjWxiE22vIl9cQL-NLuZehgzvjbTfZA&oe=6AB5D5AB",
-            "ad_name": "Sep26_CO_AxonPharma_FLORATIL_BABY_NACIONAL_CruzVerde_Awareness_01-30Sep_Video 2",
-            "spend": 507918,
-            "impressions": 578745,
-            "clicks": 2140,
-            "cpm": 877.62,
-            "cpc": 237.34,
-            "ctr": 0.37
-          },
-          {
-            "thumbnail": "https://scontent-fra3-2.cdninstagram.com/v/t51.71878-15/800468920_1381882577268744_6389991015245586349_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jfhm1nPvZcoQ7kNvwGCR-Da&_nc_oc=AdrUO1kCyozIoP3TyDTciiWQDZd2dNKrFysoqTikBj0tj5OepsOPxI5q1OpnTGoCbtE&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=qzcYjMMEcDKCFEzcB1r2eA&_nc_tpa=Q5bMBQLD2IuHwQP5sov7MHooRe3tl2u78i_7zq-wdslj3-xmjDeDZmccqNeP_a-6uXGfv4PBwjXCCQUUbw&oh=00_AQKXeB6P7ed5DBp2FaYqm0kDzNSJyobszsql_Qo40MMawg&oe=6AB5EF64",
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_CruzVerde_Awareness_01-30Sep_Video 3",
-            "spend": 474558,
-            "impressions": 530288,
-            "clicks": 1974,
-            "cpm": 894.91,
-            "cpc": 240.4,
-            "ctr": 0.37
+            "spend": 753233,
+            "impressions": 821837,
+            "clicks": 3085,
+            "cpm": 916.52,
+            "cpc": 244.16,
+            "ctr": 0.38,
+            "thumbnail": "assets/creatives/2026-09/bca8507ba8576c4d.jpg"
           },
           {
-            "thumbnail": "https://scontent-fra3-1.cdninstagram.com/v/t51.71878-15/799958338_1120767140620371_2749338825733374869_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQUQuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=moWb7alNYxMQ7kNvwHshFEt&_nc_oc=Adr8FjX42fATKe0Rkc3Dmjflid6zmLD9OR54UOm-DpJH0X9eSxX70d2F2NGS1wkxTJY&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AIZKd-4EAAAA&_nc_gid=BfPSH5Cd6ecufgbbG82_gw&_nc_tpa=Q5bMBQJpHFT0YjfrOxCQvP_JNnW8tzULg8UxiE6lpF7Hh1-mynj4Nt4eqhKNOL7wmxwh_wC_sNH50btPfg&oh=00_AQLlvUMlqnXJemOOeBhpPQcHx-uR-3eCl6VF9fcWN-Wy1g&oe=6AB604E2",
+            "ad_name": "Sep26_CO_AxonPharma_FLORATIL_BABY_NACIONAL_CruzVerde_Awareness_01-30Sep_Video 2",
+            "spend": 875330,
+            "impressions": 969015,
+            "clicks": 3540,
+            "cpm": 903.32,
+            "cpc": 247.27,
+            "ctr": 0.37,
+            "thumbnail": "assets/creatives/2026-09/bff0d0fc4a2f3aad.jpg"
+          },
+          {
             "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_ATLANTICO_Unidrogas_Awareness_01-30Sep_Video 3",
-            "spend": 496515,
-            "impressions": 537818,
-            "clicks": 1931,
-            "cpm": 923.2,
-            "cpc": 257.13,
-            "ctr": 0.36
-          }
-        ],
-        "TikTok": [
-          {
-            "thumbnail": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oQsAHzvx7MUShIYigAEGihtxoBDBaL5zABA0i~tplv-noop.image?dr=18692&refresh_token=e976bae0&x-expires=1789435635&x-signature=tG0YDuS5sNOqwAQPzTHwl9Ufw9c%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d8gsobnog65k0sd331mg",
-            "ad_name": "Jun26_AXONPHARMA_Floratil_Traffic_$3000_15000_Post1",
-            "spend": 3269406,
-            "impressions": 1534557,
-            "clicks": 177573,
-            "cpm": 2130.52,
-            "cpc": 18.41,
-            "ctr": 11.57
+            "spend": 829189,
+            "impressions": 869605,
+            "clicks": 3157,
+            "cpm": 953.52,
+            "cpc": 262.65,
+            "ctr": 0.36,
+            "thumbnail": "assets/creatives/2026-09/402dfcaf288e3c90.jpg"
           },
           {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oAo179EIEBgqKcAfcSFQCkIT1gojrDAADBkNBe~tplv-noop.image?dr=18692&refresh_token=5697bcb0&x-expires=1789435640&x-signature=d6P68scUuEA6FoS3XLXlDoODrkA%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d814k2nog65u074d7rqg",
-            "ad_name": "TIKTOK FLORATIL_ci8yoqOP.mp4_2026-01-15 15:08:27",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oMtDQaEQIBgpkDEfdeFQkQgskGhSnDApDBnNBi~tplv-noop.image?dr=18692&refresh_token=8aca5c8c&x-expires=1789435630&x-signature=o0F5GCz5F%2Ff5%2Bb3Z%2FkkMcKfDpgA%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d497gp7og65habl5c890",
-            "ad_name": "Floratil Video 3 Nov 2025_Vvucibgt.mp4_2026-01-15 15:08:26",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/ooXXSA8RToBIKiI0wiifAAwCTciniVEimhB4B3~tplv-noop.image?dr=18692&refresh_token=c95f27c2&x-expires=1789435630&x-signature=6RLODJ%2BXrA2C4Oe1Yy4sz9M0sEM%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d4972rvog65oh5pbojag",
-            "ad_name": "Floratil Video 2 Nov 2025_GbNBLxMp.mp4_2026-01-15 15:08:27",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oESWImA6iAqAJU3RBYzsazaiEBBAprwYvUIHz~tplv-noop.image?dr=18692&refresh_token=e0089f03&x-expires=1789435631&x-signature=SbVJntBqmiQarvZYcnUqFPMm174%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d496l6nog65no533lj40",
-            "ad_name": "Floratil Video 1 Nov 2025_RmtNuS5z.mp4_2026-01-15 15:08:27",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
-          },
-          {
-            "thumbnail": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oMtDQaEQIBgpkDEfdeFQkQgskGhSnDApDBnNBi~tplv-noop.image?dr=18692&refresh_token=8aca5c8c&x-expires=1789435630&x-signature=o0F5GCz5F%2Ff5%2Bb3Z%2FkkMcKfDpgA%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=623c3a84&idc=my2&VideoID=v10033g50000d497gp7og65habl5c890",
-            "ad_name": "Ene26_AXONPHARMA_Floratil_Traffic_$1.372,25_AON1",
-            "spend": 0,
-            "impressions": 0,
-            "clicks": 0,
-            "cpm": 0,
-            "cpc": 0,
-            "ctr": 0
+            "ad_name": "Sep26_CO_AxonPharma_FLORATIL_ADULTO_NACIONAL_Farmatodo_Awareness_01-30Sep_Video 3",
+            "spend": 332510,
+            "impressions": 358032,
+            "clicks": 1295,
+            "cpm": 928.72,
+            "cpc": 256.76,
+            "ctr": 0.36,
+            "thumbnail": "assets/creatives/2026-09/3ae566ddd940bf8e.jpg"
           }
         ]
       }
