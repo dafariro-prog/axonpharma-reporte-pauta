@@ -1,0 +1,54 @@
+{
+  "source": "PUSH · Reporte mensual de notificaciones (proveedor Almendra Marketing)",
+  "updated": "2026-10-08T00:00:00",
+  "note": "Campaña de notificaciones Push para tráfico a CruzVerde. El proveedor no reporta inversión; se muestran impresiones visibles, clics, vCTR y % de entrega.",
+  "months": {
+    "2026-09": {
+      "FLORATIL": {
+        "periodo": "01 – 30 Sep",
+        "objetivo": "Tráfico a CruzVerde",
+        "contratadas": 6730,
+        "imprVisibles": 432933,
+        "clics": 6750,
+        "vctr": 1.56,
+        "entrega": 100.30,
+        "print": "assets/push/floratil_sep.jpg",
+        "insights": [
+          "Entrega por encima de lo contratado: 6.750 clics frente a 6.730 contratados (100,30%) sobre 432.933 impresiones visibles.",
+          "Mayor volumen absoluto de impresiones y tráfico dirigido a la plataforma de conversión (CruzVerde).",
+          "vCTR de 1,56%, por encima del estándar de notificaciones Push móviles."
+        ]
+      },
+      "MARIMER": {
+        "periodo": "01 – 30 Sep",
+        "objetivo": "Tráfico a CruzVerde",
+        "contratadas": 3103,
+        "imprVisibles": 184131,
+        "clics": 3119,
+        "vctr": 1.69,
+        "entrega": 100.52,
+        "print": "assets/push/marimer_sep.jpg",
+        "insights": [
+          "Entrega por encima de lo contratado: 3.119 clics frente a 3.103 contratados (100,52%) sobre 184.131 impresiones visibles.",
+          "vCTR más alto de la campaña (1,69%), impulsado por el mensaje de alivio natural y bienestar diario.",
+          "Buen balance entre volumen y eficiencia de interacción."
+        ]
+      },
+      "A-CERUMEN": {
+        "periodo": "01 – 30 Sep",
+        "objetivo": "Tráfico a CruzVerde",
+        "contratadas": 3576,
+        "imprVisibles": 214709,
+        "clics": 3588,
+        "vctr": 1.67,
+        "entrega": 100.34,
+        "print": "assets/push/acerumen_sep.jpg",
+        "insights": [
+          "Entrega por encima de lo contratado: 3.588 clics frente a 3.576 contratados (100,34%) sobre 214.709 impresiones visibles.",
+          "vCTR de 1,67%, reflejando interés de la audiencia en soluciones prácticas de cuidado e higiene.",
+          "Mensaje enfocado en practicidad y seguridad del producto."
+        ]
+      }
+    }
+  }
+}

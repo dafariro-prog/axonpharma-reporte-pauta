@@ -152,6 +152,39 @@
           "Recomendación: mantener la pauta en móvil, priorizar Bumpers de 6s apoyados por Shorts (15s) y segmentar en 25–44 años, diferenciando mensajes entre Marimer Isotónico (adultos/deporte) y Marimer Baby (cuidado infantil)."
         ]
       }
+    },
+    "2026-09": {
+      "FLORATIL": {
+        "periodo": "01 – 30 Sep",
+        "contratadas": 250000,
+        "spend": 4290000,
+        "impressions": 256662,
+        "interacciones": 178693,
+        "rendimiento": 56.83,
+        "vistasTrueview": 145861,
+        "entrega": 102.66,
+        "devices": [["Pantallas de TV", 85], ["Teléfonos celulares", 10], ["Computadoras", 3], ["Tablets", 2]],
+        "topCreative": "Short #2 — 42,4% de la entrega total («Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión»)",
+        "imgs": {
+          "creativo": "assets/youtube/floratil_creativo_sep.png",
+          "generoEdad": "assets/youtube/floratil_genero_edad_sep.png"
+        },
+        "creativos": [
+          { "name": "Short #2",    "dur": "0:15", "copy": "Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión", "impr": 108747 },
+          { "name": "Bumper #3",   "dur": "0:06", "copy": "Menos complicaciones cuando viajas: Floratil® ayuda a tratar la diarrea", "impr": 37060 },
+          { "name": "Bumper #1",   "dur": "0:06", "copy": "Que la diarrea no te impida disfrutar: alivia rápidamente la diarrea con Floratil®", "impr": 36837 },
+          { "name": "In Stream #1","dur": "0:06", "copy": "Ese viaje que esperaban no tiene por qué arruinarse: alivia rápidamente la diarrea con Floratil®", "impr": 34826 },
+          { "name": "Bumper #2",   "dur": "0:06", "copy": "Viajar es probar cosas nuevas: usa Floratil® y recupera el control", "impr": 31182 },
+          { "name": "In Stream #2","dur": "0:15", "copy": "Un plan en familia puede cambiar por un imprevisto; un imprevisto no tiene por qué detenerlo", "impr": 8010 }
+        ],
+        "insights": [
+          "Rendimiento estable frente a vistas TrueView: en septiembre hubo una leve caída en las visualizaciones de interacción tipo TrueView, con un rendimiento del 56,83% y 145.861 vistas.",
+          "El formato de TV concentró el 85% de la entrega y permitió el mayor alcance de usuarios simultáneos por impresión.",
+          "La audiencia femenina sigue destacando; el segmento principal fue 25–34 años (liderado por mujeres), seguido de 35–44.",
+          "Creativo destacado: Short #2 («Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión») registró el mayor nivel de entrega, con 42,4% de participación.",
+          "Recomendación: sostener o incrementar la entrega en TV, refrescar creativos y mantener el foco en 25–44 años con mensajes prácticos de solución inmediata."
+        ]
+      }
     }
   }
 }
