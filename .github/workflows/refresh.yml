@@ -10,6 +10,10 @@ on:
         description: "Backfill completo (rebaja todo 2025→hoy). Dejar en 0 para refresco incremental."
         required: false
         default: "0"
+      cre_from:
+        description: "Backfill de creativos: fecha YYYY-MM-DD desde la que re-jalar y auto-alojar miniaturas (vacío = ventana normal de 3 meses)."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -17,7 +21,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -31,6 +35,7 @@ jobs:
         env:
           WINDSOR_API_KEY: ${{ secrets.WINDSOR_API_KEY }}
           FULL: ${{ github.event.inputs.full || '0' }}
+          CRE_FROM: ${{ github.event.inputs.cre_from || '' }}
         run: node refresh.js
 
       - name: Commit si hubo cambios

@@ -35,7 +35,7 @@ const _mf       = new Date(Date.UTC(_n.getUTCFullYear(), _n.getUTCMonth()-1, 1))
 const MONTH_FROM = FULL ? '2025-01-01' : _mf.toISOString().slice(0,10);                               // agregados mensuales
 // Creativos (image_url es lento): ventana de 3 meses atrás; se fusiona con los meses viejos ya guardados.
 const _w = new Date(Date.UTC(_n.getUTCFullYear(), _n.getUTCMonth()-3, 1));
-const CRE_FROM = FULL ? '2025-01-01' : _w.toISOString().slice(0,10);
+const CRE_FROM = process.env.CRE_FROM || (FULL ? '2025-01-01' : _w.toISOString().slice(0,10));   // override p/ backfill de creativos
 
 if (!API_KEY) { console.error('ERROR: falta WINDSOR_API_KEY'); process.exit(1); }
 
