@@ -1,6 +1,6 @@
 {
   "source": "Spotify Ads · Reporte de performance (Excel proveedor)",
-  "updated": "2026-09-14T18:38:03.941Z",
+  "updated": "2026-10-14T22:11:49.794Z",
   "months": {
     "2026-07": {
       "FLORATIL": {
@@ -375,14 +375,14 @@
             "escuchas100": 458445
           },
           {
-            "mes": "Septiembre*",
-            "impressions": 97900,
-            "reach": 59542,
-            "clics": 2832,
-            "spendUSD": 499.34,
-            "spend": 1897492,
-            "audioStarts": 98983,
-            "escuchas100": 93735
+            "mes": "Septiembre",
+            "impressions": 322095,
+            "reach": 224334,
+            "clics": 9004,
+            "spendUSD": 1787.5,
+            "spend": 6792500,
+            "audioStarts": 325587,
+            "escuchas100": 308593
           }
         ],
         "daily": [
@@ -735,6 +735,170 @@
           "Contexto musical afín al público colombiano: Latin (20,0%) y Reggaeton (11,3%) lideran las impresiones; las actividades Dancing (23,3%), Party y Sport concentran el consumo.",
           "Entrega mobile-first: el 99,7% de las impresiones ocurrió en teléfono.",
           "Desempeño diario estable desde el 21 de julio; la extensión de septiembre corre hasta el 1 de octubre de 2026."
+        ]
+      }
+    },
+    "2026-09": {
+      "FLORATIL": {
+        "periodo": "07 – 30 sep 2026",
+        "formato": "Audio · Everywhere · Colombia",
+        "monedaOrig": "USD (TC 3.800 a COP)",
+        "impressions": 322095,
+        "reach": 224334,
+        "frequency": 1.44,
+        "clics": 9004,
+        "ctr": 2.8,
+        "spendUSD": 1787.5,
+        "audioStarts": 325587,
+        "completion": 94.78,
+        "spend": 6792500,
+        "escuchas100": 308593,
+        "monthly": [
+          {
+            "mes": "Julio (21–31)",
+            "impressions": 461936,
+            "reach": 340105,
+            "clics": 5532,
+            "spendUSD": 2350.68,
+            "spend": 8932584,
+            "audioStarts": 467846,
+            "escuchas100": 442306
+          },
+          {
+            "mes": "Agosto",
+            "impressions": 477559,
+            "reach": 237087,
+            "clics": 15952,
+            "spendUSD": 2383.33,
+            "spend": 9056654,
+            "audioStarts": 483579,
+            "escuchas100": 458445
+          },
+          {
+            "mes": "Septiembre",
+            "impressions": 322095,
+            "reach": 224334,
+            "clics": 9004,
+            "spendUSD": 1787.5,
+            "spend": 6792500,
+            "audioStarts": 325587,
+            "escuchas100": 308593
+          }
+        ],
+        "daily": [],
+        "audiencia": [
+          {
+            "seg": "18-24",
+            "impr": 100687,
+            "pct": 31.3,
+            "clics": 2327,
+            "ctr": 2.31,
+            "completion": 94.4
+          },
+          {
+            "seg": "25-34",
+            "impr": 89317,
+            "pct": 27.7,
+            "clics": 2124,
+            "ctr": 2.38,
+            "completion": 94.4
+          },
+          {
+            "seg": "35-44",
+            "impr": 44385,
+            "pct": 13.8,
+            "clics": 1106,
+            "ctr": 2.49,
+            "completion": 95.1
+          },
+          {
+            "seg": "45+",
+            "impr": 87706,
+            "pct": 27.2,
+            "clics": 3447,
+            "ctr": 3.93,
+            "completion": 95.5
+          }
+        ],
+        "generos": [
+          {
+            "seg": "Latin",
+            "impr": 56012,
+            "pct": 17.4,
+            "ctr": 2.09
+          },
+          {
+            "seg": "Traditional",
+            "impr": 47122,
+            "pct": 14.6,
+            "ctr": 2.9
+          },
+          {
+            "seg": "Reggae",
+            "impr": 39779,
+            "pct": 12.3,
+            "ctr": 2.04
+          },
+          {
+            "seg": "Mexican",
+            "impr": 27926,
+            "pct": 8.7,
+            "ctr": 2.61
+          },
+          {
+            "seg": "Trap",
+            "impr": 22901,
+            "pct": 7.1,
+            "ctr": 2.19
+          },
+          {
+            "seg": "Pop",
+            "impr": 22321,
+            "pct": 6.9,
+            "ctr": 2.04
+          },
+          {
+            "seg": "House",
+            "impr": 18392,
+            "pct": 5.7,
+            "ctr": 2.77
+          },
+          {
+            "seg": "Hip hop",
+            "impr": 17103,
+            "pct": 5.3,
+            "ctr": 2.19
+          },
+          {
+            "seg": "EDM",
+            "impr": 11209,
+            "pct": 3.5,
+            "ctr": 2.9
+          },
+          {
+            "seg": "Soul",
+            "impr": 9147,
+            "pct": 2.8,
+            "ctr": 2.39
+          }
+        ],
+        "dispositivos": [
+          [
+            "Teléfono",
+            99.9
+          ],
+          [
+            "Computador",
+            0.1
+          ]
+        ],
+        "conclusiones": [
+          "Calidad de escucha: el audio alcanzó un completion rate de 94,8% (308,6 mil reproducciones completas), un nivel muy sólido para el formato y señal de que el mensaje de Floratil se escuchó de principio a fin.",
+          "Engagement: el CTR fue de 2,8% con 9.004 clics al sitio, destacando el segmento 45+ (3,9%) y hombres (3,1%). Para la próxima campaña sugerimos combinar awareness y tráfico en un mismo vuelo para sostener y elevar este indicador.",
+          "Dispositivo: el 89,5% de las impresiones se dio en Android y el 99,9% en celular, en línea con el consumo móvil y Android que predomina en Colombia. Recomendamos creatividades pensadas para pantalla de teléfono, con llamado a la acción claro.",
+          "Insights de audiencia: predominan géneros Latin (17,4%), Tradicional (14,6%) y Reggae (12,4%), tonos Love, Bittersweet y Empowering, y momentos de Dancing (25,4%) y Sport (14,8%). Los podcasts de Salud y Familia también tuvieron presencia, y todo esto sirve como base para curadurías creativas y segmentación contextual.",
+          "Estrategia multiformato: recomendamos sumar Video y Display al Audio. El Audio construye recordación con mejor completion rate, Display permite mayor cobertura de la audiencia con mejores CPM, y Video empuja el CTR hacia el sitio. Con una frecuencia de 1,44 hay espacio para reforzar el mensaje con impacto visual.",
+          "Patrón temporal: sábados y domingos lograron los mejores CTR de la semana (3,06% y 3,12%, frente a 2,3% a 2,8% entre semana). Proponemos dar mayor peso a los fines de semana en la próxima pauta."
         ]
       }
     }

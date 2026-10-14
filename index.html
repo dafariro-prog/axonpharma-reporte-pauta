@@ -452,14 +452,13 @@ function spotifyBlock(s,b,ym){
     h+=`<div class="rtab-t">Desempeño por mes</div><div class="rtab-wrap"><table class="rtab"><thead><tr><th>Mes</th><th class="n">Impresiones</th><th class="n">Alcance</th><th class="n">Clics</th><th class="n">Inversión</th></tr></thead><tbody>`+
       s.monthly.map(m=>`<tr><td class="name">${m.mes}</td><td class="n">${fmt(m.impressions)}</td><td class="n">${fmt(m.reach)}</td><td class="n">${fmt(m.clics)}</td><td class="n">${cop(m.spend)} COP</td></tr>`).join('')+`</tbody></table></div>`;
   }
-  h+=`<div class="yt-graf">
-    <div class="yt-card"><h5>Desempeño diario · impresiones y clics</h5><div class="ch-wrap"><canvas id="sp_daily_${k}"></canvas></div></div>
-    <div class="yt-card"><h5>Audiencia por edad · impresiones</h5><div class="ch-wrap"><canvas id="sp_age_${k}"></canvas></div></div>
-  </div>
-  <div class="yt-graf">
-    <div class="yt-card"><h5>Top géneros musicales · % impresiones</h5><div class="ch-wrap"><canvas id="sp_gen_${k}"></canvas></div></div>
-    <div class="yt-card"><h5>Impresiones por dispositivo</h5>${(s.dispositivos||[]).map(d=>`<div class="yt-dev"><span class="yd-n">${d[0]}</span><div class="yd-bar"><div class="yd-fill" style="width:${Math.min(100,d[1])}%;background:linear-gradient(90deg,#1DB954,#57e08a)"></div></div><span class="yd-p">${d[1]}%</span></div>`).join('')}</div>
-  </div>`;
+  const hasDaily=s.daily&&s.daily.length;
+  const cards=[];
+  if(hasDaily) cards.push(`<div class="yt-card"><h5>Desempeño diario · impresiones y clics</h5><div class="ch-wrap"><canvas id="sp_daily_${k}"></canvas></div></div>`);
+  cards.push(`<div class="yt-card"><h5>Audiencia por edad · impresiones</h5><div class="ch-wrap"><canvas id="sp_age_${k}"></canvas></div></div>`);
+  cards.push(`<div class="yt-card"><h5>Top géneros musicales · % impresiones</h5><div class="ch-wrap"><canvas id="sp_gen_${k}"></canvas></div></div>`);
+  cards.push(`<div class="yt-card"><h5>Impresiones por dispositivo</h5>${(s.dispositivos||[]).map(d=>`<div class="yt-dev"><span class="yd-n">${d[0]}</span><div class="yd-bar"><div class="yd-fill" style="width:${Math.min(100,d[1])}%;background:linear-gradient(90deg,#1DB954,#57e08a)"></div></div><span class="yd-p">${d[1]}%</span></div>`).join('')}</div>`);
+  for(let i=0;i<cards.length;i+=2) h+=`<div class="yt-graf">${cards[i]||''}${cards[i+1]||''}</div>`;
   h+=`<div class="analisis">La campaña de <b>Audio en Spotify</b> de <b>${b.name}</b> (${s.periodo}) alcanzó <b>${fmt(s.reach)}</b> usuarios únicos con ${fmt(s.impressions)} impresiones y ${fmt(s.clics)} clics (CTR ${dec(s.ctr,2)}%), con un completion rate de ${dec(s.completion,2)}% sobre ${fmt(s.audioStarts)} audio starts. Inversión de ${cop(s.spend)} COP.<div class="lrn-t">Conclusiones</div><ul>${(s.conclusiones||[]).map(c=>`<li>${c}</li>`).join('')}</ul></div>`;
   h+=`</div>`;
   return h;
