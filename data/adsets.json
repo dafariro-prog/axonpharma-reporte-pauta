@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-10-18T17:52:00.655Z",
+  "updated": "2026-10-18T20:04:57.208Z",
   "months": {
     "2026-05": {
       "MARIMER": {
@@ -1345,6 +1345,89 @@
             "ctr": 6.98,
             "hasReach": true
           }
+        ],
+        "TikTok": [
+          {
+            "name": "ACerumen Traffic",
+            "impressions": 559438,
+            "link_clicks": 66982,
+            "reach": 0,
+            "clicks": 66982,
+            "ctr": 11.97,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Baby Traffic",
+            "impressions": 369423,
+            "link_clicks": 42713,
+            "reach": 0,
+            "clicks": 42713,
+            "ctr": 11.56,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic Post 2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic Post 3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic Post 1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 4",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          }
         ]
       },
       "MARIMER": {
@@ -1449,6 +1532,116 @@
             "clicks": 64,
             "ctr": 0.68,
             "hasReach": true
+          }
+        ],
+        "TikTok": [
+          {
+            "name": "Marimer Traffic",
+            "impressions": 1809521,
+            "link_clicks": 241173,
+            "reach": 0,
+            "clicks": 241173,
+            "ctr": 13.33,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post4 Isotonico",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 5 Hipertónico baby",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 6 Isotónico baby",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 2 Hipertónico baby",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 1 Isotónico",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 3 Isotónico baby",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK MARIMER ADULTO ISOTONICO RAEgjets",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK MARIMER BABY HIPERTONICO OuViE20n",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Dic25 Marimer-3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Dic25Marimer Arrecife",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Dic25 MarimerBaby",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
           }
         ]
       },
@@ -1618,6 +1811,116 @@
             "ctr": 0.3,
             "hasReach": true
           }
+        ],
+        "TikTok": [
+          {
+            "name": "Floratil Traffic",
+            "impressions": 2063760,
+            "link_clicks": 266400,
+            "reach": 0,
+            "clicks": 266400,
+            "ctr": 12.91,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 4",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 6",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 5",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK FLORATIL ci8yoqOP",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 3 Nov 2025 Vvucibgt",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Setiembre 2025 Sept25 AXONPHARMA Floratil Traffic 616.32 3082",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          }
         ]
       }
     },
@@ -1715,6 +2018,116 @@
             "clicks": 320,
             "ctr": 0.55,
             "hasReach": true
+          }
+        ],
+        "TikTok": [
+          {
+            "name": "Marimer Traffic Post 6 Isotónico baby",
+            "impressions": 439909,
+            "link_clicks": 16793,
+            "reach": 0,
+            "clicks": 16793,
+            "ctr": 3.82,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic",
+            "impressions": 341281,
+            "link_clicks": 57814,
+            "reach": 0,
+            "clicks": 57814,
+            "ctr": 16.94,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 5 Hipertónico baby",
+            "impressions": 61162,
+            "link_clicks": 16591,
+            "reach": 0,
+            "clicks": 16591,
+            "ctr": 27.13,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post4 Isotonico",
+            "impressions": 53203,
+            "link_clicks": 22058,
+            "reach": 0,
+            "clicks": 22058,
+            "ctr": 41.46,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 3 Isotónico baby",
+            "impressions": 48250,
+            "link_clicks": 12749,
+            "reach": 0,
+            "clicks": 12749,
+            "ctr": 26.42,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 1 Isotónico",
+            "impressions": 30583,
+            "link_clicks": 8293,
+            "reach": 0,
+            "clicks": 8293,
+            "ctr": 27.12,
+            "hasReach": false
+          },
+          {
+            "name": "Marimer Traffic Post 2 Hipertónico baby",
+            "impressions": 6656,
+            "link_clicks": 1170,
+            "reach": 0,
+            "clicks": 1170,
+            "ctr": 17.58,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK MARIMER ADULTO ISOTONICO RAEgjets",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK MARIMER BABY HIPERTONICO OuViE20n",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Dic25 Marimer-3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Dic25Marimer Arrecife",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Dic25 MarimerBaby",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
           }
         ]
       },
@@ -1929,6 +2342,116 @@
             "ctr": 0.31,
             "hasReach": true
           }
+        ],
+        "TikTok": [
+          {
+            "name": "Floratil Traffic",
+            "impressions": 791791,
+            "link_clicks": 82712,
+            "reach": 0,
+            "clicks": 82712,
+            "ctr": 10.45,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 6",
+            "impressions": 776513,
+            "link_clicks": 199998,
+            "reach": 0,
+            "clicks": 199998,
+            "ctr": 25.76,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 4",
+            "impressions": 266684,
+            "link_clicks": 51763,
+            "reach": 0,
+            "clicks": 51763,
+            "ctr": 19.41,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 2",
+            "impressions": 253729,
+            "link_clicks": 28267,
+            "reach": 0,
+            "clicks": 28267,
+            "ctr": 11.14,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 3",
+            "impressions": 145463,
+            "link_clicks": 17960,
+            "reach": 0,
+            "clicks": 17960,
+            "ctr": 12.35,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 1",
+            "impressions": 79196,
+            "link_clicks": 14859,
+            "reach": 0,
+            "clicks": 14859,
+            "ctr": 18.76,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 5",
+            "impressions": 30363,
+            "link_clicks": 6535,
+            "reach": 0,
+            "clicks": 6535,
+            "ctr": 21.52,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK FLORATIL ci8yoqOP",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 3 Nov 2025 Vvucibgt",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Setiembre 2025 Sept25 AXONPHARMA Floratil Traffic 616.32 3082",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          }
         ]
       },
       "A-CERUMEN": {
@@ -1968,6 +2491,89 @@
             "clicks": 12275,
             "ctr": 6.37,
             "hasReach": true
+          }
+        ],
+        "TikTok": [
+          {
+            "name": "ACerumen Traffic",
+            "impressions": 697116,
+            "link_clicks": 99272,
+            "reach": 0,
+            "clicks": 99272,
+            "ctr": 14.24,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic Post 1",
+            "impressions": 299668,
+            "link_clicks": 43014,
+            "reach": 0,
+            "clicks": 43014,
+            "ctr": 14.35,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic Post 3",
+            "impressions": 59224,
+            "link_clicks": 10446,
+            "reach": 0,
+            "clicks": 10446,
+            "ctr": 17.64,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Baby Traffic",
+            "impressions": 54673,
+            "link_clicks": 9014,
+            "reach": 0,
+            "clicks": 9014,
+            "ctr": 16.49,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic Post 2",
+            "impressions": 19664,
+            "link_clicks": 3823,
+            "reach": 0,
+            "clicks": 3823,
+            "ctr": 19.44,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "ACerumen Traffic 4",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
           }
         ]
       }
