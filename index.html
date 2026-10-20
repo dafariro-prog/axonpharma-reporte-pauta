@@ -245,7 +245,7 @@ function render(ym){
     html+=`<div class="brand-intro"><div class="in">${b.intro}</div></div>`;
     html+=`<div class="wrap">`;
     b.platforms.forEach(P=>{
-      if(P==='YouTube'){ const y=YT[ym]&&YT[ym][b.key]; if(y) html+=youtubeBlock(y,b,ym); return; }
+      if(P==='YouTube'){ const y=YT[ym]&&YT[ym][b.key]; if(y){ html+=youtubeBlock(y,b,ym); if(y.generoEdad) pending.push({type:'ytge',key:b.key.replace(/[^A-Za-z]/g,''),data:y.generoEdad}); } return; }
       if(P==='Spotify'){ const s=SPOT[ym]&&SPOT[ym][b.key]; if(s){ html+=spotifyBlock(s,b,ym); pending.push({type:'spotify',s,key:b.key.replace(/[^A-Za-z]/g,'')}); } return; }
       if(P==='Push'){ const pu=PUSH[ym]&&PUSH[ym][b.key]; if(pu) html+=pushBlock(pu,b,ym); return; }
       const cfg=PLAT_META[P];
@@ -306,6 +306,18 @@ function drawCharts(pending, rowsM, ym){
         scales:{x:{grid:{display:false},ticks:{font:{size:10}}},
           y:{beginAtZero:true,grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}},
           y1:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},ticks:{callback:kfmt,font:{size:10}}}}}}));
+    } else if(p.type==='ytge'){
+      const el=byId('yt_ge_'+p.key); if(!el)return;
+      const d=p.data, groups=['Hombre','Mujer','Desconocido'];
+      const RAMP=['#8BBCE8','#579AD6','#3178C0','#24568C','#16266B'];
+      const datasets=d.ages.map((age,i)=>({label:age,data:groups.map(g=>(d[g]||[])[i]||0),backgroundColor:RAMP[i],borderColor:'#ffffff',borderWidth:1.5,borderRadius:3,borderSkipped:false}));
+      const dl={id:'dlge',afterDatasetsDraw(ch){const cx=ch.ctx;cx.save();cx.font="600 9px -apple-system,'Segoe UI',Roboto,sans-serif";cx.fillStyle='#5C6577';cx.textAlign='center';ch.data.datasets.forEach((ds,di)=>{const m=ch.getDatasetMeta(di);m.data.forEach((bar,i)=>{const v=ds.data[i];if(v>=1000)cx.fillText(kfmt(v),bar.x,bar.y-3);});});cx.restore();}};
+      CHARTS.push(new Chart(el,{type:'bar',data:{labels:groups,datasets},plugins:[dl],
+        options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:14}},
+          plugins:{legend:{position:'top',align:'start',labels:{usePointStyle:true,pointStyle:'rect',padding:12,boxWidth:10,boxHeight:10,font:{size:11}}},
+            tooltip:{callbacks:{label:c=>c.dataset.label+': '+fmt(c.parsed.y)+' impresiones'}}},
+          scales:{x:{grid:{display:false},ticks:{font:{size:12,weight:'600'}}},
+            y:{beginAtZero:true,grid:{color:'#EBF0F7'},ticks:{callback:kfmt,font:{size:10}}}}}}));
     } else if(p.type==='overview'){
       const elB=byId('chOverBrands'), elP=byId('chOverPlat'); if(!elB||!elP)return;
       const PLATS=['Awareness','Views','Traffic','TikTok','Search'];
@@ -433,7 +445,9 @@ function youtubeBlock(y,b,ym){
       ${y.imgs&&y.imgs.creativo?`<div class="yt-card yt-cre"><h5>Creativo destacado</h5><img class="yt-img" loading="lazy" src="${y.imgs.creativo}" alt="Creativo ${b.name}"></div>`:''}
     </div>`;
   }
-  if(y.imgs&&y.imgs.generoEdad) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por género y edad · impresiones</h5><div class="yt-agelg"><span><i style="background:#4285F4"></i>18–24</span><span><i style="background:#EA4335"></i>25–34</span><span><i style="background:#FBBC04"></i>35–44</span><span><i style="background:#34A853"></i>45–54</span><span><i style="background:#A142F4"></i>55–64</span></div><img class="yt-img" loading="lazy" src="${y.imgs.generoEdad}" alt="Género y edad ${b.name}"></div>`;
+  if(y.generoEdad){ const gk=b.key.replace(/[^A-Za-z]/g,'');
+    h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por género y edad · impresiones</h5><div class="ch-wrap"><canvas id="yt_ge_${gk}"></canvas></div></div>`;
+  } else if(y.imgs&&y.imgs.generoEdad) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por género y edad · impresiones</h5><div class="yt-agelg"><span><i style="background:#4285F4"></i>18–24</span><span><i style="background:#EA4335"></i>25–34</span><span><i style="background:#FBBC04"></i>35–44</span><span><i style="background:#34A853"></i>45–54</span><span><i style="background:#A142F4"></i>55–64</span></div><img class="yt-img" loading="lazy" src="${y.imgs.generoEdad}" alt="Género y edad ${b.name}"></div>`;
   if(y.imgs&&y.imgs.estadoParental) h+=`<div class="yt-card" style="margin-top:16px"><h5>Resultados por estado parental · alcance</h5><div class="yt-agelg"><span><i style="background:#4285F4"></i>Hombre</span><span><i style="background:#EA4335"></i>Mujer</span><span><i style="background:#FBBC04"></i>Desconocido</span></div><img class="yt-img" loading="lazy" src="${y.imgs.estadoParental}" alt="Estado parental ${b.name}"></div>`;
   const perfTxt=(y.rendimiento!=null)?`con ${fmt(y.interacciones)} interacciones y un rendimiento (view rate) de ${dec(y.rendimiento,2)}% (${fmt(y.vistasTrueview)} vistas TrueView)`:`con ${fmt(y.interacciones)} interacciones y un CTR de ${dec(y.ctr,2)}%`;
   h+=`<div class="analisis">La campaña de <b>Branding en YouTube Ads</b> de <b>${b.name}</b> en ${mesName(ym)} (${y.periodo}) entregó <b>${fmt(y.impressions)}</b> impresiones (${dec(y.entrega,2)}% de las ${fmt(y.contratadas)} contratadas) ${perfTxt}. Inversión de ${cop(y.spend)} COP.<div class="lrn-t">Insights</div><ul>${(y.insights||[]).map(i=>`<li>${i}</li>`).join('')}</ul></div>`;

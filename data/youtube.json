@@ -1,6 +1,6 @@
 {
   "source": "YouTube Ads · Reporte mensual de branding (PDF proveedor Almendra Marketing)",
-  "updated": "2026-07-23T00:00:00",
+  "updated": "2026-10-20T12:47:03.361Z",
   "months": {
     "2026-06": {
       "FLORATIL": {
@@ -9,11 +9,20 @@
         "spend": 12870000,
         "impressions": 782665,
         "interacciones": 132635,
-        "ctr": 2.50,
+        "ctr": 2.5,
         "imprVisibles": 316889,
         "entrega": 104.35,
         "topCreative": "In-stream #2 — 56,4% de la entrega total («Que la diarrea no cambie los planes de tu familia»)",
-        "devices": [["Pantallas de TV", 62], ["Otros dispositivos", 38]],
+        "devices": [
+          [
+            "Pantallas de TV",
+            62
+          ],
+          [
+            "Otros dispositivos",
+            38
+          ]
+        ],
         "imgs": {
           "creativo": "assets/youtube/floratil_creativo.jpg",
           "generoEdad": "assets/youtube/floratil_genero_edad.jpg"
@@ -31,23 +40,66 @@
         "spend": 6440367,
         "impressions": 441399,
         "interacciones": 14605,
-        "ctr": 3.30,
+        "ctr": 3.3,
         "imprVisibles": 203225,
         "entrega": 117.6,
         "topCreative": "Short #1 — 38,6% de la entrega (170.744 impresiones; «¿Entrenas pero sientes que no rindes igual?»)",
-        "devices": [["Pantallas de TV", 73], ["Teléfonos celulares", 21], ["Computadoras / tablets", 5]],
+        "devices": [
+          [
+            "Pantallas de TV",
+            73
+          ],
+          [
+            "Teléfonos celulares",
+            21
+          ],
+          [
+            "Computadoras / tablets",
+            5
+          ]
+        ],
         "imgs": {
           "performance": "assets/youtube/marimer_performance.jpg",
           "creativo": "assets/youtube/marimer_creativo.jpg",
           "generoEdad": "assets/youtube/marimer_genero_edad.jpg"
         },
         "creativos": [
-          { "name": "Short #1",    "dur": "0:15", "copy": "Respira mejor y rinde más con Marimer® Isotónico", "impr": 170744 },
-          { "name": "Bumper #3",   "dur": "0:06", "copy": "Alivia su nariz tapada con Marimer® Baby Hipertónico", "impr": 94088 },
-          { "name": "Bumper #2",   "dur": "0:06", "copy": "Cuida su naricita cada día con Marimer® Baby Isotónico", "impr": 84783 },
-          { "name": "In Stream #2","dur": "0:15", "copy": "Cuando respira mejor, todo se siente más tranquilo — Marimer® Baby Isotónico", "impr": 38643 },
-          { "name": "Short #2",    "dur": "0:15", "copy": "Que nadie interrumpa su diversión, usa Marimer® Baby Hiper.", "impr": 36430 },
-          { "name": "Bumper #1",   "dur": "0:06", "copy": "Respira mejor cada día con Marimer® Isotónico", "impr": 16711 }
+          {
+            "name": "Short #1",
+            "dur": "0:15",
+            "copy": "Respira mejor y rinde más con Marimer® Isotónico",
+            "impr": 170744
+          },
+          {
+            "name": "Bumper #3",
+            "dur": "0:06",
+            "copy": "Alivia su nariz tapada con Marimer® Baby Hipertónico",
+            "impr": 94088
+          },
+          {
+            "name": "Bumper #2",
+            "dur": "0:06",
+            "copy": "Cuida su naricita cada día con Marimer® Baby Isotónico",
+            "impr": 84783
+          },
+          {
+            "name": "In Stream #2",
+            "dur": "0:15",
+            "copy": "Cuando respira mejor, todo se siente más tranquilo — Marimer® Baby Isotónico",
+            "impr": 38643
+          },
+          {
+            "name": "Short #2",
+            "dur": "0:15",
+            "copy": "Que nadie interrumpa su diversión, usa Marimer® Baby Hiper.",
+            "impr": 36430
+          },
+          {
+            "name": "Bumper #1",
+            "dur": "0:06",
+            "copy": "Respira mejor cada día con Marimer® Isotónico",
+            "impr": 16711
+          }
         ],
         "insights": [
           "117,6% de cumplimiento de entrega: 66.086 impresiones adicionales sin aumentar la inversión ($6.440.367 COP).",
@@ -64,11 +116,26 @@
         "spend": 17760600,
         "impressions": 1037230,
         "interacciones": 28040,
-        "ctr": 2.70,
+        "ctr": 2.7,
         "imprVisibles": 975620,
         "entrega": 100.21,
-        "devices": [["Teléfonos celulares", 77], ["Computadoras", 18], ["Tablets", 5]],
-        "imgs": { "generoEdad": "assets/youtube/floratil_genero_edad_jul.png" },
+        "devices": [
+          [
+            "Teléfonos celulares",
+            77
+          ],
+          [
+            "Computadoras",
+            18
+          ],
+          [
+            "Tablets",
+            5
+          ]
+        ],
+        "imgs": {
+          "generoEdad": "assets/youtube/floratil_genero_edad_jul.png"
+        },
         "insights": [
           "Dominio de formatos cortos (Bumpers 6s): los tres anuncios Bumper acumularon más del 98% de las impresiones entregadas; el mensaje rápido y directo funciona mejor para la retención en productos de cuidado estomacal/familiar.",
           "Efectividad de la segmentación femenina: enfocar el presupuesto exclusivamente en mujeres maximizó la eficiencia y entregó un CTR competitivo del 2,70%, validando a las mujeres de 25–44 años como buyer persona decisor de la categoría.",
@@ -85,8 +152,23 @@
         "ctr": 2.51,
         "imprVisibles": 341673,
         "entrega": 114.6,
-        "devices": [["Teléfonos celulares", 69], ["Computadoras", 20], ["Tablets", 11]],
-        "imgs": { "generoEdad": "assets/youtube/marimer_genero_edad_jul.png" },
+        "devices": [
+          [
+            "Teléfonos celulares",
+            69
+          ],
+          [
+            "Computadoras",
+            20
+          ],
+          [
+            "Tablets",
+            11
+          ]
+        ],
+        "imgs": {
+          "generoEdad": "assets/youtube/marimer_genero_edad_jul.png"
+        },
         "insights": [
           "Eficiencia y sobrecumplimiento: la pauta entregó más de 73.000 impresiones adicionales sobre lo contratado (+14,6%), asegurando sobreexposición positiva de marca dentro del presupuesto.",
           "Efectividad de formatos cortos (Bumpers 6s): los formatos Bumper capturaron más del 64% de las impresiones combinadas, con la mayor retención de marca y menor abandono en video.",
@@ -105,7 +187,24 @@
         "rendimiento": 62.9,
         "vistasTrueview": 371202,
         "entrega": 100.84,
-        "devices": [["Pantallas de TV", 64], ["Teléfonos celulares", 30], ["Computadoras", 5], ["Tablets", 1]],
+        "devices": [
+          [
+            "Pantallas de TV",
+            64
+          ],
+          [
+            "Teléfonos celulares",
+            30
+          ],
+          [
+            "Computadoras",
+            5
+          ],
+          [
+            "Tablets",
+            1
+          ]
+        ],
         "topCreative": "In-Stream #2 — 48,7% de la entrega total («Que la diarrea no cambie los planes de tu familia / Alivia rápidamente la diarrea con Floratil»)",
         "imgs": {
           "creativo": "assets/youtube/floratil_creativo_ago.jpg",
@@ -136,13 +235,48 @@
           "estadoParental": "assets/youtube/marimer_estado_parental_ago.jpg"
         },
         "creativos": [
-          { "name": "Anuncio #2 Bumper",    "dur": "0:06", "copy": "Cuida su naricita cada día — encuéntralo en droguerías", "impr": 203602 },
-          { "name": "Anuncio #3 Bumper",    "dur": "0:06", "copy": "Alivia su nariz tapada — cómpralo en droguerías", "impr": 65947 },
-          { "name": "Anuncio #1 Bumper",    "dur": "0:06", "copy": "Respira mejor cada día — cómpralo en tu droguería", "impr": 64380 },
-          { "name": "Anuncio #2 In Stream", "dur": "0:15", "copy": "Cuando respira mejor, todo mejora — limpia su naricita con Marimer® Baby", "impr": 4163 },
-          { "name": "Anuncio #1 In Stream", "dur": "0:15", "copy": "Respira mejor cada día — cómpralo en droguerías", "impr": 3969 },
-          { "name": "Anuncio #2 Short",     "dur": "0:15", "copy": "Que nada interrumpa su día — cómpralo en droguerías", "impr": 2375 },
-          { "name": "Anuncio #1 Short",     "dur": "0:15", "copy": "Respira mejor y rinde — consíguelo en droguería", "impr": 1663 }
+          {
+            "name": "Anuncio #2 Bumper",
+            "dur": "0:06",
+            "copy": "Cuida su naricita cada día — encuéntralo en droguerías",
+            "impr": 203602
+          },
+          {
+            "name": "Anuncio #3 Bumper",
+            "dur": "0:06",
+            "copy": "Alivia su nariz tapada — cómpralo en droguerías",
+            "impr": 65947
+          },
+          {
+            "name": "Anuncio #1 Bumper",
+            "dur": "0:06",
+            "copy": "Respira mejor cada día — cómpralo en tu droguería",
+            "impr": 64380
+          },
+          {
+            "name": "Anuncio #2 In Stream",
+            "dur": "0:15",
+            "copy": "Cuando respira mejor, todo mejora — limpia su naricita con Marimer® Baby",
+            "impr": 4163
+          },
+          {
+            "name": "Anuncio #1 In Stream",
+            "dur": "0:15",
+            "copy": "Respira mejor cada día — cómpralo en droguerías",
+            "impr": 3969
+          },
+          {
+            "name": "Anuncio #2 Short",
+            "dur": "0:15",
+            "copy": "Que nada interrumpa su día — cómpralo en droguerías",
+            "impr": 2375
+          },
+          {
+            "name": "Anuncio #1 Short",
+            "dur": "0:15",
+            "copy": "Respira mejor y rinde — consíguelo en droguería",
+            "impr": 1663
+          }
         ],
         "insights": [
           "La campaña se ejecutó exclusivamente en dispositivos móviles, con un rendimiento del 95,18% y 329.442 vistas TrueView.",
@@ -163,19 +297,66 @@
         "rendimiento": 56.83,
         "vistasTrueview": 145861,
         "entrega": 102.66,
-        "devices": [["Pantallas de TV", 85], ["Teléfonos celulares", 10], ["Computadoras", 3], ["Tablets", 2]],
+        "devices": [
+          [
+            "Pantallas de TV",
+            85
+          ],
+          [
+            "Teléfonos celulares",
+            10
+          ],
+          [
+            "Computadoras",
+            3
+          ],
+          [
+            "Tablets",
+            2
+          ]
+        ],
         "topCreative": "Short #2 — 42,4% de la entrega total («Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión»)",
         "imgs": {
           "creativo": "assets/youtube/floratil_creativo_sep.png",
           "generoEdad": "assets/youtube/floratil_genero_edad_sep.png"
         },
         "creativos": [
-          { "name": "Short #2",    "dur": "0:15", "copy": "Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión", "impr": 108747 },
-          { "name": "Bumper #3",   "dur": "0:06", "copy": "Menos complicaciones cuando viajas: Floratil® ayuda a tratar la diarrea", "impr": 37060 },
-          { "name": "Bumper #1",   "dur": "0:06", "copy": "Que la diarrea no te impida disfrutar: alivia rápidamente la diarrea con Floratil®", "impr": 36837 },
-          { "name": "In Stream #1","dur": "0:06", "copy": "Ese viaje que esperaban no tiene por qué arruinarse: alivia rápidamente la diarrea con Floratil®", "impr": 34826 },
-          { "name": "Bumper #2",   "dur": "0:06", "copy": "Viajar es probar cosas nuevas: usa Floratil® y recupera el control", "impr": 31182 },
-          { "name": "In Stream #2","dur": "0:15", "copy": "Un plan en familia puede cambiar por un imprevisto; un imprevisto no tiene por qué detenerlo", "impr": 8010 }
+          {
+            "name": "Short #2",
+            "dur": "0:15",
+            "copy": "Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión",
+            "impr": 108747
+          },
+          {
+            "name": "Bumper #3",
+            "dur": "0:06",
+            "copy": "Menos complicaciones cuando viajas: Floratil® ayuda a tratar la diarrea",
+            "impr": 37060
+          },
+          {
+            "name": "Bumper #1",
+            "dur": "0:06",
+            "copy": "Que la diarrea no te impida disfrutar: alivia rápidamente la diarrea con Floratil®",
+            "impr": 36837
+          },
+          {
+            "name": "In Stream #1",
+            "dur": "0:06",
+            "copy": "Ese viaje que esperaban no tiene por qué arruinarse: alivia rápidamente la diarrea con Floratil®",
+            "impr": 34826
+          },
+          {
+            "name": "Bumper #2",
+            "dur": "0:06",
+            "copy": "Viajar es probar cosas nuevas: usa Floratil® y recupera el control",
+            "impr": 31182
+          },
+          {
+            "name": "In Stream #2",
+            "dur": "0:15",
+            "copy": "Un plan en familia puede cambiar por un imprevisto; un imprevisto no tiene por qué detenerlo",
+            "impr": 8010
+          }
         ],
         "insights": [
           "Rendimiento estable frente a vistas TrueView: en septiembre hubo una leve caída en las visualizaciones de interacción tipo TrueView, con un rendimiento del 56,83% y 145.861 vistas.",
@@ -183,7 +364,37 @@
           "La audiencia femenina sigue destacando; el segmento principal fue 25–34 años (liderado por mujeres), seguido de 35–44.",
           "Creativo destacado: Short #2 («Mientras explora el mundo, la diarrea puede aparecer. Usa Floratil® y devuélvele su diversión») registró el mayor nivel de entrega, con 42,4% de participación.",
           "Recomendación: sostener o incrementar la entrega en TV, refrescar creativos y mantener el foco en 25–44 años con mensajes prácticos de solución inmediata."
-        ]
+        ],
+        "generoEdad": {
+          "ages": [
+            "18-24",
+            "25-34",
+            "35-44",
+            "45-54",
+            "55-64"
+          ],
+          "Hombre": [
+            16600,
+            30000,
+            18900,
+            12000,
+            9900
+          ],
+          "Mujer": [
+            18200,
+            45500,
+            40400,
+            20000,
+            13000
+          ],
+          "Desconocido": [
+            100,
+            500,
+            100,
+            100,
+            0
+          ]
+        }
       }
     }
   }
