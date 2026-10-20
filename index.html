@@ -244,6 +244,14 @@ function render(ym){
     html+=`<div class="brand-hero"><img src="${b.banner}" alt="${b.name}"></div>`;
     html+=`<div class="brand-intro"><div class="in">${b.intro}</div></div>`;
     html+=`<div class="wrap">`;
+    if(ym==='2026-09'){
+      const brws=rowsM.filter(r=>productOf(r.campaign)===b.key);
+      if(brws.length){
+        const cid='chTot_'+b.key.replace(/[^A-Za-z]/g,'');
+        html+=`<div class="plat"><div class="plat-head"><span class="plat-tag" style="background:var(--navy-3)">Total</span><h3>${b.name} · impresiones y clics totales</h3><span class="mo-lbl">${mesName(ym)}</span></div><div class="yt-card"><h5>Evolución diaria · impresiones y clics (todas las plataformas)</h5><div class="ch-wrap"><canvas id="${cid}"></canvas></div></div></div>`;
+        pending.push({type:'daily', id:cid, rows:brws});
+      }
+    }
     b.platforms.forEach(P=>{
       if(P==='YouTube'){ const y=YT[ym]&&YT[ym][b.key]; if(y){ html+=youtubeBlock(y,b,ym); if(y.generoEdad) pending.push({type:'ytge',key:b.key.replace(/[^A-Za-z]/g,''),data:y.generoEdad}); } return; }
       if(P==='Spotify'){ const s=SPOT[ym]&&SPOT[ym][b.key]; if(s){ html+=spotifyBlock(s,b,ym); pending.push({type:'spotify',s,key:b.key.replace(/[^A-Za-z]/g,'')}); } return; }
