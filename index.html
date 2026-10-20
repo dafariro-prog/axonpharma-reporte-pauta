@@ -248,7 +248,13 @@ function render(ym){
       const brws=rowsM.filter(r=>productOf(r.campaign)===b.key);
       if(brws.length){
         const cid='chTot_'+b.key.replace(/[^A-Za-z]/g,'');
-        html+=`<div class="plat"><div class="plat-head"><span class="plat-tag" style="background:var(--navy-3)">Total</span><h3>${b.name} · impresiones y clics totales</h3><span class="mo-lbl">${mesName(ym)}</span></div><div class="yt-card"><h5>Evolución diaria · impresiones y clics (todas las plataformas)</h5><div class="ch-wrap"><canvas id="${cid}"></canvas></div></div></div>`;
+        const SRC_ORDER=['Meta','Google Ads','TikTok'];
+        const bySrc={};
+        brws.forEach(r=>{(bySrc[r.source]=bySrc[r.source]||{impr:0,clk:0}).impr+=(+r.impressions||0);bySrc[r.source].clk+=(+(r.link_clicks||r.clicks)||0);});
+        const totImpr=brws.reduce((s,r)=>s+(+r.impressions||0),0), totClk=brws.reduce((s,r)=>s+(+(r.link_clicks||r.clicks)||0),0);
+        const rowsHtml=SRC_ORDER.filter(s=>bySrc[s]).map(s=>`<tr><td class="name">${s}</td><td class="n">${fmt(bySrc[s].impr)}</td><td class="n">${dec(bySrc[s].impr/totImpr*100,1)}%</td><td class="n">${fmt(bySrc[s].clk)}</td><td class="n">${dec(bySrc[s].clk/totClk*100,1)}%</td></tr>`).join('');
+        const discTable=`<div class="rtab-t">Discriminación por plataforma</div><div class="rtab-wrap"><table class="rtab"><thead><tr><th>Plataforma</th><th class="n">Impresiones</th><th class="n">%</th><th class="n">Clics</th><th class="n">%</th></tr></thead><tbody>${rowsHtml}<tr style="font-weight:600"><td class="name">Total</td><td class="n">${fmt(totImpr)}</td><td class="n">100%</td><td class="n">${fmt(totClk)}</td><td class="n">100%</td></tr></tbody></table></div>`;
+        html+=`<div class="plat"><div class="plat-head"><span class="plat-tag" style="background:var(--navy-3)">Total</span><h3>${b.name} · impresiones y clics totales</h3><span class="mo-lbl">${mesName(ym)}</span></div><div class="yt-card"><h5>Evolución diaria · impresiones y clics (todas las plataformas)</h5><div class="ch-wrap"><canvas id="${cid}"></canvas></div></div>${discTable}</div>`;
         pending.push({type:'daily', id:cid, rows:brws});
       }
     }
