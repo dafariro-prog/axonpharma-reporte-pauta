@@ -244,7 +244,7 @@ function render(ym){
     html+=`<div class="brand-hero"><img src="${b.banner}" alt="${b.name}"></div>`;
     html+=`<div class="brand-intro"><div class="in">${b.intro}</div></div>`;
     html+=`<div class="wrap">`;
-    if(ym==='2026-09'){
+    {
       const brws=rowsM.filter(r=>productOf(r.campaign)===b.key);
       if(brws.length){
         const cid='chTot_'+b.key.replace(/[^A-Za-z]/g,'');
