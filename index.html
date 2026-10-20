@@ -257,9 +257,17 @@ function render(ym){
         const a=agg(rws);
         const rr=realReach(rws,ym); if(rr){ a.reach=rr; a.freq=a.impressions/rr; }
         html+=resultsCard(P,a);
-        const cid='ch_'+b.key.replace(/[^A-Za-z]/g,'')+'_'+P;
-        html+=`<div class="yt-card" style="margin-top:16px"><h5>Evolución diaria · impresiones y clics</h5><div class="ch-wrap"><canvas id="${cid}"></canvas></div></div>`;
-        pending.push({type:'daily', id:cid, rows:rws});
+        const isMeta=(P==='Awareness'||P==='Views'||P==='Traffic');
+        if(isMeta){
+          const days=[...new Set(rws.map(r=>r.date))].sort();
+          const d0=days[0], d1=days[days.length-1];
+          const dAbr=d=>{const [,mm,dd]=d.split('-');const MN=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];return +dd+' '+MN[+mm];};
+          html+=`<div class="yt-card" style="margin-top:16px"><h5>Periodo activo de la campaña</h5><div class="yt-ent-lbl" style="margin-top:4px">Campaña activa del <b>${dAbr(d0)}</b> al <b>${dAbr(d1)}</b> (${days.length} días con entrega registrada en plataforma)</div><div class="yt-ent" style="margin-top:8px"><div class="yt-ent-fill ok" style="width:100%"></div></div></div>`;
+        } else {
+          const cid='ch_'+b.key.replace(/[^A-Za-z]/g,'')+'_'+P;
+          html+=`<div class="yt-card" style="margin-top:16px"><h5>Evolución diaria · impresiones y clics</h5><div class="ch-wrap"><canvas id="${cid}"></canvas></div></div>`;
+          pending.push({type:'daily', id:cid, rows:rws});
+        }
         html+=`<div class="analisis">${analisis(P,b,ym,a,rws)}</div>`;
         const cr=(CRE[ym]&&CRE[ym][b.key]&&CRE[ym][b.key][P])||[];
         if(cr.length){
