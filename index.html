@@ -259,8 +259,8 @@ function render(ym){
         html+=resultsCard(P,a);
         const isMeta=(P==='Awareness'||P==='Views'||P==='Traffic');
         const isSep=(ym==='2026-09');
-        if(isMeta && isSep){
-          // Septiembre: sin gráfica (ni diaria ni periodo activo) para Meta; solo resultados y aprendizajes.
+        if(isSep){
+          // Septiembre: sin ninguna gráfica (ni diaria ni periodo activo) en ninguna plataforma; solo resultados y aprendizajes.
         } else if(isMeta){
           const days=[...new Set(rws.map(r=>r.date))].sort();
           const d0=days[0], d1=days[days.length-1];
