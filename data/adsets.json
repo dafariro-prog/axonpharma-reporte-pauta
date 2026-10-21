@@ -1,6 +1,6 @@
 {
   "source": "Meta adsets + TikTok ads",
-  "updated": "2026-10-20T19:01:22.696Z",
+  "updated": "2026-10-21T19:09:53.032Z",
   "months": {
     "2026-05": {
       "MARIMER": {
@@ -685,6 +685,118 @@
       }
     },
     "2026-07": {
+      "FLORATIL": {
+        "TikTok": [
+          {
+            "name": "Floratil Traffic",
+            "impressions": 1049552,
+            "link_clicks": 179758,
+            "reach": 0,
+            "clicks": 179758,
+            "ctr": 17.13,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 4",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 6",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 5",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK FLORATIL ci8yoqOP",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 3 Nov 2025 Vvucibgt",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          }
+        ]
+      },
       "A-CERUMEN": {
         "TikTok": [
           {
@@ -761,118 +873,6 @@
           },
           {
             "name": "ACerumen Traffic 4",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          }
-        ]
-      },
-      "FLORATIL": {
-        "TikTok": [
-          {
-            "name": "Floratil Traffic",
-            "impressions": 1049552,
-            "link_clicks": 179758,
-            "reach": 0,
-            "clicks": 179758,
-            "ctr": 17.13,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 1",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 2",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 3",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 4",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 6",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 5",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "TIKTOK FLORATIL ci8yoqOP",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 3 Nov 2025 Vvucibgt",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Setiembre 2025 Sept25 AXONPHARMA Floratil Traffic 616.32 3082",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -996,6 +996,118 @@
       }
     },
     "2026-08": {
+      "FLORATIL": {
+        "TikTok": [
+          {
+            "name": "Floratil Traffic",
+            "impressions": 5421751,
+            "link_clicks": 864902,
+            "reach": 0,
+            "clicks": 864902,
+            "ctr": 15.95,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 4",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 6",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic Post 5",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "TIKTOK FLORATIL ci8yoqOP",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Video 3 Nov 2025 Vvucibgt",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          }
+        ]
+      },
       "A-CERUMEN": {
         "TikTok": [
           {
@@ -1072,118 +1184,6 @@
           },
           {
             "name": "ACerumen Traffic 4",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          }
-        ]
-      },
-      "FLORATIL": {
-        "TikTok": [
-          {
-            "name": "Floratil Traffic",
-            "impressions": 5421751,
-            "link_clicks": 864902,
-            "reach": 0,
-            "clicks": 864902,
-            "ctr": 15.95,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 1",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 2",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 3",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 4",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 6",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Traffic Post 5",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "TIKTOK FLORATIL ci8yoqOP",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 3 Nov 2025 Vvucibgt",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Setiembre 2025 Sept25 AXONPHARMA Floratil Traffic 616.32 3082",
             "impressions": 0,
             "link_clicks": 0,
             "reach": 0,
@@ -1823,6 +1823,33 @@
             "hasReach": false
           },
           {
+            "name": "Floratil Traffic AD1",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD2",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD3",
+            "impressions": 0,
+            "link_clicks": 0,
+            "reach": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "hasReach": false
+          },
+          {
             "name": "Floratil Traffic Post 1",
             "impressions": 0,
             "link_clicks": 0,
@@ -1893,33 +1920,6 @@
             "clicks": 0,
             "ctr": 0,
             "hasReach": false
-          },
-          {
-            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Setiembre 2025 Sept25 AXONPHARMA Floratil Traffic 616.32 3082",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
           }
         ]
       }
@@ -1929,159 +1929,168 @@
         "Traffic": [
           {
             "name": "MARIMER BABY NACIONAL Farmatodo T",
-            "impressions": 728787,
-            "link_clicks": 20023,
-            "reach": 310884,
-            "clicks": 24205,
-            "ctr": 3.32,
+            "impressions": 878279,
+            "link_clicks": 22899,
+            "reach": 372849,
+            "clicks": 27795,
+            "ctr": 3.16,
             "hasReach": true
           },
           {
             "name": "MARIMER BABY NACIONAL CruzVerde",
-            "impressions": 555901,
-            "link_clicks": 25005,
-            "reach": 249670,
-            "clicks": 28547,
-            "ctr": 5.14,
+            "impressions": 667359,
+            "link_clicks": 28746,
+            "reach": 293946,
+            "clicks": 32960,
+            "ctr": 4.94,
             "hasReach": true
           },
           {
             "name": "MARIMER BABY ATLANTICO Unidrogas Traffic",
-            "impressions": 432028,
-            "link_clicks": 16418,
-            "reach": 155416,
-            "clicks": 19091,
-            "ctr": 4.42,
+            "impressions": 515703,
+            "link_clicks": 18796,
+            "reach": 181986,
+            "clicks": 21984,
+            "ctr": 4.26,
             "hasReach": true
           },
           {
             "name": "MARIMER ADULTOS NACIONAL LaRebaja Traffic",
-            "impressions": 374817,
-            "link_clicks": 15945,
-            "reach": 196731,
-            "clicks": 18139,
-            "ctr": 4.84,
+            "impressions": 473229,
+            "link_clicks": 18342,
+            "reach": 251845,
+            "clicks": 21223,
+            "ctr": 4.48,
             "hasReach": true
           },
           {
             "name": "MARIMER ADULTOS ATLANTICO Unidrogas",
-            "impressions": 357711,
-            "link_clicks": 13506,
-            "reach": 141984,
-            "clicks": 15643,
-            "ctr": 4.37,
+            "impressions": 443588,
+            "link_clicks": 15344,
+            "reach": 175872,
+            "clicks": 18033,
+            "ctr": 4.07,
             "hasReach": true
           },
           {
             "name": "MARIMER BABY ANTIOQUIA Unidrogas",
-            "impressions": 354539,
-            "link_clicks": 14278,
-            "reach": 151677,
-            "clicks": 16324,
-            "ctr": 4.6,
+            "impressions": 440274,
+            "link_clicks": 16443,
+            "reach": 183017,
+            "clicks": 19006,
+            "ctr": 4.32,
             "hasReach": true
           },
           {
             "name": "MARIMER ADULTOS NACIONAL CruzVerde",
-            "impressions": 340813,
-            "link_clicks": 16140,
-            "reach": 180684,
-            "clicks": 17742,
-            "ctr": 5.21,
+            "impressions": 409451,
+            "link_clicks": 18730,
+            "reach": 213032,
+            "clicks": 20676,
+            "ctr": 5.05,
             "hasReach": true
           },
           {
             "name": "MARIMER ADULTOS ANTIOQUIA Unidrogas",
-            "impressions": 255841,
-            "link_clicks": 14065,
-            "reach": 140040,
-            "clicks": 15334,
-            "ctr": 5.99,
+            "impressions": 323206,
+            "link_clicks": 16020,
+            "reach": 180568,
+            "clicks": 17706,
+            "ctr": 5.48,
             "hasReach": true
           }
         ],
         "Awareness": [
           {
             "name": "MARIMER BABY NACIONAL COLABORACION",
-            "impressions": 623096,
+            "impressions": 736902,
             "link_clicks": 5,
-            "reach": 495612,
-            "clicks": 3552,
+            "reach": 559184,
+            "clicks": 4224,
             "ctr": 0.57,
             "hasReach": true
           },
           {
             "name": "MARIMER ADULTO NACIONAL COLABORACION",
-            "impressions": 107245,
+            "impressions": 196423,
             "link_clicks": 0,
-            "reach": 95205,
-            "clicks": 546,
-            "ctr": 0.51,
+            "reach": 167850,
+            "clicks": 944,
+            "ctr": 0.48,
+            "hasReach": true
+          },
+          {
+            "name": "Oct26 Storys Cobertura MARIMER",
+            "impressions": 10281,
+            "link_clicks": 0,
+            "reach": 9906,
+            "clicks": 10,
+            "ctr": 0.1,
             "hasReach": true
           }
         ],
         "TikTok": [
           {
             "name": "Marimer Traffic Post 6 Isotónico baby",
-            "impressions": 492488,
-            "link_clicks": 18515,
+            "impressions": 500604,
+            "link_clicks": 18909,
             "reach": 0,
-            "clicks": 18515,
-            "ctr": 3.76,
+            "clicks": 18909,
+            "ctr": 3.78,
             "hasReach": false
           },
           {
             "name": "Marimer Traffic",
-            "impressions": 408148,
-            "link_clicks": 70868,
+            "impressions": 450426,
+            "link_clicks": 78403,
             "reach": 0,
-            "clicks": 70868,
-            "ctr": 17.36,
+            "clicks": 78403,
+            "ctr": 17.41,
             "hasReach": false
           },
           {
             "name": "Marimer Traffic Post 5 Hipertónico baby",
-            "impressions": 74546,
-            "link_clicks": 19606,
+            "impressions": 81676,
+            "link_clicks": 21481,
             "reach": 0,
-            "clicks": 19606,
+            "clicks": 21481,
             "ctr": 26.3,
             "hasReach": false
           },
           {
             "name": "Marimer Traffic Post4 Isotonico",
-            "impressions": 58173,
-            "link_clicks": 24370,
+            "impressions": 68477,
+            "link_clicks": 26465,
             "reach": 0,
-            "clicks": 24370,
-            "ctr": 41.89,
+            "clicks": 26465,
+            "ctr": 38.65,
             "hasReach": false
           },
           {
             "name": "Marimer Traffic Post 3 Isotónico baby",
-            "impressions": 53437,
-            "link_clicks": 13790,
+            "impressions": 54405,
+            "link_clicks": 13958,
             "reach": 0,
-            "clicks": 13790,
-            "ctr": 25.81,
+            "clicks": 13958,
+            "ctr": 25.66,
             "hasReach": false
           },
           {
             "name": "Marimer Traffic Post 1 Isotónico",
-            "impressions": 31526,
-            "link_clicks": 8519,
+            "impressions": 31865,
+            "link_clicks": 8573,
             "reach": 0,
-            "clicks": 8519,
-            "ctr": 27.02,
+            "clicks": 8573,
+            "ctr": 26.9,
             "hasReach": false
           },
           {
             "name": "Marimer Traffic Post 2 Hipertónico baby",
-            "impressions": 6936,
-            "link_clicks": 1264,
+            "impressions": 7058,
+            "link_clicks": 1304,
             "reach": 0,
-            "clicks": 1264,
-            "ctr": 18.22,
+            "clicks": 1304,
+            "ctr": 18.48,
             "hasReach": false
           },
           {
@@ -2135,74 +2144,74 @@
         "Traffic": [
           {
             "name": "FLORATIL ADULTOS NACIONAL Copservir",
-            "impressions": 286815,
-            "link_clicks": 19640,
-            "reach": 151413,
-            "clicks": 20910,
-            "ctr": 7.29,
+            "impressions": 294660,
+            "link_clicks": 20305,
+            "reach": 152652,
+            "clicks": 21609,
+            "ctr": 7.33,
             "hasReach": true
           },
           {
             "name": "FLORATIL PADRES BABY ATLANTICO Unidrogas Traffic",
-            "impressions": 237963,
-            "link_clicks": 9710,
-            "reach": 84201,
-            "clicks": 11079,
-            "ctr": 4.66,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas",
-            "impressions": 237130,
-            "link_clicks": 16711,
-            "reach": 95532,
-            "clicks": 17538,
-            "ctr": 7.4,
+            "impressions": 274648,
+            "link_clicks": 10900,
+            "reach": 93730,
+            "clicks": 12460,
+            "ctr": 4.54,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas Traffic",
-            "impressions": 232748,
-            "link_clicks": 12550,
-            "reach": 100999,
-            "clicks": 13607,
-            "ctr": 5.85,
+            "impressions": 272652,
+            "link_clicks": 14131,
+            "reach": 117057,
+            "clicks": 15388,
+            "ctr": 5.64,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTOS ANTIOQUIA Unidrogas",
+            "impressions": 270081,
+            "link_clicks": 18645,
+            "reach": 108775,
+            "clicks": 19601,
+            "ctr": 7.26,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTOS BOGOTA CruzVerde",
-            "impressions": 228142,
-            "link_clicks": 14883,
-            "reach": 96546,
-            "clicks": 15704,
-            "ctr": 6.88,
+            "impressions": 259525,
+            "link_clicks": 16620,
+            "reach": 109402,
+            "clicks": 17553,
+            "ctr": 6.76,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTOS ATLANTICO Unidrogas Traffic",
-            "impressions": 217399,
-            "link_clicks": 14301,
-            "reach": 77754,
-            "clicks": 15320,
-            "ctr": 7.05,
+            "impressions": 246132,
+            "link_clicks": 15938,
+            "reach": 86161,
+            "clicks": 17065,
+            "ctr": 6.93,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES BOGOTA CRUZ VERDE",
-            "impressions": 180100,
-            "link_clicks": 11870,
-            "reach": 85698,
-            "clicks": 13022,
-            "ctr": 7.23,
+            "impressions": 210576,
+            "link_clicks": 13297,
+            "reach": 100632,
+            "clicks": 14626,
+            "ctr": 6.95,
             "hasReach": true
           },
           {
             "name": "FLORATIL BABY PADRES NACIONAL Unidrogas Traffic",
-            "impressions": 152410,
-            "link_clicks": 9273,
-            "reach": 87080,
-            "clicks": 9996,
-            "ctr": 6.56,
+            "impressions": 178544,
+            "link_clicks": 10501,
+            "reach": 103020,
+            "clicks": 11316,
+            "ctr": 6.34,
             "hasReach": true
           },
           {
@@ -2245,166 +2254,202 @@
         "Awareness": [
           {
             "name": "Colaboracion el tiempo-Colombiano",
-            "impressions": 1363582,
-            "link_clicks": 6,
-            "reach": 880563,
-            "clicks": 8378,
-            "ctr": 0.61,
+            "impressions": 1447738,
+            "link_clicks": 7,
+            "reach": 911596,
+            "clicks": 8916,
+            "ctr": 0.62,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTO NACIONAL Cruzverde",
-            "impressions": 364380,
-            "link_clicks": 136,
-            "reach": 270956,
-            "clicks": 1256,
-            "ctr": 0.34,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL BABY PADRES NACIONAL CruzVerde",
-            "impressions": 363328,
-            "link_clicks": 128,
-            "reach": 262364,
-            "clicks": 1198,
-            "ctr": 0.33,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTO ATLANTICO Unidrogas",
-            "impressions": 350506,
-            "link_clicks": 137,
-            "reach": 213172,
-            "clicks": 1118,
-            "ctr": 0.32,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL BABY PADRES ATLANTICO Unidrogas",
-            "impressions": 348545,
-            "link_clicks": 165,
-            "reach": 215399,
-            "clicks": 928,
-            "ctr": 0.27,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTO ANTIOQUIA Unidrogas",
-            "impressions": 347927,
-            "link_clicks": 172,
-            "reach": 213400,
-            "clicks": 1023,
-            "ctr": 0.29,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas",
-            "impressions": 339003,
-            "link_clicks": 178,
-            "reach": 210939,
-            "clicks": 731,
-            "ctr": 0.22,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL ADULTO NACIONAL Farmatodo",
-            "impressions": 161842,
-            "link_clicks": 54,
-            "reach": 138297,
-            "clicks": 556,
-            "ctr": 0.34,
-            "hasReach": true
-          },
-          {
-            "name": "FLORATIL BABY PADRES NACIONAL Farmatodo",
-            "impressions": 160687,
-            "link_clicks": 23,
-            "reach": 128831,
-            "clicks": 560,
+            "impressions": 408942,
+            "link_clicks": 151,
+            "reach": 302977,
+            "clicks": 1418,
             "ctr": 0.35,
             "hasReach": true
           },
           {
+            "name": "FLORATIL BABY PADRES NACIONAL CruzVerde",
+            "impressions": 406183,
+            "link_clicks": 145,
+            "reach": 298604,
+            "clicks": 1318,
+            "ctr": 0.32,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTO ATLANTICO Unidrogas",
+            "impressions": 389584,
+            "link_clicks": 156,
+            "reach": 229747,
+            "clicks": 1259,
+            "ctr": 0.32,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTO ANTIOQUIA Unidrogas",
+            "impressions": 388729,
+            "link_clicks": 194,
+            "reach": 230053,
+            "clicks": 1144,
+            "ctr": 0.29,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES ATLANTICO Unidrogas",
+            "impressions": 388573,
+            "link_clicks": 184,
+            "reach": 229180,
+            "clicks": 1022,
+            "ctr": 0.26,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES ANTIOQUIA Unidrogas",
+            "impressions": 378277,
+            "link_clicks": 198,
+            "reach": 230517,
+            "clicks": 813,
+            "ctr": 0.21,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL ADULTO NACIONAL Farmatodo",
+            "impressions": 180356,
+            "link_clicks": 58,
+            "reach": 152227,
+            "clicks": 631,
+            "ctr": 0.35,
+            "hasReach": true
+          },
+          {
+            "name": "FLORATIL BABY PADRES NACIONAL Farmatodo",
+            "impressions": 178632,
+            "link_clicks": 26,
+            "reach": 143216,
+            "clicks": 615,
+            "ctr": 0.34,
+            "hasReach": true
+          },
+          {
             "name": "FLORATIL BABY PADRES NACIONAL La rebaja",
-            "impressions": 133737,
-            "link_clicks": 47,
-            "reach": 113463,
-            "clicks": 465,
+            "impressions": 148458,
+            "link_clicks": 57,
+            "reach": 123844,
+            "clicks": 514,
             "ctr": 0.35,
             "hasReach": true
           },
           {
             "name": "FLORATIL ADULTO NACIONAL LaRebaja",
-            "impressions": 128700,
-            "link_clicks": 65,
-            "reach": 96986,
-            "clicks": 409,
-            "ctr": 0.32,
+            "impressions": 144355,
+            "link_clicks": 70,
+            "reach": 104829,
+            "clicks": 447,
+            "ctr": 0.31,
+            "hasReach": true
+          },
+          {
+            "name": "Oct26 IG AxonPharma Publicaciones Jaladas Awareness",
+            "impressions": 6158,
+            "link_clicks": 0,
+            "reach": 5671,
+            "clicks": 0,
+            "ctr": 0,
             "hasReach": true
           }
         ],
         "TikTok": [
           {
             "name": "Floratil Traffic",
-            "impressions": 954208,
-            "link_clicks": 93910,
+            "impressions": 1038864,
+            "link_clicks": 103300,
             "reach": 0,
-            "clicks": 93910,
-            "ctr": 9.84,
+            "clicks": 103300,
+            "ctr": 9.94,
             "hasReach": false
           },
           {
             "name": "Floratil Traffic Post 6",
-            "impressions": 906865,
-            "link_clicks": 234277,
+            "impressions": 935240,
+            "link_clicks": 241131,
             "reach": 0,
-            "clicks": 234277,
-            "ctr": 25.83,
+            "clicks": 241131,
+            "ctr": 25.78,
             "hasReach": false
           },
           {
             "name": "Floratil Traffic Post 4",
-            "impressions": 298023,
-            "link_clicks": 58805,
+            "impressions": 321008,
+            "link_clicks": 63437,
             "reach": 0,
-            "clicks": 58805,
-            "ctr": 19.73,
+            "clicks": 63437,
+            "ctr": 19.76,
             "hasReach": false
           },
           {
             "name": "Floratil Traffic Post 2",
-            "impressions": 282283,
-            "link_clicks": 35126,
+            "impressions": 303707,
+            "link_clicks": 40125,
             "reach": 0,
-            "clicks": 35126,
-            "ctr": 12.44,
+            "clicks": 40125,
+            "ctr": 13.21,
             "hasReach": false
           },
           {
             "name": "Floratil Traffic Post 3",
-            "impressions": 146630,
-            "link_clicks": 18193,
+            "impressions": 148184,
+            "link_clicks": 18383,
             "reach": 0,
-            "clicks": 18193,
+            "clicks": 18383,
             "ctr": 12.41,
             "hasReach": false
           },
           {
             "name": "Floratil Traffic Post 1",
-            "impressions": 103068,
-            "link_clicks": 19346,
+            "impressions": 109120,
+            "link_clicks": 20655,
             "reach": 0,
-            "clicks": 19346,
-            "ctr": 18.77,
+            "clicks": 20655,
+            "ctr": 18.93,
             "hasReach": false
           },
           {
             "name": "Floratil Traffic Post 5",
-            "impressions": 37451,
-            "link_clicks": 7984,
+            "impressions": 38243,
+            "link_clicks": 8126,
             "reach": 0,
-            "clicks": 7984,
-            "ctr": 21.32,
+            "clicks": 8126,
+            "ctr": 21.25,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD1",
+            "impressions": 17869,
+            "link_clicks": 5459,
+            "reach": 0,
+            "clicks": 5459,
+            "ctr": 30.55,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD2",
+            "impressions": 16173,
+            "link_clicks": 3044,
+            "reach": 0,
+            "clicks": 3044,
+            "ctr": 18.82,
+            "hasReach": false
+          },
+          {
+            "name": "Floratil Traffic AD3",
+            "impressions": 3187,
+            "link_clicks": 909,
+            "reach": 0,
+            "clicks": 909,
+            "ctr": 28.52,
             "hasReach": false
           },
           {
@@ -2424,33 +2469,6 @@
             "clicks": 0,
             "ctr": 0,
             "hasReach": false
-          },
-          {
-            "name": "Floratil Video 2 Nov 2025 GbNBLxMp",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Video 1 Nov 2025 RmtNuS5z",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
-          },
-          {
-            "name": "Floratil Setiembre 2025 Sept25 AXONPHARMA Floratil Traffic 616.32 3082",
-            "impressions": 0,
-            "link_clicks": 0,
-            "reach": 0,
-            "clicks": 0,
-            "ctr": 0,
-            "hasReach": false
           }
         ]
       },
@@ -2458,84 +2476,84 @@
         "Traffic": [
           {
             "name": "A-CERUMEN ADULTO ATLANTICO Unidrogas",
-            "impressions": 420941,
-            "link_clicks": 19456,
-            "reach": 214646,
-            "clicks": 21762,
-            "ctr": 5.17,
+            "impressions": 475835,
+            "link_clicks": 21572,
+            "reach": 244714,
+            "clicks": 24158,
+            "ctr": 5.08,
             "hasReach": true
           },
           {
             "name": "A-CERUMEN ADULTO ANTIOQUIA Unidrogas",
-            "impressions": 395073,
-            "link_clicks": 23225,
-            "reach": 250214,
-            "clicks": 26223,
-            "ctr": 6.64,
+            "impressions": 442598,
+            "link_clicks": 25759,
+            "reach": 274722,
+            "clicks": 29118,
+            "ctr": 6.58,
             "hasReach": true
           },
           {
             "name": "A-CERUMEN ADULTO Nacional CruzVerde",
-            "impressions": 344337,
-            "link_clicks": 16938,
-            "reach": 245851,
-            "clicks": 19559,
-            "ctr": 5.68,
+            "impressions": 386795,
+            "link_clicks": 18804,
+            "reach": 272900,
+            "clicks": 21750,
+            "ctr": 5.62,
             "hasReach": true
           },
           {
             "name": "A-CERUMEN ADULTO NACIONAL Farmatodo",
-            "impressions": 267079,
-            "link_clicks": 13993,
-            "reach": 198544,
-            "clicks": 15680,
-            "ctr": 5.87,
+            "impressions": 300347,
+            "link_clicks": 15488,
+            "reach": 220694,
+            "clicks": 17387,
+            "ctr": 5.79,
             "hasReach": true
           }
         ],
         "TikTok": [
           {
             "name": "ACerumen Traffic",
-            "impressions": 816891,
-            "link_clicks": 118127,
+            "impressions": 836802,
+            "link_clicks": 121695,
             "reach": 0,
-            "clicks": 118127,
-            "ctr": 14.46,
+            "clicks": 121695,
+            "ctr": 14.54,
             "hasReach": false
           },
           {
             "name": "ACerumen Traffic Post 1",
-            "impressions": 328399,
-            "link_clicks": 48488,
+            "impressions": 343416,
+            "link_clicks": 51874,
             "reach": 0,
-            "clicks": 48488,
-            "ctr": 14.76,
+            "clicks": 51874,
+            "ctr": 15.11,
             "hasReach": false
           },
           {
             "name": "ACerumen Baby Traffic",
-            "impressions": 66873,
-            "link_clicks": 10663,
+            "impressions": 128937,
+            "link_clicks": 18062,
             "reach": 0,
-            "clicks": 10663,
-            "ctr": 15.95,
+            "clicks": 18062,
+            "ctr": 14.01,
             "hasReach": false
           },
           {
             "name": "ACerumen Traffic Post 3",
-            "impressions": 62536,
-            "link_clicks": 11047,
+            "impressions": 63716,
+            "link_clicks": 11480,
             "reach": 0,
-            "clicks": 11047,
-            "ctr": 17.67,
+            "clicks": 11480,
+            "ctr": 18.02,
             "hasReach": false
           },
           {
             "name": "ACerumen Traffic Post 2",
-            "impressions": 19998,
-            "link_clicks": 3872,
+            "impressions": 20165,
+            "link_clicks": 3903,
             "reach": 0,
-            "clicks": 3872,
+            "clicks": 3903,
             "ctr": 19.36,
             "hasReach": false
           },
