@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-10-24T20:03:48.469Z",
+  "updated": "2026-10-25T18:01:34.980Z",
   "months": {
     "2025-05": {
       "May25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
@@ -674,36 +674,36 @@
     },
     "2026-10": {
       "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 2071677,
-        "freq": 2.3989
+        "reach": 2123832,
+        "freq": 2.4352
       },
       "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 758682,
-        "freq": 3.0461
+        "reach": 772692,
+        "freq": 3.0712
       },
       "Oct26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
-        "reach": 913595,
-        "freq": 2.0511
+        "reach": 929075,
+        "freq": 2.0799
       },
       "Oct26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 1685306,
-        "freq": 3.3252
+        "reach": 1726026,
+        "freq": 3.3673
       },
       "Oct26_CO_AxonPharma_MARIMER_FB/IG_Awareness -PATROCINADO": {
-        "reach": 1043904,
-        "freq": 1.6239
+        "reach": 1122855,
+        "freq": 1.6967
       },
       "Oct26_AXONPHARMA_Marimer_Traffic": {
-        "reach": 362719,
-        "freq": 3.839
+        "reach": 375594,
+        "freq": 3.9629
       },
       "Oct26_AXONPHARMA_A-Cerumen_Traffic": {
-        "reach": 403990,
-        "freq": 4.1064
+        "reach": 417496,
+        "freq": 4.2446
       },
       "Oct26_AXONPHARMA_Floratil_Traffic": {
-        "reach": 971295,
-        "freq": 3.5852
+        "reach": 1009522,
+        "freq": 3.6878
       }
     }
   }
