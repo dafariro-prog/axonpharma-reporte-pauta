@@ -1,6 +1,6 @@
 {
   "source": "Meta+TikTok reach mensual único",
-  "updated": "2026-10-31T18:59:33.936Z",
+  "updated": "2026-11-01T19:19:03.670Z",
   "months": {
     "2025-05": {
       "May25_CO_AxonPharma_MARIMER_FB/IG_Awareness": {
@@ -674,36 +674,70 @@
     },
     "2026-10": {
       "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Awareness": {
-        "reach": 2387066,
-        "freq": 2.6768
+        "reach": 2416466,
+        "freq": 2.7027
       },
       "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Traffic": {
-        "reach": 837460,
-        "freq": 3.2433
+        "reach": 843678,
+        "freq": 3.2614
       },
       "Oct26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic": {
         "reach": 1016402,
-        "freq": 2.2258
+        "freq": 2.2261
       },
       "Oct26_CO_AxonPharma_MARIMER_FB/IG_Traffic": {
-        "reach": 1857913,
-        "freq": 3.6177
+        "reach": 1868318,
+        "freq": 3.6459
       },
       "Oct26_CO_AxonPharma_MARIMER_FB/IG_Awareness -PATROCINADO": {
-        "reach": 1159489,
-        "freq": 1.7273
+        "reach": 1160956,
+        "freq": 1.7352
       },
       "Oct26_AXONPHARMA_Marimer_Traffic": {
-        "reach": 449540,
-        "freq": 4.6628
+        "reach": 456835,
+        "freq": 4.6987
       },
       "Oct26_AXONPHARMA_A-Cerumen_Traffic": {
-        "reach": 501769,
-        "freq": 5.0345
+        "reach": 506417,
+        "freq": 5.018
       },
       "Oct26_AXONPHARMA_Floratil_Traffic": {
-        "reach": 1241890,
-        "freq": 4.3711
+        "reach": 1254115,
+        "freq": 4.3491
+      }
+    },
+    "2026-11": {
+      "Nov26_CO_AxonPharma_A-CERUMEN_FB/IG_Traffic_$ 4,504,500": {
+        "reach": 23855,
+        "freq": 1.1085
+      },
+      "Nov26_CO_AxonPharma_MARIMER_FB/IG_Awareness -PATROCINADO": {
+        "reach": 40514,
+        "freq": 1.0654
+      },
+      "Nov26_CO_AxonPharma_MARIMER_FB/IG_Traffic $9,667,766- 01-30 Nov": {
+        "reach": 46578,
+        "freq": 1.1438
+      },
+      "Nov26_CO_AxonPharma_FLORATIL_FB/IG_Awareness_$5,600,000 - 01-30 Nov": {
+        "reach": 108331,
+        "freq": 1.1546
+      },
+      "Oct26_CO_AxonPharma_FLORATIL_FB/IG_Traffic _$12,000,000-01- 30 Nov": {
+        "reach": 48087,
+        "freq": 1.042
+      },
+      "Nov26_AXONPHARMA_Floratil_Traffic_$4,061.23_01-30 Nov": {
+        "reach": 8669,
+        "freq": 18.649
+      },
+      "Nov26_AXONPHARMA_Marimer_Traffic_$2,499_01-30 Nov": {
+        "reach": 8016,
+        "freq": 13.145
+      },
+      "Novt26_AXONPHARMA_A-Cerumen_Traffic_$1,072.16- 01- 30 Nov": {
+        "reach": 4505,
+        "freq": 10.9671
       }
     }
   }
